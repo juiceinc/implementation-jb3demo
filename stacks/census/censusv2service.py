@@ -187,13 +187,25 @@ class KeyMetricsService(CensusService):
 
 
 class KeyMetricsV3Service(CensusService):
+    def __init__(self, request, *args, **kwargs):
+        # you're cut off
+        self.Session = Session
+        self.request = request
+        self.download = False
+        self.local_filter_ids = ()
+
     def build_response(self):
         metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
         recipe = self.recipe().metrics(*metrics)
         self.response =  {"responses": [recipe.jb_response("Sample")]}
         self.response['responses'][0]['config'] = {"titleTemplate": "Mooo {}".format(randint(0, 10000))}
 
-
+    def run(self):
+        """ Process everything
+        """
+        with self.session_scope():
+            self.build_request_params()
+            self.build_response()
 
 
 
