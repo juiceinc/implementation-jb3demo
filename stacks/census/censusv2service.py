@@ -210,7 +210,7 @@ class KeyMetricsV3Service(CensusService):
                 "group_by_type": 'metric',
                 "formattedValue": "250"
             })
-        response['data'][0]['values'] = group['items']
+        response['data'][0]['values'] = [group]
 
         self.response =  {"responses": [response]}
 
