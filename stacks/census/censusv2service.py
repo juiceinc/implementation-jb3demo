@@ -197,8 +197,23 @@ class KeyMetricsV3Service(CensusService):
     def build_response(self):
         metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
         recipe = self.recipe().metrics(*metrics)
-        self.response =  {"responses": [recipe.jb_response("Sample")]}
-        self.response['responses'][0]['config'] = {"titleTemplate": "Mooo {}".format(randint(0, 10000))}
+
+        response = recipe.jb_response("Sample")
+        response['config'] = {"titleTemplate": "Moooooo {}".format(randint(0, 10000))}
+
+        group = {'items': [], 'group_by_type': 'metric', 'name': 'metric'}
+
+        for metric in metrics:
+            group['items'].append({
+                "id": metric,
+                "label": self.metric_shelf[metric].id,
+                "group_by_type": 'metric',
+                "formattedValue": "250"
+            })
+        response['data'][0]['values'] = group['items']
+
+        self.response =  {"responses": [response]}
+
 
     def run(self):
         """ Process everything
