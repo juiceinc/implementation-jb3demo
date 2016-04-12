@@ -1,0 +1,17 @@
+# Source file for the logo.
+# Upload an image with enough resolution to be used for @2x retina versions.
+# This image must exist in the public/img/ directory
+logo: "logos/census-logo-whiteBG_png__640480_.png"
+# Geometry for logo as width x height in pixels
+# To set just the height use x50 for 50px high
+logo_geometry: "x62"
+# The background pattern to use on each page.
+# This image must exist in the public/img/ directory.
+background_pattern: "patterns/bright_squares.png"
+# Set the primary colors for the app.
+variables: |
+  $theme-base-font-stack: 'Merriweather', Georgia, serif !default;
+  $theme-primary-color: #11222f;
+  $theme-accent-color: #dd4b44;
+# Extra css overrides
+extra_css: ""

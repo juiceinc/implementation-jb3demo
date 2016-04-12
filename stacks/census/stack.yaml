@@ -1,0 +1,42 @@
+# Label is the displayed name of this stack
+label: "Census"
+# Should a hopscotch tour be displayed.
+has_tour: false
+# The hash to load if the user hasn't started using this stack.
+# If you leave this blank the slices will start with nothing selected or defaults.
+initial_hash: ""
+# Provides data to the global filters
+# Can be either a data service class in your service.py file (e.g. 'realtorservice.FilterService')
+# or a json file in the fixtures directory (e.g. 'filters.json')
+global_filters_service: ''
+slices:
+#
+# Slice documentation: http://dev.fruitiondata.com/static/docs/slices.html
+# How to build titles: http://dev.fruitiondata.com/static/docs/title-templates.html
+#
+- slice_type: "option-chooser"
+  # The title line for the slice.
+  title: "Explore your data"
+  # Detailed configuration for the slice.
+  config:
+    "maxSelections": 1
+    "minSelections": 1
+    "optionExtraClass": "option-item-fixed-width"
+    "optionTemplate": |-
+      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=formattedValue}}</div></div>
+    "showTitles": false
+  # Provides data to the slice
+  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
+  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
+  data_service: "censusv2service.KeyMetricsService"
+#
+#
+#
+- slice_type: "ranked-list"
+  title: "Let's compare"
+  config:
+    "min_value": 0
+  eventmap:
+    "filter_change":
+    - "option-chooser"
+  data_service: "censusv2service.RankedListService"

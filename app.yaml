@@ -1,0 +1,19 @@
+id: "xVNKTlyz"
+# Slug appears in the url for the stack like http://www.juiceboxdata.com/{appslug}/{stackslug}/
+slug: "jb3demo"
+# Label is the displayed name of this app. Appears on the home page.
+label: "Data Services Demo"
+# Description of this app, appears below the label on the home page.
+description: "US Census Bureau data services demo"
+# If true, allow discussions in this app
+use_discussions: false
+# discussions_group_property is a property of user.extra that groups who users can talk to in discussions
+# If blank, everyone with access to the app can discuss together.
+# WARNING: IF YOU CHANGE THIS IT MAY AFFECT WHAT DISCUSSIONS A USER IS FOLLOWING
+discussions_group_property: ""
+# If true, show help button and allow access to help page.
+show_help: false
+juicebox_version: "3"
+# A list of stacks in this app, should be a folder in the stacks/ directory in this app
+stacks:
+- "census"
