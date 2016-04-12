@@ -2,6 +2,7 @@ from sqlalchemy import Column, String, Integer, Float, case, ForeignKey, select,
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from dataservices.servicebase import *
+from dataservices.recipe import *
 from dataservices.redshift_connectionbase import *
 
 # -------------
@@ -91,7 +92,7 @@ class CensusJoined(Base):
 class CensusService(RecipeServiceBase):
     # Metrics are defined as an SQLAlchemy expression, and a label.
     metric_shelf = {
-        'pop2000': Metric(func.sum(Census.pop2000), label='Population 2000'),
+        'pop2000': Metric(func.sum(Census.pop2000), label='Population 2000', format=".2f", singular="cookie", plural="cookies"),
         'pop2008': Metric(func.sum(Census.pop2008), label='Population 2008'),
         'popdiff': Metric(func.sum(Census.pop2008 - Census.pop2000), label='Population Growth'),
         'avgage': Metric(func.sum(Census.pop2008 * Census.age) / func.sum(Census.pop2008), label='Average Age'),
@@ -181,6 +182,19 @@ class KeyMetricsService(CensusService):
 
         self.response['items'].append(group)
         self.response['notes'] = "Data from US Census Bureau"
+
+
+
+
+class KeyMetricsV3Service(CensusService):
+    def build_response(self):
+        metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
+        recipe = self.recipe().metrics(*metrics)
+        self.response =  {"responses": [recipe.jb_response("Sample")]}
+        self.response['responses'][0]['config'] = {"titleTemplate": "Mooo {}".format(randint(0, 10000))}
+
+
+
 
 
 class RankedListService(CensusService):
