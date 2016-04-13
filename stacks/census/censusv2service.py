@@ -92,7 +92,8 @@ class CensusJoined(Base):
 class CensusService(RecipeServiceBase):
     # Metrics are defined as an SQLAlchemy expression, and a label.
     metric_shelf = {
-        'pop2000': Metric(func.sum(Census.pop2000), label='Population 2000', format=".2f", singular="cookie", plural="cookies"),
+        'pop2000': Metric(func.sum(Census.pop2000), label='Population 2000', format=".2f", singular="cookie",
+                          plural="cookies"),
         'pop2008': Metric(func.sum(Census.pop2008), label='Population 2008'),
         'popdiff': Metric(func.sum(Census.pop2008 - Census.pop2000), label='Population Growth'),
         'avgage': Metric(func.sum(Census.pop2008 * Census.age) / func.sum(Census.pop2008), label='Average Age'),
@@ -138,55 +139,8 @@ class CensusService(RecipeServiceBase):
 
 
 
-class FilterService(CensusService):
-    """
-    Support global filters
-    """
 
-    def build_response(self):
-        metric = self.metric_shelf[self.default_metric]
-        for dim in self.dimension_order:
-            dimension = self.dimension_shelf[dim]
-            items = {'items': [], 'group_by_type': dim, 'name': dimension.label}
-
-            for row in self.recipe().metrics(self.default_metric).dimensions(dim).all():
-                items['items'].append({
-                    'id': dimension.id_value(row),
-                    'name': dimension.value(row),
-                    'group_by_type': dim,
-                    'count': metric.value(row),
-                })
-
-            self.response['items'].append(items)
-
-
-class KeyMetricsService(CensusService):
-    def build_response(self):
-        metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
-        all_result = self.recipe().metrics(*metrics).all()[0]
-
-        group = {'items': [], 'group_by_type': 'metric', 'name': 'metric'}
-
-        for metric in metrics:
-            formatstr = "{0:" + self.metadata[metric]['format'] + '}'
-            try:
-                fv = formatstr.format(getattr(all_result, metric))
-            except:
-                fv = 'can not get'
-            group['items'].append({
-                "id": metric,
-                "label": self.metric_shelf[metric].label,
-                "group_by_type": 'metric',
-                "formattedValue": formatstr.format(getattr(all_result, metric))
-            })
-
-        self.response['items'].append(group)
-        self.response['notes'] = "Data from US Census Bureau"
-
-
-
-
-class KeyMetricsV3Service(CensusService):
+class FirstChooserV3Service(CensusService):
     def __init__(self, request, *args, **kwargs):
         # you're cut off
         self.Session = Session
@@ -195,6 +149,7 @@ class KeyMetricsV3Service(CensusService):
         self.local_filter_ids = ()
 
     def build_response(self):
+
         metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
         recipe = self.recipe().metrics(*metrics)
 
@@ -212,8 +167,7 @@ class KeyMetricsV3Service(CensusService):
             })
         response['data'][0]['values'] = [group]
 
-        self.response =  {"responses": [response]}
-
+        self.response = {"responses": [response]}
 
     def run(self):
         """ Process everything
@@ -224,124 +178,38 @@ class KeyMetricsV3Service(CensusService):
 
 
 
-class RankedListService(CensusService):
-    def __init__(self, *args, **kwargs):
-        super(RankedListService, self).__init__(*args, **kwargs)
-        self.local_filter_ids = ('metric',)
+class SecondChooserV3Service(CensusService):
+    def __init__(self, request, *args, **kwargs):
+        # you're cut off
+        self.Session = Session
+        self.request = request
+        self.download = False
+        self.local_filter_ids = ()
 
     def build_response(self):
+        params = self.request.data
+        metric = params.get('metric', ['pop2000'])[0]
+        recipe = self.recipe().dimensions('sex').metrics(metric)
 
-        if 'metric' in self.local_filters:
-            metric = self.local_filters['metric'][0]
-        else:
-            metric = self.query_metric
-        for dim in self.dimension_order:
-            self.response['items'].extend(self.recipe().metrics('pop2008', metric).dimensions(dim).as_jb_list(mapper={
-                'pop2000': 'count',
-                'pop2008': 'value',
-                dim: 'label',
-            }))
-            # Patch up the metadata formats
-            if 'dim' in self.metadata:
-                self.metadata[dim]['format'] = self.metadata[metric]['format']
+        response = recipe.jb_response("Sample")
+        response['config'] = {"titleTemplate": "Cookies {}".format(randint(0, 10000))}
 
-        self.response['notes'] = "Showing data for {0}".format(self.metric_shelf[metric].label)
-
-
-class DistributionService(CensusService):
-    def build_response(self):
-        r = self.recipe().dimensions('state').metrics('avgage')
-
-        def make_group(minage, maxage):
-            '''
-            Take a minage and maxage and return all the states where the
-            average age falls inside the range.
-
-            Returns an object with an age range label and a list of objects.
-
-            {
-              'label': '0-35',
-              'items': [
-                {
-                  'group_by_type': 'state',
-                  'id': 'Tennessee',
-                  'value': 0,
-                  'label': 'Tennessee'
-                }
-              ]
-            }
-            '''
-            grp = {"label": "{}-{}".format(minage, maxage), "items": []}
-            for state in r.all():
-                if state.avgage > minage and state.avgage < maxage:
-                    grp['items'].append({
-                        'group_by_type': 'state',
-                        'id': state.state,
-                        'value': state.avgage,
-                        'label': state.state
-                    })
-            return grp
-
-        def make_groups(name, age_ranges):
-            '''
-            Take a name and return the age range breakdown as a dictionary.
-
-            {
-              'name': 'Some Name',
-              'items': [
-                {
-                  'label': '0-35',
-                  'items': [
-                    {
-                      'group_by_type': 'state',
-                      'id': 'Tennessee',
-                      'value': 0,
-                      'label': 'Tennessee'
-                    },
-                    {
-                      'group_by_type': 'state',
-                      'id': 'Alabama',
-                      'value': 0,
-                      'label': 'Alabama'
-                    }
-                  ]
-                }
-              ]
-            }
-            '''
-            ret = {'name': name, 'items': []}
-
-            for age_range in age_ranges:
-                ret['items'].append(make_group(age_range[0], age_range[1]))
-            return ret
-
-        self.response['items'].append(
-            make_groups('group 1', [(0.0, 35.0), (35.0, 36.0), (36.0, 37.0), (37.0, 38.0), (38.0, 40.0), (40.0, 99.0)]))
-        self.response['items'].append(make_groups('group 2', [(0.0, 35.0), (35.0, 40.0), (40.0, 99.0)]))
-        self.response['items'].append(make_groups('group 3', [(0.0, 30.0), (30.0, 40.0), (40.0, 99.0)]))
-
-
-# When making a data service.
-# just use the name of the slice, e.g. RankedListService, LollipopService
-class SuperDuperService(CensusService):
-    def build_response(self):
-        # Make a recipe
-        # First part of the recipe is self.recipe({BASE TABLE}) that you're using.
-        recipe = self.recipe()
-
-        # Recipes can be built upon
-        # .metrics() will look things up in the metricshelf
-        recipe = recipe.metrics('pctdiff')
-
-        # .dimensions() will look things up in the dimension_shelf
-        recipe = recipe.dimensions('state', 'sex')
-
-        recipe = recipe.order_by('-pctdiff')
+        group = {'items': [], 'group_by_type': 'metric', 'name': 'foo'}
 
         for row in recipe.all():
-            # Recipe builds a SQLAlchemy query and runs it lazily
-            # For every dimension and metric you use, there will be a
-            # property on every row.
-            self.response['items'].append(
-                {'state': row.state, 'sex': row.sex, 'pop_difference': row.pctdiff}
-            )
+            group['items'].append({
+                "id": row.sex_id,
+                "label": row.sex,
+                "group_by_type": 'sex',
+                "formattedValue": "{0:.1f}".format(getattr(row,metric)/1000000.)
+            })
+        response['data'][0]['values'] = [group]
+
+        self.response = {"responses": [response]}
+
+    def run(self):
+        """ Process everything
+        """
+        with self.session_scope():
+            self.build_request_params()
+            self.build_response()

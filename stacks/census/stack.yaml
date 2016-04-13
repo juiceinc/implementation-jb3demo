@@ -45,7 +45,7 @@ slices:
   # Provides data to the slice
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-  data_service: "censusv2service.KeyMetricsV3Service"
+  data_service: "censusv2service.FirstChooserV3Service"
 
 - slice_type: "option-chooser"
   slug: "bar"
@@ -67,7 +67,7 @@ slices:
   # Provides data to the slice
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-  data_service: "censusv2service.KeyMetricsV3Service"
+  data_service: "censusv2service.SecondChooserV3Service"
 #
 #
 #
