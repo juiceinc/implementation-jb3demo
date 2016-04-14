@@ -79,7 +79,7 @@ slices:
   # Provides data to the slice
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-  data_service: "sample-distribution.json"
+  data_service: "censusv2service.DistributionV3Service"
 
 #
 #

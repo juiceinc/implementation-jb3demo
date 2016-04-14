@@ -169,14 +169,12 @@ class RecipeServiceBaseV3(object):
         """
         pass
 
-
     def run(self):
         """ Process everything
         """
         with self.session_scope():
             self.build_request_params()
             self.build_response()
-
 
 
 class CensusService(RecipeServiceBaseV3):
@@ -201,6 +199,9 @@ class CensusService(RecipeServiceBaseV3):
         # Simplest possible dimension, a SQLAlchemy expression and a label.
         'state': Dimension(Census.state, label='State'),
         'age': Dimension(Census.age, label='Age'),
+        'age_bands': Dimension(case([(Census.age < 21, 'Under 21'),
+                                     (Census.age < 49, '21-49')
+                                    ], else_='Other'), label='Age Bands'),
         # A dimension that requires a join, the join can be a relationship, or a table
         'region': Dimension(StateFact.standard_federal_region, label='Region', join=StateFact),
         # A dimension that requires multiple joins
@@ -231,15 +232,7 @@ class CensusService(RecipeServiceBaseV3):
 
 
 class FirstChooserV3Service(CensusService):
-    def __init__(self, request, *args, **kwargs):
-        # you're cut off
-        self.Session = Session
-        self.request = request
-        self.download = False
-        self.local_filter_ids = ()
-
     def build_response(self):
-
         metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
         recipe = self.recipe().metrics(*metrics)
 
@@ -259,23 +252,8 @@ class FirstChooserV3Service(CensusService):
 
         self.response = {"responses": [response]}
 
-    def run(self):
-        """ Process everything
-        """
-        with self.session_scope():
-            self.build_request_params()
-            self.build_response()
-
-
 
 class SecondChooserV3Service(CensusService):
-    def __init__(self, request, *args, **kwargs):
-        # you're cut off
-        self.Session = Session
-        self.request = request
-        self.download = False
-        self.local_filter_ids = ()
-
     def build_response(self):
         params = self.request.data
         metric = params.get('metric', None)
@@ -288,22 +266,239 @@ class SecondChooserV3Service(CensusService):
         response = recipe.jb_response("Sample")
         response['config'] = {"titleTemplate": "Cookies {}".format(randint(0, 10000))}
 
-        group = {'items': [], 'group_by_type': 'metric', 'name': 'foo'}
+        group = {'items': [], 'group_by_type': 'metric', 'name': 'sex'}
 
         for row in recipe.all():
             group['items'].append({
                 "id": row.sex_id,
                 "label": row.sex,
                 "group_by_type": 'sex',
-                "formattedValue": "{0:.1f}".format(getattr(row,metric)/1000000.)
+                "formattedValue": "{0:.1f}".format(getattr(row, metric) / 1000000.)
             })
         response['data'][0]['values'] = [group]
 
         self.response = {"responses": [response]}
 
-    def run(self):
-        """ Process everything
-        """
-        with self.session_scope():
-            self.build_request_params()
-            self.build_response()
+
+class DistributionV3Service(CensusService):
+    def build_response(self):
+        from copy import deepcopy
+
+        params = self.request.data
+        metric = params.get('metric', None)
+        if metric:
+            metric = metric[0]
+        else:
+            metric = 'pop2000'
+
+        recipe = self.recipe().dimensions('age_bands', 'age').metrics(metric).order_by('age_bands', 'age')
+
+        # The first dimension is the group
+        # the second dimension is the group_by_type
+        # The metric is metric
+        # recipe.jb_response(MAGIC)
+
+        for row in recipe.all():
+            print row._asdict()
+
+        print self.slice_type
+
+        # recipe = self.recipe(debug_ingredients=True).dimensions('region', 'state').metrics(metric).order_by('region', 'state')
+        #
+        # for row in recipe.all():
+        #     print row._asdict()
+
+        self.response = {
+            "responses": [
+                {
+                    "name": "Age Bands",
+                    "config": deepcopy(self.config),
+                    "metadata": {},
+                    "data": [
+                        {
+                            "name": "items",
+                            "values": [
+                                {
+                                    "items": [
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "a-3",
+                                            "value": 94,
+                                            "label": "label-a-3"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "a-4",
+                                            "value": 52,
+                                            "label": "label-a-4"
+                                        }
+                                    ],
+                                    "label": "Group 1"
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-3",
+                                            "value": 98,
+                                            "label": "label-b-3"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-4",
+                                            "value": 65,
+                                            "label": "label-b-4"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-5",
+                                            "value": 12,
+                                            "label": "label-b-5"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-6",
+                                            "value": 79,
+                                            "label": "label-b-6"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-7",
+                                            "value": 28,
+                                            "label": "label-b-7"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-8",
+                                            "value": 8,
+                                            "label": "label-b-8"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-9",
+                                            "value": 35,
+                                            "label": "label-b-9"
+                                        }
+                                    ],
+                                    "label": "Group 2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "States by Region",
+                    "config": deepcopy(self.config),
+                    "metadata": {},
+                    "data": [
+                        {
+                            "name": "items",
+                            "values": [
+                                {
+                                    "items": [
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "a-3",
+                                            "value": 14,
+                                            "label": "label-a-3"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "a-4",
+                                            "value": 63,
+                                            "label": "label-a-4"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "a-5",
+                                            "value": 97,
+                                            "label": "label-a-5"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "a-6",
+                                            "value": 100,
+                                            "label": "label-a-6"
+                                        }
+                                    ],
+                                    "label": "Group AAA"
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-3",
+                                            "value": 74,
+                                            "label": "label-b-3"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-4",
+                                            "value": 19,
+                                            "label": "label-b-4"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-5",
+                                            "value": 38,
+                                            "label": "label-b-5"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-6",
+                                            "value": 54,
+                                            "label": "label-b-6"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-7",
+                                            "value": 0,
+                                            "label": "label-b-7"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "b-8",
+                                            "value": 57,
+                                            "label": "label-b-8"
+                                        }
+                                    ],
+                                    "label": "Group BBB"
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "c-3",
+                                            "value": 81,
+                                            "label": "label-c-3"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "c-4",
+                                            "value": 26,
+                                            "label": "label-c-4"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "c-5",
+                                            "value": 62,
+                                            "label": "label-c-5"
+                                        },
+                                        {
+                                            "group_by_type": "location",
+                                            "id": "c-6",
+                                            "value": 3,
+                                            "label": "label-c-6"
+                                        }
+                                    ],
+                                    "label": "Group CCC"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+
+
+        self.response['responses'][1]['config']['titleTemplate'] = 'Cookie Monster'
