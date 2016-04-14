@@ -8,7 +8,7 @@ initial_hash: ""
 # Provides data to the global filters
 # Can be either a data service class in your service.py file (e.g. 'realtorservice.FilterService')
 # or a json file in the fixtures directory (e.g. 'filters.json')
-global_filters_service: ''
+global_filters_service: null
 slices:
 #
 # Slice documentation: http://dev.fruitiondata.com/static/docs/slices.html

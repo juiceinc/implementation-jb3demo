@@ -87,9 +87,99 @@ class CensusJoined(Base):
 # on the dimension_shelf
 # -------------
 
+class RecipeServiceBaseV3(object):
+    """ A base class for Fruition Data Services using recipes
+
+        Subclasses should define a dimension_shelf and metric_shelf
+        """
+    metric_shelf = {}
+    dimension_shelf = {}
+    filter_shelf = {}
+    global_filters = []
+    local_filters = []
+
+    def __init__(self, request, config, slice_type=None, user_filters=None, stack_filters=None):
+        self.request = request
+        self.config = config
+        self.slice_type = slice_type
+        self.user_filters = user_filters
+        self.stack_filters = stack_filters
+        self.Session = sessionmaker()
+
+    @contextmanager
+    def session_scope(self):
+        """ Provide a transactional scope around a series of operations.
+        """
+        self.session = self.Session()
+        try:
+            yield self.session
+            self.session.commit()
+        except:
+            self.session.rollback()
+            raise
+        finally:
+            self.session.close()
+
+    def recipe(self, *args, **kwargs):
+        args = list(args)
+
+        # Insert a reference to the service
+        args.insert(0, self)
+
+        # Use the default table if no table is passed and there is a
+        # default_table defined
+        if len(args) == 1 and hasattr(self, 'default_table'):
+            args.append(self.default_table)
+
+        return Recipe(*args, **kwargs)
+
+    def build_request_params(self):
+        """ Build a dictionary of query parameters to use as global filters.
+        Also keep a reference to any metric supplied.
+
+        If a data service defines a list of local filter names
+        `self.local_filter_ids`, then it will create a dictionary of the local
+        filters along with their values in `self.local_filters`.
+        """
+        self.global_filters = {}
+        self.local_filters = {}
+
+    def apply_user_filters(self, query=None, table=None):
+        return query
+
+    def apply_global_filters(self, query=None, table=None, limit_to=None):
+        return query
+
+    def build_response(self):
+        """ Build the response.
+
+        Subclasses should override this to do the following
+
+        1) Build one or more queries
+        2) apply_user_filters on that query
+        3) apply_global_filters on that query
+        4) Apply local filters where needed
+        5) Format the result and return it
+
+        ----
+
+        Built a recipe/ mapper from props in recipe to props in response
+        a list of objects where each object has a group_by_type and id
+        or a list of list of objects
+        """
+        pass
 
 
-class CensusService(RecipeServiceBase):
+    def run(self):
+        """ Process everything
+        """
+        with self.session_scope():
+            self.build_request_params()
+            self.build_response()
+
+
+
+class CensusService(RecipeServiceBaseV3):
     # Metrics are defined as an SQLAlchemy expression, and a label.
     metric_shelf = {
         'pop2000': Metric(func.sum(Census.pop2000), label='Population 2000', format=".2f", singular="cookie",
@@ -188,7 +278,11 @@ class SecondChooserV3Service(CensusService):
 
     def build_response(self):
         params = self.request.data
-        metric = params.get('metric', ['pop2000'])[0]
+        metric = params.get('metric', None)
+        if metric:
+            metric = metric[0]
+        else:
+            metric = 'pop2000'
         recipe = self.recipe().dimensions('sex').metrics(metric)
 
         response = recipe.jb_response("Sample")
