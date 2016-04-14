@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 from sqlalchemy import Column, String, Integer, Float, case, ForeignKey, select, join, Table, or_
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -201,7 +203,7 @@ class CensusService(RecipeServiceBaseV3):
         'age': Dimension(Census.age, label='Age'),
         'age_bands': Dimension(case([(Census.age < 21, 'Under 21'),
                                      (Census.age < 49, '21-49')
-                                    ], else_='Other'), label='Age Bands'),
+                                     ], else_='Other'), label='Age Bands'),
         # A dimension that requires a join, the join can be a relationship, or a table
         'region': Dimension(StateFact.standard_federal_region, label='Region', join=StateFact),
         # A dimension that requires multiple joins
@@ -280,6 +282,84 @@ class SecondChooserV3Service(CensusService):
         self.response = {"responses": [response]}
 
 
+import abc
+
+
+class AbstractResponseRenderer(object):
+    __metaclass__ = abc.ABCMeta
+
+    @abc.abstractmethod
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @abc.abstractmethod
+    def render(self, *args, **kwargs):
+        pass
+
+    def response_template(self):
+        return {
+            "data": [
+                {
+                    "name": "items",
+                    "values": []
+                }
+            ],
+            'config': {},
+            'metadata': {},
+            'template_context': {},
+            'name': "Untitled",
+        }
+
+
+class DistributionRenderer(AbstractResponseRenderer):
+    def __init__(self, service, data, group_dimension, grain_dimension, metrics):
+        self.service = service
+        self.data = data
+        self.group_dimension = group_dimension
+        self.grain_dimension = grain_dimension
+        self.metrics = metrics
+
+    def render(self):
+        response = self.response_template()
+
+        response['config'] = deepcopy(self.service.config)
+
+        def make_group(label):
+            return {
+                'items': [],
+                'label': label
+            }
+
+        group = make_group('__INITIAL__')
+        for row in self.data:
+            if group['label'] != getattr(row, self.group_dimension):
+                group = make_group(getattr(row, self.group_dimension))
+            item = {
+                'group_by_type': self.grain_dimension,
+                'id': getattr(row, self.grain_dimension + '_id'),
+                'value': getattr(row, self.grain_dimension),
+            }
+            for metric in self.metrics:
+                item[metric] = getattr(row, metric)
+            group['items'].append(item)
+
+        return response
+
+
+class RenderFactory(object):
+    __render_classes = {
+        'distribution': DistributionRenderer,
+    }
+
+    @staticmethod
+    def get_renderer(slice_type, *args, **kwargs):
+        renderer_class = RenderFactory.__render_classes.get(slice_type, None)
+
+        if renderer_class:
+            return renderer_class(*args, **kwargs)
+        raise NotImplementedError("The rendering engine for slice_type '{}' has not been implemented.".format(slice_type))
+
+
 class DistributionV3Service(CensusService):
     def build_response(self):
         from copy import deepcopy
@@ -292,6 +372,24 @@ class DistributionV3Service(CensusService):
             metric = 'pop2000'
 
         recipe = self.recipe().dimensions('age_bands', 'age').metrics(metric).order_by('age_bands', 'age')
+        render_engine = RenderFactory.get_renderer(self.slice_type, self, recipe.all(), group_dimension='age_bank', grain_dimension='age',
+                                                   metrics=[metric])
+
+
+        self.response = {
+            'responses': [render_engine.render()]
+        }
+        return
+
+
+
+
+
+
+
+
+
+
 
         # The first dimension is the group
         # the second dimension is the group_by_type
@@ -499,6 +597,5 @@ class DistributionV3Service(CensusService):
                 }
             ]
         }
-
 
         self.response['responses'][1]['config']['titleTemplate'] = 'Cookie Monster'
