@@ -324,24 +324,25 @@ class DistributionRenderer(AbstractResponseRenderer):
 
         response['config'] = deepcopy(self.service.config)
 
-        def make_group(label):
-            return {
+        from itertools import groupby
+        from operator import attrgetter
+        for group, items in groupby(self.data, attrgetter(self.group_dimension)):
+            group_data = {
                 'items': [],
-                'label': label
+                'label': group
             }
 
-        group = make_group('__INITIAL__')
-        for row in self.data:
-            if group['label'] != getattr(row, self.group_dimension):
-                group = make_group(getattr(row, self.group_dimension))
-            item = {
-                'group_by_type': self.grain_dimension,
-                'id': getattr(row, self.grain_dimension + '_id'),
-                'value': getattr(row, self.grain_dimension),
-            }
-            for metric in self.metrics:
-                item[metric] = getattr(row, metric)
-            group['items'].append(item)
+            for item in items:
+                item_data = {
+                    'group_by_type': self.grain_dimension,
+                    'id': getattr(item, self.grain_dimension + '_id'),
+                    'value': getattr(item, self.grain_dimension),
+                }
+                for metric in self.metrics:
+                    item_data[metric] = getattr(item, metric)
+                group_data['items'].append(item_data)
+
+            response['data'][0]['values'].append(group_data)
 
         return response
 
@@ -372,7 +373,7 @@ class DistributionV3Service(CensusService):
             metric = 'pop2000'
 
         recipe = self.recipe().dimensions('age_bands', 'age').metrics(metric).order_by('age_bands', 'age')
-        render_engine = RenderFactory.get_renderer(self.slice_type, self, recipe.all(), group_dimension='age_bank', grain_dimension='age',
+        render_engine = RenderFactory.get_renderer(self.slice_type, self, recipe.all(), group_dimension='age_bands', grain_dimension='age',
                                                    metrics=[metric])
 
 
