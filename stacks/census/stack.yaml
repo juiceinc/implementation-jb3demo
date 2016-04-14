@@ -40,6 +40,8 @@ slices:
     "optionTemplate": |-
       <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=formattedValue}}</div></div>
     "showTitles": false
+    "minSelections": 1
+    "maxSelections": 1
   # Provides data to the slice
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
@@ -55,6 +57,8 @@ slices:
     "optionTemplate": |-
       <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=formattedValue}}</div></div>
     "showTitles": false
+    "minSelections": 1
+    "maxSelections": 1
 
   eventmap:
 # TODO: this should go away, because in v3 it is automatic
@@ -80,7 +84,6 @@ slices:
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
   data_service: "censusv2service.DistributionV3Service"
-
 #
 #
 #

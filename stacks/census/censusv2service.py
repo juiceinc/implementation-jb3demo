@@ -200,6 +200,7 @@ class CensusService(RecipeServiceBaseV3):
     dimension_shelf = {
         # Simplest possible dimension, a SQLAlchemy expression and a label.
         'state': Dimension(Census.state, label='State'),
+        'first_letter_state': Dimension(func.substring(Census.state,1,1), label='State'),
         'age': Dimension(Census.age, label='Age'),
         'age_bands': Dimension(case([(Census.age < 21, 'Under 21'),
                                      (Census.age < 49, '21-49')
@@ -312,15 +313,17 @@ class AbstractResponseRenderer(object):
 
 
 class DistributionRenderer(AbstractResponseRenderer):
-    def __init__(self, service, data, group_dimension, grain_dimension, metrics):
+    def __init__(self, service, data, group_dimension, grain_dimension, metrics, name):
         self.service = service
         self.data = data
         self.group_dimension = group_dimension
         self.grain_dimension = grain_dimension
         self.metrics = metrics
+        self.name = name
 
     def render(self):
         response = self.response_template()
+        response['name'] = self.name
 
         response['config'] = deepcopy(self.service.config)
 
@@ -336,10 +339,11 @@ class DistributionRenderer(AbstractResponseRenderer):
                 item_data = {
                     'group_by_type': self.grain_dimension,
                     'id': getattr(item, self.grain_dimension + '_id'),
-                    'value': getattr(item, self.grain_dimension),
+                    'label': getattr(item, self.grain_dimension),
+                    'value': getattr(item, self.metrics[0]),
                 }
-                for metric in self.metrics:
-                    item_data[metric] = getattr(item, metric)
+                # for metric in self.metrics:
+                #     item_data[metric] = getattr(item, metric)
                 group_data['items'].append(item_data)
 
             response['data'][0]['values'].append(group_data)
@@ -347,9 +351,14 @@ class DistributionRenderer(AbstractResponseRenderer):
         return response
 
 
+class FiltersRenderer(AbstractResponseRenderer):
+    pass
+
+
 class RenderFactory(object):
     __render_classes = {
         'distribution': DistributionRenderer,
+        'filters': FiltersRenderer,
     }
 
     @staticmethod
@@ -358,7 +367,8 @@ class RenderFactory(object):
 
         if renderer_class:
             return renderer_class(*args, **kwargs)
-        raise NotImplementedError("The rendering engine for slice_type '{}' has not been implemented.".format(slice_type))
+        raise NotImplementedError(
+            "The rendering engine for slice_type '{}' has not been implemented.".format(slice_type))
 
 
 class DistributionV3Service(CensusService):
@@ -372,231 +382,34 @@ class DistributionV3Service(CensusService):
         else:
             metric = 'pop2000'
 
-        recipe = self.recipe().dimensions('age_bands', 'age').metrics(metric).order_by('age_bands', 'age')
-        render_engine = RenderFactory.get_renderer(self.slice_type, self, recipe.all(), group_dimension='age_bands', grain_dimension='age',
-                                                   metrics=[metric])
+        metrics = [metric]
+        filters = []
+
+        if 'sex' in params:
+            if params['sex']:
+                filters.append(self.dimension_shelf['sex'].filter_values(params['sex']))
 
 
+        recipe = self.recipe().dimensions('age_bands', 'age').metrics(metric).order_by('age_bands', 'age').filters(*filters)
+        render_engine = RenderFactory.get_renderer(self.slice_type, self, recipe.all(), group_dimension='age_bands',
+                                                   grain_dimension='age',
+                                                   metrics=[metric],
+                                                   name="Ages")
         self.response = {
             'responses': [render_engine.render()]
         }
-        return
 
-
-
-
-
-
-
-
-
-
-
-        # The first dimension is the group
-        # the second dimension is the group_by_type
-        # The metric is metric
-        # recipe.jb_response(MAGIC)
-
-        for row in recipe.all():
-            print row._asdict()
-
-        print self.slice_type
-
-        # recipe = self.recipe(debug_ingredients=True).dimensions('region', 'state').metrics(metric).order_by('region', 'state')
-        #
-        # for row in recipe.all():
-        #     print row._asdict()
+        recipe = self.recipe().dimensions('first_letter_state', 'state').metrics(metric).order_by('first_letter_state', 'state').filters(*filters)
+        render_engine = RenderFactory.get_renderer(self.slice_type, self, recipe.all(), group_dimension='first_letter_state',
+                                                   grain_dimension='state',
+                                                   metrics=[metric],
+                                                   name="States")
+        self.response['responses'].append(render_engine.render())
 
         self.response = {
-            "responses": [
-                {
-                    "name": "Age Bands",
-                    "config": deepcopy(self.config),
-                    "metadata": {},
-                    "data": [
-                        {
-                            "name": "items",
-                            "values": [
-                                {
-                                    "items": [
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "a-3",
-                                            "value": 94,
-                                            "label": "label-a-3"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "a-4",
-                                            "value": 52,
-                                            "label": "label-a-4"
-                                        }
-                                    ],
-                                    "label": "Group 1"
-                                },
-                                {
-                                    "items": [
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-3",
-                                            "value": 98,
-                                            "label": "label-b-3"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-4",
-                                            "value": 65,
-                                            "label": "label-b-4"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-5",
-                                            "value": 12,
-                                            "label": "label-b-5"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-6",
-                                            "value": 79,
-                                            "label": "label-b-6"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-7",
-                                            "value": 28,
-                                            "label": "label-b-7"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-8",
-                                            "value": 8,
-                                            "label": "label-b-8"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-9",
-                                            "value": 35,
-                                            "label": "label-b-9"
-                                        }
-                                    ],
-                                    "label": "Group 2"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "States by Region",
-                    "config": deepcopy(self.config),
-                    "metadata": {},
-                    "data": [
-                        {
-                            "name": "items",
-                            "values": [
-                                {
-                                    "items": [
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "a-3",
-                                            "value": 14,
-                                            "label": "label-a-3"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "a-4",
-                                            "value": 63,
-                                            "label": "label-a-4"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "a-5",
-                                            "value": 97,
-                                            "label": "label-a-5"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "a-6",
-                                            "value": 100,
-                                            "label": "label-a-6"
-                                        }
-                                    ],
-                                    "label": "Group AAA"
-                                },
-                                {
-                                    "items": [
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-3",
-                                            "value": 74,
-                                            "label": "label-b-3"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-4",
-                                            "value": 19,
-                                            "label": "label-b-4"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-5",
-                                            "value": 38,
-                                            "label": "label-b-5"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-6",
-                                            "value": 54,
-                                            "label": "label-b-6"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-7",
-                                            "value": 0,
-                                            "label": "label-b-7"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "b-8",
-                                            "value": 57,
-                                            "label": "label-b-8"
-                                        }
-                                    ],
-                                    "label": "Group BBB"
-                                },
-                                {
-                                    "items": [
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "c-3",
-                                            "value": 81,
-                                            "label": "label-c-3"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "c-4",
-                                            "value": 26,
-                                            "label": "label-c-4"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "c-5",
-                                            "value": 62,
-                                            "label": "label-c-5"
-                                        },
-                                        {
-                                            "group_by_type": "location",
-                                            "id": "c-6",
-                                            "value": 3,
-                                            "label": "label-c-6"
-                                        }
-                                    ],
-                                    "label": "Group CCC"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+            'responses': [self.recipe().dimensions('age_bands', 'age').metrics(metric).order_by('age_bands', 'age').filters(*filters).render()
+                          self.recipe().dimensions('first_letter_state', 'state').metrics(metric).order_by(
+                              'first_letter_state', 'state').filters(*filters).render()]
         }
 
-        self.response['responses'][1]['config']['titleTemplate'] = 'Cookie Monster'
+
