@@ -96,9 +96,11 @@ class RecipeServiceBaseV3(object):
         """
     metric_shelf = {}
     dimension_shelf = {}
+    dimensions = {}
     filter_shelf = {}
     global_filters = []
     local_filters = []
+    global_filter_ids = ()
 
     def __init__(self, request, config, slice_type=None, user_filters=None, stack_filters=None):
         self.request = request
@@ -143,7 +145,20 @@ class RecipeServiceBaseV3(object):
         `self.local_filter_ids`, then it will create a dictionary of the local
         filters along with their values in `self.local_filters`.
         """
+        if self.request:
+            params = self.request.data
+        else:
+            params = {}
+        self.params = params
+        # Build the global filters.
         self.global_filters = {}
+        for id in self.global_filter_ids:
+            v = params.get(id, None)
+            if v:
+                self.global_filters[id] = v
+
+        # self.global_filters = {k: [unquote_plus(_) for _ in v] for
+        #                        k, v in self.global_filters.iteritems()}
         self.local_filters = {}
 
     def apply_user_filters(self, query=None, table=None):
@@ -218,7 +233,7 @@ class CensusService(RecipeServiceBaseV3):
     }
 
     # Dimension order will be used for the global filters
-    dimension_order = ('sex', 'state',)
+    global_filter_ids = ('sex', 'state',)
     default_metric = 'pop2000'
     default_table = Census
 
@@ -331,7 +346,6 @@ class FiltersRenderer(AbstractResponseRenderer):
         return response
 
 
-
 class RenderFactory(object):
     __render_classes = {
         'distribution': DistributionRenderer,
@@ -355,7 +369,7 @@ class FilterService(CensusService):
         self.response = {
             'responses': []
         }
-        for dim in self.dimension_order:
+        for dim in self.global_filter_ids:
             dimension = self.dimension_shelf[dim]
             recipe = self.recipe().metrics(self.default_metric).dimensions(
                 dim)
