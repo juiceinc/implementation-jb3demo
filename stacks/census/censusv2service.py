@@ -231,58 +231,6 @@ class CensusService(RecipeServiceBaseV3):
 # Step 3) The data services response.
 # -------------
 
-
-
-
-class FirstChooserV3Service(CensusService):
-    def build_response(self):
-        metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
-        recipe = self.recipe().metrics(*metrics)
-
-        response = recipe.jb_response("Sample")
-        response['config'] = {"titleTemplate": "Moooooo {}".format(randint(0, 10000))}
-
-        group = {'items': [], 'group_by_type': 'metric', 'name': 'metric'}
-
-        for metric in metrics:
-            group['items'].append({
-                "id": metric,
-                "label": self.metric_shelf[metric].id,
-                "group_by_type": 'metric',
-                "formattedValue": "250"
-            })
-        response['data'][0]['values'] = [group]
-
-        self.response = {"responses": [response]}
-
-
-class SecondChooserV3Service(CensusService):
-    def build_response(self):
-        params = self.request.data
-        metric = params.get('metric', None)
-        if metric:
-            metric = metric[0]
-        else:
-            metric = 'pop2000'
-        recipe = self.recipe().dimensions('sex').metrics(metric)
-
-        response = recipe.jb_response("Sample")
-        response['config'] = {"titleTemplate": "Cookies {}".format(randint(0, 10000))}
-
-        group = {'items': [], 'group_by_type': 'metric', 'name': 'sex'}
-
-        for row in recipe.all():
-            group['items'].append({
-                "id": row.sex_id,
-                "label": row.sex,
-                "group_by_type": 'sex',
-                "formattedValue": "{0:.1f}".format(getattr(row, metric) / 1000000.)
-            })
-        response['data'][0]['values'] = [group]
-
-        self.response = {"responses": [response]}
-
-
 import abc
 
 
@@ -352,7 +300,36 @@ class DistributionRenderer(AbstractResponseRenderer):
 
 
 class FiltersRenderer(AbstractResponseRenderer):
-    pass
+    def __init__(self, service, metrics, dimension, dimension_label, data):
+        self.service = service
+        self.metrics = metrics
+        self.dimension = dimension
+        self.dimension_label = dimension_label
+        self.data = data
+
+    def render(self):
+        response = self.response_template()
+        response['config'] = deepcopy(self.service.config)
+        filter_items = {'values': [],
+                 'group_by_type': self.dimension,
+                 'name': 'items'}
+        count_metric = self.metrics[0]
+
+        for item in self.data:
+            item_data = {
+                'id': getattr(item, self.dimension + '_id'),
+                'name': getattr(item, self.dimension),
+                'group_by_type': self.dimension,
+                'count': getattr(item, count_metric),
+            }
+            for metric in self.metrics[1:]:
+                item_data[metric] = getattr(item, metric)
+            filter_items['values'].append(item_data)
+        response['data'][0] = filter_items
+        response['name'] = self.dimension_label
+
+        return response
+
 
 
 class RenderFactory(object):
@@ -369,6 +346,73 @@ class RenderFactory(object):
             return renderer_class(*args, **kwargs)
         raise NotImplementedError(
             "The rendering engine for slice_type '{}' has not been implemented.".format(slice_type))
+
+
+class FilterService(CensusService):
+
+    def build_response(self):
+        metrics = [self.default_metric]
+        self.response = {
+            'responses': []
+        }
+        for dim in self.dimension_order:
+            dimension = self.dimension_shelf[dim]
+            recipe = self.recipe().metrics(self.default_metric).dimensions(
+                dim)
+            render_engine = RenderFactory.get_renderer(self.slice_type, self,
+                                                       metrics, dim,
+                                                       dimension.label,
+                                                       recipe.all())
+            self.response['responses'].append(render_engine.render())
+
+
+class FirstChooserV3Service(CensusService):
+    def build_response(self):
+        metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
+        recipe = self.recipe().metrics(*metrics)
+
+        response = recipe.jb_response("Sample")
+        response['config'] = {"titleTemplate": "Moooooo {}".format(randint(0, 10000))}
+
+        group = {'items': [], 'group_by_type': 'metric', 'name': 'metric'}
+
+        for metric in metrics:
+            group['items'].append({
+                "id": metric,
+                "label": self.metric_shelf[metric].id,
+                "group_by_type": 'metric',
+                "formattedValue": "250"
+            })
+        response['data'][0]['values'] = [group]
+
+        self.response = {"responses": [response]}
+
+
+class SecondChooserV3Service(CensusService):
+    def build_response(self):
+        params = self.request.data
+        metric = params.get('metric', None)
+        if metric:
+            metric = metric[0]
+        else:
+            metric = 'pop2000'
+        recipe = self.recipe().dimensions('sex').metrics(metric)
+
+        response = recipe.jb_response("Sample")
+        response['config'] = {"titleTemplate": "Cookies {}".format(randint(0, 10000))}
+
+        group = {'items': [], 'group_by_type': 'metric', 'name': 'sex'}
+
+        for row in recipe.all():
+            group['items'].append({
+                "id": row.sex_id,
+                "label": row.sex,
+                "group_by_type": 'sex',
+                "formattedValue": "{0:.1f}".format(getattr(row, metric) / 1000000.)
+            })
+        response['data'][0]['values'] = [group]
+
+        self.response = {"responses": [response]}
 
 
 class DistributionV3Service(CensusService):
@@ -406,10 +450,10 @@ class DistributionV3Service(CensusService):
                                                    name="States")
         self.response['responses'].append(render_engine.render())
 
-        self.response = {
-            'responses': [self.recipe().dimensions('age_bands', 'age').metrics(metric).order_by('age_bands', 'age').filters(*filters).render()
-                          self.recipe().dimensions('first_letter_state', 'state').metrics(metric).order_by(
-                              'first_letter_state', 'state').filters(*filters).render()]
-        }
+        # self.response = {
+        #     'responses': [self.recipe().dimensions('age_bands', 'age').metrics(metric).order_by('age_bands', 'age').filters(*filters).render()
+        #                   self.recipe().dimensions('first_letter_state', 'state').metrics(metric).order_by(
+        #                       'first_letter_state', 'state').filters(*filters).render()]
+        # }
 
 
