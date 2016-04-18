@@ -38,7 +38,7 @@ slices:
   config:
     "optionExtraClass": "option-item-fixed-width"
     "optionTemplate": |-
-      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=formattedValue}}</div></div>
+      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=value}}</div></div>
     "showTitles": false
     "minSelections": 1
     "maxSelections": 1
@@ -55,7 +55,7 @@ slices:
   config:
     "optionExtraClass": "option-item-fixed-width"
     "optionTemplate": |-
-      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=formattedValue}}</div></div>
+      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=value}}</div></div>
     "showTitles": false
     "minSelections": 1
     "maxSelections": 1
@@ -74,7 +74,8 @@ slices:
   # The title line for the slice.
   title: "Distribution slice"
   # Detailed configuration for the slice.
-  config: {}
+  config:
+    "cellTemplateName": "#distribution-template"
   eventmap:
 # TODO: this should go away, because in v3 it is automatic
     "filter_change":
