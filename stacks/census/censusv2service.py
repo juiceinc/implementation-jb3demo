@@ -306,13 +306,13 @@ class OptionChooserRenderer(AbstractResponseRenderer):
         row = self.data[0]
         print row._asdict()
         if len(self.metrics) > 1:
-            group = {'items': [], 'group_by_type': self.metrics[0], 'name': 'metric'}
+            group = {'items': [], 'group_by_type': 'metric', 'name': 'metric'}
             self.metrics = zip(self.metrics, self.labels)
             for metric, label in self.metrics:
                 group['items'].append({
                     "id": metric,
                     "label": label,
-                    "group_by_type": metric,
+                    "group_by_type": 'metric',
                     "formattedValue": getattr(row, metric)
                 })
             response['data'][0]['values'].append(group)
