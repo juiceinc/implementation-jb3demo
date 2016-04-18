@@ -276,35 +276,21 @@ class AbstractResponseRenderer(object):
 
 
 class OptionChooserRenderer(AbstractResponseRenderer):
-    def __init__(self, service, data, metrics, labels, name):
+    def __init__(self, service, data, metrics, labels, name, metadata):
         self.service = service
         self.data = data
         self.name = name
         self.metrics = metrics
         self.labels = labels
+        self.metadata = metadata
 
     def render(self):
         response = self.response_template()
         response['name'] = self.name
         response['config'] = deepcopy(self.service.config)
-
-        # response = {
-        #     'data': [
-        #         {'name': 'items',
-        #          'values': vals}
-        #     ],
-        #     # FIXME: We need a better way to get back to the slice config
-        #     'config': {},
-        #     'metadata': self._cauldron.metadata(**kwargs),
-        #     'template_context': {},
-        #     'name': name,
-        # }
-        # response = recipe.jb_response("Sample")
-        # response['config'] = {
-        #     "titleTemplate": "Moooooo {}".format(randint(0, 10000))}
+        response['metadata'] = self.metadata
 
         row = self.data[0]
-        print row._asdict()
         if len(self.metrics) > 1:
             group = {'items': [], 'group_by_type': 'metric', 'name': 'metric'}
             self.metrics = zip(self.metrics, self.labels)
@@ -318,7 +304,8 @@ class OptionChooserRenderer(AbstractResponseRenderer):
             response['data'][0]['values'].append(group)
         else:
             metric = self.metrics[0]
-            group = {'items': [], 'group_by_type': self.labels[0], 'name': 'metric'}
+            group = {'items': [], 'group_by_type': self.labels[0],
+                     'name': self.labels[0]}
 
             for row in self.data:
                 group['items'].append({
@@ -333,19 +320,21 @@ class OptionChooserRenderer(AbstractResponseRenderer):
 
 
 class DistributionRenderer(AbstractResponseRenderer):
-    def __init__(self, service, data, group_dimension, grain_dimension, metrics, name):
+    def __init__(self, service, data, group_dimension, grain_dimension,
+                 metrics, name, metadata):
         self.service = service
         self.data = data
         self.group_dimension = group_dimension
         self.grain_dimension = grain_dimension
         self.metrics = metrics
         self.name = name
+        self.metadata = metadata
 
     def render(self):
         response = self.response_template()
         response['name'] = self.name
-
         response['config'] = deepcopy(self.service.config)
+        response['metadata'] = self.metadata
 
         from itertools import groupby
         from operator import attrgetter
@@ -448,7 +437,8 @@ class FirstChooserV3Service(CensusService):
                                                    recipe.all(),
                                                    metrics=metrics,
                                                    labels=metric_labels,
-                                                   name="FirstChooser")
+                                                   name="FirstChooser",
+                                                   metadata=recipe.metadata)
         self.response = {
             'responses': [render_engine.render()]
         }
@@ -470,7 +460,8 @@ class SecondChooserV3Service(CensusService):
                                                    recipe.all(),
                                                    metrics=metrics,
                                                    labels=dimensions,
-                                                   name="SecondChooser")
+                                                   name="SecondChooser",
+                                                   metadata=recipe.metadata)
         self.response = {
             'responses': [render_engine.render()]
         }
@@ -495,20 +486,30 @@ class DistributionV3Service(CensusService):
         print filters
 
 
-        recipe = self.recipe().dimensions('age_bands', 'age').metrics(*metrics).order_by('age_bands', 'age').filters(*filters)
-        render_engine = RenderFactory.get_renderer(self.slice_type, self, recipe.all(), group_dimension='age_bands',
+        recipe = self.recipe().dimensions('age_bands', 'age') \
+            .metrics(*metrics).order_by('age_bands', 'age').filters(*filters)
+        render_engine = RenderFactory.get_renderer(self.slice_type, self,
+                                                   recipe.all(),
+                                                   group_dimension='age_bands',
                                                    grain_dimension='age',
                                                    metrics=metrics,
-                                                   name="Ages")
+                                                   name="Ages",
+                                                   metadata=recipe.metadata)
         self.response = {
             'responses': [render_engine.render()]
         }
 
-        recipe = self.recipe().dimensions('first_letter_state', 'state').metrics(*metrics).order_by('first_letter_state', 'state').filters(*filters)
-        render_engine = RenderFactory.get_renderer(self.slice_type, self, recipe.all(), group_dimension='first_letter_state',
+        recipe = self.recipe().dimensions('first_letter_state', 'state') \
+            .metrics(*metrics).order_by('first_letter_state', 'state') \
+            .filters(*filters)
+        render_engine = RenderFactory.get_renderer(self.slice_type, self,
+                                                   recipe.all(),
+                                                   group_dimension=
+                                                       'first_letter_state',
                                                    grain_dimension='state',
                                                    metrics=metrics,
-                                                   name="States")
+                                                   name="States",
+                                                   metadata=recipe.metadata)
         self.response['responses'].append(render_engine.render())
 
         # self.response = {
