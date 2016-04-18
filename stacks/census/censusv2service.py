@@ -303,24 +303,26 @@ class OptionChooserRenderer(AbstractResponseRenderer):
         # response['config'] = {
         #     "titleTemplate": "Moooooo {}".format(randint(0, 10000))}
 
-        group = {'items': [], 'group_by_type': 'metric', 'name': 'metric'}
         row = self.data[0]
         print row._asdict()
         if len(self.metrics) > 1:
+            group = {'items': [], 'group_by_type': self.metrics[0], 'name': 'metric'}
             self.metrics = zip(self.metrics, self.labels)
             for metric, label in self.metrics:
                 group['items'].append({
                     "id": metric,
                     "label": label,
-                    "group_by_type": 'metric',
+                    "group_by_type": metric,
                     "formattedValue": getattr(row, metric)
                 })
             response['data'][0]['values'].append(group)
         else:
             metric = self.metrics[0]
+            group = {'items': [], 'group_by_type': self.metrics[0], 'name': 'metric'}
+
             for row in self.data:
                 group['items'].append({
-                    "id": metric,
+                    "id": getattr(row, self.labels[0] + '_id'),
                     "label": getattr(row, self.labels[0]),
                     "group_by_type": self.labels[0],
                     "formattedValue": "{0:.1f}".format(
@@ -476,8 +478,6 @@ class SecondChooserV3Service(CensusService):
 
 class DistributionV3Service(CensusService):
     def build_response(self):
-        from copy import deepcopy
-
         params = self.request.data
         print params
         metric = params.get('metric', None)
@@ -492,6 +492,7 @@ class DistributionV3Service(CensusService):
         if 'sex' in params:
             if params['sex']:
                 filters.append(self.dimension_shelf['sex'].filter_values(params['sex']))
+        print filters
 
 
         recipe = self.recipe().dimensions('age_bands', 'age').metrics(*metrics).order_by('age_bands', 'age').filters(*filters)
