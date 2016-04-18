@@ -351,8 +351,6 @@ class DistributionRenderer(AbstractResponseRenderer):
                     'label': getattr(item, self.grain_dimension),
                     'value': getattr(item, self.metrics[0]),
                 }
-                # for metric in self.metrics:
-                #     item_data[metric] = getattr(item, metric)
                 group_data['items'].append(item_data)
 
             response['data'][0]['values'].append(group_data)
@@ -361,16 +359,19 @@ class DistributionRenderer(AbstractResponseRenderer):
 
 
 class FiltersRenderer(AbstractResponseRenderer):
-    def __init__(self, service, metrics, dimension, dimension_label, data):
+    def __init__(self, service, metrics, dimension, dimension_label, data,
+                 metadata):
         self.service = service
         self.metrics = metrics
         self.dimension = dimension
         self.dimension_label = dimension_label
         self.data = data
+        self.metadata = metadata
 
     def render(self):
         response = self.response_template()
         response['config'] = deepcopy(self.service.config)
+        response['metadata'] = self.metadata
         filter_items = {'values': [],
                  'group_by_type': self.dimension,
                  'name': 'items'}
@@ -409,6 +410,28 @@ class RenderFactory(object):
             "The rendering engine for slice_type '{}' has not been implemented.".format(slice_type))
 
 
+def generate_default_filter_service(base):
+
+    class DefaultFilterService(base):
+
+            def build_response(self):
+                metrics = [self.default_metric]
+                self.response = {
+                    'responses': []
+                }
+                for dim in self.global_filter_ids:
+                    dimension = self.dimension_shelf[dim]
+                    recipe = self.recipe().metrics(self.default_metric).dimensions(
+                        dim)
+                    render_engine = RenderFactory.get_renderer(self.slice_type,
+                                                               self,
+                                                               metrics, dim,
+                                                               dimension.label,
+                                                               recipe.all(),
+                                                               recipe.metadata)
+                    self.response['responses'].append(render_engine.render())
+
+
 class FilterService(CensusService):
 
     def build_response(self):
@@ -423,7 +446,8 @@ class FilterService(CensusService):
             render_engine = RenderFactory.get_renderer(self.slice_type, self,
                                                        metrics, dim,
                                                        dimension.label,
-                                                       recipe.all())
+                                                       recipe.all(),
+                                                       recipe.metadata)
             self.response['responses'].append(render_engine.render())
 
 
@@ -470,7 +494,6 @@ class SecondChooserV3Service(CensusService):
 class DistributionV3Service(CensusService):
     def build_response(self):
         params = self.request.data
-        print params
         metric = params.get('metric', None)
         if metric:
             metric = metric[0]
@@ -483,8 +506,6 @@ class DistributionV3Service(CensusService):
         if 'sex' in params:
             if params['sex']:
                 filters.append(self.dimension_shelf['sex'].filter_values(params['sex']))
-        print filters
-
 
         recipe = self.recipe().dimensions('age_bands', 'age') \
             .metrics(*metrics).order_by('age_bands', 'age').filters(*filters)
