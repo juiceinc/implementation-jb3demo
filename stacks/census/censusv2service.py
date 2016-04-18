@@ -318,7 +318,7 @@ class OptionChooserRenderer(AbstractResponseRenderer):
             response['data'][0]['values'].append(group)
         else:
             metric = self.metrics[0]
-            group = {'items': [], 'group_by_type': self.metrics[0], 'name': 'metric'}
+            group = {'items': [], 'group_by_type': self.labels[0], 'name': 'metric'}
 
             for row in self.data:
                 group['items'].append({
