@@ -246,217 +246,18 @@ class CensusService(RecipeServiceBaseV3):
 # Step 3) The data services response.
 # -------------
 
-import abc
-
-
-class AbstractResponseRenderer(object):
-    __metaclass__ = abc.ABCMeta
-
-    @abc.abstractmethod
-    def __init__(self, *args, **kwargs):
-        pass
-
-    @abc.abstractmethod
-    def render(self, *args, **kwargs):
-        pass
-
-    def response_template(self):
-        return {
-            'config': {},
-            'data': [
-                {
-                    'name': 'items',
-                    'values': []
-                }
-            ],
-            'metadata': {},
-            'name': 'Untitled',
-            'template_context': {},
-            'version': '3'
-        }
-
-
-class OptionChooserRenderer(AbstractResponseRenderer):
-    def __init__(self, service, data, name, dimensions, metrics, metadata):
-        self.service = service
-        self.data = data
-        self.name = name
-        self.dimensions = dimensions
-        self.metrics = metrics
-        self.metadata = metadata
-
-    def render(self):
-        response = self.response_template()
-        response['name'] = self.name
-        response['config'] = deepcopy(self.service.config)
-        metadata = self.metadata
-
-        row = self.data[0]
-
-        # Generate a list of labels
-        labels = [metric for metric in self.metrics]
-
-        if len(self.metrics) > 1:
-            group = {'items': [], 'group_by_type': 'metric', 'name': 'metric'}
-            self.metrics = zip(self.metrics, labels)
-            for metric, label in self.metrics:
-                group['items'].append({
-                    'id': metric,
-                    'label': label,
-                    'group_by_type': 'metric',
-                    'value': getattr(row, metric)
-                })
-            response['data'][0]['values'].append(group)
-        else:
-            metric = self.metrics[0]
-            group = {'items': [], 'group_by_type': labels[0],
-                     'name': labels[0]}
-
-            for row in self.data:
-                group['items'].append({
-                    'id': getattr(row, self.dimensions[0] + '_id'),
-                    'label': getattr(row, self.dimensions[0]),
-                    'group_by_type': self.dimensions[0],
-                    'value': getattr(row, metric)
-                })
-            response['data'][0]['values'] = [group]
-
-            metadata['value'] = self.metadata[metric]
-
-        response['metadata'] = metadata
-
-        return response
-
-
-class DistributionRenderer(AbstractResponseRenderer):
-
-    def __init__(self, service, data, name, dimensions, metrics, metadata):
-        self.service = service
-        self.data = data
-        self.name = name
-        self.dimensions = dimensions
-        self.metrics = metrics
-        self.metadata = metadata
-
-    def render(self):
-        response = self.response_template()
-        response['name'] = self.name
-        response['config'] = deepcopy(self.service.config)
-
-        # Determine the roles using the order of keys
-        # passed in dimensions and metrics
-        group_dimension = self.dimensions[0]
-        grain_dimension = self.dimensions[1]
-        value_metric = self.metrics[0]
-
-        from itertools import groupby
-        from operator import attrgetter
-        for group, items in groupby(self.data, attrgetter(group_dimension)):
-            group_data = {
-                'items': [],
-                'label': group
-            }
-
-            for item in items:
-                item_data = {
-                    'group_by_type': grain_dimension,
-                    'id': getattr(item, grain_dimension + '_id'),
-                    'label': getattr(item, grain_dimension),
-                    'value': getattr(item, value_metric),
-                }
-                group_data['items'].append(item_data)
-
-            response['data'][0]['values'].append(group_data)
-
-        metadata = {
-            'value': self.metadata[value_metric],
-        }
-        response['metadata'] = metadata
-
-        return response
-
-
-class FiltersRenderer(AbstractResponseRenderer):
-    def __init__(self, service, data, name, dimensions, metrics,
-                 metadata):
-        self.service = service
-        self.data = data
-        self.name = name
-        self.dimensions = dimensions
-        self.metrics = metrics
-        self.metadata = metadata
-
-    def render(self):
-        response = self.response_template()
-        response['config'] = deepcopy(self.service.config)
-
-        # Determine the roles using the order of keys
-        # passed in dimensions and metrics
-        dimension = self.dimensions[0]
-        count_metric = self.metrics[0]
-
-        filter_items = {'values': [],
-                        'group_by_type': dimension,
-                        'name': 'items'}
-
-        for item in self.data:
-            item_data = {
-                'id': getattr(item, dimension + '_id'),
-                'name': getattr(item, dimension),
-                'group_by_type': dimension,
-                'count': getattr(item, count_metric),
-            }
-            for metric in self.metrics[1:]:
-                item_data[metric] = getattr(item, metric)
-            filter_items['values'].append(item_data)
-
-        response['data'][0] = filter_items
-        response['name'] = self.metadata[dimension]['label_plural']
-
-        self.metadata['count'] = self.metadata[count_metric]
-        response['metadata'] = self.metadata
-
-        return response
-
-
-class RenderFactory(object):
-    __render_classes = {
-        'distribution': DistributionRenderer,
-        'filters': FiltersRenderer,
-        'option-chooser': OptionChooserRenderer,
-    }
-
-    @staticmethod
-    def get_renderer(slice_type, *args, **kwargs):
-        renderer_class = RenderFactory.__render_classes.get(slice_type, None)
-
-        if renderer_class:
-            return renderer_class(*args, **kwargs)
-        raise NotImplementedError(
-            'The rendering engine for slice_type \'{}\' has not been '
-            'implemented.'.format(slice_type))
-
-
 def generate_default_filter_service(base):
 
     class DefaultFilterService(base):
 
             def build_response(self):
-                metrics = [self.default_metric]
                 self.response = {
                     'responses': []
                 }
                 for dim in self.global_filter_ids:
-                    dimension = self.dimension_shelf[dim]
-                    recipe = self.recipe().metrics(self.default_metric).dimensions(
-                        dim)
-                    render_engine = RenderFactory.get_renderer(self.slice_type,
-                                                               self,
-                                                               metrics, dim,
-                                                               dimension.label,
-                                                               recipe.all(),
-                                                               recipe.metadata)
-                    self.response['responses'].append(render_engine.render())
+                    recipe = self.recipe().metrics(
+                        self.default_metric).dimensions(dim)
+                    self.response['responses'].append(recipe.render())
 
 
 class FilterService(CensusService):
@@ -468,17 +269,7 @@ class FilterService(CensusService):
         }
         for dim in self.global_filter_ids:
             recipe = self.recipe().metrics(*metrics).dimensions(dim)
-            # metadata = recipe.metadata(metrics, [dim])
-            metadata = recipe.metadata(self)
-
-            render_engine = RenderFactory.get_renderer(self.slice_type,
-                                                       self,
-                                                       recipe.all(),
-                                                       'foo',
-                                                       [dim],
-                                                       metrics,
-                                                       metadata)
-            self.response['responses'].append(render_engine.render())
+            self.response['responses'].append(recipe.render())
 
 
 class FirstChooserV3Service(CensusService):
@@ -486,17 +277,8 @@ class FirstChooserV3Service(CensusService):
         metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
 
         recipe = self.recipe().metrics(*metrics)
-
-        metadata = recipe.metadata(self)
-        render_engine = RenderFactory.get_renderer(self.slice_type,
-                                                   self,
-                                                   recipe.all(),
-                                                   name='FirstChooser',
-                                                   dimensions=[],
-                                                   metrics=metrics,
-                                                   metadata=metadata)
         self.response = {
-            'responses': [render_engine.render()]
+            'responses': [recipe.render()]
         }
 
 
@@ -512,16 +294,8 @@ class SecondChooserV3Service(CensusService):
         dimensions = ['sex', ]
         recipe = self.recipe().dimensions(*dimensions).metrics(*metrics)
 
-        metadata = recipe.metadata(self)
-        render_engine = RenderFactory.get_renderer(self.slice_type,
-                                                   self,
-                                                   recipe.all(),
-                                                   name='SecondChooser',
-                                                   dimensions=dimensions,
-                                                   metrics=metrics,
-                                                   metadata=metadata)
         self.response = {
-            'responses': [render_engine.render()]
+            'responses': [recipe.render()]
         }
 
 
@@ -544,32 +318,15 @@ class DistributionV3Service(CensusService):
         recipe = self.recipe().dimensions('age_bands', 'age') \
             .metrics(*metrics).order_by('age_bands', 'age').filters(*filters)
 
-        metadata = recipe.metadata(self)
-
-        render_engine = RenderFactory.get_renderer(self.slice_type,
-                                                   self,
-                                                   recipe.all(),
-                                                   name='Ages',
-                                                   dimensions=('age_bands', 'age'),
-                                                   metrics=metrics,
-                                                   metadata=metadata)
         self.response = {
-            'responses': [render_engine.render()]
+            'responses': [recipe.render('Ages')]
         }
 
         recipe = self.recipe().dimensions('first_letter_state', 'state') \
             .metrics(*metrics).order_by('first_letter_state', 'state') \
             .filters(*filters)
 
-        metadata = recipe.metadata(self)
-        render_engine = RenderFactory.get_renderer(self.slice_type,
-                                                   self,
-                                                   recipe.all(),
-                                                   name='States',
-                                                   dimensions=('first_letter_state', 'state'),
-                                                   metrics=metrics,
-                                                   metadata=metadata)
-        self.response['responses'].append(render_engine.render())
+        self.response['responses'].append(recipe.render('States'))
 
         # self.response = {
         #     'responses': [self.recipe().dimensions('age_bands', 'age').metrics(metric).order_by('age_bands', 'age').filters(*filters).render()
