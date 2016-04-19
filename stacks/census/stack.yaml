@@ -79,6 +79,7 @@ slices:
   # Detailed configuration for the slice.
   config:
     "cellTemplateName": "#distribution-template"
+    "colors": {"Ages": {"range": ["#f00", "#0f0"], "field": "value"} }
   eventmap:
 # TODO: this should go away, because in v3 it is automatic
     "filter_change":
