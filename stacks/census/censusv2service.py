@@ -109,6 +109,10 @@ class RecipeServiceBaseV3(object):
         self.user_filters = user_filters
         self.stack_filters = stack_filters
         self.Session = sessionmaker()
+        self.filter_ingredients = []
+        self.filters = []
+        self.metrics = []
+        self.dimensions = []
 
     @contextmanager
     def session_scope(self):
@@ -160,6 +164,16 @@ class RecipeServiceBaseV3(object):
         # self.global_filters = {k: [unquote_plus(_) for _ in v] for
         #                        k, v in self.global_filters.iteritems()}
         self.local_filters = {}
+        filters = []
+
+        for filter_ingredient in self.filter_ingredients:
+            if filter_ingredient in params:
+                filters.append(self.dimension_shelf[
+                    filter_ingredient].filter_values(params[filter_ingredient])
+                )
+        self.metrics = params.get('metric', [])
+        self.dimensions = params.get('dimentions', [])
+        print "PARAMS: ", params
 
     def apply_user_filters(self, query=None, table=None):
         return query
@@ -197,7 +211,7 @@ class RecipeServiceBaseV3(object):
 class CensusService(RecipeServiceBaseV3):
     # Metrics are defined as an SQLAlchemy expression, and a label.
     metric_shelf = {
-        'pop2000': Metric(func.sum(Census.pop2000), label='Population 2000', format=".3s", singular="cookie",
+        'pop2000': Metric(func.sum(Census.pop2000), label='Population 2000', format=".3s", singular="Population 2000",
                           plural="cookies"),
         'pop2008': Metric(func.sum(Census.pop2008), label='Population 2008', format=".3s"),
         'popdiff': Metric(func.sum(Census.pop2008 - Census.pop2000), label='Population Growth'),
@@ -263,20 +277,20 @@ def generate_default_filter_service(base):
 class FilterService(CensusService):
 
     def build_response(self):
-        metrics = [self.default_metric]
+        self.metrics = [self.default_metric]
         self.response = {
             'responses': []
         }
         for dim in self.global_filter_ids:
-            recipe = self.recipe().metrics(*metrics).dimensions(dim)
+            recipe = self.recipe().metrics(*self.metrics).dimensions(dim)
             self.response['responses'].append(recipe.render())
 
 
 class FirstChooserV3Service(CensusService):
     def build_response(self):
-        metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
+        self.metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
 
-        recipe = self.recipe().metrics(*metrics)
+        recipe = self.recipe().metrics(*self.metrics)
         self.response = {
             'responses': [recipe.render()]
         }
@@ -284,15 +298,9 @@ class FirstChooserV3Service(CensusService):
 
 class SecondChooserV3Service(CensusService):
     def build_response(self):
-        params = self.request.data
-        metric = params.get('metric', None)
-        if metric:
-            metric = metric[0]
-        else:
-            metric = 'pop2000'
-        metrics = [metric]
-        dimensions = ['sex', ]
-        recipe = self.recipe().dimensions(*dimensions).metrics(*metrics)
+        self.dimensions.append('sex')
+        recipe = self.recipe().dimensions(
+            *self.dimensions).metrics(*self.metrics)
 
         self.response = {
             'responses': [recipe.render()]
@@ -301,30 +309,23 @@ class SecondChooserV3Service(CensusService):
 
 class DistributionV3Service(CensusService):
     def build_response(self):
-        params = self.request.data
-        metric = params.get('metric', None)
-        if metric:
-            metric = metric[0]
-        else:
-            metric = 'pop2000'
+        self.dimensions.extend(['age_bands', 'age'])
+        self.filter_ingredients = ['sex']
 
-        metrics = [metric]
-        filters = []
 
-        if 'sex' in params:
-            if params['sex']:
-                filters.append(self.dimension_shelf['sex'].filter_values(params['sex']))
-
-        recipe = self.recipe().dimensions('age_bands', 'age') \
-            .metrics(*metrics).order_by('age_bands', 'age').filters(*filters)
+        recipe = self.recipe().dimensions(*self.dimensions) \
+            .metrics(*self.metrics).order_by(*self.dimensions).filters(
+                *self.filters)
 
         self.response = {
             'responses': [recipe.render('Ages')]
         }
 
-        recipe = self.recipe().dimensions('first_letter_state', 'state') \
-            .metrics(*metrics).order_by('first_letter_state', 'state') \
-            .filters(*filters)
+        self.dimensions = ['first_letter_state', 'state']
+
+        recipe = self.recipe().dimensions(*self.dimensions) \
+            .metrics(*self.metrics).order_by(*self.dimensions) \
+            .filters(*self.filters)
 
         self.response['responses'].append(recipe.render('States'))
 
