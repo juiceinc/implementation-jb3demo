@@ -276,13 +276,13 @@ class AbstractResponseRenderer(object):
 
 
 class OptionChooserRenderer(AbstractResponseRenderer):
-    def __init__(self, service, data, name, dimensions, metrics, metadata_shelf):
+    def __init__(self, service, data, name, dimensions, metrics, metadata):
         self.service = service
         self.data = data
         self.name = name
         self.dimensions = dimensions
         self.metrics = metrics
-        self.metadata_shelf = metadata_shelf
+        self.metadata = metadata
 
     def render(self):
         response = self.response_template()
@@ -292,7 +292,8 @@ class OptionChooserRenderer(AbstractResponseRenderer):
         row = self.data[0]
 
         # Generate a list of labels
-        labels = [self.metadata_shelf[metric].id for metric in self.metrics]
+        labels = [self.metadata[metric]['label_plural'] for metric in
+                  self.metrics]
 
         if len(self.metrics) > 1:
             group = {'items': [], 'group_by_type': 'metric', 'name': 'metric'}
@@ -321,7 +322,7 @@ class OptionChooserRenderer(AbstractResponseRenderer):
             response['data'][0]['values'] = [group]
 
             metadata = {
-                'value': self.metadata_shelf[metric].metadata,
+                'value': self.metadata[metric],
             }
 
         response['metadata'] = metadata
@@ -331,13 +332,13 @@ class OptionChooserRenderer(AbstractResponseRenderer):
 
 class DistributionRenderer(AbstractResponseRenderer):
 
-    def __init__(self, service, data, name, dimensions, metrics, metadata_shelf):
+    def __init__(self, service, data, name, dimensions, metrics, metadata):
         self.service = service
         self.data = data
         self.name = name
         self.dimensions = dimensions
         self.metrics = metrics
-        self.metadata_shelf = metadata_shelf
+        self.metadata = metadata
 
     def render(self):
         response = self.response_template()
@@ -370,7 +371,7 @@ class DistributionRenderer(AbstractResponseRenderer):
             response['data'][0]['values'].append(group_data)
 
         metadata = {
-            'value': self.metadata_shelf[value_metric].metadata,
+            'value': self.metadata[value_metric],
         }
         response['metadata'] = metadata
 
@@ -378,13 +379,14 @@ class DistributionRenderer(AbstractResponseRenderer):
 
 
 class FiltersRenderer(AbstractResponseRenderer):
-    def __init__(self, service, data, name, dimensions, metrics, metadata_shelf):
+    def __init__(self, service, data, name, dimensions, metrics,
+                 metadata):
         self.service = service
         self.data = data
         self.name = name
         self.dimensions = dimensions
         self.metrics = metrics
-        self.metadata_shelf = metadata_shelf
+        self.metadata = metadata
 
     def render(self):
         response = self.response_template()
@@ -396,8 +398,8 @@ class FiltersRenderer(AbstractResponseRenderer):
         count_metric = self.metrics[0]
 
         filter_items = {'values': [],
-                 'group_by_type': dimension,
-                 'name': 'items'}
+                        'group_by_type': dimension,
+                        'name': 'items'}
 
         for item in self.data:
             item_data = {
@@ -411,14 +413,10 @@ class FiltersRenderer(AbstractResponseRenderer):
             filter_items['values'].append(item_data)
 
         response['data'][0] = filter_items
-        response['name'] = self.metadata_shelf[dimension].plural
+        response['name'] = self.metadata[dimension]['label_plural']
 
-        metadata = {
-            'count': self.metadata_shelf[count_metric].metadata,
-            dimension: self.metadata_shelf[count_metric].metadata
-        }
-        response['metadata'] = metadata
-
+        self.metadata['count'] = self.metadata[count_metric]
+        response['metadata'] = self.metadata
 
         return response
 
@@ -470,19 +468,17 @@ class FilterService(CensusService):
             'responses': []
         }
         for dim in self.global_filter_ids:
-            dimension = self.dimension_shelf[dim]
-            recipe = self.recipe().metrics(self.default_metric).dimensions(
-                dim)
+            recipe = self.recipe().metrics(*metrics).dimensions(dim)
+            # metadata = recipe.metadata(metrics, [dim])
+            metadata = recipe.metadata(self)
 
-            metadata_shelf = copy(self.dimension_shelf)
-            metadata_shelf.update(self.metric_shelf)
             render_engine = RenderFactory.get_renderer(self.slice_type,
                                                        self,
                                                        recipe.all(),
                                                        "foo",
                                                        [dim],
                                                        metrics,
-                                                       metadata_shelf)
+                                                       metadata)
             self.response['responses'].append(render_engine.render())
 
 
@@ -492,16 +488,14 @@ class FirstChooserV3Service(CensusService):
 
         recipe = self.recipe().metrics(*metrics)
 
-        metadata_shelf = copy(self.dimension_shelf)
-        metadata_shelf.update(self.metric_shelf)
-
+        metadata = recipe.metadata(self)
         render_engine = RenderFactory.get_renderer(self.slice_type,
                                                    self,
                                                    recipe.all(),
                                                    name="FirstChooser",
                                                    dimensions=[],
                                                    metrics=metrics,
-                                                   metadata_shelf=metadata_shelf)
+                                                   metadata=metadata)
         self.response = {
             'responses': [render_engine.render()]
         }
@@ -516,19 +510,17 @@ class SecondChooserV3Service(CensusService):
         else:
             metric = 'pop2000'
         metrics = [metric]
-        dimensions = ['sex',]
+        dimensions = ['sex', ]
         recipe = self.recipe().dimensions(*dimensions).metrics(*metrics)
 
-        metadata_shelf = copy(self.dimension_shelf)
-        metadata_shelf.update(self.metric_shelf)
-
+        metadata = recipe.metadata(self)
         render_engine = RenderFactory.get_renderer(self.slice_type,
                                                    self,
                                                    recipe.all(),
                                                    name="SecondChooser",
                                                    dimensions=dimensions,
                                                    metrics=metrics,
-                                                   metadata_shelf=metadata_shelf)
+                                                   metadata=metadata)
         self.response = {
             'responses': [render_engine.render()]
         }
@@ -553,8 +545,7 @@ class DistributionV3Service(CensusService):
         recipe = self.recipe().dimensions('age_bands', 'age') \
             .metrics(*metrics).order_by('age_bands', 'age').filters(*filters)
 
-        metadata_shelf = copy(self.dimension_shelf)
-        metadata_shelf.update(self.metric_shelf)
+        metadata = recipe.metadata(self)
 
         render_engine = RenderFactory.get_renderer(self.slice_type,
                                                    self,
@@ -562,7 +553,7 @@ class DistributionV3Service(CensusService):
                                                    name="Ages",
                                                    dimensions=('age_bands', 'age'),
                                                    metrics=metrics,
-                                                   metadata_shelf=metadata_shelf)
+                                                   metadata=metadata)
         self.response = {
             'responses': [render_engine.render()]
         }
@@ -571,13 +562,14 @@ class DistributionV3Service(CensusService):
             .metrics(*metrics).order_by('first_letter_state', 'state') \
             .filters(*filters)
 
+        metadata = recipe.metadata(self)
         render_engine = RenderFactory.get_renderer(self.slice_type,
                                                    self,
                                                    recipe.all(),
                                                    name="States",
                                                    dimensions=('first_letter_state', 'state'),
                                                    metrics=metrics,
-                                                   metadata_shelf=metadata_shelf)
+                                                   metadata=metadata)
         self.response['responses'].append(render_engine.render())
 
         # self.response = {
