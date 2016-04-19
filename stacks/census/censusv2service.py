@@ -262,16 +262,17 @@ class AbstractResponseRenderer(object):
 
     def response_template(self):
         return {
-            "data": [
+            'config': {},
+            'data': [
                 {
-                    "name": "items",
-                    "values": []
+                    'name': 'items',
+                    'values': []
                 }
             ],
-            'config': {},
             'metadata': {},
+            'name': 'Untitled',
             'template_context': {},
-            'name': "Untitled",
+            'version': '3'
         }
 
 
@@ -300,10 +301,10 @@ class OptionChooserRenderer(AbstractResponseRenderer):
             self.metrics = zip(self.metrics, labels)
             for metric, label in self.metrics:
                 group['items'].append({
-                    "id": metric,
-                    "label": label,
-                    "group_by_type": 'metric',
-                    "value": getattr(row, metric)
+                    'id': metric,
+                    'label': label,
+                    'group_by_type': 'metric',
+                    'value': getattr(row, metric)
                 })
             response['data'][0]['values'].append(group)
         else:
@@ -313,10 +314,10 @@ class OptionChooserRenderer(AbstractResponseRenderer):
 
             for row in self.data:
                 group['items'].append({
-                    "id": getattr(row, self.dimensions[0] + '_id'),
-                    "label": getattr(row, self.dimensions[0]),
-                    "group_by_type": self.dimensions[0],
-                    "value": getattr(row, metric)
+                    'id': getattr(row, self.dimensions[0] + '_id'),
+                    'label': getattr(row, self.dimensions[0]),
+                    'group_by_type': self.dimensions[0],
+                    'value': getattr(row, metric)
                 })
             response['data'][0]['values'] = [group]
 
@@ -432,7 +433,8 @@ class RenderFactory(object):
         if renderer_class:
             return renderer_class(*args, **kwargs)
         raise NotImplementedError(
-            "The rendering engine for slice_type '{}' has not been implemented.".format(slice_type))
+            'The rendering engine for slice_type \'{}\' has not been '
+            'implemented.'.format(slice_type))
 
 
 def generate_default_filter_service(base):
@@ -472,7 +474,7 @@ class FilterService(CensusService):
             render_engine = RenderFactory.get_renderer(self.slice_type,
                                                        self,
                                                        recipe.all(),
-                                                       "foo",
+                                                       'foo',
                                                        [dim],
                                                        metrics,
                                                        metadata)
@@ -489,7 +491,7 @@ class FirstChooserV3Service(CensusService):
         render_engine = RenderFactory.get_renderer(self.slice_type,
                                                    self,
                                                    recipe.all(),
-                                                   name="FirstChooser",
+                                                   name='FirstChooser',
                                                    dimensions=[],
                                                    metrics=metrics,
                                                    metadata=metadata)
@@ -514,7 +516,7 @@ class SecondChooserV3Service(CensusService):
         render_engine = RenderFactory.get_renderer(self.slice_type,
                                                    self,
                                                    recipe.all(),
-                                                   name="SecondChooser",
+                                                   name='SecondChooser',
                                                    dimensions=dimensions,
                                                    metrics=metrics,
                                                    metadata=metadata)
@@ -547,7 +549,7 @@ class DistributionV3Service(CensusService):
         render_engine = RenderFactory.get_renderer(self.slice_type,
                                                    self,
                                                    recipe.all(),
-                                                   name="Ages",
+                                                   name='Ages',
                                                    dimensions=('age_bands', 'age'),
                                                    metrics=metrics,
                                                    metadata=metadata)
@@ -563,7 +565,7 @@ class DistributionV3Service(CensusService):
         render_engine = RenderFactory.get_renderer(self.slice_type,
                                                    self,
                                                    recipe.all(),
-                                                   name="States",
+                                                   name='States',
                                                    dimensions=('first_letter_state', 'state'),
                                                    metrics=metrics,
                                                    metadata=metadata)
