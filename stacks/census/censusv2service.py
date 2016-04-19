@@ -293,8 +293,7 @@ class OptionChooserRenderer(AbstractResponseRenderer):
         row = self.data[0]
 
         # Generate a list of labels
-        labels = [self.metadata[metric]['label_plural'] for metric in
-                  self.metrics]
+        labels = [metric for metric in self.metrics]
 
         if len(self.metrics) > 1:
             group = {'items': [], 'group_by_type': 'metric', 'name': 'metric'}
