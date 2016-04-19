@@ -288,6 +288,7 @@ class OptionChooserRenderer(AbstractResponseRenderer):
         response = self.response_template()
         response['name'] = self.name
         response['config'] = deepcopy(self.service.config)
+        metadata = self.metadata
 
         row = self.data[0]
 
@@ -306,7 +307,6 @@ class OptionChooserRenderer(AbstractResponseRenderer):
                     "value": getattr(row, metric)
                 })
             response['data'][0]['values'].append(group)
-            metadata = {}
         else:
             metric = self.metrics[0]
             group = {'items': [], 'group_by_type': labels[0],
@@ -321,9 +321,7 @@ class OptionChooserRenderer(AbstractResponseRenderer):
                 })
             response['data'][0]['values'] = [group]
 
-            metadata = {
-                'value': self.metadata[metric],
-            }
+            metadata['value'] = self.metadata[metric]
 
         response['metadata'] = metadata
 
