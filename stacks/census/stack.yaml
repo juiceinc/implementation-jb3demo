@@ -37,8 +37,11 @@ slices:
   # Detailed configuration for the slice.
   config:
     "optionExtraClass": "option-item-fixed-width"
+#    {{=format('value', undefined, 'id')}} means: in the current object, format value  of a 'value' field
+#    we don't have a static format specifier (undefined), but you can lookup the format in metadata using the 'id' field's value
+#    so, the specifier is metadata[item.id].format
     "optionTemplate": |-
-      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=value}}</div></div>
+      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=format('value', undefined, 'id')}}</div></div>
     "showTitles": false
     "minSelections": 1
     "maxSelections": 1
@@ -55,7 +58,7 @@ slices:
   config:
     "optionExtraClass": "option-item-fixed-width"
     "optionTemplate": |-
-      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=value}}</div></div>
+      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=format('value', ',.2s')}}</div></div>
     "showTitles": false
     "minSelections": 1
     "maxSelections": 1
