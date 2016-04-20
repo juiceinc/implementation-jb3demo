@@ -308,30 +308,35 @@ class SecondChooserV3Service(CensusService):
 
 
 import gevent
+from gevent.queue import Queue
+from gevent.pool import Pool
 class RecipePool(object):
     def __init__(self, recipes):
         self.recipes = recipes
+        self.tasks = Queue()
+        self.pool = Pool(5)
 
     def __query(self, recipe, name):
         recipe.session = sessionmaker(bind=engine_green)()
         result =  recipe.render(name)
         return result
 
+    def executor(self, number):
+        while not self.tasks.empty():
+            recipe, name = self.tasks.get()
+            return self.__query(recipe, name)
+
+    def overseer(self):
+        for recipe in self.recipes:
+            self.tasks.put_nowait(recipe)
+
     def run(self):
-        workers = [gevent.spawn(self.__query, recipe, name) for recipe, name in self.recipes]
-        workers_complete = []
-
-        gevent.joinall(workers, timeout=20)
-
-        while workers:
-            worker = workers.pop()
-            if worker.ready():
-                workers_complete.append(worker)
-            else:
-                workers.append(worker)
+        gevent.spawn(self.overseer).join()
+        workers_complete = self.pool.map(self.executor,
+                                         xrange(len(self.tasks)))
         results = {}
         for worker in workers_complete:
-            results[worker.value['name']] = worker.value
+            results[worker['name']] = worker
         workers_complete = []
         for recipe, name in self.recipes:
             workers_complete.append(results[name])
