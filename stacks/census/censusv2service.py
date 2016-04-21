@@ -3,6 +3,7 @@ from sqlalchemy import Column, String, ForeignKey, select, join
 from dataservices.recipe import *
 from dataservices.redshift_connectionbase import *
 from dataservices.servicebase import *
+from dataservices.recipe_pool import RecipePool
 
 # -------------
 # Connect to the database
@@ -10,50 +11,12 @@ from dataservices.servicebase import *
 from sqlalchemy.orm import relationship
 
 engine = redshift_create_engine()
-engine_green = redshift_create_engine_green()
 
 # Instantiate the base class for declarative (table) class instances
 # ------------------------------------------------------------------
 
 Base = declarative_base()
 
-import gevent
-from gevent.queue import Queue
-from gevent.pool import Pool
-
-
-class RecipePool(object):
-    def __init__(self, recipes):
-        self.recipes = recipes
-        self.tasks = Queue()
-        self.pool = Pool(5)
-
-    def __query(self, recipe, name):
-        recipe.session = sessionmaker(bind=engine_green)()
-        result = recipe.render(name)
-        return result
-
-    def executor(self, number):
-        while not self.tasks.empty():
-            recipe, name = self.tasks.get()
-            return self.__query(recipe, name)
-
-    def overseer(self):
-        for recipe in self.recipes:
-            self.tasks.put_nowait(recipe)
-
-    def run(self):
-        gevent.spawn(self.overseer).join()
-        workers_complete = self.pool.map(self.executor,
-                                         xrange(len(self.tasks)))
-        results = {}
-        for worker in workers_complete:
-            results[worker['name']] = worker
-        workers_complete = []
-        for recipe, name in self.recipes:
-            workers_complete.append(results[name])
-
-        return workers_complete
 
 
 # -------------
@@ -367,9 +330,13 @@ def generate_default_filter_service(base):
 class FilterService(CensusService):
     def build_response(self):
         self.metrics = [self.default_metric]
+        recipes = []
         for dim in self.automatic_filter_keys:
             recipe = self.recipe().metrics(*self.metrics).dimensions(dim)
-            self.response['responses'].append(recipe.render())
+            recipes.append((recipe, dim))
+
+        results = RecipePool(recipes).run()
+        self.response['responses'] = results
 
 
 class FirstChooserV3Service(CensusService):
@@ -400,5 +367,7 @@ class DistributionV3Service(CensusService):
             .metrics(*self.metrics).order_by(*self.dimensions) \
             .filters(*self.filters)
 
-        results = RecipePool([(recipe1, 'Ages'), (recipe2, 'States')]).run()
+        results = RecipePool([
+            (recipe1, 'Ages'), (recipe2, 'States'),
+        ]).run()
         self.response['responses'] = results
