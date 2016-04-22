@@ -1,9 +1,12 @@
+import time
 from sqlalchemy import Column, String, ForeignKey, select, join
+from dataservices.connectionbase import regions
 
 from dataservices.recipe import *
 from dataservices.redshift_connectionbase import *
 from dataservices.servicebase import *
 from dataservices.recipe_pool import RecipePool
+from dataservices import caching_query
 
 # -------------
 # Connect to the database
@@ -17,7 +20,7 @@ engine = redshift_create_engine()
 
 Base = declarative_base()
 
-
+current_milli_time = lambda: int(round(time.time() * 1000))
 
 # -------------
 # Step 1: Define the tables used in your application
@@ -125,7 +128,8 @@ class RecipeServiceBaseV3(object):
         self.slice_type = slice_type
         self.user_filters = user_filters
         self.stack_filters = stack_filters
-        self.Session = sessionmaker()
+        self.Session = sessionmaker(query_cls=caching_query.query_callable(regions),
+                                    bind=engine)
 
         # Metrics, dimensions and filters to apply automatically to recipes
         self.metrics = []
@@ -311,7 +315,7 @@ class CensusService(RecipeServiceBaseV3):
 
     def __init__(self, *args, **kwargs):
         super(CensusService, self).__init__(*args, **kwargs)
-        self.Session = Session
+        # self.Session = Session
 
 
 # -------------
@@ -341,21 +345,25 @@ class FilterService(CensusService):
 
 class FirstChooserV3Service(CensusService):
     def build_response(self):
+        start = current_milli_time()
         self.metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
         recipe = self.recipe().metrics(*self.metrics)
         self.response['responses'].append(recipe.render())
-
+        print 'Ms: ',current_milli_time() - start
 
 class SecondChooserV3Service(CensusService):
     def build_response(self):
+        start = current_milli_time()
         self.dimensions = ('sex',)
         recipe = self.recipe().dimensions(
             *self.dimensions).metrics(*self.metrics)
         self.response['responses'].append(recipe.render())
+        print 'Ms: ',current_milli_time() - start
 
 
 class DistributionV3Service(CensusService):
     def build_response(self):
+        start = current_milli_time()
         self.dimensions = ['age_bands', 'age']
         recipe1 = self.recipe().dimensions(*self.dimensions) \
             .metrics(*self.metrics).order_by(*self.dimensions).filters(
@@ -366,8 +374,10 @@ class DistributionV3Service(CensusService):
         recipe2 = self.recipe().dimensions(*self.dimensions) \
             .metrics(*self.metrics).order_by(*self.dimensions) \
             .filters(*self.filters)
+        self.dimensions = ['gender', 'region']
 
         results = RecipePool([
             (recipe1, 'Ages'), (recipe2, 'States'),
         ]).run()
         self.response['responses'] = results
+        print 'Ms: ',current_milli_time() - start
