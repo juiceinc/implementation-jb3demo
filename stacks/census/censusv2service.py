@@ -188,8 +188,8 @@ class FirstChooserV3Service(CensusService):
         start = current_milli_time()
         self.metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
         recipe = self.recipe().metrics(*self.metrics)
-        self.response['responses'].append(recipe.render())
-        print 'Ms: ',current_milli_time() - start
+        self.response['responses'].append(recipe.render(flavor='metric'))
+        print 'Ms: ', current_milli_time() - start
 
 class SecondChooserV3Service(CensusService):
     def build_response(self):
@@ -197,8 +197,9 @@ class SecondChooserV3Service(CensusService):
         self.dimensions = ('sex',)
         recipe = self.recipe().dimensions(
             *self.dimensions).metrics(*self.metrics)
-        self.response['responses'].append(recipe.render())
-        print 'Ms: ',current_milli_time() - start
+        print 'len: ', len(self.dimensions)
+        self.response['responses'].append(recipe.render(flavor='metric'))
+        print 'Ms: ', current_milli_time() - start
 
 
 class DistributionV3Service(CensusService):
