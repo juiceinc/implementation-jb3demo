@@ -41,7 +41,7 @@ slices:
 #    we don't have a static format specifier (undefined), but you can lookup the format in metadata using the 'id' field's value
 #    so, the specifier is metadata[item.id].format
     "optionTemplate": |-
-      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=format('value', undefined, 'id')}}</div></div>
+      <div data-id="{{= datum.id }}" class="group-container__item"><div class="group-container__item__label">{{= datum.label}}</div><div class="group-container__item__value">{{= datum.format('value', undefined, 'id') }}</div></div>
     "showTitles": false
     "minSelections": 1
     "maxSelections": 1
@@ -58,7 +58,7 @@ slices:
   config:
     "optionExtraClass": "option-item-fixed-width"
     "optionTemplate": |-
-      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=format('value', ',.2s')}}</div></div>
+      <div data-id="{{= datum.id }}" class="group-container__item"><div class="group-container__item__label">{{= datum.label }}</div><div class="group-container__item__value">{{= datum.format('value', ',.2s') }}</div></div>
     "showTitles": false
     "minSelections": 1
     "maxSelections": 1
@@ -89,23 +89,46 @@ slices:
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
   data_service: "censusv2service.DistributionV3Service"
-#
-#
-#
-#- slice_type: "ranked-list"
-#  title: "Let's compare"
-#  config:
-#    "min_value": 0
-#  eventmap:
-#    "filter_change":
-#    - "option-chooser"
-#  data_service: "censusv2service.RankedListService"
+
+
 - slice_type: "details-table"
-  slug: "table"
-  # Get extract the title or titleTemplate from config and store it as a top level element
-  title: "Choose a state to view more details."
-  style:
-  - "section-last"
+  slug: "table1"
+  # The title line for the slice.
+  title: "Details table"
+  # Detailed configuration for the slice.
   config:
-    "max_selections": 1
-  data_service: "censusv2service.TableService"
+    "minSelections": 2
+    "maxSelections": 4
+    "name_field": "student_name"
+  eventmap:
+# TODO: this should go away, because in v3 it is automatic
+    "filter_change":
+      - "foo"
+      - "bar"
+      - "distribution1"
+  # Provides data to the slice
+  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
+  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
+  data_service: "sample-table.json"
+
+
+- slice_type: "ranked-list"
+  slug: "rankedlist1"
+  # The title line for the slice.
+  title: "Ranked list"
+  # Detailed configuration for the slice.
+  config:
+    "name_field": "student_name"
+  eventmap:
+# TODO: this should go away, because in v3 it is automatic
+    "filter_change":
+      - "foo"
+      - "bar"
+      - "distribution1"
+      - "table1"
+  # Provides data to the slice
+  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
+  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
+  data_service: "sample-rankedlist.json"
+
+>>>>>>> 26ad9ea69cc1ef2c1da63e74e10ea8dd8d8c9201

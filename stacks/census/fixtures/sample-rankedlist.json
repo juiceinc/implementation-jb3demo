@@ -1,0 +1,221 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "option 1",
+      "config": {"titleTemplate": "Moo 1"},
+      "metadata": {},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+    {
+      "count": 47,
+      "group_by_type": "course",
+      "value": 28,
+      "id": 0,
+      "label": "label-0",
+      "dimension": "product_category"
+    },
+    {
+      "count": 16,
+      "group_by_type": "course",
+      "value": 6,
+      "id": 1,
+      "label": "label-1",
+      "dimension": "product_category"
+    },
+    {
+      "count": 23,
+      "group_by_type": "course",
+      "value": 48,
+      "id": 2,
+      "label": "label-2",
+      "dimension": "product_category"
+    },
+    {
+      "count": 47,
+      "group_by_type": "course",
+      "value": 28,
+      "id": 10,
+      "label": "label-10",
+      "dimension": "product_category"
+    },
+    {
+      "count": 16,
+      "group_by_type": "course",
+      "value": 6,
+      "id": 11,
+      "label": "label-11",
+      "dimension": "product_category"
+    },
+    {
+      "count": 23,
+      "group_by_type": "course",
+      "value": 48,
+      "id": 12,
+      "label": "label-21",
+      "dimension": "product_category"
+    },
+    {
+      "count": 25,
+      "group_by_type": "course",
+      "value": 11,
+      "id": 3,
+      "label": "label-3",
+      "dimension": "product_category"
+    },
+    {
+      "count": 21,
+      "group_by_type": "course",
+      "value": 26,
+      "id": 4,
+      "label": "label-4",
+      "dimension": "product_category"
+    },
+    {
+      "count": 26,
+      "group_by_type": "course",
+      "value": 34,
+      "id": 5,
+      "label": "label-5",
+      "dimension": "product_category"
+    },
+    {
+      "count": 25,
+      "group_by_type": "course",
+      "value": 11,
+      "id": 13,
+      "label": "label-13",
+      "dimension": "product_category"
+    },
+    {
+      "count": 21,
+      "group_by_type": "course",
+      "value": 26,
+      "id": 14,
+      "label": "label-14",
+      "dimension": "product_category"
+    },
+    {
+      "count": 26,
+      "group_by_type": "course",
+      "value": 34,
+      "id": 15,
+      "label": "label-15",
+      "dimension": "product_category"
+    },
+    {
+      "count": 16,
+      "group_by_type": "course",
+      "value": 30,
+      "id": 6,
+      "label": "label-6",
+      "dimension": "product_category"
+    }
+  ]
+        }
+      ]
+    },
+    {
+      "name": "option 2",
+      "config": {"titleTemplate": "Moo 2"},
+      "metadata": {},
+      "data": [
+        {
+          "name": "items",
+          "values": [
+     {
+      "count": 23,
+      "group_by_type": "something-else",
+      "value": 48,
+      "id": 2,
+      "label": "label-2",
+      "dimension": "product_category"
+    },
+    {
+      "count": 47,
+      "group_by_type": "something-else",
+      "value": 28,
+      "id": 10,
+      "label": "label-10",
+      "dimension": "product_category"
+    },
+    {
+      "count": 16,
+      "group_by_type": "something-else",
+      "value": 6,
+      "id": 11,
+      "label": "label-11",
+      "dimension": "product_category"
+    },
+    {
+      "count": 23,
+      "group_by_type": "something-else",
+      "value": 48,
+      "id": 12,
+      "label": "label-21",
+      "dimension": "product_category"
+    },
+    {
+      "count": 25,
+      "group_by_type": "something-else",
+      "value": 11,
+      "id": 3,
+      "label": "label-3",
+      "dimension": "product_category"
+    },
+    {
+      "count": 21,
+      "group_by_type": "something-else",
+      "value": 26,
+      "id": 4,
+      "label": "label-4",
+      "dimension": "product_category"
+    },
+    {
+      "count": 26,
+      "group_by_type": "something-else",
+      "value": 34,
+      "id": 5,
+      "label": "label-5",
+      "dimension": "product_category"
+    },
+    {
+      "count": 25,
+      "group_by_type": "something-else",
+      "value": 11,
+      "id": 13,
+      "label": "label-13",
+      "dimension": "product_category"
+    },
+    {
+      "count": 21,
+      "group_by_type": "something-else",
+      "value": 26,
+      "id": 14,
+      "label": "label-14",
+      "dimension": "product_category"
+    },
+    {
+      "count": 26,
+      "group_by_type": "something-else",
+      "value": 34,
+      "id": 15,
+      "label": "label-15",
+      "dimension": "product_category"
+    },
+    {
+      "count": 16,
+      "group_by_type": "something-else",
+      "value": 30,
+      "id": 6,
+      "label": "label-6",
+      "dimension": "product_category"
+    }
+  ]
+        }
+      ]
+    }
+  ]
+}
