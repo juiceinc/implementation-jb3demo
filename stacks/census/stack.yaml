@@ -100,3 +100,12 @@ slices:
 #    "filter_change":
 #    - "option-chooser"
 #  data_service: "censusv2service.RankedListService"
+- slice_type: "details-table"
+  slug: "table"
+  # Get extract the title or titleTemplate from config and store it as a top level element
+  title: "Choose a state to view more details."
+  style:
+  - "section-last"
+  config:
+    "max_selections": 1
+  data_service: "censusv2service.TableService"
