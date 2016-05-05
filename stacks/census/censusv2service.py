@@ -223,17 +223,12 @@ class DistributionV3Service(CensusService):
         self.response['responses'] = results
         print 'Ms: ',current_milli_time() - start
 
-class TableService(CensusService):
+
+class TableV3Service(CensusService):
     def build_response(self):
         self.metrics = ('pop2000', 'pop2008', 'popdiff')
         self.dimensions = ('state', 'sex')
         recipe = self.recipe().metrics(*self.metrics).dimensions(
             *self.dimensions)
-        self.response['columns'] = [
-            {'name': 'State', 'field': 'state'},
-            {'name': '2000 Pop.', 'field': 'pop2000'},
-            {'name': '2008 Pop.', 'field': 'pop2008'},
-            {'name': 'Difference', 'field': 'popdiff'}
-        ]
 
         self.response['responses'].append(recipe.render('Table'))
