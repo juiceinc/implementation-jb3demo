@@ -41,7 +41,7 @@ slices:
 #    we don't have a static format specifier (undefined), but you can lookup the format in metadata using the 'id' field's value
 #    so, the specifier is metadata[item.id].format
     "optionTemplate": |-
-      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=format('value', undefined, 'id')}}</div></div>
+      <div data-id="{{= datum.id }}" class="group-container__item"><div class="group-container__item__label">{{= datum.label}}</div><div class="group-container__item__value">{{= datum.format('value', undefined, 'id') }}</div></div>
     "showTitles": false
     "minSelections": 1
     "maxSelections": 1
@@ -58,7 +58,7 @@ slices:
   config:
     "optionExtraClass": "option-item-fixed-width"
     "optionTemplate": |-
-      <div data-id="{{=id}}" class="group-container__item"><div class="group-container__item__label">{{=label}}</div><div class="group-container__item__value">{{=format('value', ',.2s')}}</div></div>
+      <div data-id="{{= datum.id }}" class="group-container__item"><div class="group-container__item__label">{{= datum.label }}</div><div class="group-container__item__value">{{= datum.format('value', ',.2s') }}</div></div>
     "showTitles": false
     "minSelections": 1
     "maxSelections": 1
