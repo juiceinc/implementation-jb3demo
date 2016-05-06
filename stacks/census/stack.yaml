@@ -149,6 +149,21 @@ slices:
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
   data_service: "censusv2service.TableV3Service"
+- slice_type: "ranked-list"
+  slug: "COOKIES"
+  title: "Here's a breakout of your responses."
+  config:
+    "disableSort": true
+  style:
+    - "section-content"
+  eventmap:
+    "filter_change":
+      - "foo"
+      - "bar"
+      - "distribution1"
+      - "table1"
+  data_service: "censusv2service.RankedListV3Service"
+
 
 
 - slice_type: "lollipop"
