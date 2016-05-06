@@ -63,10 +63,9 @@ slices:
     "minSelections": 1
     "maxSelections": 1
 
+  # TODO: this eventmap could go away, because in v3 it is automatic, but we have it here explicitly to test it.
   eventmap:
-# TODO: this should go away, because in v3 it is automatic
-    "filter_change":
-    - "foo"
+  - "foo"
   # Provides data to the slice
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
@@ -80,11 +79,6 @@ slices:
   config:
     "cellTemplateName": "#distribution-template"
     "colors": {"Ages": {"range": ["#f00", "#0f0"], "field": "value"} }
-  eventmap:
-# TODO: this should go away, because in v3 it is automatic
-    "filter_change":
-      - "foo"
-      - "bar"
   # Provides data to the slice
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
@@ -97,12 +91,6 @@ slices:
   # Detailed configuration for the slice.
   config:
     "name_field": "state"
-  eventmap:
-# TODO: this should go away, because in v3 it is automatic
-    "filter_change":
-      - "foo"
-      - "bar"
-      - "distribution1"
   # Provides data to the slice
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
@@ -114,12 +102,6 @@ slices:
     "disableSort": true
   style:
     - "section-content"
-  eventmap:
-    "filter_change":
-      - "foo"
-      - "bar"
-      - "distribution1"
-      - "table1"
   data_service: "censusv2service.RankedListV3Service"
 
 #
