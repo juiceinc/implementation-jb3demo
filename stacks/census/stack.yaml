@@ -91,53 +91,11 @@ slices:
   data_service: "censusv2service.DistributionV3Service"
 
 - slice_type: "details-table"
-  slug: "table1"
-  # The title line for the slice.
-  title: "Details table"
-  # Detailed configuration for the slice.
-  config:
-    "minSelections": 2
-    "maxSelections": 4
-    "name_field": "student_name"
-  eventmap:
-# TODO: this should go away, because in v3 it is automatic
-    "filter_change":
-      - "foo"
-      - "bar"
-      - "distribution1"
-  # Provides data to the slice
-  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
-  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-  data_service: "sample-table.json"
-
-
-- slice_type: "ranked-list"
-  slug: "rankedlist1"
-  # The title line for the slice.
-  title: "Ranked list"
-  # Detailed configuration for the slice.
-  config:
-    "name_field": "student_name"
-  eventmap:
-# TODO: this should go away, because in v3 it is automatic
-    "filter_change":
-      - "foo"
-      - "bar"
-      - "distribution1"
-      - "table1"
-  # Provides data to the slice
-  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
-  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-  data_service: "sample-rankedlist.json"
-
-- slice_type: "details-table"
   slug: "table23"
   # The title line for the slice.
   title: "Details table2"
   # Detailed configuration for the slice.
   config:
-    "minSelections": 2
-    "maxSelections": 4
     "name_field": "state"
   eventmap:
 # TODO: this should go away, because in v3 it is automatic
