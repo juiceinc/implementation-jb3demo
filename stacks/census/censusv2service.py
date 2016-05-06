@@ -117,9 +117,10 @@ class CensusService(RecipeServiceBaseV3):
         'pctdiff': Metric(func.sum(Census.pop2008 - Census.pop2000) / func.sum(
             Census.pop2000),
                           singular='Population Pct Change',
-                          formatters=[
-                              lambda x: "Change is {0:0.1%} percent".format(
-                                  x)]),
+                          # formatters=[
+                          #     lambda x: "Change is {0:0.1%} percent".format(
+                          #         x)]
+                              ),
     }
 
     # Dimensions are ways to split the data.
@@ -162,15 +163,6 @@ class CensusService(RecipeServiceBaseV3):
 # Step 3) The data services response.
 # -------------
 
-def generate_default_filter_service(base):
-    class DefaultFilterService(base):
-        def build_response(self):
-            for dim in self.automatic_filter_keys:
-                recipe = self.recipe().metrics(self.default_metric).dimensions(
-                    dim)
-                self.response['responses'].append(recipe.render())
-
-
 class FilterService(CensusService):
     def build_response(self):
         self.metrics = [self.default_metric]
@@ -190,6 +182,7 @@ class FirstChooserV3Service(CensusService):
         recipe = self.recipe().metrics(*self.metrics)
         self.response['responses'].append(recipe.render(flavor='metric'))
         print 'Ms: ', current_milli_time() - start
+
 
 class SecondChooserV3Service(CensusService):
     def build_response(self):
@@ -253,3 +246,17 @@ class RankedListV3Service(CensusService):
             (recipe1, 'States'), (recipe2, 'Gender'),
         ]).run()
         self.response['responses'] = results
+
+
+class LollipopV3Service(CensusService):
+    def build_response(self):
+        self.metrics = ('pctfemale', 'pctdiff')
+        benchmark = self.recipe().dimensions().metrics(
+            *self.metrics).apply_global_filters(False)
+
+        recipe = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions).apply_global_filters(True).compare(benchmark)
+        
+        self.response['responses'].append(
+            recipe.render(flavor='single_benchmark'))
+

@@ -122,26 +122,37 @@ slices:
       - "table1"
   data_service: "censusv2service.RankedListV3Service"
 
-
+#
+#
+#- slice_type: "lollipop"
+#  slug: "lollipop1"
+#  title: "I am a lollipop"
+#  config:
+#    "groups":
+#      "default":
+#        "max": 100
+#    "minSelections": 1
+#    "showStick": true
+#  data_service: "sample-lollipop.json"
+#
+#- slice_type: "lollipop"
+#  slug: "lollipop2"
+#  title: "I am another lollipop"
+#  config:
+#    "groups":
+#      "default":
+#        "max": 100
+#    "minSelections": 1
+#    "showStick": true
+#  data_service: "sample-lollipop-singledataset.json"
 
 - slice_type: "lollipop"
-  slug: "lollipop1"
-  title: "I am a lollipop"
+  slug: "lollipop-jam1"
+  title: "JAM lollipop"
   config:
     "groups":
       "default":
         "max": 100
     "minSelections": 1
     "showStick": true
-  data_service: "sample-lollipop.json"
-
-- slice_type: "lollipop"
-  slug: "lollipop2"
-  title: "I am another lollipop"
-  config:
-    "groups":
-      "default":
-        "max": 100
-    "minSelections": 1
-    "showStick": true
-  data_service: "sample-lollipop-singledataset.json"
+  data_service: "censusv2service.LollipopV3Service"
