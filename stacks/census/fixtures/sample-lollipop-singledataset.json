@@ -1,0 +1,102 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "option 1",
+      "config": {"titleTemplate": "Plain lollipop"},
+      "metadata": {},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+              {
+   "items": [
+    {
+     "group_by_type": "metric",
+     "name": "Life Safety",
+     "value": 82.4585507629302,
+     "comparisons": [
+      {
+       "value": "80.23",
+       "label": "All States Score"
+      }
+     ],
+     "id": "life_score",
+     "target": [
+      90,
+      100
+     ]
+    },
+    {
+     "group_by_type": "metric",
+     "name": "Human Resources",
+     "value": 73.4896781651394,
+     "comparisons": [
+      {
+       "value": "79.25",
+       "label": "All States Score"
+      }
+     ],
+     "id": "hr_score",
+     "target": [
+      85,
+      100
+     ]
+    },
+    {
+     "group_by_type": "metric",
+     "name": "Infection Prevention and Control",
+     "value": 84.65064617877,
+     "comparisons": [
+      {
+       "value": "81.99",
+       "label": "All States Score"
+      }
+     ],
+     "id": "infection_score",
+     "target": [
+      70,
+      100
+     ]
+    },
+    {
+     "group_by_type": "metric",
+     "name": "Environment of Care",
+     "value": 80.5615079163578,
+     "comparisons": [
+      {
+       "value": "80.09",
+       "label": "All States Score"
+      }
+     ],
+     "id": "environment_score",
+     "target": [
+      80,
+      100
+     ]
+    },
+    {
+     "group_by_type": "metric",
+     "name": "Provision of Care",
+     "value": 75.6602625087528,
+     "comparisons": [
+      {
+       "value": "83.20",
+       "label": "All States Score"
+      }
+     ],
+     "id": "provision_score",
+     "target": [
+      80,
+      100
+     ]
+    }
+   ],
+   "name": "complyq"
+  }
+            ]
+        }
+      ]
+    }
+  ]
+}
