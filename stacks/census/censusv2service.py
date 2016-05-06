@@ -232,3 +232,12 @@ class TableV3Service(CensusService):
             *self.dimensions)
 
         self.response['responses'].append(recipe.render('Table'))
+
+
+class RankedListV3Service(CensusService):
+    def build_response(self):
+        self.metrics = ('avgage', 'pop2008')
+        self.dimensions = ('state',)
+        recipe = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions).order_by('avgage')
+        self.response['responses'].append(recipe.render('Scores'))
