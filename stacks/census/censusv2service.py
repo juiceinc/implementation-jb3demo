@@ -228,16 +228,28 @@ class TableV3Service(CensusService):
     def build_response(self):
         self.metrics = ('pop2000', 'pop2008', 'popdiff')
         self.dimensions = ('state', 'sex')
-        recipe = self.recipe().metrics(*self.metrics).dimensions(
+        recipe1 = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions)
+        self.dimensions = ('age_bands', 'age')
+        recipe2 = self.recipe().metrics(*self.metrics).dimensions(
             *self.dimensions)
 
-        self.response['responses'].append(recipe.render('Table'))
+        results = RecipePool([
+            (recipe1, 'States'), (recipe2, 'Ages'),
+        ]).run()
+        self.response['responses'] = results
 
 
 class RankedListV3Service(CensusService):
     def build_response(self):
         self.metrics = ('avgage', 'pop2008')
-        self.dimensions = ('state',)
-        recipe = self.recipe().metrics(*self.metrics).dimensions(
+        self.dimensions = ('state', )
+        recipe1 = self.recipe().metrics(*self.metrics).dimensions(
             *self.dimensions).order_by('avgage')
-        self.response['responses'].append(recipe.render('Scores'))
+        self.dimensions = ('sex',)
+        recipe2 = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions).order_by('avgage')
+        results = RecipePool([
+            (recipe1, 'States'), (recipe2, 'Gender'),
+        ]).run()
+        self.response['responses'] = results
