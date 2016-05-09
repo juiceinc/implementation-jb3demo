@@ -1,0 +1,18 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "option 1",
+      "config": {"titleTemplate": "Moo 1"},
+      "metadata": {},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+              {"date":"January 2016"}
+            ]
+        }
+      ]
+    }
+  ]
+}

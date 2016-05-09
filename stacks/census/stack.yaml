@@ -91,6 +91,7 @@ slices:
   # Detailed configuration for the slice.
   config:
     "name_field": "state"
+    "slickgrid_id_field": "row_id"
   # Provides data to the slice
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
@@ -138,3 +139,19 @@ slices:
     "minSelections": 1
     "showStick": true
   data_service: "censusv2service.LollipopV3Service"
+
+- slice_type: "free-form"
+  slug: "free-form1"
+  style:
+  - "title-large"
+# bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
+# see https://juiceanalytics.atlassian.net/browse/JB-682 for details
+  bare: true
+  mixins:
+  - options: {}
+    target: "view"
+    class: "WithNoData"
+  config:
+    baseTemplateName: "#base-slice-bare-template"
+    contentTemplate: "#free-form1-template"
+  data_service: "sample-free-form.json"
