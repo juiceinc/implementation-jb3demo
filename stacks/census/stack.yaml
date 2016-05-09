@@ -155,3 +155,19 @@ slices:
     baseTemplateName: "#base-slice-bare-template"
     contentTemplate: "#free-form1-template"
   data_service: "sample-free-form.json"
+
+- slice_type: "free-form"
+  slug: "free-form2"
+  style:
+  - "title-large"
+# bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
+# see https://juiceanalytics.atlassian.net/browse/JB-682 for details
+  bare: true
+  mixins:
+  - options: {}
+    target: "view"
+    class: "WithNoData"
+  config:
+    baseTemplateName: "#base-slice-bare-template"
+    contentTemplate: "#free-form2-template"
+  data_service: "sample-free-form.json"

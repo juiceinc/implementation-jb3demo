@@ -15,10 +15,20 @@ The template goes here
         {{= datum.format("value", ",.3s") }}
 </script>
 <script type="text/template" id="free-form1-template">
-	<div style="text-align: center;">
+	<div style="text-align: center; margin-top: 50px; background-color: lightsalmon;">
         <div class="free-form-header">Explore details for your physicians</div>
 		<div class="fr-headline" style="display:inline-block; font-size: 20px">
             <div class="">See physician performance for <strong>{{=date}}</strong> </div>
+		</div>
+	</div>
+</script>
+
+
+<script type="text/template" id="free-form2-template">
+	<div style="text-align: center; margin-top: 50px; background-color: lightblue;">
+        <div class="free-form-header">This is a free form that doesn't use dynamic data</div>
+		<div class="fr-headline" style="display:inline-block; font-size: 20px">
+            <div class="">See physician performance for <strong>2018</strong> </div>
 		</div>
 	</div>
 </script>
