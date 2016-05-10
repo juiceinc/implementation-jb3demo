@@ -141,6 +141,38 @@ slices:
   data_service: "censusv2service.LollipopV3Service"
 
 - slice_type: "free-form"
+  slug: "jam-free-form1"
+  style:
+  - "title-large"
+# bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
+# see https://juiceanalytics.atlassian.net/browse/JB-682 for details
+  bare: true
+  mixins:
+  - options: {}
+    target: "view"
+    class: "WithNoData"
+  config:
+    baseTemplateName: "#base-slice-bare-template"
+    contentTemplate: "#jam-free-form1-template"
+  data_service: "censusv2service.FreeFormV3Service1"
+
+- slice_type: "free-form"
+  slug: "jam-free-form2"
+  style:
+  - "title-large"
+# bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
+# see https://juiceanalytics.atlassian.net/browse/JB-682 for details
+  bare: true
+  mixins:
+  - options: {}
+    target: "view"
+    class: "WithNoData"
+  config:
+    baseTemplateName: "#base-slice-bare-template"
+    contentTemplate: "#jam-free-form2-template"
+  data_service: "censusv2service.FreeFormV3Service2"
+
+- slice_type: "free-form"
   slug: "free-form1"
   style:
   - "title-large"

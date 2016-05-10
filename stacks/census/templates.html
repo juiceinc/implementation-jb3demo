@@ -12,7 +12,23 @@ The template goes here
 
 <script type="text/template" id="distribution-template">
         COWS
-        {{= datum.format("value", ",.3s") }}
+        {{=datum.format("value", ",.3s") }}
+</script>
+<script type="text/template" id="jam-free-form1-template">
+	<div style="text-align: center; margin-top: 50px; background-color: lightsalmon;">
+        <div class="free-form-header">Percent Female Overview</div>
+		<div class="fr-headline" style="display:inline-block; font-size: 20px">
+            <div class=""><strong>{{=state}}</strong> is <strong>{{=pctfemale}}</strong> female.</div>
+		</div>
+	</div>
+</script>
+<script type="text/template" id="jam-free-form2-template">
+	<div style="text-align: center; margin-top: 50px; background-color: lightsalmon;">
+        <div class="free-form-header">Detailed Pastry Analysis</div>
+		<div class="fr-headline" style="display:inline-block; font-size: 20px">
+            <div class=""><strong>{{=name}}</strong> loves <strong>{{=pastry}}</strong>!</div>
+		</div>
+	</div>
 </script>
 <script type="text/template" id="free-form1-template">
 	<div style="text-align: center; margin-top: 50px; background-color: lightsalmon;">
