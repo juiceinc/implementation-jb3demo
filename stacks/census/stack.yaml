@@ -171,3 +171,11 @@ slices:
     baseTemplateName: "#base-slice-bare-template"
     contentTemplate: "#free-form2-template"
   data_service: "sample-free-form.json"
+
+
+- slice_type: "card"
+  slug: "card1"
+  title: "Card"
+  config:
+    "cardTemplateName": "#card-template"
+  data_service: "sample-card.json"

@@ -32,3 +32,11 @@ The template goes here
 		</div>
 	</div>
 </script>
+
+<!--card template-->
+<script type="text/template" id="card-template">
+  <div class="fr-caption {{= item.classed }}-color" style="font-style: normal; font-size: 80%; text-transform: uppercase;">{{= item.course_category }}</div>
+  <div class="fr-body2">{{= item.label }}</div>
+  <div class="fr-caption">{{= item.format("score", ',.1f') }} average score</div>
+  <div class="fr-caption">{{= item.format("count", ',.0f"pluralize( student, students)"') }}</div>
+</script>
