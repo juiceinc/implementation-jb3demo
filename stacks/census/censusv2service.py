@@ -126,7 +126,8 @@ class CensusService(RecipeServiceBaseV3):
     # Dimensions are ways to split the data.
     dimension_shelf = {
         # Simplest possible dimension, a SQLAlchemy expression and a label.
-        'state': Dimension(Census.state, singular='State', plural='States'),
+        'state': Dimension(Census.state, singular='State', plural='States',
+                           format=""),
         'first_letter_state': Dimension(func.substring(Census.state, 1, 1),
                                         label='State'),
         'age': Dimension(Census.age, singular='Age', plural='Ages'),
@@ -190,7 +191,6 @@ class SecondChooserV3Service(CensusService):
         self.dimensions = ('sex',)
         recipe = self.recipe().dimensions(
             *self.dimensions).metrics(*self.metrics)
-        print 'len: ', len(self.dimensions)
         self.response['responses'].append(recipe.render(flavor='metric'))
         print 'Ms: ', current_milli_time() - start
 
@@ -219,6 +219,7 @@ class DistributionV3Service(CensusService):
 
 class TableV3Service(CensusService):
     def build_response(self):
+        start = current_milli_time()
         self.metrics = ('pop2000', 'pop2008', 'popdiff')
         self.dimensions = ('state', 'sex')
         recipe1 = self.recipe().metrics(*self.metrics).dimensions(
@@ -231,10 +232,13 @@ class TableV3Service(CensusService):
             (recipe1, 'States'), (recipe2, 'Ages'),
         ]).run()
         self.response['responses'] = results
+        print 'Ms: ',current_milli_time() - start
+
 
 
 class RankedListV3Service(CensusService):
     def build_response(self):
+        start = current_milli_time()
         self.metrics = ('avgage', 'pop2008')
         self.dimensions = ('state', )
         recipe1 = self.recipe().metrics(*self.metrics).dimensions(
@@ -246,17 +250,46 @@ class RankedListV3Service(CensusService):
             (recipe1, 'States'), (recipe2, 'Gender'),
         ]).run()
         self.response['responses'] = results
+        print 'Ms: ',current_milli_time() - start
+
 
 
 class LollipopV3Service(CensusService):
     def build_response(self):
+        start = current_milli_time()
         self.metrics = ('pctfemale', 'pctdiff')
         benchmark = self.recipe().dimensions().metrics(
             *self.metrics).apply_global_filters(False)
 
         recipe = self.recipe().metrics(*self.metrics).dimensions(
-            *self.dimensions).apply_global_filters(True).compare(benchmark)
-        
+            *self.dimensions).apply_global_filters(True).filters(
+            *self.filters).compare(benchmark)
+
         self.response['responses'].append(
             recipe.render(flavor='single_benchmark'))
+        print 'Ms: ',current_milli_time() - start
+
+
+class FreeFormV3Service1(CensusService):
+    def build_response(self):
+        start = current_milli_time()
+        self.metrics = ('pctfemale', )
+        self.dimensions = ('state',)
+        recipe = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions).limit(1).apply_global_filters(False)
+        self.response['responses'].append(recipe.render())
+        print 'Ms: ',current_milli_time() - start
+
+
+class FreeFormV3Service2(CensusService):
+    def build_response(self):
+        start = current_milli_time()
+
+        data = {'name': 'Jason', 'pastry': 'cookies'}
+
+        response = self.response_template()
+        response['data'][0]['values'].append(data)
+
+        self.response['responses'].append(response)
+        print 'Ms: ',current_milli_time() - start
 
