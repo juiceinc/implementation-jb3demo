@@ -211,3 +211,10 @@ slices:
   config:
     "cardTemplateName": "#card-template"
   data_service: "sample-card.json"
+
+- slice_type: "card"
+  slug: "jam-card1"
+  title: "Card"
+  config:
+    "cardTemplateName": "#jam-card-template"
+  data_service: "censusv2service.CardV3Service2"

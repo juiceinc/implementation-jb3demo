@@ -273,7 +273,7 @@ class LollipopV3Service(CensusService):
 class FreeFormV3Service1(CensusService):
     def build_response(self):
         start = current_milli_time()
-        self.metrics = ('pctfemale', )
+        self.metrics = ('popdiff', )
         self.dimensions = ('state',)
         recipe = self.recipe().metrics(*self.metrics).dimensions(
             *self.dimensions).limit(1).apply_global_filters(False)
@@ -293,3 +293,23 @@ class FreeFormV3Service2(CensusService):
         self.response['responses'].append(response)
         print 'Ms: ',current_milli_time() - start
 
+
+class CardV3Service2(CensusService):
+    def build_response(self):
+        start = current_milli_time()
+
+        self.metrics = ('popdiff',)
+        self.dimensions = ('state',)
+        recipe1 = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions)
+
+        self.dimensions = ('sex', )
+        recipe2 = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions)
+
+        results = RecipePool([
+            (recipe1, 'States'), (recipe2, 'Gender'),
+        ]).run()
+
+        self.response['responses'] = results
+        print 'Ms: ',current_milli_time() - start

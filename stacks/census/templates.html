@@ -56,3 +56,7 @@ The template goes here
   <div class="fr-caption">{{= item.format("score", ',.1f') }} average score</div>
   <div class="fr-caption">{{= item.format("count", ',.0f"pluralize( student, students)"') }}</div>
 </script>
+<script type="text/template" id="jam-card-template">
+  <div class="fr-body2">{{= item.label }}</div>
+  <div class="fr-caption">{{= item.format("popdiff", ',.0f') }} change in population</div>
+</script>
