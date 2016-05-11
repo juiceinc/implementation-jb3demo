@@ -218,3 +218,19 @@ slices:
   config:
     "cardTemplateName": "#jam-card-template"
   data_service: "censusv2service.CardV3Service2"
+
+
+- slice_type: "nine-box"
+  slug: "ninebox"
+  title: "Nine box"
+  config:
+    "axisLabels": [{"labels": ["Low", "Medium", "High"]}, {"labels": ["Slow", "Normal", "Fast"]}]
+    "boxLabels":
+    - "col": 2
+      "position": "ne"
+      "row": 0
+      "text": "Small exposure, but high conversion rate"
+    "sizeMinMax":
+    - 5
+    - 20
+  data_service: "sample-ninebox.json"
