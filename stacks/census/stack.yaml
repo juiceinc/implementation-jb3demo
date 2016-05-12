@@ -105,30 +105,6 @@ slices:
     - "section-content"
   data_service: "censusv2service.RankedListV3Service"
 
-#
-#
-#- slice_type: "lollipop"
-#  slug: "lollipop1"
-#  title: "I am a lollipop"
-#  config:
-#    "groups":
-#      "default":
-#        "max": 100
-#    "minSelections": 1
-#    "showStick": true
-#  data_service: "sample-lollipop.json"
-#
-#- slice_type: "lollipop"
-#  slug: "lollipop2"
-#  title: "I am another lollipop"
-#  config:
-#    "groups":
-#      "default":
-#        "max": 100
-#    "minSelections": 1
-#    "showStick": true
-#  data_service: "sample-lollipop-singledataset.json"
-
 - slice_type: "lollipop"
   slug: "lollipop-jam1"
   title: "JAM lollipop"
@@ -172,46 +148,6 @@ slices:
     contentTemplate: "#jam-free-form2-template"
   data_service: "censusv2service.FreeFormV3Service2"
 
-- slice_type: "free-form"
-  slug: "free-form1"
-  style:
-  - "title-large"
-# bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
-# see https://juiceanalytics.atlassian.net/browse/JB-682 for details
-  bare: true
-  mixins:
-  - options: {}
-    target: "view"
-    class: "WithNoData"
-  config:
-    baseTemplateName: "#base-slice-bare-template"
-    contentTemplate: "#free-form1-template"
-  data_service: "sample-free-form.json"
-
-- slice_type: "free-form"
-  slug: "free-form2"
-  style:
-  - "title-large"
-# bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
-# see https://juiceanalytics.atlassian.net/browse/JB-682 for details
-  bare: true
-  mixins:
-  - options: {}
-    target: "view"
-    class: "WithNoData"
-  config:
-    baseTemplateName: "#base-slice-bare-template"
-    contentTemplate: "#free-form2-template"
-  data_service: "sample-free-form.json"
-
-
-- slice_type: "card"
-  slug: "card1"
-  title: "Card"
-  config:
-    "cardTemplateName": "#card-template"
-  data_service: "sample-card.json"
-
 - slice_type: "card"
   slug: "jam-card1"
   title: "Card"
@@ -230,7 +166,4 @@ slices:
       "position": "ne"
       "row": 0
       "text": "Small exposure, but high conversion rate"
-    "sizeMinMax":
-    - 5
-    - 20
-  data_service: "sample-ninebox.json"
+  data_service: "censusv2service.NineBoxV3Service"

@@ -313,3 +313,16 @@ class CardV3Service2(CensusService):
 
         self.response['responses'] = results
         print 'Ms: ',current_milli_time() - start
+
+
+class NineBoxV3Service(CensusService):
+    def build_response(self):
+        start = current_milli_time()
+
+        self.metrics = ('popdiff', 'pctfemale')
+        self.dimensions = ('state',)
+        recipe = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions).apply_global_filters(False)
+
+        self.response['responses'].append(recipe.render())
+        print 'Ms: ',current_milli_time() - start
