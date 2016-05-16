@@ -153,7 +153,6 @@ class CensusService(RecipeServiceBaseV3):
 
     # Automatic filter keys are used for the global filters as well
     automatic_filter_keys = ('sex', 'state',)
-    default_metric = 'pop2000'
 
     def __init__(self, *args, **kwargs):
         super(CensusService, self).__init__(*args, **kwargs)
@@ -166,7 +165,7 @@ class CensusService(RecipeServiceBaseV3):
 
 class FilterService(CensusService):
     def build_response(self):
-        self.metrics = [self.default_metric]
+        self.metrics = ('pop2000', )
         recipes = []
         for dim in self.automatic_filter_keys:
             recipe = self.recipe().metrics(*self.metrics).dimensions(dim)
@@ -187,7 +186,9 @@ class FirstChooserV3Service(CensusService):
 
 class SecondChooserV3Service(CensusService):
     def build_response(self):
+        print 'Metrics: ',self.metrics
         start = current_milli_time()
+        self.metrics = ('pop2000', )
         self.dimensions = ('sex',)
         recipe = self.recipe().dimensions(
             *self.dimensions).metrics(*self.metrics)
@@ -198,6 +199,7 @@ class SecondChooserV3Service(CensusService):
 class DistributionV3Service(CensusService):
     def build_response(self):
         start = current_milli_time()
+        self.metrics = ('pop2000', )
         self.dimensions = ['age_bands', 'age']
         recipe1 = self.recipe().dimensions(*self.dimensions) \
             .metrics(*self.metrics).order_by(*self.dimensions).filters(
