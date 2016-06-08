@@ -84,18 +84,18 @@ slices:
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
   data_service: "censusv2service.DistributionV3Service"
 
-- slice_type: "details-table"
-  slug: "table23"
-  # The title line for the slice.
-  title: "Details table2"
-  # Detailed configuration for the slice.
-  config:
-    "name_field": "state"
-    "slickgrid_id_field": "row_id"
-  # Provides data to the slice
-  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
-  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-  data_service: "censusv2service.TableV3Service"
+#- slice_type: "details-table"
+#  slug: "table23"
+#  # The title line for the slice.
+#  title: "Details table2"
+#  # Detailed configuration for the slice.
+#  config:
+#    "name_field": "state"
+#    "slickgrid_id_field": "row_id"
+#  # Provides data to the slice
+#  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
+#  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
+#  data_service: "censusv2service.TableV3Service"
 - slice_type: "ranked-list"
   slug: "COOKIES"
   title: "Here's a breakout of your responses."
@@ -167,3 +167,63 @@ slices:
       "row": 0
       "text": "Small exposure, but high conversion rate"
   data_service: "censusv2service.NineBoxV3Service"
+
+- slice_type: "keymetrics-hierarchy"
+  slug: "keymetrics-hierarchy"
+  title: "Key Metrics Hierarchy"
+  config:
+    margin:
+      top: 60
+      right: 80
+      left: 20
+      bottom: 100
+  data_service: "sample-keymetricshierarchy.json"
+
+- slice_type: "leaderboard"
+  slug: "leaderboard"
+  title: "Leaderboard"
+  data_service: "sample-leaderboard.json"
+
+- slice_type: "map"
+  slug: "map"
+  title: "Map"
+  data_service: "sample-map.json"
+
+- slice_type: "matchup"
+  slug: "matchup"
+  title: "matchup"
+  data_service: "sample-matchup.json"
+
+- slice_type: "trend"
+  slug: "trend"
+  title: "trend"
+  data_service: "sample-trend.json"
+
+- slice_type: "vega"
+  slug: "vega"
+  title: "vega"
+  data_service: "sample-vega.json"
+
+- slice_type: "orbit"
+  slug: "orbit"
+  title: "orbit"
+  config:
+    "minSelections": 1
+    "sizeField": "employees"
+    "sizeRange": [30,200]
+    "colorField": "value"
+    "colorRange": ["#d7191c","#ffffcf","#36A556"]
+  data_service: "sample-orbit.json"
+
+
+- slice_type: "sankey"
+  slug: "sankey"
+  title: "Sankey"
+  config:
+    "colorMap":
+      "Better Than": "#97cc58"
+      "Same As": "#ccc"
+      "Worse Than": "#ff7e79"
+  data_service: "sample-sankey.json"
+
+
