@@ -1,0 +1,75 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "first",
+      "config": {"titleTemplate": "Slice with dataset 1"},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+              {
+                "range": [
+                  "2013-01-02",
+                  "2014-01-02"
+                ],
+                "label": "Last Year",
+                "selected": true,
+                "group_by_types": [
+                  "start_date",
+                  "end_date"
+                ]
+              },
+              {
+                "range": [
+                  "2014-10-22",
+                  "2014-10-28"
+                ],
+                "label": "LastWeek",
+                "selected": false,
+                "group_by_types": [
+                  "start_date",
+                  "end_date"
+                ]
+              }
+            ]
+        }
+      ]
+    },
+    {
+      "name": "second",
+      "config": {"titleTemplate": "Slice with dataset 2"},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+              {
+                "range": [
+                  "2013-01-02",
+                  "2014-01-02"
+                ],
+                "label": "Last Year",
+                "selected": true,
+                "group_by_types": [
+                  "start_date",
+                  "end_date"
+                ]
+              },
+              {
+                "range": [
+                  "2014-10-22",
+                  "2014-10-28"
+                ],
+                "label": "LastWeek",
+                "selected": false,
+                "group_by_types": [
+                  "start_date",
+                  "end_date"
+                ]
+              }
+            ]
+        }
+      ]
+    }
+  ]
+}

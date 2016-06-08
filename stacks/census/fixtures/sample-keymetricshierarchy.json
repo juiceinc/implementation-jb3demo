@@ -1,0 +1,278 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "first",
+      "config": {"titleTemplate": "Slice with dataset 1"},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+              {
+                "definition": "This score is based on mean compression depth and rate, full release of compressions, the correct number of compressions per cycle, hand placement, length of interruptions, mean ventilation volume and rate, and the correct number of 30:2 cycles, as directed.  These are weighted to approximate their relative contribution to clinical outcomes, where supported by research data.  PASS = 75% or greater.",
+                "goal": {
+                  "buffer": 5.0,
+                  "max": 100.0,
+                  "type": "value",
+                  "min": 80.0
+                },
+                "children": [
+                  {
+                    "definition": "This score is based on mean compression depth and rate, full release of compressions, hand placement, and for CPR exercises, length of interruptions and the correct number of 30:2 cycles, as directed.  These are weighted to approximate their relative contribution to clinical outcomes, where supported by research data.  PASS = 75% or greater. ",
+                    "goal": {
+                      "buffer": 10.0,
+                      "max": 100.0,
+                      "type": "value",
+                      "min": 80.0
+                    },
+                    "children": [
+                      {
+                        "definition": "The average depth of all compressions performed.",
+                        "goal": {
+                          "buffer": 4.0,
+                          "max": 70.0,
+                          "type": "value",
+                          "min": 45.0
+                        },
+                        "children": [
+
+                        ],
+                        "label": "Mean Depth (mm)",
+                        "formatStr": ".1f",
+                        "value": 55.489614243323444,
+                        "group_by_type": "squid_id", "id": "comp_mean_depth"
+                      },
+                      {
+                        "definition": "The average rate at which compressions were delivered during relevant segments of this exercise. ",
+                        "goal": {
+                          "buffer": 10.0,
+                          "max": 120.0,
+                          "type": "value",
+                          "min": 100.0
+                        },
+                        "children": [
+
+                        ],
+                        "label": "Mean Rate (cpm)",
+                        "formatStr": ".1f",
+                        "value": 108.10979228486647,
+                        "group_by_type": "squid_id", "id": "comp_mean_rate"
+                      },
+                      {
+                        "definition": "The percentage of compressions that were delivered at or beyond the target depth.",
+                        "goal": {
+                          "buffer": 5.0,
+                          "max": 100.0,
+                          "type": "value",
+                          "min": 80.0
+                        },
+                        "children": [
+
+                        ],
+                        "label": "Correct Depth (%)",
+                        "formatStr": ".1f",
+                        "value": 96.84569732937686,
+                        "group_by_type": "squid_id", "id": "comp_correct_depth_percentage"
+                      },
+                      {
+                        "definition": "The percentage of compressions that were delivered within the recommended range of effective compression rates.",
+                        "goal": {
+                          "buffer": 5.0,
+                          "max": 100.0,
+                          "type": "value",
+                          "min": 80.0
+                        },
+                        "children": [
+
+                        ],
+                        "label": "Correct Rate (%)",
+                        "formatStr": ".1f",
+                        "value": 87.73590504451039,
+                        "group_by_type": "squid_id", "id": "comp_correct_rate_percentage"
+                      },
+                      {
+                        "definition": "The percentage of compressions that were delivered with full release of the chest (without \"\"leaning\"\").",
+                        "goal": {
+                          "buffer": 5.0,
+                          "max": 100.0,
+                          "type": "value",
+                          "min": 75.0
+                        },
+                        "children": [
+
+                        ],
+                        "label": "Full Release (%)",
+                        "formatStr": ".1f",
+                        "value": 98.75370919881306,
+                        "group_by_type": "squid_id", "id": "comp_correct_release_percentage"
+                      },
+                      {
+                        "definition": "The percentage of time during the exercise when compressions were being delivered.",
+                        "goal": {
+                          "buffer": 5.0,
+                          "max": 100.0,
+                          "type": "value",
+                          "min": 75.0
+                        },
+                        "children": [
+
+                        ],
+                        "label": "Flow Fraction (%)",
+                        "formatStr": ".1f",
+                        "value": 98.18100890207715,
+                        "group_by_type": "squid_id", "id": "flow_time_percentage"
+                      }
+                    ],
+                    "label": "Compression Score (%)",
+                    "formatStr": ".1f",
+                    "value": 96.41246290801188,
+                    "group_by_type": "squid_id", "id": "overall_comp_score"
+                  },
+                  {
+                    "definition": "This score is based on mean ventilation volume and rate.  These are weighted to approximate their relative contribution to clinical outcomes, where supported by research data.  PASS = 75% or greater.",
+                    "goal": {
+                      "buffer": 5.0,
+                      "max": 100.0,
+                      "type": "value",
+                      "min": 80.0
+                    },
+                    "children": [
+                      {
+                        "definition": "The average volume of all ventilations detected.",
+                        "goal": {
+                          "buffer": 20.0,
+                          "max": 700.0,
+                          "type": "value",
+                          "min": 400.0
+                        },
+                        "children": [
+
+                        ],
+                        "label": "Mean Volume (ml)",
+                        "formatStr": ".1f",
+                        "value": 522.593471810089,
+                        "group_by_type": "squid_id", "id": "vent_mean_volume"
+                      },
+                      {
+                        "definition": "The average rate per minute at which ventilations were deliverd over the duration of this exercise.",
+                        "goal": {
+                          "buffer": 2.0,
+                          "max": 6.0,
+                          "type": "value",
+                          "min": 4.0
+                        },
+                        "children": [
+
+                        ],
+                        "label": "Mean Rate (vpm)",
+                        "formatStr": ".1f",
+                        "value": 6.094955489614243,
+                        "group_by_type": "squid_id", "id": "vent_mean_rate"
+                      },
+                      {
+                        "definition": "The percentage of ventilations that were delivered within the recommended range of volumes.",
+                        "goal": {
+                          "buffer": 5.0,
+                          "max": 100.0,
+                          "type": "value",
+                          "min": 80.0
+                        },
+                        "children": [
+
+                        ],
+                        "label": "Correct Volume (%)",
+                        "formatStr": ".1f",
+                        "value": 63.0,
+                        "group_by_type": "squid_id", "id": "vent_correct_volume_percentage"
+                      }
+                    ],
+                    "label": "Ventilation Score (%)",
+                    "formatStr": ".1f",
+                    "value": 93.23738872403561,
+                    "group_by_type": "squid_id", "id": "vent_overall_score"
+                  }
+                ],
+                "label": "Overall Score (%)",
+                "formatStr": ".1f",
+                "value": 91.77744807121661,
+                "group_by_type": "squid_id", "id": "overall_score"
+              }
+            ]
+        }
+      ]
+    },
+    {
+      "name": "second",
+      "config": {"titleTemplate": "Slice with dataset 2"},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+              {
+                "definition": "This score is based on mean compression depth and rate, full release of compressions, the correct number of compressions per cycle, hand placement, length of interruptions, mean ventilation volume and rate, and the correct number of 30:2 cycles, as directed.  These are weighted to approximate their relative contribution to clinical outcomes, where supported by research data.  PASS = 75% or greater.",
+                "goal": {
+                  "buffer": 5.0,
+                  "max": 100.0,
+                  "type": "value",
+                  "min": 80.0
+                },
+                "children": [
+                  {
+                    "definition": "This score is based on mean ventilation volume and rate.  These are weighted to approximate their relative contribution to clinical outcomes, where supported by research data.  PASS = 75% or greater.",
+                    "goal": {
+                      "buffer": 5.0,
+                      "max": 100.0,
+                      "type": "value",
+                      "min": 80.0
+                    },
+                    "children": [
+                      {
+                        "definition": "The average volume of all ventilations detected.",
+                        "goal": {
+                          "buffer": 20.0,
+                          "max": 700.0,
+                          "type": "value",
+                          "min": 400.0
+                        },
+                        "children": [
+
+                        ],
+                        "label": "Mean Volume (ml)",
+                        "formatStr": ".1f",
+                        "value": 522.593471810089,
+                        "group_by_type": "squid_id", "id": "vent_mean_volume"
+                      },
+                      {
+                        "definition": "The percentage of ventilations that were delivered within the recommended range of volumes.",
+                        "goal": {
+                          "buffer": 5.0,
+                          "max": 100.0,
+                          "type": "value",
+                          "min": 80.0
+                        },
+                        "children": [
+
+                        ],
+                        "label": "Correct Volume (%)",
+                        "formatStr": ".1f",
+                        "value": 63.0,
+                        "group_by_type": "squid_id", "id": "vent_correct_volume_percentage"
+                      }
+                    ],
+                    "label": "Ventilation Score (%)",
+                    "formatStr": ".1f",
+                    "value": 93.23738872403561,
+                    "group_by_type": "squid_id", "id": "vent_overall_score"
+                  }
+                ],
+                "label": "Overall Score (%)",
+                "formatStr": ".1f",
+                "value": 91.77744807121661,
+                "group_by_type": "squid_id", "id": "overall_score"
+              }
+            ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3887 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "first",
+      "config": {"titleTemplate": "Matchup  with dataset 1", "averageTitle": "HealthStream average","differenceThreshold": 0.5},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+  {
+    "id": 0,
+    "name": "label-0",
+    "label": "label-0",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 13
+  },
+  {
+    "id": 1,
+    "name": "label-1",
+    "label": "label-1",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 14
+  },
+  {
+    "id": 2,
+    "name": "label-2",
+    "label": "label-2",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 19
+  },
+  {
+    "id": 3,
+    "name": "label-3",
+    "label": "label-3",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 10
+  },
+  {
+    "id": 4,
+    "name": "label-4",
+    "label": "label-4",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 12
+  },
+  {
+    "id": 5,
+    "name": "label-5",
+    "label": "label-5",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 13
+  },
+  {
+    "id": 6,
+    "name": "label-6",
+    "label": "label-6",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 16
+  },
+  {
+    "id": 7,
+    "name": "label-7",
+    "label": "label-7",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 14
+  },
+  {
+    "id": 8,
+    "name": "label-8",
+    "label": "label-8",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 14
+  },
+  {
+    "id": 9,
+    "name": "label-9",
+    "label": "label-9",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 10
+  },
+  {
+    "id": 10,
+    "name": "label-10",
+    "label": "label-10",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 17
+  },
+  {
+    "id": 11,
+    "name": "label-11",
+    "label": "label-11",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 16
+  },
+  {
+    "id": 12,
+    "name": "label-12",
+    "label": "label-12",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 12
+  },
+  {
+    "id": 13,
+    "name": "label-13",
+    "label": "label-13",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 15
+  },
+  {
+    "id": 14,
+    "name": "label-14",
+    "label": "label-14",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 16
+  },
+  {
+    "id": 15,
+    "name": "label-15",
+    "label": "label-15",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 16
+  },
+  {
+    "id": 16,
+    "name": "label-16",
+    "label": "label-16",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 14
+  },
+  {
+    "id": 17,
+    "name": "label-17",
+    "label": "label-17",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 14
+  },
+  {
+    "id": 18,
+    "name": "label-18",
+    "label": "label-18",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 13
+  },
+  {
+    "id": 19,
+    "name": "label-19",
+    "label": "label-19",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 16
+  },
+  {
+    "id": 20,
+    "name": "label-20",
+    "label": "label-20",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 18
+  },
+  {
+    "id": 21,
+    "name": "label-21",
+    "label": "label-21",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 15
+  },
+  {
+    "id": 22,
+    "name": "label-22",
+    "label": "label-22",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 17
+  },
+  {
+    "id": 23,
+    "name": "label-23",
+    "label": "label-23",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 19
+  },
+  {
+    "id": 24,
+    "name": "label-24",
+    "label": "label-24",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 11
+  },
+  {
+    "id": 25,
+    "name": "label-25",
+    "label": "label-25",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 19
+  },
+  {
+    "id": 26,
+    "name": "label-26",
+    "label": "label-26",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 14
+  },
+  {
+    "id": 27,
+    "name": "label-27",
+    "label": "label-27",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 16
+  },
+  {
+    "id": 28,
+    "name": "label-28",
+    "label": "label-28",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 14
+  },
+  {
+    "id": 29,
+    "name": "label-29",
+    "label": "label-29",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 19
+  },
+  {
+    "id": 30,
+    "name": "label-30",
+    "label": "label-30",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 15
+  },
+  {
+    "id": 31,
+    "name": "label-31",
+    "label": "label-31",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 14
+  },
+  {
+    "id": 32,
+    "name": "label-32",
+    "label": "label-32",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 17
+  },
+  {
+    "id": 33,
+    "name": "label-33",
+    "label": "label-33",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 18
+  },
+  {
+    "id": 34,
+    "name": "label-34",
+    "label": "label-34",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 11
+  },
+  {
+    "id": 35,
+    "name": "label-35",
+    "label": "label-35",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 17
+  },
+  {
+    "id": 36,
+    "name": "label-36",
+    "label": "label-36",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 18
+  },
+  {
+    "id": 37,
+    "name": "label-37",
+    "label": "label-37",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 17
+  },
+  {
+    "id": 38,
+    "name": "label-38",
+    "label": "label-38",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 16
+  },
+  {
+    "id": 39,
+    "name": "label-39",
+    "label": "label-39",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 10
+  },
+  {
+    "id": 40,
+    "name": "label-40",
+    "label": "label-40",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 12
+  },
+  {
+    "id": 41,
+    "name": "label-41",
+    "label": "label-41",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 14
+  },
+  {
+    "id": 42,
+    "name": "label-42",
+    "label": "label-42",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 11
+  },
+  {
+    "id": 43,
+    "name": "label-43",
+    "label": "label-43",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 10
+  },
+  {
+    "id": 44,
+    "name": "label-44",
+    "label": "label-44",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 16
+  },
+  {
+    "id": 45,
+    "name": "label-45",
+    "label": "label-45",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 15
+  },
+  {
+    "id": 46,
+    "name": "label-46",
+    "label": "label-46",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 10
+  },
+  {
+    "id": 47,
+    "name": "label-47",
+    "label": "label-47",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 15
+  },
+  {
+    "id": 48,
+    "name": "label-48",
+    "label": "label-48",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 13
+  },
+  {
+    "id": 49,
+    "name": "label-49",
+    "label": "label-49",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 13
+  },
+  {
+    "id": 50,
+    "name": "label-50",
+    "label": "label-50",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 10
+  },
+  {
+    "id": 51,
+    "name": "label-51",
+    "label": "label-51",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 15
+  },
+  {
+    "id": 52,
+    "name": "label-52",
+    "label": "label-52",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 18
+  },
+  {
+    "id": 53,
+    "name": "label-53",
+    "label": "label-53",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 18
+  },
+  {
+    "id": 54,
+    "name": "label-54",
+    "label": "label-54",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 11
+  },
+  {
+    "id": 55,
+    "name": "label-55",
+    "label": "label-55",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 17
+  },
+  {
+    "id": 56,
+    "name": "label-56",
+    "label": "label-56",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 11
+  },
+  {
+    "id": 57,
+    "name": "label-57",
+    "label": "label-57",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 17
+  },
+  {
+    "id": 58,
+    "name": "label-58",
+    "label": "label-58",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 15
+  },
+  {
+    "id": 59,
+    "name": "label-59",
+    "label": "label-59",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 15
+  },
+  {
+    "id": 60,
+    "name": "label-60",
+    "label": "label-60",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 18
+  },
+  {
+    "id": 61,
+    "name": "label-61",
+    "label": "label-61",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 16
+  },
+  {
+    "id": 62,
+    "name": "label-62",
+    "label": "label-62",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 16
+  },
+  {
+    "id": 63,
+    "name": "label-63",
+    "label": "label-63",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 15
+  },
+  {
+    "id": 64,
+    "name": "label-64",
+    "label": "label-64",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 18
+  },
+  {
+    "id": 65,
+    "name": "label-65",
+    "label": "label-65",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 14
+  },
+  {
+    "id": 66,
+    "name": "label-66",
+    "label": "label-66",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 17
+  },
+  {
+    "id": 67,
+    "name": "label-67",
+    "label": "label-67",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 13
+  },
+  {
+    "id": 68,
+    "name": "label-68",
+    "label": "label-68",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 10
+  },
+  {
+    "id": 69,
+    "name": "label-69",
+    "label": "label-69",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 16
+  },
+  {
+    "id": 70,
+    "name": "label-70",
+    "label": "label-70",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 11
+  },
+  {
+    "id": 71,
+    "name": "label-71",
+    "label": "label-71",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 11
+  },
+  {
+    "id": 72,
+    "name": "label-72",
+    "label": "label-72",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 11
+  },
+  {
+    "id": 73,
+    "name": "label-73",
+    "label": "label-73",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 19
+  },
+  {
+    "id": 74,
+    "name": "label-74",
+    "label": "label-74",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 14
+  },
+  {
+    "id": 75,
+    "name": "label-75",
+    "label": "label-75",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 16
+  },
+  {
+    "id": 76,
+    "name": "label-76",
+    "label": "label-76",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 19
+  },
+  {
+    "id": 77,
+    "name": "label-77",
+    "label": "label-77",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 16
+  },
+  {
+    "id": 78,
+    "name": "label-78",
+    "label": "label-78",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 14
+  },
+  {
+    "id": 79,
+    "name": "label-79",
+    "label": "label-79",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 18
+  },
+  {
+    "id": 80,
+    "name": "label-80",
+    "label": "label-80",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 15
+  },
+  {
+    "id": 81,
+    "name": "label-81",
+    "label": "label-81",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 12
+  },
+  {
+    "id": 82,
+    "name": "label-82",
+    "label": "label-82",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 11
+  },
+  {
+    "id": 83,
+    "name": "label-83",
+    "label": "label-83",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 10
+  },
+  {
+    "id": 84,
+    "name": "label-84",
+    "label": "label-84",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 10
+  },
+  {
+    "id": 85,
+    "name": "label-85",
+    "label": "label-85",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 10
+  },
+  {
+    "id": 86,
+    "name": "label-86",
+    "label": "label-86",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 18
+  },
+  {
+    "id": 87,
+    "name": "label-87",
+    "label": "label-87",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 13
+  },
+  {
+    "id": 88,
+    "name": "label-88",
+    "label": "label-88",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 19
+  },
+  {
+    "id": 89,
+    "name": "label-89",
+    "label": "label-89",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 19
+  },
+  {
+    "id": 90,
+    "name": "label-90",
+    "label": "label-90",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 10
+  },
+  {
+    "id": 91,
+    "name": "label-91",
+    "label": "label-91",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 15
+  },
+  {
+    "id": 92,
+    "name": "label-92",
+    "label": "label-92",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 13
+  },
+  {
+    "id": 93,
+    "name": "label-93",
+    "label": "label-93",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 12
+  },
+  {
+    "id": 94,
+    "name": "label-94",
+    "label": "label-94",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 19
+  },
+  {
+    "id": 95,
+    "name": "label-95",
+    "label": "label-95",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 16
+  },
+  {
+    "id": 96,
+    "name": "label-96",
+    "label": "label-96",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 19
+  },
+  {
+    "id": 97,
+    "name": "label-97",
+    "label": "label-97",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 18
+  },
+  {
+    "id": 98,
+    "name": "label-98",
+    "label": "label-98",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 15
+  },
+  {
+    "id": 99,
+    "name": "label-99",
+    "label": "label-99",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 18
+  },
+  {
+    "id": 100,
+    "name": "label-100",
+    "label": "label-100",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 11
+  },
+  {
+    "id": 101,
+    "name": "label-101",
+    "label": "label-101",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 18
+  },
+  {
+    "id": 102,
+    "name": "label-102",
+    "label": "label-102",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 11
+  },
+  {
+    "id": 103,
+    "name": "label-103",
+    "label": "label-103",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 15
+  },
+  {
+    "id": 104,
+    "name": "label-104",
+    "label": "label-104",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 18
+  },
+  {
+    "id": 105,
+    "name": "label-105",
+    "label": "label-105",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 10
+  },
+  {
+    "id": 106,
+    "name": "label-106",
+    "label": "label-106",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 13
+  },
+  {
+    "id": 107,
+    "name": "label-107",
+    "label": "label-107",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 15
+  },
+  {
+    "id": 108,
+    "name": "label-108",
+    "label": "label-108",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 16
+  },
+  {
+    "id": 109,
+    "name": "label-109",
+    "label": "label-109",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 14
+  },
+  {
+    "id": 110,
+    "name": "label-110",
+    "label": "label-110",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 12
+  },
+  {
+    "id": 111,
+    "name": "label-111",
+    "label": "label-111",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 12
+  },
+  {
+    "id": 112,
+    "name": "label-112",
+    "label": "label-112",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 18
+  },
+  {
+    "id": 113,
+    "name": "label-113",
+    "label": "label-113",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 12
+  },
+  {
+    "id": 114,
+    "name": "label-114",
+    "label": "label-114",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 17
+  },
+  {
+    "id": 115,
+    "name": "label-115",
+    "label": "label-115",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 17
+  },
+  {
+    "id": 116,
+    "name": "label-116",
+    "label": "label-116",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 13
+  },
+  {
+    "id": 117,
+    "name": "label-117",
+    "label": "label-117",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 11
+  },
+  {
+    "id": 118,
+    "name": "label-118",
+    "label": "label-118",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 13
+  },
+  {
+    "id": 119,
+    "name": "label-119",
+    "label": "label-119",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 14
+  },
+  {
+    "id": 120,
+    "name": "label-120",
+    "label": "label-120",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 14
+  },
+  {
+    "id": 121,
+    "name": "label-121",
+    "label": "label-121",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 14
+  },
+  {
+    "id": 122,
+    "name": "label-122",
+    "label": "label-122",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 11
+  },
+  {
+    "id": 123,
+    "name": "label-123",
+    "label": "label-123",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 18
+  },
+  {
+    "id": 124,
+    "name": "label-124",
+    "label": "label-124",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 15
+  },
+  {
+    "id": 125,
+    "name": "label-125",
+    "label": "label-125",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 17
+  },
+  {
+    "id": 126,
+    "name": "label-126",
+    "label": "label-126",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 19
+  },
+  {
+    "id": 127,
+    "name": "label-127",
+    "label": "label-127",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 16
+  },
+  {
+    "id": 128,
+    "name": "label-128",
+    "label": "label-128",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 17
+  },
+  {
+    "id": 129,
+    "name": "label-129",
+    "label": "label-129",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 16
+  },
+  {
+    "id": 130,
+    "name": "label-130",
+    "label": "label-130",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 12
+  },
+  {
+    "id": 131,
+    "name": "label-131",
+    "label": "label-131",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 14
+  },
+  {
+    "id": 132,
+    "name": "label-132",
+    "label": "label-132",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 16
+  },
+  {
+    "id": 133,
+    "name": "label-133",
+    "label": "label-133",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 15
+  },
+  {
+    "id": 134,
+    "name": "label-134",
+    "label": "label-134",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 19
+  },
+  {
+    "id": 135,
+    "name": "label-135",
+    "label": "label-135",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 18
+  },
+  {
+    "id": 136,
+    "name": "label-136",
+    "label": "label-136",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 18
+  },
+  {
+    "id": 137,
+    "name": "label-137",
+    "label": "label-137",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 14
+  },
+  {
+    "id": 138,
+    "name": "label-138",
+    "label": "label-138",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 11
+  },
+  {
+    "id": 139,
+    "name": "label-139",
+    "label": "label-139",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 15
+  },
+  {
+    "id": 140,
+    "name": "label-140",
+    "label": "label-140",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 16
+  },
+  {
+    "id": 141,
+    "name": "label-141",
+    "label": "label-141",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 13
+  },
+  {
+    "id": 142,
+    "name": "label-142",
+    "label": "label-142",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 13
+  },
+  {
+    "id": 143,
+    "name": "label-143",
+    "label": "label-143",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 13
+  },
+  {
+    "id": 144,
+    "name": "label-144",
+    "label": "label-144",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 11
+  },
+  {
+    "id": 145,
+    "name": "label-145",
+    "label": "label-145",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 19
+  },
+  {
+    "id": 146,
+    "name": "label-146",
+    "label": "label-146",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 10
+  },
+  {
+    "id": 147,
+    "name": "label-147",
+    "label": "label-147",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 17
+  },
+  {
+    "id": 148,
+    "name": "label-148",
+    "label": "label-148",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 15
+  },
+  {
+    "id": 149,
+    "name": "label-149",
+    "label": "label-149",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 19
+  },
+  {
+    "id": 150,
+    "name": "label-150",
+    "label": "label-150",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 16
+  },
+  {
+    "id": 151,
+    "name": "label-151",
+    "label": "label-151",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 19
+  },
+  {
+    "id": 152,
+    "name": "label-152",
+    "label": "label-152",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 10
+  },
+  {
+    "id": 153,
+    "name": "label-153",
+    "label": "label-153",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 19
+  },
+  {
+    "id": 154,
+    "name": "label-154",
+    "label": "label-154",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 19
+  },
+  {
+    "id": 155,
+    "name": "label-155",
+    "label": "label-155",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 18
+  },
+  {
+    "id": 156,
+    "name": "label-156",
+    "label": "label-156",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 17
+  },
+  {
+    "id": 157,
+    "name": "label-157",
+    "label": "label-157",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 17
+  },
+  {
+    "id": 158,
+    "name": "label-158",
+    "label": "label-158",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 13
+  },
+  {
+    "id": 159,
+    "name": "label-159",
+    "label": "label-159",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 18
+  },
+  {
+    "id": 160,
+    "name": "label-160",
+    "label": "label-160",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 11
+  },
+  {
+    "id": 161,
+    "name": "label-161",
+    "label": "label-161",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 10
+  },
+  {
+    "id": 162,
+    "name": "label-162",
+    "label": "label-162",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 15
+  },
+  {
+    "id": 163,
+    "name": "label-163",
+    "label": "label-163",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 12
+  },
+  {
+    "id": 164,
+    "name": "label-164",
+    "label": "label-164",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 13
+  },
+  {
+    "id": 165,
+    "name": "label-165",
+    "label": "label-165",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 14
+  },
+  {
+    "id": 166,
+    "name": "label-166",
+    "label": "label-166",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 18
+  },
+  {
+    "id": 167,
+    "name": "label-167",
+    "label": "label-167",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 14
+  },
+  {
+    "id": 168,
+    "name": "label-168",
+    "label": "label-168",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 10
+  },
+  {
+    "id": 169,
+    "name": "label-169",
+    "label": "label-169",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 10
+  },
+  {
+    "id": 170,
+    "name": "label-170",
+    "label": "label-170",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 12
+  },
+  {
+    "id": 171,
+    "name": "label-171",
+    "label": "label-171",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 18
+  },
+  {
+    "id": 172,
+    "name": "label-172",
+    "label": "label-172",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 12
+  },
+  {
+    "id": 173,
+    "name": "label-173",
+    "label": "label-173",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 16
+  },
+  {
+    "id": 174,
+    "name": "label-174",
+    "label": "label-174",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 17
+  },
+  {
+    "id": 175,
+    "name": "label-175",
+    "label": "label-175",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 16
+  },
+  {
+    "id": 176,
+    "name": "label-176",
+    "label": "label-176",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 10
+  },
+  {
+    "id": 177,
+    "name": "label-177",
+    "label": "label-177",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 11
+  },
+  {
+    "id": 178,
+    "name": "label-178",
+    "label": "label-178",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 15
+  },
+  {
+    "id": 179,
+    "name": "label-179",
+    "label": "label-179",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 19
+  },
+  {
+    "id": 180,
+    "name": "label-180",
+    "label": "label-180",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 10
+  },
+  {
+    "id": 181,
+    "name": "label-181",
+    "label": "label-181",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 12
+  },
+  {
+    "id": 182,
+    "name": "label-182",
+    "label": "label-182",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 14
+  },
+  {
+    "id": 183,
+    "name": "label-183",
+    "label": "label-183",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 17
+  },
+  {
+    "id": 184,
+    "name": "label-184",
+    "label": "label-184",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 13
+  },
+  {
+    "id": 185,
+    "name": "label-185",
+    "label": "label-185",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 10
+  },
+  {
+    "id": 186,
+    "name": "label-186",
+    "label": "label-186",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 10
+  },
+  {
+    "id": 187,
+    "name": "label-187",
+    "label": "label-187",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 15
+  },
+  {
+    "id": 188,
+    "name": "label-188",
+    "label": "label-188",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 17
+  },
+  {
+    "id": 189,
+    "name": "label-189",
+    "label": "label-189",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 15
+  },
+  {
+    "id": 190,
+    "name": "label-190",
+    "label": "label-190",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 17
+  },
+  {
+    "id": 191,
+    "name": "label-191",
+    "label": "label-191",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 17
+  },
+  {
+    "id": 192,
+    "name": "label-192",
+    "label": "label-192",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 16
+  },
+  {
+    "id": 193,
+    "name": "label-193",
+    "label": "label-193",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 19
+  },
+  {
+    "id": 194,
+    "name": "label-194",
+    "label": "label-194",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 11
+  },
+  {
+    "id": 195,
+    "name": "label-195",
+    "label": "label-195",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 18
+  },
+  {
+    "id": 196,
+    "name": "label-196",
+    "label": "label-196",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 17
+  },
+  {
+    "id": 197,
+    "name": "label-197",
+    "label": "label-197",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 16
+  },
+  {
+    "id": 198,
+    "name": "label-198",
+    "label": "label-198",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 14
+  },
+  {
+    "id": 199,
+    "name": "label-199",
+    "label": "label-199",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 15
+  },
+  {
+    "id": 200,
+    "name": "label-200",
+    "label": "label-200",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 16
+  },
+  {
+    "id": 201,
+    "name": "label-201",
+    "label": "label-201",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 19
+  },
+  {
+    "id": 202,
+    "name": "label-202",
+    "label": "label-202",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 19
+  },
+  {
+    "id": 203,
+    "name": "label-203",
+    "label": "label-203",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 14
+  },
+  {
+    "id": 204,
+    "name": "label-204",
+    "label": "label-204",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 14
+  },
+  {
+    "id": 205,
+    "name": "label-205",
+    "label": "label-205",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 13
+  },
+  {
+    "id": 206,
+    "name": "label-206",
+    "label": "label-206",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 11
+  },
+  {
+    "id": 207,
+    "name": "label-207",
+    "label": "label-207",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 10
+  },
+  {
+    "id": 208,
+    "name": "label-208",
+    "label": "label-208",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 13
+  },
+  {
+    "id": 209,
+    "name": "label-209",
+    "label": "label-209",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 13
+  },
+  {
+    "id": 210,
+    "name": "label-210",
+    "label": "label-210",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 19
+  },
+  {
+    "id": 211,
+    "name": "label-211",
+    "label": "label-211",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 16
+  },
+  {
+    "id": 212,
+    "name": "label-212",
+    "label": "label-212",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 14
+  },
+  {
+    "id": 213,
+    "name": "label-213",
+    "label": "label-213",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 18
+  },
+  {
+    "id": 214,
+    "name": "label-214",
+    "label": "label-214",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 10
+  },
+  {
+    "id": 215,
+    "name": "label-215",
+    "label": "label-215",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 19
+  },
+  {
+    "id": 216,
+    "name": "label-216",
+    "label": "label-216",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 14
+  },
+  {
+    "id": 217,
+    "name": "label-217",
+    "label": "label-217",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 18
+  },
+  {
+    "id": 218,
+    "name": "label-218",
+    "label": "label-218",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 11
+  },
+  {
+    "id": 219,
+    "name": "label-219",
+    "label": "label-219",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 13
+  },
+  {
+    "id": 220,
+    "name": "label-220",
+    "label": "label-220",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 19
+  },
+  {
+    "id": 221,
+    "name": "label-221",
+    "label": "label-221",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 13
+  },
+  {
+    "id": 222,
+    "name": "label-222",
+    "label": "label-222",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 14
+  },
+  {
+    "id": 223,
+    "name": "label-223",
+    "label": "label-223",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 13
+  },
+  {
+    "id": 224,
+    "name": "label-224",
+    "label": "label-224",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 17
+  },
+  {
+    "id": 225,
+    "name": "label-225",
+    "label": "label-225",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 16
+  },
+  {
+    "id": 226,
+    "name": "label-226",
+    "label": "label-226",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 12
+  },
+  {
+    "id": 227,
+    "name": "label-227",
+    "label": "label-227",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 16
+  }
+]
+        }
+      ]
+    },
+    {
+      "name": "second",
+      "config": {"titleTemplate": "Matchup  with dataset 2", "averageTitle": "Somethingelse average","differenceThreshold": 0.5},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+
+  {
+    "id": 84,
+    "name": "label-84",
+    "label": "label-84",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 10
+  },
+  {
+    "id": 85,
+    "name": "label-85",
+    "label": "label-85",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 10
+  },
+  {
+    "id": 86,
+    "name": "label-86",
+    "label": "label-86",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 18
+  },
+  {
+    "id": 87,
+    "name": "label-87",
+    "label": "label-87",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 13
+  },
+  {
+    "id": 88,
+    "name": "label-88",
+    "label": "label-88",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 19
+  },
+  {
+    "id": 89,
+    "name": "label-89",
+    "label": "label-89",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 19
+  },
+  {
+    "id": 90,
+    "name": "label-90",
+    "label": "label-90",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 10
+  },
+  {
+    "id": 91,
+    "name": "label-91",
+    "label": "label-91",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 15
+  },
+  {
+    "id": 92,
+    "name": "label-92",
+    "label": "label-92",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 13
+  },
+  {
+    "id": 93,
+    "name": "label-93",
+    "label": "label-93",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 12
+  },
+  {
+    "id": 94,
+    "name": "label-94",
+    "label": "label-94",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 19
+  },
+  {
+    "id": 95,
+    "name": "label-95",
+    "label": "label-95",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 16
+  },
+  {
+    "id": 96,
+    "name": "label-96",
+    "label": "label-96",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 19
+  },
+  {
+    "id": 97,
+    "name": "label-97",
+    "label": "label-97",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 18
+  },
+  {
+    "id": 98,
+    "name": "label-98",
+    "label": "label-98",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 15
+  },
+  {
+    "id": 99,
+    "name": "label-99",
+    "label": "label-99",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 18
+  },
+  {
+    "id": 100,
+    "name": "label-100",
+    "label": "label-100",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 11
+  },
+  {
+    "id": 101,
+    "name": "label-101",
+    "label": "label-101",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 18
+  },
+  {
+    "id": 102,
+    "name": "label-102",
+    "label": "label-102",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 11
+  },
+  {
+    "id": 103,
+    "name": "label-103",
+    "label": "label-103",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 15
+  },
+  {
+    "id": 104,
+    "name": "label-104",
+    "label": "label-104",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 18
+  },
+  {
+    "id": 105,
+    "name": "label-105",
+    "label": "label-105",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 10
+  },
+  {
+    "id": 106,
+    "name": "label-106",
+    "label": "label-106",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 13
+  },
+  {
+    "id": 107,
+    "name": "label-107",
+    "label": "label-107",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 15
+  },
+  {
+    "id": 108,
+    "name": "label-108",
+    "label": "label-108",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 16
+  },
+  {
+    "id": 109,
+    "name": "label-109",
+    "label": "label-109",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 14
+  },
+  {
+    "id": 110,
+    "name": "label-110",
+    "label": "label-110",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 12
+  },
+  {
+    "id": 111,
+    "name": "label-111",
+    "label": "label-111",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 12
+  },
+  {
+    "id": 112,
+    "name": "label-112",
+    "label": "label-112",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 18
+  },
+  {
+    "id": 113,
+    "name": "label-113",
+    "label": "label-113",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 12
+  },
+  {
+    "id": 114,
+    "name": "label-114",
+    "label": "label-114",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 17
+  },
+  {
+    "id": 115,
+    "name": "label-115",
+    "label": "label-115",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 17
+  },
+  {
+    "id": 116,
+    "name": "label-116",
+    "label": "label-116",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 13
+  },
+  {
+    "id": 117,
+    "name": "label-117",
+    "label": "label-117",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 11
+  },
+  {
+    "id": 118,
+    "name": "label-118",
+    "label": "label-118",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 13
+  },
+  {
+    "id": 119,
+    "name": "label-119",
+    "label": "label-119",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 14
+  },
+  {
+    "id": 120,
+    "name": "label-120",
+    "label": "label-120",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 14
+  },
+  {
+    "id": 121,
+    "name": "label-121",
+    "label": "label-121",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 14
+  },
+  {
+    "id": 122,
+    "name": "label-122",
+    "label": "label-122",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 11
+  },
+  {
+    "id": 123,
+    "name": "label-123",
+    "label": "label-123",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 18
+  },
+  {
+    "id": 124,
+    "name": "label-124",
+    "label": "label-124",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 15
+  },
+  {
+    "id": 125,
+    "name": "label-125",
+    "label": "label-125",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 17
+  },
+  {
+    "id": 126,
+    "name": "label-126",
+    "label": "label-126",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 19
+  },
+  {
+    "id": 127,
+    "name": "label-127",
+    "label": "label-127",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 16
+  },
+  {
+    "id": 128,
+    "name": "label-128",
+    "label": "label-128",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 17
+  },
+  {
+    "id": 129,
+    "name": "label-129",
+    "label": "label-129",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 16
+  },
+  {
+    "id": 130,
+    "name": "label-130",
+    "label": "label-130",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 12
+  },
+  {
+    "id": 131,
+    "name": "label-131",
+    "label": "label-131",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 14
+  },
+  {
+    "id": 132,
+    "name": "label-132",
+    "label": "label-132",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 16
+  },
+  {
+    "id": 133,
+    "name": "label-133",
+    "label": "label-133",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 15
+  },
+  {
+    "id": 134,
+    "name": "label-134",
+    "label": "label-134",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 19
+  },
+  {
+    "id": 135,
+    "name": "label-135",
+    "label": "label-135",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 18
+  },
+  {
+    "id": 136,
+    "name": "label-136",
+    "label": "label-136",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 18
+  },
+  {
+    "id": 137,
+    "name": "label-137",
+    "label": "label-137",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 14
+  },
+  {
+    "id": 138,
+    "name": "label-138",
+    "label": "label-138",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 11
+  },
+  {
+    "id": 139,
+    "name": "label-139",
+    "label": "label-139",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 15
+  },
+  {
+    "id": 140,
+    "name": "label-140",
+    "label": "label-140",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 16
+  },
+  {
+    "id": 141,
+    "name": "label-141",
+    "label": "label-141",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 13
+  },
+  {
+    "id": 142,
+    "name": "label-142",
+    "label": "label-142",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 13
+  },
+  {
+    "id": 143,
+    "name": "label-143",
+    "label": "label-143",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 13
+  },
+  {
+    "id": 144,
+    "name": "label-144",
+    "label": "label-144",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 11
+  },
+  {
+    "id": 145,
+    "name": "label-145",
+    "label": "label-145",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 19
+  },
+  {
+    "id": 146,
+    "name": "label-146",
+    "label": "label-146",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 10
+  },
+  {
+    "id": 147,
+    "name": "label-147",
+    "label": "label-147",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 17
+  },
+  {
+    "id": 148,
+    "name": "label-148",
+    "label": "label-148",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 15
+  },
+  {
+    "id": 149,
+    "name": "label-149",
+    "label": "label-149",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 19
+  },
+  {
+    "id": 150,
+    "name": "label-150",
+    "label": "label-150",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 16
+  },
+  {
+    "id": 151,
+    "name": "label-151",
+    "label": "label-151",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 19
+  },
+  {
+    "id": 152,
+    "name": "label-152",
+    "label": "label-152",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 10
+  },
+  {
+    "id": 153,
+    "name": "label-153",
+    "label": "label-153",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 19
+  },
+  {
+    "id": 154,
+    "name": "label-154",
+    "label": "label-154",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 19
+  },
+  {
+    "id": 155,
+    "name": "label-155",
+    "label": "label-155",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 18
+  },
+  {
+    "id": 156,
+    "name": "label-156",
+    "label": "label-156",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 17
+  },
+  {
+    "id": 157,
+    "name": "label-157",
+    "label": "label-157",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 17
+  },
+  {
+    "id": 158,
+    "name": "label-158",
+    "label": "label-158",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 13
+  },
+  {
+    "id": 159,
+    "name": "label-159",
+    "label": "label-159",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 18
+  },
+  {
+    "id": 160,
+    "name": "label-160",
+    "label": "label-160",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 11
+  },
+  {
+    "id": 161,
+    "name": "label-161",
+    "label": "label-161",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 10
+  },
+  {
+    "id": 162,
+    "name": "label-162",
+    "label": "label-162",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 15
+  },
+  {
+    "id": 163,
+    "name": "label-163",
+    "label": "label-163",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 12
+  },
+  {
+    "id": 164,
+    "name": "label-164",
+    "label": "label-164",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 13
+  },
+  {
+    "id": 165,
+    "name": "label-165",
+    "label": "label-165",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 14
+  },
+  {
+    "id": 166,
+    "name": "label-166",
+    "label": "label-166",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 18
+  },
+  {
+    "id": 167,
+    "name": "label-167",
+    "label": "label-167",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 14
+  },
+  {
+    "id": 168,
+    "name": "label-168",
+    "label": "label-168",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 10
+  },
+  {
+    "id": 169,
+    "name": "label-169",
+    "label": "label-169",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 10
+  },
+  {
+    "id": 170,
+    "name": "label-170",
+    "label": "label-170",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 12
+  },
+  {
+    "id": 171,
+    "name": "label-171",
+    "label": "label-171",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 18
+  },
+  {
+    "id": 172,
+    "name": "label-172",
+    "label": "label-172",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 12
+  },
+  {
+    "id": 173,
+    "name": "label-173",
+    "label": "label-173",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 16
+  },
+  {
+    "id": 174,
+    "name": "label-174",
+    "label": "label-174",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 17
+  },
+  {
+    "id": 175,
+    "name": "label-175",
+    "label": "label-175",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 16
+  },
+  {
+    "id": 176,
+    "name": "label-176",
+    "label": "label-176",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 10
+  },
+  {
+    "id": 177,
+    "name": "label-177",
+    "label": "label-177",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 11
+  },
+  {
+    "id": 178,
+    "name": "label-178",
+    "label": "label-178",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 15
+  },
+  {
+    "id": 179,
+    "name": "label-179",
+    "label": "label-179",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 19
+  },
+  {
+    "id": 180,
+    "name": "label-180",
+    "label": "label-180",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 10
+  },
+  {
+    "id": 181,
+    "name": "label-181",
+    "label": "label-181",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 12
+  },
+  {
+    "id": 182,
+    "name": "label-182",
+    "label": "label-182",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 14
+  },
+  {
+    "id": 183,
+    "name": "label-183",
+    "label": "label-183",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 17
+  },
+  {
+    "id": 184,
+    "name": "label-184",
+    "label": "label-184",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 13
+  },
+  {
+    "id": 185,
+    "name": "label-185",
+    "label": "label-185",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 10
+  },
+  {
+    "id": 186,
+    "name": "label-186",
+    "label": "label-186",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 10
+  },
+  {
+    "id": 187,
+    "name": "label-187",
+    "label": "label-187",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 15
+  },
+  {
+    "id": 188,
+    "name": "label-188",
+    "label": "label-188",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 17
+  },
+  {
+    "id": 189,
+    "name": "label-189",
+    "label": "label-189",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 15
+  },
+  {
+    "id": 190,
+    "name": "label-190",
+    "label": "label-190",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 17
+  },
+  {
+    "id": 191,
+    "name": "label-191",
+    "label": "label-191",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 17
+  },
+  {
+    "id": 192,
+    "name": "label-192",
+    "label": "label-192",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 16
+  },
+  {
+    "id": 193,
+    "name": "label-193",
+    "label": "label-193",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 19
+  },
+  {
+    "id": 194,
+    "name": "label-194",
+    "label": "label-194",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 11
+  },
+  {
+    "id": 195,
+    "name": "label-195",
+    "label": "label-195",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 18
+  },
+  {
+    "id": 196,
+    "name": "label-196",
+    "label": "label-196",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 17
+  },
+  {
+    "id": 197,
+    "name": "label-197",
+    "label": "label-197",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 16
+  },
+  {
+    "id": 198,
+    "name": "label-198",
+    "label": "label-198",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 14
+  },
+  {
+    "id": 199,
+    "name": "label-199",
+    "label": "label-199",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 15
+  },
+  {
+    "id": 200,
+    "name": "label-200",
+    "label": "label-200",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 16
+  },
+  {
+    "id": 201,
+    "name": "label-201",
+    "label": "label-201",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 19
+  },
+  {
+    "id": 202,
+    "name": "label-202",
+    "label": "label-202",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 19
+  },
+  {
+    "id": 203,
+    "name": "label-203",
+    "label": "label-203",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 14
+  },
+  {
+    "id": 204,
+    "name": "label-204",
+    "label": "label-204",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 14
+  },
+  {
+    "id": 205,
+    "name": "label-205",
+    "label": "label-205",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 13
+  },
+  {
+    "id": 206,
+    "name": "label-206",
+    "label": "label-206",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 11
+  },
+  {
+    "id": 207,
+    "name": "label-207",
+    "label": "label-207",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 10
+  },
+  {
+    "id": 208,
+    "name": "label-208",
+    "label": "label-208",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 13
+  },
+  {
+    "id": 209,
+    "name": "label-209",
+    "label": "label-209",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 13
+  },
+  {
+    "id": 210,
+    "name": "label-210",
+    "label": "label-210",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 19
+  },
+  {
+    "id": 211,
+    "name": "label-211",
+    "label": "label-211",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 16
+  },
+  {
+    "id": 212,
+    "name": "label-212",
+    "label": "label-212",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 14
+  },
+  {
+    "id": 213,
+    "name": "label-213",
+    "label": "label-213",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 18
+  },
+  {
+    "id": 214,
+    "name": "label-214",
+    "label": "label-214",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 10
+  },
+  {
+    "id": 215,
+    "name": "label-215",
+    "label": "label-215",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 19
+  },
+  {
+    "id": 216,
+    "name": "label-216",
+    "label": "label-216",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 14
+  },
+  {
+    "id": 217,
+    "name": "label-217",
+    "label": "label-217",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 18
+  },
+  {
+    "id": 218,
+    "name": "label-218",
+    "label": "label-218",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 11
+  },
+  {
+    "id": 219,
+    "name": "label-219",
+    "label": "label-219",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 13
+  },
+  {
+    "id": 220,
+    "name": "label-220",
+    "label": "label-220",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 19
+  },
+  {
+    "id": 221,
+    "name": "label-221",
+    "label": "label-221",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 13
+  },
+  {
+    "id": 222,
+    "name": "label-222",
+    "label": "label-222",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 14
+  },
+  {
+    "id": 223,
+    "name": "label-223",
+    "label": "label-223",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 13
+  },
+  {
+    "id": 224,
+    "name": "label-224",
+    "label": "label-224",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 17
+  },
+  {
+    "id": 225,
+    "name": "label-225",
+    "label": "label-225",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 16
+  },
+  {
+    "id": 226,
+    "name": "label-226",
+    "label": "label-226",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 12
+  },
+  {
+    "id": 227,
+    "name": "label-227",
+    "label": "label-227",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 16
+  }
+]
+        }
+      ]
+    },
+    {
+      "name": "third",
+      "config": {"titleTemplate": "Matchup  with dataset 3", "averageTitle": "Not an average","differenceThreshold": 0.5},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+  {
+    "id": 0,
+    "name": "label-0",
+    "label": "label-0",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 13
+  },
+  {
+    "id": 1,
+    "name": "label-1",
+    "label": "label-1",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 14
+  },
+  {
+    "id": 2,
+    "name": "label-2",
+    "label": "label-2",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 19
+  },
+  {
+    "id": 3,
+    "name": "label-3",
+    "label": "label-3",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 10
+  },
+  {
+    "id": 4,
+    "name": "label-4",
+    "label": "label-4",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 12
+  },
+  {
+    "id": 5,
+    "name": "label-5",
+    "label": "label-5",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 13
+  },
+  {
+    "id": 6,
+    "name": "label-6",
+    "label": "label-6",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 16
+  },
+  {
+    "id": 7,
+    "name": "label-7",
+    "label": "label-7",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 14
+  },
+  {
+    "id": 8,
+    "name": "label-8",
+    "label": "label-8",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 14
+  },
+  {
+    "id": 9,
+    "name": "label-9",
+    "label": "label-9",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 10
+  },
+  {
+    "id": 10,
+    "name": "label-10",
+    "label": "label-10",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 17
+  },
+  {
+    "id": 11,
+    "name": "label-11",
+    "label": "label-11",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 16
+  },
+  {
+    "id": 12,
+    "name": "label-12",
+    "label": "label-12",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 12
+  },
+  {
+    "id": 13,
+    "name": "label-13",
+    "label": "label-13",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 15
+  },
+  {
+    "id": 14,
+    "name": "label-14",
+    "label": "label-14",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 16
+  },
+  {
+    "id": 15,
+    "name": "label-15",
+    "label": "label-15",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 16
+  },
+  {
+    "id": 16,
+    "name": "label-16",
+    "label": "label-16",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 14
+  },
+  {
+    "id": 17,
+    "name": "label-17",
+    "label": "label-17",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 14
+  },
+  {
+    "id": 18,
+    "name": "label-18",
+    "label": "label-18",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 13
+  },
+  {
+    "id": 19,
+    "name": "label-19",
+    "label": "label-19",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 16
+  },
+  {
+    "id": 20,
+    "name": "label-20",
+    "label": "label-20",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 18
+  },
+  {
+    "id": 21,
+    "name": "label-21",
+    "label": "label-21",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 15
+  },
+  {
+    "id": 22,
+    "name": "label-22",
+    "label": "label-22",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 17
+  },
+  {
+    "id": 23,
+    "name": "label-23",
+    "label": "label-23",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 19
+  },
+  {
+    "id": 24,
+    "name": "label-24",
+    "label": "label-24",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 11
+  },
+  {
+    "id": 25,
+    "name": "label-25",
+    "label": "label-25",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 19
+  },
+  {
+    "id": 26,
+    "name": "label-26",
+    "label": "label-26",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 14
+  },
+  {
+    "id": 27,
+    "name": "label-27",
+    "label": "label-27",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 16
+  },
+  {
+    "id": 28,
+    "name": "label-28",
+    "label": "label-28",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 14
+  },
+  {
+    "id": 29,
+    "name": "label-29",
+    "label": "label-29",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 19
+  },
+  {
+    "id": 30,
+    "name": "label-30",
+    "label": "label-30",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 15
+  },
+  {
+    "id": 31,
+    "name": "label-31",
+    "label": "label-31",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 14
+  },
+  {
+    "id": 32,
+    "name": "label-32",
+    "label": "label-32",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 17
+  },
+  {
+    "id": 33,
+    "name": "label-33",
+    "label": "label-33",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 18
+  },
+  {
+    "id": 34,
+    "name": "label-34",
+    "label": "label-34",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 11
+  },
+  {
+    "id": 35,
+    "name": "label-35",
+    "label": "label-35",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 17
+  },
+  {
+    "id": 36,
+    "name": "label-36",
+    "label": "label-36",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 18
+  },
+  {
+    "id": 37,
+    "name": "label-37",
+    "label": "label-37",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 17
+  },
+  {
+    "id": 38,
+    "name": "label-38",
+    "label": "label-38",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 16
+  },
+  {
+    "id": 39,
+    "name": "label-39",
+    "label": "label-39",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 10
+  },
+  {
+    "id": 40,
+    "name": "label-40",
+    "label": "label-40",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 12
+  },
+  {
+    "id": 41,
+    "name": "label-41",
+    "label": "label-41",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 14
+  },
+  {
+    "id": 42,
+    "name": "label-42",
+    "label": "label-42",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 11
+  },
+  {
+    "id": 43,
+    "name": "label-43",
+    "label": "label-43",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 10
+  },
+  {
+    "id": 44,
+    "name": "label-44",
+    "label": "label-44",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 16
+  },
+  {
+    "id": 45,
+    "name": "label-45",
+    "label": "label-45",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 15
+  },
+  {
+    "id": 46,
+    "name": "label-46",
+    "label": "label-46",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 10
+  },
+  {
+    "id": 47,
+    "name": "label-47",
+    "label": "label-47",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 15
+  },
+  {
+    "id": 48,
+    "name": "label-48",
+    "label": "label-48",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 13
+  },
+  {
+    "id": 49,
+    "name": "label-49",
+    "label": "label-49",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 13
+  },
+  {
+    "id": 50,
+    "name": "label-50",
+    "label": "label-50",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 10
+  },
+  {
+    "id": 51,
+    "name": "label-51",
+    "label": "label-51",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 15
+  },
+  {
+    "id": 52,
+    "name": "label-52",
+    "label": "label-52",
+    "group_by_type": "course",
+    "value": -3,
+    "count": 18
+  },
+  {
+    "id": 53,
+    "name": "label-53",
+    "label": "label-53",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 18
+  },
+  {
+    "id": 54,
+    "name": "label-54",
+    "label": "label-54",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 11
+  },
+  {
+    "id": 55,
+    "name": "label-55",
+    "label": "label-55",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 17
+  },
+  {
+    "id": 56,
+    "name": "label-56",
+    "label": "label-56",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 11
+  },
+  {
+    "id": 57,
+    "name": "label-57",
+    "label": "label-57",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 17
+  },
+  {
+    "id": 58,
+    "name": "label-58",
+    "label": "label-58",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 15
+  },
+  {
+    "id": 59,
+    "name": "label-59",
+    "label": "label-59",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 15
+  },
+  {
+    "id": 60,
+    "name": "label-60",
+    "label": "label-60",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 18
+  },
+  {
+    "id": 61,
+    "name": "label-61",
+    "label": "label-61",
+    "group_by_type": "course",
+    "value": -1,
+    "count": 16
+  },
+  {
+    "id": 62,
+    "name": "label-62",
+    "label": "label-62",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 16
+  },
+  {
+    "id": 63,
+    "name": "label-63",
+    "label": "label-63",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 15
+  },
+  {
+    "id": 64,
+    "name": "label-64",
+    "label": "label-64",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 18
+  },
+  {
+    "id": 65,
+    "name": "label-65",
+    "label": "label-65",
+    "group_by_type": "course",
+    "value": 5,
+    "count": 14
+  },
+  {
+    "id": 66,
+    "name": "label-66",
+    "label": "label-66",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 17
+  },
+  {
+    "id": 67,
+    "name": "label-67",
+    "label": "label-67",
+    "group_by_type": "course",
+    "value": 0,
+    "count": 13
+  },
+  {
+    "id": 68,
+    "name": "label-68",
+    "label": "label-68",
+    "group_by_type": "course",
+    "value": 8,
+    "count": 10
+  },
+  {
+    "id": 69,
+    "name": "label-69",
+    "label": "label-69",
+    "group_by_type": "course",
+    "value": -4,
+    "count": 16
+  },
+  {
+    "id": 70,
+    "name": "label-70",
+    "label": "label-70",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 11
+  },
+  {
+    "id": 71,
+    "name": "label-71",
+    "label": "label-71",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 11
+  },
+  {
+    "id": 72,
+    "name": "label-72",
+    "label": "label-72",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 11
+  },
+  {
+    "id": 73,
+    "name": "label-73",
+    "label": "label-73",
+    "group_by_type": "course",
+    "value": -5,
+    "count": 19
+  },
+  {
+    "id": 74,
+    "name": "label-74",
+    "label": "label-74",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 14
+  },
+  {
+    "id": 75,
+    "name": "label-75",
+    "label": "label-75",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 16
+  },
+  {
+    "id": 76,
+    "name": "label-76",
+    "label": "label-76",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 19
+  },
+  {
+    "id": 77,
+    "name": "label-77",
+    "label": "label-77",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 16
+  },
+  {
+    "id": 78,
+    "name": "label-78",
+    "label": "label-78",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 14
+  },
+  {
+    "id": 79,
+    "name": "label-79",
+    "label": "label-79",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 18
+  },
+  {
+    "id": 80,
+    "name": "label-80",
+    "label": "label-80",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 15
+  },
+  {
+    "id": 81,
+    "name": "label-81",
+    "label": "label-81",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 12
+  },
+  {
+    "id": 82,
+    "name": "label-82",
+    "label": "label-82",
+    "group_by_type": "course",
+    "value": 4,
+    "count": 11
+  },
+  {
+    "id": 83,
+    "name": "label-83",
+    "label": "label-83",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 10
+  },
+  {
+    "id": 84,
+    "name": "label-84",
+    "label": "label-84",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 10
+  },
+  {
+    "id": 85,
+    "name": "label-85",
+    "label": "label-85",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 10
+  },
+  {
+    "id": 86,
+    "name": "label-86",
+    "label": "label-86",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 18
+  },
+  {
+    "id": 87,
+    "name": "label-87",
+    "label": "label-87",
+    "group_by_type": "course",
+    "value": -8,
+    "count": 13
+  },
+  {
+    "id": 88,
+    "name": "label-88",
+    "label": "label-88",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 19
+  },
+  {
+    "id": 89,
+    "name": "label-89",
+    "label": "label-89",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 19
+  },
+  {
+    "id": 90,
+    "name": "label-90",
+    "label": "label-90",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 10
+  },
+  {
+    "id": 91,
+    "name": "label-91",
+    "label": "label-91",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 15
+  },
+  {
+    "id": 92,
+    "name": "label-92",
+    "label": "label-92",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 13
+  },
+  {
+    "id": 93,
+    "name": "label-93",
+    "label": "label-93",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 12
+  },
+  {
+    "id": 94,
+    "name": "label-94",
+    "label": "label-94",
+    "group_by_type": "course",
+    "value": 2,
+    "count": 19
+  },
+  {
+    "id": 95,
+    "name": "label-95",
+    "label": "label-95",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 16
+  },
+  {
+    "id": 96,
+    "name": "label-96",
+    "label": "label-96",
+    "group_by_type": "course",
+    "value": 3,
+    "count": 19
+  },
+  {
+    "id": 97,
+    "name": "label-97",
+    "label": "label-97",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 18
+  },
+  {
+    "id": 98,
+    "name": "label-98",
+    "label": "label-98",
+    "group_by_type": "course",
+    "value": 6,
+    "count": 15
+  },
+  {
+    "id": 99,
+    "name": "label-99",
+    "label": "label-99",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 18
+  },
+  {
+    "id": 100,
+    "name": "label-100",
+    "label": "label-100",
+    "group_by_type": "course",
+    "value": 7,
+    "count": 11
+  },
+  {
+    "id": 101,
+    "name": "label-101",
+    "label": "label-101",
+    "group_by_type": "course",
+    "value": -2,
+    "count": 18
+  },
+  {
+    "id": 102,
+    "name": "label-102",
+    "label": "label-102",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 11
+  },
+  {
+    "id": 103,
+    "name": "label-103",
+    "label": "label-103",
+    "group_by_type": "course",
+    "value": -7,
+    "count": 15
+  },
+  {
+    "id": 104,
+    "name": "label-104",
+    "label": "label-104",
+    "group_by_type": "course",
+    "value": -6,
+    "count": 18
+  },
+  {
+    "id": 105,
+    "name": "label-105",
+    "label": "label-105",
+    "group_by_type": "course",
+    "value": -10,
+    "count": 10
+  },
+  {
+    "id": 106,
+    "name": "label-106",
+    "label": "label-106",
+    "group_by_type": "course",
+    "value": 9,
+    "count": 13
+  },
+  {
+    "id": 107,
+    "name": "label-107",
+    "label": "label-107",
+    "group_by_type": "course",
+    "value": -9,
+    "count": 15
+  },
+  {
+    "id": 227,
+    "name": "label-227",
+    "label": "label-227",
+    "group_by_type": "course",
+    "value": 1,
+    "count": 16
+  }
+]
+        }
+      ]
+    }
+  ]
+}

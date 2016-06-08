@@ -1,0 +1,1025 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "option 1",
+      "config": {"titleTemplate": "Title of the first dataset"},
+      "metadata": {},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+              {
+                "scales": [
+                  {
+                    "domain": {
+                      "field": "sepalWidth",
+                      "data": "items"
+                    },
+                    "type": "linear",
+                    "range": "width",
+                    "zero": false,
+                    "name": "x"
+                  },
+                  {
+                    "domain": {
+                      "field": "petalLength",
+                      "data": "items"
+                    },
+                    "name": "y",
+                    "zero": false,
+                    "range": "height",
+                    "type": "linear",
+                    "nice": true
+                  },
+                  {
+                    "range": "category10",
+                    "type": "ordinal",
+                    "domain": {
+                      "field": "species",
+                      "data": "items"
+                    },
+                    "name": "c"
+                  }
+                ],
+                "axes": [
+                  {
+                    "scale": "x",
+                    "type": "x",
+                    "ticks": 5,
+                    "offset": 5,
+                    "title": "Sepal Width"
+                  },
+                  {
+                    "scale": "y",
+                    "type": "y",
+                    "ticks": 5,
+                    "offset": 5,
+                    "title": "Petal Length"
+                  }
+                ],
+                "signals": [
+                  {
+                    "init": 0,
+                    "streams": [
+                      {
+                        "expr": "datum.id",
+                        "type": "@iris-element:click"
+                      }
+                    ],
+                    "name": "onSelectionChange",
+                    "verbose": true
+                  }
+                ],
+                "marks": [
+                  {
+                    "type": "symbol",
+                    "from": {
+                      "data": "items"
+                    },
+                    "name": "iris-element",
+                    "key": "id",
+                    "properties": {
+                      "update": {
+                        "height": {
+                          "value": 10
+                        },
+                        "width": {
+                          "value": 10
+                        },
+                        "fillOpacity": {
+                          "value": 0.5
+                        },
+                        "y": {
+                          "field": "petalLength",
+                          "scale": "y"
+                        },
+                        "x": {
+                          "field": "sepalWidth",
+                          "scale": "x"
+                        },
+                        "size": {
+                          "value": 100
+                        },
+                        "fill": {
+                          "rule": [
+                            {
+                              "field": "species",
+                              "predicate": {
+                                "name": "isSelected",
+                                "id": {
+                                  "field": "id"
+                                }
+                              },
+                              "scale": "c"
+                            },
+                            {
+                              "value": "grey"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                ],
+                "predicates": [
+                  {
+                    "field": "id",
+                    "type": "in",
+                    "name": "isSelected",
+                    "data": "selectedItems",
+                    "item": {
+                      "arg": "id"
+                    }
+                  }
+                ],
+                "data": [
+                  {
+                    "values": [
+                      {
+                        "group_by_type": "flower",
+                        "id": 1,
+                        "label": "setosa-1",
+                        "petalLength": 1.4,
+                        "sepalWidth": 3.5,
+                        "sepalLength": 5.1,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 2,
+                        "label": "setosa-2",
+                        "petalLength": 1.4,
+                        "sepalWidth": 3,
+                        "sepalLength": 4.9,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 3,
+                        "label": "setosa-3",
+                        "petalLength": 1.3,
+                        "sepalWidth": 3.2,
+                        "sepalLength": 4.7,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 35,
+                        "label": "setosa-35",
+                        "petalLength": 1.5,
+                        "sepalWidth": 3.1,
+                        "sepalLength": 4.9,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 36,
+                        "label": "setosa-36",
+                        "petalLength": 1.2,
+                        "sepalWidth": 3.2,
+                        "sepalLength": 5,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 37,
+                        "label": "setosa-37",
+                        "petalLength": 1.3,
+                        "sepalWidth": 3.5,
+                        "sepalLength": 5.5,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 38,
+                        "label": "setosa-38",
+                        "petalLength": 1.4,
+                        "sepalWidth": 3.6,
+                        "sepalLength": 4.9,
+                        "petalWidth": 0.1,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 39,
+                        "label": "setosa-39",
+                        "petalLength": 1.3,
+                        "sepalWidth": 3,
+                        "sepalLength": 4.4,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 40,
+                        "label": "setosa-40",
+                        "petalLength": 1.5,
+                        "sepalWidth": 3.4,
+                        "sepalLength": 5.1,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 41,
+                        "label": "setosa-41",
+                        "petalLength": 1.3,
+                        "sepalWidth": 3.5,
+                        "sepalLength": 5,
+                        "petalWidth": 0.3,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 42,
+                        "label": "setosa-42",
+                        "petalLength": 1.3,
+                        "sepalWidth": 2.3,
+                        "sepalLength": 4.5,
+                        "petalWidth": 0.3,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 43,
+                        "label": "setosa-43",
+                        "petalLength": 1.3,
+                        "sepalWidth": 3.2,
+                        "sepalLength": 4.4,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 44,
+                        "label": "setosa-44",
+                        "petalLength": 1.6,
+                        "sepalWidth": 3.5,
+                        "sepalLength": 5,
+                        "petalWidth": 0.6,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 45,
+                        "label": "setosa-45",
+                        "petalLength": 1.9,
+                        "sepalWidth": 3.8,
+                        "sepalLength": 5.1,
+                        "petalWidth": 0.4,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 46,
+                        "label": "setosa-46",
+                        "petalLength": 1.4,
+                        "sepalWidth": 3,
+                        "sepalLength": 4.8,
+                        "petalWidth": 0.3,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 47,
+                        "label": "setosa-47",
+                        "petalLength": 1.6,
+                        "sepalWidth": 3.8,
+                        "sepalLength": 5.1,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 48,
+                        "label": "setosa-48",
+                        "petalLength": 1.4,
+                        "sepalWidth": 3.2,
+                        "sepalLength": 4.6,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 49,
+                        "label": "setosa-49",
+                        "petalLength": 1.5,
+                        "sepalWidth": 3.7,
+                        "sepalLength": 5.3,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 50,
+                        "label": "setosa-50",
+                        "petalLength": 1.4,
+                        "sepalWidth": 3.3,
+                        "sepalLength": 5,
+                        "petalWidth": 0.2,
+                        "species": "setosa"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 51,
+                        "label": "versicolor-51",
+                        "petalLength": 4.7,
+                        "sepalWidth": 3.2,
+                        "sepalLength": 7,
+                        "petalWidth": 1.4,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 52,
+                        "label": "versicolor-52",
+                        "petalLength": 4.5,
+                        "sepalWidth": 3.2,
+                        "sepalLength": 6.4,
+                        "petalWidth": 1.5,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 53,
+                        "label": "versicolor-53",
+                        "petalLength": 4.9,
+                        "sepalWidth": 3.1,
+                        "sepalLength": 6.9,
+                        "petalWidth": 1.5,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 54,
+                        "label": "versicolor-54",
+                        "petalLength": 4,
+                        "sepalWidth": 2.3,
+                        "sepalLength": 5.5,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 55,
+                        "label": "versicolor-55",
+                        "petalLength": 4.6,
+                        "sepalWidth": 2.8,
+                        "sepalLength": 6.5,
+                        "petalWidth": 1.5,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 56,
+                        "label": "versicolor-56",
+                        "petalLength": 4.5,
+                        "sepalWidth": 2.8,
+                        "sepalLength": 5.7,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 57,
+                        "label": "versicolor-57",
+                        "petalLength": 4.7,
+                        "sepalWidth": 3.3,
+                        "sepalLength": 6.3,
+                        "petalWidth": 1.6,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 58,
+                        "label": "versicolor-58",
+                        "petalLength": 3.3,
+                        "sepalWidth": 2.4,
+                        "sepalLength": 4.9,
+                        "petalWidth": 1,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 59,
+                        "label": "versicolor-59",
+                        "petalLength": 4.6,
+                        "sepalWidth": 2.9,
+                        "sepalLength": 6.6,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 72,
+                        "label": "versicolor-72",
+                        "petalLength": 4,
+                        "sepalWidth": 2.8,
+                        "sepalLength": 6.1,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 73,
+                        "label": "versicolor-73",
+                        "petalLength": 4.9,
+                        "sepalWidth": 2.5,
+                        "sepalLength": 6.3,
+                        "petalWidth": 1.5,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 74,
+                        "label": "versicolor-74",
+                        "petalLength": 4.7,
+                        "sepalWidth": 2.8,
+                        "sepalLength": 6.1,
+                        "petalWidth": 1.2,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 75,
+                        "label": "versicolor-75",
+                        "petalLength": 4.3,
+                        "sepalWidth": 2.9,
+                        "sepalLength": 6.4,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 76,
+                        "label": "versicolor-76",
+                        "petalLength": 4.4,
+                        "sepalWidth": 3,
+                        "sepalLength": 6.6,
+                        "petalWidth": 1.4,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 77,
+                        "label": "versicolor-77",
+                        "petalLength": 4.8,
+                        "sepalWidth": 2.8,
+                        "sepalLength": 6.8,
+                        "petalWidth": 1.4,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 78,
+                        "label": "versicolor-78",
+                        "petalLength": 5,
+                        "sepalWidth": 3,
+                        "sepalLength": 6.7,
+                        "petalWidth": 1.7,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 79,
+                        "label": "versicolor-79",
+                        "petalLength": 4.5,
+                        "sepalWidth": 2.9,
+                        "sepalLength": 6,
+                        "petalWidth": 1.5,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 80,
+                        "label": "versicolor-80",
+                        "petalLength": 3.5,
+                        "sepalWidth": 2.6,
+                        "sepalLength": 5.7,
+                        "petalWidth": 1,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 81,
+                        "label": "versicolor-81",
+                        "petalLength": 3.8,
+                        "sepalWidth": 2.4,
+                        "sepalLength": 5.5,
+                        "petalWidth": 1.1,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 82,
+                        "label": "versicolor-82",
+                        "petalLength": 3.7,
+                        "sepalWidth": 2.4,
+                        "sepalLength": 5.5,
+                        "petalWidth": 1,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 83,
+                        "label": "versicolor-83",
+                        "petalLength": 3.9,
+                        "sepalWidth": 2.7,
+                        "sepalLength": 5.8,
+                        "petalWidth": 1.2,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 84,
+                        "label": "versicolor-84",
+                        "petalLength": 5.1,
+                        "sepalWidth": 2.7,
+                        "sepalLength": 6,
+                        "petalWidth": 1.6,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 85,
+                        "label": "versicolor-85",
+                        "petalLength": 4.5,
+                        "sepalWidth": 3,
+                        "sepalLength": 5.4,
+                        "petalWidth": 1.5,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 86,
+                        "label": "versicolor-86",
+                        "petalLength": 4.5,
+                        "sepalWidth": 3.4,
+                        "sepalLength": 6,
+                        "petalWidth": 1.6,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 87,
+                        "label": "versicolor-87",
+                        "petalLength": 4.7,
+                        "sepalWidth": 3.1,
+                        "sepalLength": 6.7,
+                        "petalWidth": 1.5,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 88,
+                        "label": "versicolor-88",
+                        "petalLength": 4.4,
+                        "sepalWidth": 2.3,
+                        "sepalLength": 6.3,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 89,
+                        "label": "versicolor-89",
+                        "petalLength": 4.1,
+                        "sepalWidth": 3,
+                        "sepalLength": 5.6,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 90,
+                        "label": "versicolor-90",
+                        "petalLength": 4,
+                        "sepalWidth": 2.5,
+                        "sepalLength": 5.5,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 91,
+                        "label": "versicolor-91",
+                        "petalLength": 4.4,
+                        "sepalWidth": 2.6,
+                        "sepalLength": 5.5,
+                        "petalWidth": 1.2,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 92,
+                        "label": "versicolor-92",
+                        "petalLength": 4.6,
+                        "sepalWidth": 3,
+                        "sepalLength": 6.1,
+                        "petalWidth": 1.4,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 93,
+                        "label": "versicolor-93",
+                        "petalLength": 4,
+                        "sepalWidth": 2.6,
+                        "sepalLength": 5.8,
+                        "petalWidth": 1.2,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 94,
+                        "label": "versicolor-94",
+                        "petalLength": 3.3,
+                        "sepalWidth": 2.3,
+                        "sepalLength": 5,
+                        "petalWidth": 1,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 95,
+                        "label": "versicolor-95",
+                        "petalLength": 4.2,
+                        "sepalWidth": 2.7,
+                        "sepalLength": 5.6,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 96,
+                        "label": "versicolor-96",
+                        "petalLength": 4.2,
+                        "sepalWidth": 3,
+                        "sepalLength": 5.7,
+                        "petalWidth": 1.2,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 97,
+                        "label": "versicolor-97",
+                        "petalLength": 4.2,
+                        "sepalWidth": 2.9,
+                        "sepalLength": 5.7,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 98,
+                        "label": "versicolor-98",
+                        "petalLength": 4.3,
+                        "sepalWidth": 2.9,
+                        "sepalLength": 6.2,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 99,
+                        "label": "versicolor-99",
+                        "petalLength": 3,
+                        "sepalWidth": 2.5,
+                        "sepalLength": 5.1,
+                        "petalWidth": 1.1,
+                        "species": "versicolor"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 100,
+                        "label": "versicolor-100",
+                        "petalLength": 4.1,
+                        "sepalWidth": 2.8,
+                        "sepalLength": 5.7,
+                        "petalWidth": 1.3,
+                        "species": "versicolor"
+                      },
+                    {
+                        "group_by_type": "flower",
+                        "id": 141,
+                        "label": "virginica-141",
+                        "petalLength": 5.6,
+                        "sepalWidth": 3.1,
+                        "sepalLength": 6.7,
+                        "petalWidth": 2.4,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 142,
+                        "label": "virginica-142",
+                        "petalLength": 5.1,
+                        "sepalWidth": 3.1,
+                        "sepalLength": 6.9,
+                        "petalWidth": 2.3,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 143,
+                        "label": "virginica-143",
+                        "petalLength": 5.1,
+                        "sepalWidth": 2.7,
+                        "sepalLength": 5.8,
+                        "petalWidth": 1.9,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 144,
+                        "label": "virginica-144",
+                        "petalLength": 5.9,
+                        "sepalWidth": 3.2,
+                        "sepalLength": 6.8,
+                        "petalWidth": 2.3,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 145,
+                        "label": "virginica-145",
+                        "petalLength": 5.7,
+                        "sepalWidth": 3.3,
+                        "sepalLength": 6.7,
+                        "petalWidth": 2.5,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 146,
+                        "label": "virginica-146",
+                        "petalLength": 5.2,
+                        "sepalWidth": 3,
+                        "sepalLength": 6.7,
+                        "petalWidth": 2.3,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 147,
+                        "label": "virginica-147",
+                        "petalLength": 5,
+                        "sepalWidth": 2.5,
+                        "sepalLength": 6.3,
+                        "petalWidth": 1.9,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 148,
+                        "label": "virginica-148",
+                        "petalLength": 5.2,
+                        "sepalWidth": 3,
+                        "sepalLength": 6.5,
+                        "petalWidth": 2,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 149,
+                        "label": "virginica-149",
+                        "petalLength": 5.4,
+                        "sepalWidth": 3.4,
+                        "sepalLength": 6.2,
+                        "petalWidth": 2.3,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 150,
+                        "label": "virginica-150",
+                        "petalLength": 5.1,
+                        "sepalWidth": 3,
+                        "sepalLength": 5.9,
+                        "petalWidth": 1.8,
+                        "species": "virginica"
+                      }
+                    ],
+                    "name": "items"
+                  },
+                  {
+                    "modify": [
+                      {
+                        "field": "id",
+                        "signal": "onSelectionChange",
+                        "type": "toggle"
+                      }
+                    ],
+                    "name": "selectedItems"
+                  }
+                ]
+              }
+            ]
+        }
+      ]
+    },
+    {
+      "name": "option 2",
+      "config": {"titleTemplate": "Title of the second dataset"},
+      "metadata": {},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+              {
+                "scales": [
+                  {
+                    "domain": {
+                      "field": "sepalWidth",
+                      "data": "items"
+                    },
+                    "type": "linear",
+                    "range": "width",
+                    "zero": false,
+                    "name": "x"
+                  },
+                  {
+                    "domain": {
+                      "field": "petalLength",
+                      "data": "items"
+                    },
+                    "name": "y",
+                    "zero": false,
+                    "range": "height",
+                    "type": "linear",
+                    "nice": true
+                  },
+                  {
+                    "range": "category10",
+                    "type": "ordinal",
+                    "domain": {
+                      "field": "species",
+                      "data": "items"
+                    },
+                    "name": "c"
+                  }
+                ],
+                "axes": [
+                  {
+                    "scale": "x",
+                    "type": "x",
+                    "ticks": 5,
+                    "offset": 5,
+                    "title": "Sepal Width"
+                  },
+                  {
+                    "scale": "y",
+                    "type": "y",
+                    "ticks": 5,
+                    "offset": 5,
+                    "title": "Petal Length"
+                  }
+                ],
+                "signals": [
+                  {
+                    "init": 0,
+                    "streams": [
+                      {
+                        "expr": "datum.id",
+                        "type": "@iris-element:click"
+                      }
+                    ],
+                    "name": "onSelectionChange",
+                    "verbose": true
+                  }
+                ],
+                "marks": [
+                  {
+                    "type": "symbol",
+                    "from": {
+                      "data": "items"
+                    },
+                    "name": "iris-element",
+                    "key": "id",
+                    "properties": {
+                      "update": {
+                        "height": {
+                          "value": 10
+                        },
+                        "width": {
+                          "value": 10
+                        },
+                        "fillOpacity": {
+                          "value": 0.5
+                        },
+                        "y": {
+                          "field": "petalLength",
+                          "scale": "y"
+                        },
+                        "x": {
+                          "field": "sepalWidth",
+                          "scale": "x"
+                        },
+                        "size": {
+                          "value": 100
+                        },
+                        "fill": {
+                          "rule": [
+                            {
+                              "field": "species",
+                              "predicate": {
+                                "name": "isSelected",
+                                "id": {
+                                  "field": "id"
+                                }
+                              },
+                              "scale": "c"
+                            },
+                            {
+                              "value": "grey"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                ],
+                "predicates": [
+                  {
+                    "field": "id",
+                    "type": "in",
+                    "name": "isSelected",
+                    "data": "selectedItems",
+                    "item": {
+                      "arg": "id"
+                    }
+                  }
+                ],
+                "data": [
+                  {
+                    "values": [
+                      {
+                        "group_by_type": "flower",
+                        "id": 147,
+                        "label": "virginica-147",
+                        "petalLength": 5,
+                        "sepalWidth": 2.5,
+                        "sepalLength": 6.3,
+                        "petalWidth": 1.9,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 148,
+                        "label": "virginica-148",
+                        "petalLength": 5.2,
+                        "sepalWidth": 3,
+                        "sepalLength": 6.5,
+                        "petalWidth": 2,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 149,
+                        "label": "virginica-149",
+                        "petalLength": 5.4,
+                        "sepalWidth": 3.4,
+                        "sepalLength": 6.2,
+                        "petalWidth": 2.3,
+                        "species": "virginica"
+                      },
+                      {
+                        "group_by_type": "flower",
+                        "id": 150,
+                        "label": "virginica-150",
+                        "petalLength": 5.1,
+                        "sepalWidth": 3,
+                        "sepalLength": 5.9,
+                        "petalWidth": 1.8,
+                        "species": "virginica"
+                      }
+                    ],
+                    "name": "items"
+                  },
+                  {
+                    "modify": [
+                      {
+                        "field": "id",
+                        "signal": "onSelectionChange",
+                        "type": "toggle"
+                      }
+                    ],
+                    "name": "selectedItems"
+                  }
+                ]
+              }
+            ]
+        }
+      ]
+
+    }
+  ]
+}
+

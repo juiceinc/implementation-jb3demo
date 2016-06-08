@@ -1,0 +1,206 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "6 months ago",
+      "config": {"titleTemplate": "Title of the first dataset"},
+      "metadata": {},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+              {
+                "group_by_type": "sankey_6m",
+                "target_id": 4,
+                "value": 1,
+                "dimension": "sankey_6m",
+                "score": 80.5500030517578,
+                "source_id": 2,
+                "label": "worse to same",
+                "id": "w2s"
+              },
+              {
+                "group_by_type": "sankey_6m",
+                "target_id": 5,
+                "value": 1,
+                "dimension": "sankey_6m",
+                "score": 75.5599975585938,
+                "source_id": 2,
+                "label": "worse to worse",
+                "id": "w2w"
+              },
+              {
+                "group_by_type": "sankey_6m",
+                "target_id": 3,
+                "value": 5,
+                "dimension": "sankey_6m",
+                "score": 91.7699996948242,
+                "source_id": 1,
+                "label": "same to better",
+                "id": "s2b"
+              },
+              {
+                "group_by_type": "sankey_6m",
+                "target_id": 3,
+                "value": 21,
+                "dimension": "sankey_6m",
+                "score": 93.9980951944987,
+                "source_id": 0,
+                "label": "better to better",
+                "id": "b2b"
+              },
+              {
+                "group_by_type": "sankey_6m",
+                "target_id": 4,
+                "value": 2,
+                "dimension": "sankey_6m",
+                "score": 81.1149978637695,
+                "source_id": 0,
+                "label": "better to same",
+                "id": "b2s"
+              },
+              {
+                "group_by_type": "sankey_6m",
+                "target_id": 4,
+                "value": 7,
+                "dimension": "sankey_6m",
+                "score": 83.1385716029576,
+                "source_id": 1,
+                "label": "same to same",
+                "id": "s2s"
+              },
+              {
+                "group_by_type": "sankey_6m",
+                "target_id": 3,
+                "value": 1,
+                "dimension": "sankey_6m",
+                "score": 86.6699981689453,
+                "source_id": 2,
+                "label": "worse to better",
+                "id": "w2b"
+              }
+            ]
+        },
+        {
+            "name": "nodes",
+            "values": [
+              {
+                "name": "Better Than"
+              },
+              {
+                "name": "Same As"
+              },
+              {
+                "name": "Worse Than"
+              },
+              {
+                "name": "Better Than"
+              },
+              {
+                "name": "Same As"
+              },
+              {
+                "name": "Worse Than"
+              }
+            ]
+        }
+      ]
+    },
+    {
+      "name": "12 months ago",
+      "config": {"titleTemplate": "Title of the second dataset"},
+      "metadata": {},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+                  {
+                    "group_by_type": "sankey_12m",
+                    "target_id": 3,
+                    "value": 23,
+                    "dimension": "sankey_12m",
+                    "score": 94.5473908134129,
+                    "source_id": 0,
+                    "label": "better to better",
+                    "id": "b2b"
+                  },
+                  {
+                    "group_by_type": "sankey_12m",
+                    "target_id": 3,
+                    "value": 10,
+                    "dimension": "sankey_12m",
+                    "score": 93.4009994506836,
+                    "source_id": 1,
+                    "label": "same to better",
+                    "id": "s2b"
+                  },
+                  {
+                    "group_by_type": "sankey_12m",
+                    "target_id": 4,
+                    "value": 3,
+                    "dimension": "sankey_12m",
+                    "score": 82.7799987792969,
+                    "source_id": 0,
+                    "label": "better to same",
+                    "id": "b2s"
+                  },
+                  {
+                    "group_by_type": "sankey_12m",
+                    "target_id": 4,
+                    "value": 7,
+                    "dimension": "sankey_12m",
+                    "score": 81.3685716901507,
+                    "source_id": 1,
+                    "label": "same to same",
+                    "id": "s2s"
+                  },
+                  {
+                    "group_by_type": "sankey_12m",
+                    "target_id": 3,
+                    "value": 1,
+                    "dimension": "sankey_12m",
+                    "score": 87.2900009155273,
+                    "source_id": 2,
+                    "label": "worse to better",
+                    "id": "w2b"
+                  },
+                  {
+                    "group_by_type": "sankey_12m",
+                    "target_id": 4,
+                    "value": 1,
+                    "dimension": "sankey_12m",
+                    "score": 80.5500030517578,
+                    "source_id": 2,
+                    "label": "worse to same",
+                    "id": "w2s"
+                  }
+            ]
+        },
+        {
+            "name": "nodes",
+            "values": [
+              {
+                "name": "Better Than"
+              },
+              {
+                "name": "Same As"
+              },
+              {
+                "name": "Worse Than"
+              },
+              {
+                "name": "Better Than"
+              },
+              {
+                "name": "Same As"
+              },
+              {
+                "name": "Worse Than"
+              }
+            ]
+        }
+      ]
+    }
+  ]
+}
+
