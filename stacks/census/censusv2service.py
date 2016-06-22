@@ -134,15 +134,6 @@ class CensusService(RecipeServiceBaseV3):
         'age_bands': Dimension(case([(Census.age < 21, 'Under 21'),
                                      (Census.age < 49, '21-49')
                                      ], else_='Other'), label='Age Bands'),
-        # A dimension that requires a join, the join can be a relationship, or a table
-        'region': Dimension(StateFact.standard_federal_region, label='Region',
-                            join=StateFact),
-        # A dimension that requires multiple joins
-        'divname': Dimension(DivLookup.name, label='Census DivisionNames',
-                             join=[DivLookup, StateFact]),
-        'circuit_court': Dimension(StateFact.circuit_court,
-                                   label='Circuit Court', join=StateFact),
-
         # This will use the lookup to get display values of "M" and "F"
         'sex': LookupDimension(Census.sex, singular='Gender', plural='Genders',
                                lookup={'M': 'Menfolk', "F": "Womenfolk"}),
@@ -192,7 +183,7 @@ class SecondChooserV3Service(CensusService):
         self.dimensions = ('sex',)
         recipe = self.recipe().dimensions(
             *self.dimensions).metrics(*self.metrics)
-        self.response['responses'].append(recipe.render(flavor='metric'))
+        self.response['responses'].append(recipe.render())
         print 'Ms: ', current_milli_time() - start
 
 
