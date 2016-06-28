@@ -225,8 +225,25 @@ class TableV3Service(CensusService):
             (recipe1, 'States'), (recipe2, 'Ages'),
         ]).run()
         self.response['responses'] = results
-        print 'Ms: ',current_milli_time() - start
+        print 'Ms: ', current_milli_time() - start
 
+
+class LeaderboardV3Service(CensusService):
+    def build_response(self):
+        start = current_milli_time()
+        self.metrics = ('pop2000', 'pop2008', 'popdiff')
+        self.dimensions = ('state', )
+        recipe1 = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions)
+        self.dimensions = ('age', )
+        recipe2 = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions)
+
+        results = RecipePool([
+            (recipe1, 'States'), (recipe2, 'Ages'),
+        ]).run()
+        self.response['responses'] = results
+        print 'Ms: ', current_milli_time() - start
 
 
 class RankedListV3Service(CensusService):

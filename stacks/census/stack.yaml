@@ -84,18 +84,18 @@ slices:
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
   data_service: "censusv2service.DistributionV3Service"
 
-#- slice_type: "details-table"
-#  slug: "table23"
-#  # The title line for the slice.
-#  title: "Details table2"
-#  # Detailed configuration for the slice.
-#  config:
-#    "name_field": "state"
-#    "slickgrid_id_field": "row_id"
-#  # Provides data to the slice
-#  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
-#  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-#  data_service: "censusv2service.TableV3Service"
+- slice_type: "details-table"
+  slug: "table23"
+  # The title line for the slice.
+  title: "Details table2"
+  # Detailed configuration for the slice.
+  config:
+    "name_field": "state"
+    "slickgrid_id_field": "row_id"
+  # Provides data to the slice
+  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
+  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
+  data_service: "censusv2service.TableV3Service"
 - slice_type: "ranked-list"
   slug: "COOKIES"
   title: "Here's a breakout of your responses."
@@ -182,7 +182,7 @@ slices:
 - slice_type: "leaderboard"
   slug: "leaderboard"
   title: "Leaderboard"
-  data_service: "sample-leaderboard.json"
+  data_service: "censusv2service.LeaderboardV3Service"
 
 - slice_type: "map"
   slug: "map"
