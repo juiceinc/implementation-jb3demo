@@ -14,4 +14,3 @@ variables: |
   $theme-primary-color: #11222f;
   $theme-accent-color: #dd4b44;
 # Extra css overrides
-extra_css: ""

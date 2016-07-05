@@ -336,3 +336,14 @@ class NineBoxV3Service(CensusService):
 
         self.response['responses'].append(recipe.render())
         print 'Ms: ',current_milli_time() - start
+
+
+class MatchupV3Service(CensusService):
+    def build_response(self):
+        self.metrics = ('popdiff', )
+        self.dimensions = ('state',)
+
+        recipe = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions)
+
+        self.response['responses'].append(recipe.render())

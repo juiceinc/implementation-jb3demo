@@ -49,6 +49,7 @@ slices:
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
   data_service: "censusv2service.FirstChooserV3Service"
+  extra_css: ""
 
 - slice_type: "option-chooser"
   slug: "bar"
@@ -70,6 +71,7 @@ slices:
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
   data_service: "censusv2service.SecondChooserV3Service"
+  extra_css: ""
 
 - slice_type: "distribution"
   slug: "distribution1"
@@ -83,6 +85,7 @@ slices:
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
   data_service: "censusv2service.DistributionV3Service"
+  extra_css: ""
 
 - slice_type: "details-table"
   slug: "table23"
@@ -96,6 +99,8 @@ slices:
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
   data_service: "censusv2service.TableV3Service"
+  extra_css: ""
+
 - slice_type: "ranked-list"
   slug: "COOKIES"
   title: "Here's a breakout of your responses."
@@ -104,9 +109,10 @@ slices:
   style:
     - "section-content"
   data_service: "censusv2service.RankedListV3Service"
+  extra_css: ""
 
 - slice_type: "lollipop"
-  slug: "lollipop-jam1"
+  slug: "lollipop_jam1"
   title: "JAM lollipop"
   config:
     "groups":
@@ -115,9 +121,10 @@ slices:
     "minSelections": 1
     "showStick": true
   data_service: "censusv2service.LollipopV3Service"
+  extra_css: ""
 
 - slice_type: "free-form"
-  slug: "jam-free-form1"
+  slug: "jam_free_form1"
   style:
   - "title-large"
 # bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
@@ -131,9 +138,10 @@ slices:
     baseTemplateName: "#base-slice-bare-template"
     contentTemplate: "#jam-free-form1-template"
   data_service: "censusv2service.FreeFormV3Service1"
+  extra_css: ""
 
 - slice_type: "free-form"
-  slug: "jam-free-form2"
+  slug: "jam_free_form2"
   style:
   - "title-large"
 # bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
@@ -147,14 +155,15 @@ slices:
     baseTemplateName: "#base-slice-bare-template"
     contentTemplate: "#jam-free-form2-template"
   data_service: "censusv2service.FreeFormV3Service2"
+  extra_css: ""
 
 - slice_type: "card"
-  slug: "jam-card1"
+  slug: "jam_card1"
   title: "Card"
   config:
     "cardTemplateName": "#jam-card-template"
   data_service: "censusv2service.CardV3Service2"
-
+  extra_css: ""
 
 - slice_type: "nine-box"
   slug: "ninebox"
@@ -167,9 +176,10 @@ slices:
       "row": 0
       "text": "Small exposure, but high conversion rate"
   data_service: "censusv2service.NineBoxV3Service"
+  extra_css: ""
 
 - slice_type: "keymetrics-hierarchy"
-  slug: "keymetrics-hierarchy"
+  slug: "keymetrics_hierarchy"
   title: "Key Metrics Hierarchy"
   config:
     margin:
@@ -178,31 +188,41 @@ slices:
       left: 20
       bottom: 100
   data_service: "sample-keymetricshierarchy.json"
+  extra_css: ""
 
 - slice_type: "leaderboard"
   slug: "leaderboard"
   title: "Leaderboard"
   data_service: "censusv2service.LeaderboardV3Service"
+  extra_css: ""
 
 - slice_type: "map"
   slug: "map"
   title: "Map"
   data_service: "sample-map.json"
+  extra_css: ""
 
 - slice_type: "matchup"
   slug: "matchup"
   title: "matchup"
-  data_service: "sample-matchup.json"
+  data_service: "censusv2service.MatchupV3Service"
+  config:
+    "differenceThreshold": 0.01
+    "scoreTitleTemplate": "Population Change"
+    "averageTitle": "Average Change"
+  extra_css: ""
 
 - slice_type: "trend"
   slug: "trend"
   title: "trend"
   data_service: "sample-trend.json"
+  extra_css: ""
 
 - slice_type: "vega"
   slug: "vega"
   title: "vega"
   data_service: "sample-vega.json"
+  extra_css: ""
 
 - slice_type: "orbit"
   slug: "orbit"
@@ -214,6 +234,7 @@ slices:
     "colorField": "value"
     "colorRange": ["#d7191c","#ffffcf","#36A556"]
   data_service: "sample-orbit.json"
+  extra_css: ""
 
 
 - slice_type: "sankey"
