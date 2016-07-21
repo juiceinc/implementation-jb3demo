@@ -247,4 +247,11 @@ slices:
       "Worse Than": "#ff7e79"
   data_service: "sample-sankey.json"
 
+- slice_type: "bubble"
+  slug: "bubble"
+  title: "Bubble"
+  config:
+    "sizeField": "employees"
+    "colorField": "value"
+  data_service: "sample-orbit.json"
 
