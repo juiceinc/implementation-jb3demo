@@ -73,6 +73,28 @@ slices:
   data_service: "censusv2service.SecondChooserV3Service"
   extra_css: ""
 
+- slice_type: "option-chooser"
+  slug: "buttons"
+  # The title line for the slice.
+  title: "This could stay here"
+  # Detailed configuration for the slice.
+  config:
+    "optionExtraClass": "option-item-fixed-width"
+    "optionTemplate": |-
+      <div data-id="<%= datum.id %>" class="group-container__item"><div class="group-container__item__label"><%= datum.label %></div><div class="group-container__item__value"><%= datum.format('value', ',.2s') %></div></div>
+    "showTitles": false
+    "minSelections": 1
+    "maxSelections": 1
+
+  # TODO: this eventmap could go away, because in v3 it is automatic, but we have it here explicitly to test it.
+  eventmap:
+  - "foo"
+  # Provides data to the slice
+  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
+  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
+  data_service: "censusv2service.ButtonChooserV3Service"
+  extra_css: ""
+
 - slice_type: "distribution"
   slug: "distribution1"
   # The title line for the slice.
@@ -246,5 +268,3 @@ slices:
       "Same As": "#ccc"
       "Worse Than": "#ff7e79"
   data_service: "sample-sankey.json"
-
-

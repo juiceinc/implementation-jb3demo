@@ -5,6 +5,7 @@ from dataservices.recipe import *
 from dataservices.redshift_connectionbase import *
 from dataservices.servicebase import *
 from dataservices.recipe_pool import RecipePool
+from dataservices.renderers import OptionChooserRenderer
 from dataservices.servicebasev3 import RecipeServiceBaseV3
 
 # -------------
@@ -185,6 +186,25 @@ class SecondChooserV3Service(CensusService):
             *self.dimensions).metrics(*self.metrics)
         self.response['responses'].append(recipe.render())
         print 'Ms: ', current_milli_time() - start
+
+class ButtonChooserV3Service(CensusService):
+    def build_response(self):
+        render_config = {
+            'buttons': [
+                {'total': 'total_label',
+                 'path': 'path1'},
+                {'standard': 'standard_label',
+                 'path': 'path2'},
+                {'vent_trach': 'Vent/Trach',
+                 'path': 'path3'}
+            ],
+            'group_by': 'exclusion'
+        }
+
+        renderer = OptionChooserRenderer(self, None, 'button_name')
+        response = renderer.render(flavor='buttons',
+                                   render_config=render_config)
+        self.response['responses'].append(response)
 
 
 class DistributionV3Service(CensusService):
