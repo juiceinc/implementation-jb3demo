@@ -187,6 +187,7 @@ class SecondChooserV3Service(CensusService):
         self.response['responses'].append(recipe.render())
         print 'Ms: ', current_milli_time() - start
 
+
 class ButtonChooserV3Service(CensusService):
     def build_response(self):
         render_config = {
