@@ -1,0 +1,11 @@
+tests:
+- name: Census App Data
+  url: /api/v1/app/jb3demo/
+  status: 200
+
+- name: Bar data service
+  request_headers:
+      accept: application/json
+      Authorization: $ENVIRON['GABBI_AUTH']
+  url: $RESPONSE['$.stacks[?(@.slug="census")].slices[?(@.slug="bar")].data_service']
+  status: 200

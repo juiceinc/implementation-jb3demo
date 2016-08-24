@@ -1,0 +1,13 @@
+tests:
+- name: Base App Redirect
+  url: /jb3demo/
+  status: 302 || 301
+
+- name: Census Stack
+  url: /jb3demo/census/
+  status: 302
+
+- name: Census Stack
+  url: /jb3demo/census/
+  redirects: true
+  status: 200
