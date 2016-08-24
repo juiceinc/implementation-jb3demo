@@ -114,6 +114,10 @@
       "dimension": "product_category"
     }
   ]
+        },
+        {
+          "name": "markers",
+          "values": [{"x1": 35, "x2": 40, "label": "target", "tooltipContent": "Overall Score Target Range: <strong>35-40</strong>"}]
         }
       ]
     },

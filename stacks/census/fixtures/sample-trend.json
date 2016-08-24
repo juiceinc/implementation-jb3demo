@@ -986,6 +986,10 @@
             ]
             }
           ]
+        },
+        {
+          "name": "markers",
+          "values": [{"y1": 50, "y2": 100, "label": "target", "tooltipContent": "Target Range <strong>50-100</strong>"}]
         }
       ]
     },
@@ -1494,6 +1498,10 @@
               ]
             }
           ]
+        },
+        {
+          "name": "markers",
+          "values": [{"y1": 50, "y2": 100, "tooltipContent": "Target Range <strong>50-100</strong>"}]
         }
       ]
     }
