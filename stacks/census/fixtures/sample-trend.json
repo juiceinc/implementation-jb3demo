@@ -989,7 +989,12 @@
         },
         {
           "name": "markers",
-          "values": [{"y1": 50, "y2": 100, "label": "target", "tooltipContent": "Target Range <strong>50-100</strong>"}]
+          "values": [
+            {"y1": 50, "y2": 100, "label": "target", "tooltipContent": "Target Range <strong>50-100</strong>", "position":"below", "shape": "rect"},
+            {"y1": 150, "y2": 250, "label": "goal",  "shape": "line", "position": "above", "classed": "cool"},
+            {"y1": 20, "y2": 0, "label": "previous goal", "shape": "line", "position": "above"},
+            {"y1": 120, "y2": 200, "label": "another goal", "shape": "line", "position": "below"}
+          ]
         }
       ]
     },
@@ -1501,7 +1506,12 @@
         },
         {
           "name": "markers",
-          "values": [{"y1": 50, "y2": 100, "tooltipContent": "Target Range <strong>50-100</strong>"}]
+          "values": [
+            {"y1": 70, "y2": 90, "label": "target", "tooltipContent": "Target Range <strong>50-100</strong>", "position":"below", "shape": "rect"},
+            {"y1": 150, "y2": 150, "label": "goal",  "shape": "line", "position": "above", "classed": "cool"},
+            {"y1": 200, "y2": 220, "label": "previous goal", "shape": "line", "position": "above"},
+            {"y1": 120, "y2": 200, "label": "another goal", "shape": "line", "position": "below"}
+          ]
         }
       ]
     }
