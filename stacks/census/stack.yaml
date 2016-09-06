@@ -242,7 +242,13 @@ slices:
     "differenceThreshold": 0.01
     "scoreTitleTemplate": "Population Change"
     "averageTitle": "Average Change"
-  extra_css: ""
+  extra_css: "
+  .red-class {
+    stroke: red;
+    stroke-width: 2px;
+    color: red;
+  };
+  "
 
 - slice_type: "trend"
   slug: "trend"
