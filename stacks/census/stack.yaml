@@ -142,6 +142,15 @@ slices:
     - "section-content"
   data_service: "sample-rankedlist100.json"
   extra_css: ""
+- slice_type: "ranked-list-2"
+  slug: "rl3"
+  title: "New ranked list!"
+  config:
+    "disableSort": true
+  style:
+    - "section-content"
+  data_service: "sample-rankedlist.json"
+  extra_css: ""
 
 - slice_type: "lollipop"
   slug: "lollipop_jam1"

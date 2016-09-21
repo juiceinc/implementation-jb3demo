@@ -3,13 +3,21 @@
   "responses": [
     {
       "name": "option 1",
-      "config": {"titleTemplate": "Moo 1"},
+      "config": {"titleTemplate": "Moo 1", "colorRange": ["orange", "blue"]},
       "metadata": {},
       "data": [
         {
-            "name": "items",
-            "values": [{"count":122,"group_by_type":"course","value":196,"id":86,"label":"label-86","dimension":"product_category"},{"count":22,"group_by_type":"course","value":194,"id":122,"label":"label-122","dimension":"product_category"},{"count":35,"group_by_type":"course","value":192,"id":5,"label":"label-5","dimension":"product_category"},{"count":172,"group_by_type":"course","value":184,"id":17,"label":"label-17","dimension":"product_category"},{"count":23,"group_by_type":"course","value":182,"id":70,"label":"label-70","dimension":"product_category"},{"count":31,"group_by_type":"course","value":182,"id":85,"label":"label-85","dimension":"product_category"},{"count":118,"group_by_type":"course","value":180,"id":25,"label":"label-25","dimension":"product_category"},{"count":114,"group_by_type":"course","value":179,"id":96,"label":"label-96","dimension":"product_category"},{"count":156,"group_by_type":"course","value":175,"id":80,"label":"label-80","dimension":"product_category"},{"count":126,"group_by_type":"course","value":171,"id":53,"label":"label-53","dimension":"product_category"},{"count":118,"group_by_type":"course","value":170,"id":63,"label":"label-63","dimension":"product_category"},{"count":159,"group_by_type":"course","value":164,"id":68,"label":"label-68","dimension":"product_category"},{"count":97,"group_by_type":"course","value":163,"id":102,"label":"label-102","dimension":"product_category"},{"count":99,"group_by_type":"course","value":161,"id":50,"label":"label-50","dimension":"product_category"},{"count":184,"group_by_type":"course","value":159,"id":47,"label":"label-47","dimension":"product_category"},{"count":37,"group_by_type":"course","value":156,"id":31,"label":"label-31","dimension":"product_category"},{"count":42,"group_by_type":"course","value":150,"id":110,"label":"label-110","dimension":"product_category"},{"count":42,"group_by_type":"course","value":147,"id":98,"label":"label-98","dimension":"product_category"},{"count":100,"group_by_type":"course","value":146,"id":46,"label":"label-46","dimension":"product_category"},{"count":42,"group_by_type":"course","value":145,"id":27,"label":"label-27","dimension":"product_category"},{"count":15,"group_by_type":"course","value":142,"id":26,"label":"label-26","dimension":"product_category"},{"count":40,"group_by_type":"course","value":136,"id":3,"label":"label-3","dimension":"product_category"},{"count":26,"group_by_type":"course","value":120,"id":56,"label":"label-56","dimension":"product_category"},{"count":150,"group_by_type":"course","value":113,"id":30,"label":"label-30","dimension":"product_category"},{"count":190,"group_by_type":"course","value":113,"id":125,"label":"label-125"},{"count":98,"group_by_type":"course","value":112,"id":120,"label":"label-120","dimension":"product_category"},{"count":85,"group_by_type":"course","value":112,"id":123,"label":"label-123","dimension":"product_category"},{"count":28,"group_by_type":"course","value":111,"id":28,"label":"label-28","dimension":"product_category"},{"count":115,"group_by_type":"course","value":108,"id":117,"label":"label-117","dimension":"product_category"},{"count":117,"group_by_type":"course","value":106,"id":18,"label":"label-18","dimension":"product_category"},{"count":105,"group_by_type":"course","value":105,"id":12,"label":"label-12","dimension":"product_category"},{"count":78,"group_by_type":"course","value":104,"id":118,"label":"label-118","dimension":"product_category"},{"count":70,"group_by_type":"course","value":103,"id":99,"label":"label-99","dimension":"product_category"},{"count":75,"group_by_type":"course","value":101,"id":121,"label":"label-121","dimension":"product_category"},{"count":27,"group_by_type":"course","value":100,"id":71,"label":"label-71","dimension":"product_category"},{"count":169,"group_by_type":"course","value":98,"id":60,"label":"label-60","dimension":"product_category"},{"count":152,"group_by_type":"course","value":97,"id":44,"label":"label-44","dimension":"product_category"},{"count":196,"group_by_type":"course","value":90,"id":67,"label":"label-67","dimension":"product_category"},{"count":140,"group_by_type":"course","value":84,"id":81,"label":"label-81","dimension":"product_category"},{"count":148,"group_by_type":"course","value":76,"id":20,"label":"label-20","dimension":"product_category"},{"count":27,"group_by_type":"course","value":76,"id":59,"label":"label-59","dimension":"product_category"},{"count":117,"group_by_type":"course","value":75,"id":87,"label":"label-87","dimension":"product_category"},{"count":46,"group_by_type":"course","value":65,"id":6,"label":"label-6","dimension":"product_category"},{"count":57,"group_by_type":"course","value":59,"id":58,"label":"label-58","dimension":"product_category"},{"count":125,"group_by_type":"course","value":57,"id":43,"label":"label-43","dimension":"product_category"},{"count":192,"group_by_type":"course","value":50,"id":22,"label":"label-22","dimension":"product_category"},{"count":197,"group_by_type":"course","value":40,"id":89,"label":"label-89","dimension":"product_category"},{"count":133,"group_by_type":"course","value":38,"id":108,"label":"label-108","dimension":"product_category"},{"count":3,"group_by_type":"course","value":34,"id":97,"label":"label-97","dimension":"product_category"},{"count":57,"group_by_type":"course","value":32,"id":77,"label":"label-77","dimension":"product_category"},{"count":56,"group_by_type":"course","value":30,"id":94,"label":"label-94","dimension":"product_category"},{"count":130,"group_by_type":"course","value":29,"id":37,"label":"label-37","dimension":"product_category"},{"count":70,"group_by_type":"course","value":28,"id":101,"label":"label-101","dimension":"product_category"},{"count":132,"group_by_type":"course","value":27,"id":14,"label":"label-14","dimension":"product_category"},{"count":90,"group_by_type":"course","value":24,"id":19,"label":"label-19","dimension":"product_category"},{"count":2,"group_by_type":"course","value":23,"id":100,"label":"label-100","dimension":"product_category"},{"count":120,"group_by_type":"course","value":21,"id":4,"label":"label-4","dimension":"product_category"},{"count":151,"group_by_type":"course","value":20,"id":111,"label":"label-111","dimension":"product_category"},{"count":154,"group_by_type":"course","value":11,"id":74,"label":"label-74","dimension":"product_category"},{"count":74,"group_by_type":"course","value":10,"id":65,"label":"label-65","dimension":"product_category"},{"count":115,"group_by_type":"course","value":7,"id":104,"label":"label-104","dimension":"product_category"},{"count":175,"group_by_type":"course","value":-3,"id":23,"label":"label-23","dimension":"product_category"},{"count":99,"group_by_type":"course","value":-5,"id":75,"label":"label-75","dimension":"product_category"},{"count":7,"group_by_type":"course","value":-5,"id":91,"label":"label-91","dimension":"product_category"},{"count":105,"group_by_type":"course","value":-7,"id":62,"label":"label-62","dimension":"product_category"},{"count":106,"group_by_type":"course","value":-8,"id":34,"label":"label-34","dimension":"product_category"},{"count":4,"group_by_type":"course","value":-12,"id":42,"label":"label-42","dimension":"product_category"},{"count":17,"group_by_type":"course","value":-13,"id":112,"label":"label-112","dimension":"product_category"},{"count":52,"group_by_type":"course","value":-25,"id":107,"label":"label-107","dimension":"product_category"},{"count":59,"group_by_type":"course","value":-31,"id":29,"label":"label-29","dimension":"product_category"},{"count":39,"group_by_type":"course","value":-34,"id":2,"label":"label-2","dimension":"product_category"},{"count":27,"group_by_type":"course","value":-35,"id":55,"label":"label-55","dimension":"product_category"},{"count":118,"group_by_type":"course","value":-40,"id":36,"label":"label-36","dimension":"product_category"},{"count":187,"group_by_type":"course","value":-43,"id":88,"label":"label-88","dimension":"product_category"},{"count":57,"group_by_type":"course","value":-45,"id":57,"label":"label-57","dimension":"product_category"},{"count":21,"group_by_type":"course","value":-51,"id":52,"label":"label-52","dimension":"product_category"},{"count":15,"group_by_type":"course","value":-55,"id":8,"label":"label-8","dimension":"product_category"},{"count":83,"group_by_type":"course","value":-57,"id":116,"label":"label-116","dimension":"product_category"},{"count":138,"group_by_type":"course","value":-60,"id":49,"label":"label-49","dimension":"product_category"},{"count":186,"group_by_type":"course","value":-69,"id":1,"label":"label-1","dimension":"product_category"},{"count":114,"group_by_type":"course","value":-74,"id":40,"label":"label-40","dimension":"product_category"},{"count":85,"group_by_type":"course","value":-75,"id":11,"label":"label-11","dimension":"product_category"},{"count":195,"group_by_type":"course","value":-76,"id":66,"label":"label-66","dimension":"product_category"},{"count":94,"group_by_type":"course","value":-77,"id":33,"label":"label-33","dimension":"product_category"},{"count":28,"group_by_type":"course","value":-78,"id":124,"label":"label-124","dimension":"product_category"},{"count":196,"group_by_type":"course","value":-82,"id":10,"label":"label-10","dimension":"product_category"},{"count":98,"group_by_type":"course","value":-82,"id":119,"label":"label-119","dimension":"product_category"},{"count":182,"group_by_type":"course","value":-89,"id":7,"label":"label-7","dimension":"product_category"},{"count":157,"group_by_type":"course","value":-91,"id":13,"label":"label-13","dimension":"product_category"},{"count":111,"group_by_type":"course","value":-92,"id":32,"label":"label-32","dimension":"product_category"},{"count":23,"group_by_type":"course","value":-94,"id":38,"label":"label-38","dimension":"product_category"},{"count":151,"group_by_type":"course","value":-96,"id":113,"label":"label-113","dimension":"product_category"},{"count":103,"group_by_type":"course","value":-97,"id":24,"label":"label-24","dimension":"product_category"},{"count":142,"group_by_type":"course","value":-97,"id":15,"label":"label-15","dimension":"product_category"},{"count":23,"group_by_type":"course","value":-101,"id":51,"label":"label-51","dimension":"product_category"},{"count":37,"group_by_type":"course","value":-102,"id":105,"label":"label-105","dimension":"product_category"},{"count":14,"group_by_type":"course","value":-104,"id":79,"label":"label-79","dimension":"product_category"},{"count":26,"group_by_type":"course","value":-105,"id":39,"label":"label-39","dimension":"product_category"},{"count":95,"group_by_type":"course","value":-113,"id":21,"label":"label-21","dimension":"product_category"},{"count":27,"group_by_type":"course","value":-115,"id":114,"label":"label-114","dimension":"product_category"},{"count":109,"group_by_type":"course","value":-116,"id":78,"label":"label-78","dimension":"product_category"},{"count":151,"group_by_type":"course","value":-116,"id":41,"label":"label-41","dimension":"product_category"},{"count":10,"group_by_type":"course","value":-120,"id":109,"label":"label-109","dimension":"product_category"},{"count":6,"group_by_type":"course","value":-121,"id":73,"label":"label-73","dimension":"product_category"},{"count":26,"group_by_type":"course","value":-124,"id":82,"label":"label-82","dimension":"product_category"},{"count":172,"group_by_type":"course","value":-125,"id":95,"label":"label-95","dimension":"product_category"},{"count":131,"group_by_type":"course","value":-131,"id":106,"label":"label-106","dimension":"product_category"},{"count":94,"group_by_type":"course","value":-132,"id":0,"label":"label-0","dimension":"product_category"},{"count":96,"group_by_type":"course","value":-135,"id":54,"label":"label-54","dimension":"product_category"},{"count":119,"group_by_type":"course","value":-136,"id":16,"label":"label-16","dimension":"product_category"},{"count":118,"group_by_type":"course","value":-138,"id":9,"label":"label-9","dimension":"product_category"},{"count":183,"group_by_type":"course","value":-153,"id":48,"label":"label-48","dimension":"product_category"},{"count":30,"group_by_type":"course","value":-157,"id":92,"label":"label-92","dimension":"product_category"},{"count":169,"group_by_type":"course","value":-157,"id":45,"label":"label-45","dimension":"product_category"},{"count":6,"group_by_type":"course","value":-162,"id":72,"label":"label-72","dimension":"product_category"},{"count":84,"group_by_type":"course","value":-168,"id":35,"label":"label-35","dimension":"product_category"},{"count":33,"group_by_type":"course","value":-169,"id":90,"label":"label-90","dimension":"product_category"},{"count":150,"group_by_type":"course","value":-171,"id":93,"label":"label-93","dimension":"product_category"},{"count":97,"group_by_type":"course","value":-179,"id":61,"label":"label-61","dimension":"product_category"},{"count":45,"group_by_type":"course","value":-181,"id":115,"label":"label-115","dimension":"product_category"},{"count":107,"group_by_type":"course","value":-186,"id":64,"label":"label-64","dimension":"product_category"},{"count":58,"group_by_type":"course","value":-192,"id":76,"label":"label-76","dimension":"product_category"},{"count":103,"group_by_type":"course","value":-194,"id":83,"label":"label-83","dimension":"product_category"},{"count":130,"group_by_type":"course","value":-194,"id":69,"label":"label-69","dimension":"product_category"},{"count":82,"group_by_type":"course","value":-199,"id":103,"label":"label-103","dimension":"product_category"},{"count":69,"group_by_type":"course","value":-200,"id":84,"label":"label-84","dimension":"product_category"}]
+          "name": "items",
+          "values": [{"count":122,"group_by_type":"course","value":196,"id":86,"label":"label-86","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":22,"group_by_type":"course","value":194,"id":122,"label":"label-122","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":35,"group_by_type":"course","value":192,"id":5,"label":"label-5","benchmarks": [{"label": "last year", "value": 0}], "dimension":"product_category"},{"count":172,"group_by_type":"course","value":184,"id":17,"label":"label-17","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":23,"group_by_type":"course","value":182,"id":70,"label":"label-70","benchmarks": [{"label": "last year", "value": 0}], "dimension":"product_category"},{"count":31,"group_by_type":"course","value":182,"id":85,"label":"label-85","benchmarks": [{"label": "last year", "value": 0}], "dimension":"product_category"},{"count":118,"group_by_type":"course","value":180,"id":25,"label":"label-25","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":114,"group_by_type":"course","value":179,"id":96,"label":"label-96","benchmarks": [{"label": "last year", "value": -5}], "dimension":"product_category"},{"count":156,"group_by_type":"course","value":175,"id":80,"label":"label-80","benchmarks": [{"label": "last year", "value": -20}], "dimension":"product_category"},{"count":126,"group_by_type":"course","value":171,"id":53,"label":"label-53","benchmarks": [{"label": "last year", "value": 0}], "dimension":"product_category"},{"count":118,"group_by_type":"course","value":170,"id":63,"label":"label-63","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":159,"group_by_type":"course","value":164,"id":68,"label":"label-68","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":97,"group_by_type":"course","value":163,"id":102,"label":"label-102","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":99,"group_by_type":"course","value":161,"id":50,"label":"label-50","benchmarks": [{"label": "last year", "value": null}], "dimension":"product_category"},{"count":184,"group_by_type":"course","value":159,"id":47,"label":"label-47","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":37,"group_by_type":"course","value":156,"id":31,"label":"label-31","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":42,"group_by_type":"course","value":150,"id":110,"label":"label-110","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":42,"group_by_type":"course","value":147,"id":98,"label":"label-98","benchmarks": [{"label": "last year", "value": null}], "dimension":"product_category"},{"count":100,"group_by_type":"course","value":146,"id":46,"label":"label-46","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":42,"group_by_type":"course","value":145,"id":27,"label":"label-27","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":15,"group_by_type":"course","value":142,"id":26,"label":"label-26","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":40,"group_by_type":"course","value":136,"id":3,"label":"label-3","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":26,"group_by_type":"course","value":120,"id":56,"label":"label-56","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":150,"group_by_type":"course","value":113,"id":30,"label":"label-30","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":190,"group_by_type":"course","value":113,"id":125,"label":"label-125"},{"count":98,"group_by_type":"course","value":112,"id":120,"label":"label-120","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":85,"group_by_type":"course","value":112,"id":123,"label":"label-123","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":28,"group_by_type":"course","value":111,"id":28,"label":"label-28","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":115,"group_by_type":"course","value":108,"id":117,"label":"label-117","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":117,"group_by_type":"course","value":106,"id":18,"label":"label-18","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":105,"group_by_type":"course","value":105,"id":12,"label":"label-12","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":78,"group_by_type":"course","value":104,"id":118,"label":"label-118","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":70,"group_by_type":"course","value":103,"id":99,"label":"label-99","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":75,"group_by_type":"course","value":101,"id":121,"label":"label-121","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":27,"group_by_type":"course","value":100,"id":71,"label":"label-71","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":169,"group_by_type":"course","value":98,"id":60,"label":"label-60","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":152,"group_by_type":"course","value":97,"id":44,"label":"label-44","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":196,"group_by_type":"course","value":90,"id":67,"label":"label-67","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":140,"group_by_type":"course","value":84,"id":81,"label":"label-81","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":148,"group_by_type":"course","value":76,"id":20,"label":"label-20","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":27,"group_by_type":"course","value":76,"id":59,"label":"label-59","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":117,"group_by_type":"course","value":75,"id":87,"label":"label-87","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":46,"group_by_type":"course","value":65,"id":6,"label":"label-6","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":57,"group_by_type":"course","value":59,"id":58,"label":"label-58","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":125,"group_by_type":"course","value":57,"id":43,"label":"label-43","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":192,"group_by_type":"course","value":50,"id":22,"label":"label-22","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":197,"group_by_type":"course","value":40,"id":89,"label":"label-89","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":133,"group_by_type":"course","value":38,"id":108,"label":"label-108","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":3,"group_by_type":"course","value":34,"id":97,"label":"label-97","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":57,"group_by_type":"course","value":32,"id":77,"label":"label-77","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":56,"group_by_type":"course","value":30,"id":94,"label":"label-94","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":130,"group_by_type":"course","value":29,"id":37,"label":"label-37","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":70,"group_by_type":"course","value":28,"id":101,"label":"label-101","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":132,"group_by_type":"course","value":27,"id":14,"label":"label-14","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":90,"group_by_type":"course","value":24,"id":19,"label":"label-19","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":2,"group_by_type":"course","value":23,"id":100,"label":"label-100","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":120,"group_by_type":"course","value":21,"id":4,"label":"label-4","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":151,"group_by_type":"course","value":20,"id":111,"label":"label-111","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":154,"group_by_type":"course","value":11,"id":74,"label":"label-74","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":74,"group_by_type":"course","value":10,"id":65,"label":"label-65","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":115,"group_by_type":"course","value":7,"id":104,"label":"label-104","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":175,"group_by_type":"course","value":0,"id":23,"label":"label-23","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":99,"group_by_type":"course","value":-5,"id":75,"label":"label-75","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":7,"group_by_type":"course","value":-5,"id":91,"label":"label-91","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":105,"group_by_type":"course","value":-7,"id":62,"label":"label-62","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":106,"group_by_type":"course","value":-8,"id":34,"label":"label-34","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":4,"group_by_type":"course","value":-12,"id":42,"label":"label-42","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":17,"group_by_type":"course","value":-13,"id":112,"label":"label-112","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":52,"group_by_type":"course","value":-25,"id":107,"label":"label-107","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":59,"group_by_type":"course","value":-31,"id":29,"label":"label-29","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":39,"group_by_type":"course","value":-34,"id":2,"label":"label-2","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":27,"group_by_type":"course","value":-35,"id":55,"label":"label-55","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":118,"group_by_type":"course","value":-40,"id":36,"label":"label-36","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":187,"group_by_type":"course","value":-43,"id":88,"label":"label-88","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":57,"group_by_type":"course","value":-45,"id":57,"label":"label-57","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":21,"group_by_type":"course","value":-51,"id":52,"label":"label-52","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":15,"group_by_type":"course","value":-55,"id":8,"label":"label-8","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":83,"group_by_type":"course","value":-57,"id":116,"label":"label-116","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":138,"group_by_type":"course","value":-60,"id":49,"label":"label-49","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":186,"group_by_type":"course","value":-69,"id":1,"label":"label-1","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":114,"group_by_type":"course","value":-74,"id":40,"label":"label-40","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":85,"group_by_type":"course","value":-75,"id":11,"label":"label-11","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":195,"group_by_type":"course","value":-76,"id":66,"label":"label-66","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":94,"group_by_type":"course","value":-77,"id":33,"label":"label-33","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":28,"group_by_type":"course","value":-78,"id":124,"label":"label-124","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":196,"group_by_type":"course","value":-82,"id":10,"label":"label-10","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":98,"group_by_type":"course","value":-82,"id":119,"label":"label-119","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":182,"group_by_type":"course","value":-89,"id":7,"label":"label-7","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":157,"group_by_type":"course","value":-91,"id":13,"label":"label-13","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":111,"group_by_type":"course","value":-92,"id":32,"label":"label-32","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":23,"group_by_type":"course","value":-94,"id":38,"label":"label-38","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":151,"group_by_type":"course","value":-96,"id":113,"label":"label-113","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":103,"group_by_type":"course","value":-97,"id":24,"label":"label-24","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":142,"group_by_type":"course","value":-97,"id":15,"label":"label-15","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":23,"group_by_type":"course","value":-101,"id":51,"label":"label-51","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":37,"group_by_type":"course","value":-102,"id":105,"label":"label-105","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":14,"group_by_type":"course","value":-104,"id":79,"label":"label-79","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":26,"group_by_type":"course","value":-105,"id":39,"label":"label-39","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":95,"group_by_type":"course","value":-113,"id":21,"label":"label-21","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":27,"group_by_type":"course","value":-115,"id":114,"label":"label-114","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":109,"group_by_type":"course","value":-116,"id":78,"label":"label-78","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":151,"group_by_type":"course","value":-116,"id":41,"label":"label-41","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":10,"group_by_type":"course","value":-120,"id":109,"label":"label-109","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":6,"group_by_type":"course","value":-121,"id":73,"label":"label-73","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":26,"group_by_type":"course","value":-124,"id":82,"label":"label-82","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":172,"group_by_type":"course","value":-125,"id":95,"label":"label-95","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":131,"group_by_type":"course","value":-131,"id":106,"label":"label-106","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":94,"group_by_type":"course","value":-132,"id":0,"label":"label-0","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":96,"group_by_type":"course","value":-135,"id":54,"label":"label-54","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":119,"group_by_type":"course","value":-136,"id":16,"label":"label-16","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":118,"group_by_type":"course","value":-138,"id":9,"label":"label-9","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":183,"group_by_type":"course","value":-153,"id":48,"label":"label-48","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":30,"group_by_type":"course","value":-157,"id":92,"label":"label-92","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":169,"group_by_type":"course","value":-157,"id":45,"label":"label-45","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":6,"group_by_type":"course","value":-162,"id":72,"label":"label-72","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":84,"group_by_type":"course","value":-168,"id":35,"label":"label-35","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":33,"group_by_type":"course","value":-169,"id":90,"label":"label-90","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":150,"group_by_type":"course","value":-171,"id":93,"label":"label-93","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":97,"group_by_type":"course","value":-179,"id":61,"label":"label-61","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":45,"group_by_type":"course","value":-181,"id":115,"label":"label-115","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":107,"group_by_type":"course","value":-186,"id":64,"label":"label-64","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":58,"group_by_type":"course","value":-192,"id":76,"label":"label-76","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":103,"group_by_type":"course","value":-194,"id":83,"label":"label-83","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":130,"group_by_type":"course","value":-194,"id":69,"label":"label-69","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":82,"group_by_type":"course","value":-199,"id":103,"label":"label-103","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"},{"count":69,"group_by_type":"course","value":-200,"id":84,"label":"label-84","benchmarks": [{"label": "last year", "value": 29}], "dimension":"product_category"}]
+        },
+        {
+          "name": "markers",
+          "values": [
+            {"x1": -50, "x2": 0, "label": "target", "tooltipContent": "Target Range <strong>-50-0</strong>",
+              "position":"below", "shape": "rect", "classed": "slice-legend__goal"}
+          ]
         }
+
       ]
     },
     {
@@ -20,95 +28,238 @@
         {
           "name": "items",
           "values": [
-     {
-      "count": 23,
-      "group_by_type": "something-else",
-      "value": 48,
-      "id": 2,
-      "label": "label-2",
-      "dimension": "product_category"
+            {
+              "count": 23,
+              "group_by_type": "something-else",
+              "value": 48,
+              "id": 2,
+              "label": "label-2",
+              "dimension": "product_category"
+            },
+            {
+              "count": 47,
+              "group_by_type": "something-else",
+              "value": 28,
+              "id": 10,
+              "label": "label-10",
+              "dimension": "product_category"
+            },
+            {
+              "count": 16,
+              "group_by_type": "something-else",
+              "value": 6,
+              "id": 11,
+              "label": "label-11",
+              "dimension": "product_category"
+            },
+            {
+              "count": 23,
+              "group_by_type": "something-else",
+              "value": 48,
+              "id": 12,
+              "label": "label-21",
+              "dimension": "product_category"
+            },
+            {
+              "count": 25,
+              "group_by_type": "something-else",
+              "value": 11,
+              "id": 3,
+              "label": "label-3",
+              "dimension": "product_category"
+            },
+            {
+              "count": 21,
+              "group_by_type": "something-else",
+              "value": 26,
+              "id": 4,
+              "label": "label-4",
+              "dimension": "product_category"
+            },
+            {
+              "count": 26,
+              "group_by_type": "something-else",
+              "value": 34,
+              "id": 5,
+              "label": "label-5",
+              "dimension": "product_category"
+            },
+            {
+              "count": 25,
+              "group_by_type": "something-else",
+              "value": 11,
+              "id": 13,
+              "label": "label-13",
+              "dimension": "product_category"
+            },
+            {
+              "count": 21,
+              "group_by_type": "something-else",
+              "value": 26,
+              "id": 14,
+              "label": "label-14",
+              "dimension": "product_category"
+            },
+            {
+              "count": 26,
+              "group_by_type": "something-else",
+              "value": 34,
+              "id": 15,
+              "label": "label-15",
+              "dimension": "product_category"
+            },
+            {
+              "count": 16,
+              "group_by_type": "something-else",
+              "value": 30,
+              "id": 6,
+              "label": "label-6",
+              "dimension": "product_category"
+            }
+          ]
+        },
+        {
+          "name": "markers",
+          "values": [
+            {"x1": 20, "x2": 30, "label": "target", "tooltipContent": "Target Range <strong>-50-0</strong>",
+              "position":"below", "shape": "rect", "classed": "slice-legend__goal"}
+          ]
+        }
+      ]
     },
     {
-      "count": 47,
-      "group_by_type": "something-else",
-      "value": 28,
-      "id": 10,
-      "label": "label-10",
-      "dimension": "product_category"
+      "name": "option 3",
+      "config": {"titleTemplate": "Moo 3"},
+      "metadata": {},
+      "data": [
+        {
+          "name": "items",
+          "values": [
+            {
+              "count": 23,
+              "group_by_type": "something-else",
+              "value": -48,
+              "id": 2,
+              "label": "label-2",
+              "dimension": "product_category"
+            },
+            {
+              "count": 47,
+              "group_by_type": "something-else",
+              "value": -28,
+              "id": 10,
+              "label": "label-10",
+              "dimension": "product_category"
+            },
+            {
+              "count": 16,
+              "group_by_type": "something-else",
+              "value": -6,
+              "id": 11,
+              "label": "label-11",
+              "dimension": "product_category"
+            },
+            {
+              "count": 23,
+              "group_by_type": "something-else",
+              "value": -48,
+              "id": 12,
+              "label": "label-21",
+              "dimension": "product_category"
+            },
+            {
+              "count": 25,
+              "group_by_type": "something-else",
+              "value": -11,
+              "id": 3,
+              "label": "label-3",
+              "dimension": "product_category"
+            },
+            {
+              "count": 21,
+              "group_by_type": "something-else",
+              "value": -26,
+              "id": 4,
+              "label": "label-4",
+              "dimension": "product_category"
+            },
+            {
+              "count": 26,
+              "group_by_type": "something-else",
+              "value": -34,
+              "id": 5,
+              "label": "label-5",
+              "dimension": "product_category"
+            },
+            {
+              "count": 25,
+              "group_by_type": "something-else",
+              "value":-11,
+              "id": 13,
+              "label": "label-13",
+              "dimension": "product_category"
+            },
+            {
+              "count": 21,
+              "group_by_type": "something-else",
+              "value": -26,
+              "id": 14,
+              "label": "label-14",
+              "dimension": "product_category"
+            },
+            {
+              "count": 26,
+              "group_by_type": "something-else",
+              "value": -34,
+              "id": 15,
+              "label": "label-15",
+              "dimension": "product_category"
+            },
+            {
+              "count": 16,
+              "group_by_type": "something-else",
+              "value": -30,
+              "id": 6,
+              "label": "label-6",
+              "dimension": "product_category"
+            }
+          ]
+        }
+      ]
     },
     {
-      "count": 16,
-      "group_by_type": "something-else",
-      "value": 6,
-      "id": 11,
-      "label": "label-11",
-      "dimension": "product_category"
-    },
-    {
-      "count": 23,
-      "group_by_type": "something-else",
-      "value": 48,
-      "id": 12,
-      "label": "label-21",
-      "dimension": "product_category"
-    },
-    {
-      "count": 25,
-      "group_by_type": "something-else",
-      "value": 11,
-      "id": 3,
-      "label": "label-3",
-      "dimension": "product_category"
-    },
-    {
-      "count": 21,
-      "group_by_type": "something-else",
-      "value": 26,
-      "id": 4,
-      "label": "label-4",
-      "dimension": "product_category"
-    },
-    {
-      "count": 26,
-      "group_by_type": "something-else",
-      "value": 34,
-      "id": 5,
-      "label": "label-5",
-      "dimension": "product_category"
-    },
-    {
-      "count": 25,
-      "group_by_type": "something-else",
-      "value": 11,
-      "id": 13,
-      "label": "label-13",
-      "dimension": "product_category"
-    },
-    {
-      "count": 21,
-      "group_by_type": "something-else",
-      "value": 26,
-      "id": 14,
-      "label": "label-14",
-      "dimension": "product_category"
-    },
-    {
-      "count": 26,
-      "group_by_type": "something-else",
-      "value": 34,
-      "id": 15,
-      "label": "label-15",
-      "dimension": "product_category"
-    },
-    {
-      "count": 16,
-      "group_by_type": "something-else",
-      "value": 30,
-      "id": 6,
-      "label": "label-6",
-      "dimension": "product_category"
-    }
-  ]
+      "name": "option 4",
+      "config": {"titleTemplate": "Moo 4"},
+      "metadata": {},
+      "data": [
+        {
+          "name": "items",
+          "values": [
+            {
+              "count": 25,
+              "group_by_type": "something-else",
+              "value": 11,
+              "id": 3,
+              "label": "label-3",
+              "dimension": "product_category"
+            },
+            {
+              "count": 21,
+              "group_by_type": "something-else",
+              "value": 26,
+              "id": 4,
+              "label": "label-4",
+              "dimension": "product_category"
+            },
+            {
+              "count": 26,
+              "group_by_type": "something-else",
+              "value": 34,
+              "id": 5,
+              "label": "label-5",
+              "dimension": "product_category"
+            }
+          ]
         }
       ]
     }

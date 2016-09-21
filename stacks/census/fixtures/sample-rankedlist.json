@@ -15,7 +15,7 @@
       "value": 28,
       "id": 0,
       "label": "label-0",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 10}]
     },
     {
       "count": 16,
@@ -23,7 +23,7 @@
       "value": 6,
       "id": 1,
       "label": "label-1",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 20}]
     },
     {
       "count": 23,
@@ -31,7 +31,7 @@
       "value": 48,
       "id": 2,
       "label": "label-2",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 30}]
     },
     {
       "count": 47,
@@ -39,7 +39,7 @@
       "value": 28,
       "id": 10,
       "label": "label-10",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 10}]
     },
     {
       "count": 16,
@@ -47,7 +47,7 @@
       "value": 6,
       "id": 11,
       "label": "label-11",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 0}]
     },
     {
       "count": 23,
@@ -55,7 +55,7 @@
       "value": 48,
       "id": 12,
       "label": "label-21",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 5}]
     },
     {
       "count": 25,
@@ -63,7 +63,7 @@
       "value": 11,
       "id": 3,
       "label": "label-3",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 30}]
     },
     {
       "count": 21,
@@ -71,7 +71,7 @@
       "value": 26,
       "id": 4,
       "label": "label-4",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 26,
@@ -79,7 +79,7 @@
       "value": 34,
       "id": 5,
       "label": "label-5",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 25,
@@ -87,7 +87,7 @@
       "value": 11,
       "id": 13,
       "label": "label-13",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 21,
@@ -95,7 +95,7 @@
       "value": 26,
       "id": 14,
       "label": "label-14",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 26,
@@ -103,7 +103,7 @@
       "value": 34,
       "id": 15,
       "label": "label-15",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 16,
@@ -111,13 +111,16 @@
       "value": 30,
       "id": 6,
       "label": "label-6",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     }
   ]
         },
         {
           "name": "markers",
-          "values": [{"x1": 35, "x2": 40, "label": "target", "tooltipContent": "Overall Score Target Range: <strong>35-40</strong>"}]
+          "values": [
+            {"x1": 20, "x2": 40,  "label": "target", "tooltipContent": "Target Range <strong>20-40</strong>",
+              "position":"below", "shape": "rect", "classed": "slice-legend__goal"}
+          ]
         }
       ]
     },
@@ -135,7 +138,7 @@
       "value": 48,
       "id": 2,
       "label": "label-2",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 47,
@@ -143,7 +146,7 @@
       "value": 28,
       "id": 10,
       "label": "label-10",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 16,
@@ -151,7 +154,7 @@
       "value": 6,
       "id": 11,
       "label": "label-11",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 23,
@@ -159,7 +162,7 @@
       "value": 48,
       "id": 12,
       "label": "label-21",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 25,
@@ -167,7 +170,7 @@
       "value": 11,
       "id": 3,
       "label": "label-3",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 21,
@@ -175,7 +178,7 @@
       "value": 26,
       "id": 4,
       "label": "label-4",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 26,
@@ -183,7 +186,7 @@
       "value": 34,
       "id": 5,
       "label": "label-5",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 25,
@@ -191,7 +194,7 @@
       "value": 11,
       "id": 13,
       "label": "label-13",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 21,
@@ -199,7 +202,7 @@
       "value": 26,
       "id": 14,
       "label": "label-14",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 26,
@@ -207,7 +210,7 @@
       "value": 34,
       "id": 15,
       "label": "label-15",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     },
     {
       "count": 16,
@@ -215,7 +218,7 @@
       "value": 30,
       "id": 6,
       "label": "label-6",
-      "dimension": "product_category"
+      "dimension": "product_category", "benchmarks":[{"label": "last year", "value": 29}]
     }
   ]
         }

@@ -990,10 +990,10 @@
         {
           "name": "markers",
           "values": [
-            {"y1": 50, "y2": 100, "label": "target", "tooltipContent": "Target Range <strong>50-100</strong>",
+            {"x1": 10, "label": "target", "tooltipContent": "Target Range <strong>50-100</strong>",
               "position":"below", "shape": "rect", "classed": "slice-legend__goal"},
-            {"y1": 60, "y2": 100, "label": "current goal",  "shape": "line-dashed", "position": "above"},
-            {"y1": 60, "y2": 60, "label": "minimum goal", "shape": "line", "position": "above", "classed": "red-class"}
+            {"x1": 30, "x2": 30, "label": "current goal",  "shape": "line-dashed", "position": "above"},
+            {"x1": 40, "x2": 40, "label": "minimum goal", "shape": "line", "position": "above", "classed": "red-class"}
           ]
         }
       ]
