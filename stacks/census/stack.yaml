@@ -301,3 +301,12 @@ slices:
     "sizeField": "employees"
     "colorField": "value"
   data_service: "sample-orbit.json"
+
+
+- slice_type: "flower"
+  slug: "flower1"
+  title: "Flower"
+  config:
+    "detailsTemplateName": "#flower-slice-details-template"
+    "width": 750
+  data_service: "sample-flower.json"

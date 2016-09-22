@@ -41,7 +41,6 @@ The template goes here
 
 
 <script type="text/template" id="free-form2-template">
-<script type="text/template" id="free-form2-template">
 	<div style="text-align: center; margin-top: 50px; background-color: lightblue;">
         <div class="free-form-header">This is a free form that doesn't use dynamic data</div>
 		<div class="fr-headline" style="display:inline-block; font-size: 20px">
@@ -60,4 +59,13 @@ The template goes here
 <script type="text/template" id="jam-card-template">
   <div class="fr-body2"><%= datum.label %></div>
   <div class="fr-caption"><%= datum.format("popdiff", ',.0f') %> change in population</div>
+</script>
+
+<!-- flower slice details template -->
+<script type="text/template" id="flower-slice-details-template">
+    <div  class="viz-details-container">
+        <div class="viz-details-title"><i class="hand-icon"></i> <%=title%>:</div>
+        <div class="viz-details-score">Your score is <strong><%=score%></strong></div>
+        <div class="viz-details-average">Industry average is <strong><%=avg%></strong></div>
+    </div>
 </script>

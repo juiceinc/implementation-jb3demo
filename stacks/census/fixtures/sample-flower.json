@@ -3,177 +3,1220 @@
   "responses": [
     {
       "name": "first",
-      "config": {"titleTemplate": "Slice with dataset 1"},
+      "config": {"titleTemplate": "Slice with dataset 1", "height": 450, "zoomFactor": 1},
       "data": [
         {
             "name": "items",
             "values": [
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.542988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 0,
-                    "value": 0.4580223271623254,
-                    "name": "Inpatient Diagnostic"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.742988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 1,
-                    "value": 0.23666769405826926,
-                    "name": "Inpatient Procedural"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.342988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 2,
-                    "value": 0.6856625573709607,
-                    "name": "Outpatient Diagnostic"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.942988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 3,
-                    "value": 0.01579950051382184,
-                    "name": "Outpatient Procedural"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.242988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 4,
-                    "value": 0.773868405725807,
-                    "name": "ED"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.642988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 5,
-                    "value": 0.8349121694918722,
-                    "name": "Physician Office"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.5988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 6,
-                    "value": 0.3416898569557816,
-                    "name": "Other"
-                  }
-                ]
+              {"label": "flower0", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]}
+            ]
         }
       ]
     },
     {
       "name": "second",
-      "config": {"titleTemplate": "Slice with dataset 2"},
+      "config": {"titleTemplate": "Slice with dataset 2", "height": 600},
       "data": [
         {
             "name": "items",
             "values": [
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.542988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 0,
-                    "value": 0.4580223271623254,
-                    "name": "Inpatient Diagnostic"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.742988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 1,
-                    "value": 0.23666769405826926,
-                    "name": "Inpatient Procedural"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.342988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 2,
-                    "value": 0.6856625573709607,
-                    "name": "Outpatient Diagnostic"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.942988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 3,
-                    "value": 0.01579950051382184,
-                    "name": "Outpatient Procedural"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.242988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 4,
-                    "value": 0.773868405725807,
-                    "name": "ED"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.642988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 5,
-                    "value": 0.8349121694918722,
-                    "name": "Physician Office"
-                  },
-                  {
-                    "comparisons": [
-                      {
-                        "value": "0.5988844105",
-                        "label": "Avg"
-                      }
-                    ],
-                    "group_by_type": "flower_id", "id": 6,
-                    "value": 0.3416898569557816,
-                    "name": "Other"
-                  }
-                ]
+              { "label": "flower1", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower2", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower3", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower4", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]}
+            ]
+        }
+      ]
+    },
+    {
+      "name": "third",
+      "config": {"titleTemplate": "Slice with dataset 3", "height": 900},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+              { "label": "flower1", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower2", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower3", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower4", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower5", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower6", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower7", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower8", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower9", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]},
+              { "label": "flower10", "items": [
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.542988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 0,
+                  "value": 0.4580223271623254,
+                  "label": "Inpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.742988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 1,
+                  "value": 0.23666769405826926,
+                  "label": "Inpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.342988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 2,
+                  "value": 0.6856625573709607,
+                  "label": "Outpatient Diagnostic"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.942988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 3,
+                  "value": 0.01579950051382184,
+                  "label": "Outpatient Procedural"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.242988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 4,
+                  "value": 0.773868405725807,
+                  "label": "ED"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.642988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 5,
+                  "value": 0.8349121694918722,
+                  "label": "Physician Office"
+                },
+                {
+                  "comparisons": [
+                    {
+                      "value": "0.5988844105",
+                      "label": "Avg"
+                    }
+                  ],
+                  "group_by_type": "flower_id", "id": 6,
+                  "value": 0.3416898569557816,
+                  "label": "Other"
+                }
+              ]}
+
+            ]
         }
       ]
     }
