@@ -1,0 +1,3081 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "first",
+      "config": {"titleTemplate": "Slice with dataset 1","colors":[{"range":["#FFF","#1a8cdb"],"domain":[50,100],"title_text":"Map","name":"score"}],"sizes":[{"range":[10,70],"name":"population"}]},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+  {
+    "id": 0,
+    "label": "label-0",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -82,
+    "score": 53,
+    "population": 83
+  },
+  {
+    "id": 1,
+    "label": "label-1",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -92,
+    "score": 88,
+    "population": 22
+  },
+  {
+    "id": 2,
+    "label": "label-2",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -101,
+    "score": 75,
+    "population": 84
+  },
+  {
+    "id": 3,
+    "label": "label-3",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -82,
+    "score": 59,
+    "population": 58
+  },
+  {
+    "id": 4,
+    "label": "label-4",
+    "group_by_type": "facility",
+    "latitude": 35,
+    "longitude": -104,
+    "score": 64,
+    "population": 28
+  },
+  {
+    "id": 5,
+    "label": "label-5",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -104,
+    "score": 93,
+    "population": 17
+  },
+  {
+    "id": 6,
+    "label": "label-6",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -82,
+    "score": 55,
+    "population": 71
+  },
+  {
+    "id": 7,
+    "label": "label-7",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -93,
+    "score": 55,
+    "population": 20
+  },
+  {
+    "id": 8,
+    "label": "label-8",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -85,
+    "score": 54,
+    "population": 51
+  },
+  {
+    "id": 9,
+    "label": "label-9",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -88,
+    "score": 94,
+    "population": 37
+  },
+  {
+    "id": 10,
+    "label": "label-10",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -108,
+    "score": 50,
+    "population": 15
+  },
+  {
+    "id": 11,
+    "label": "label-11",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -114,
+    "score": 62,
+    "population": 69
+  },
+  {
+    "id": 12,
+    "label": "label-12",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -102,
+    "score": 73,
+    "population": 37
+  },
+  {
+    "id": 13,
+    "label": "label-13",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -89,
+    "score": 97,
+    "population": 54
+  },
+  {
+    "id": 14,
+    "label": "label-14",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -85,
+    "score": 59,
+    "population": 19
+  },
+  {
+    "id": 15,
+    "label": "label-15",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -80,
+    "score": 66,
+    "population": 59
+  },
+  {
+    "id": 16,
+    "label": "label-16",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -108,
+    "score": 80,
+    "population": 54
+  },
+  {
+    "id": 17,
+    "label": "label-17",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -101,
+    "score": 86,
+    "population": 63
+  },
+  {
+    "id": 18,
+    "label": "label-18",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -114,
+    "score": 50,
+    "population": 16
+  },
+  {
+    "id": 19,
+    "label": "label-19",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -104,
+    "score": 97,
+    "population": 95
+  },
+  {
+    "id": 20,
+    "label": "label-20",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -86,
+    "score": 86,
+    "population": 85
+  },
+  {
+    "id": 21,
+    "label": "label-21",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -104,
+    "score": 92,
+    "population": 62
+  },
+  {
+    "id": 22,
+    "label": "label-22",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -100,
+    "score": 77,
+    "population": 13
+  },
+  {
+    "id": 23,
+    "label": "label-23",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -82,
+    "score": 98,
+    "population": 58
+  },
+  {
+    "id": 24,
+    "label": "label-24",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -104,
+    "score": 91,
+    "population": 71
+  },
+  {
+    "id": 25,
+    "label": "label-25",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -108,
+    "score": 69,
+    "population": 52
+  },
+  {
+    "id": 26,
+    "label": "label-26",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -115,
+    "score": 67,
+    "population": 44
+  },
+  {
+    "id": 27,
+    "label": "label-27",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -112,
+    "score": 82,
+    "population": 35
+  },
+  {
+    "id": 28,
+    "label": "label-28",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -87,
+    "score": 81,
+    "population": 71
+  },
+  {
+    "id": 29,
+    "label": "label-29",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -95,
+    "score": 58,
+    "population": 10
+  },
+  {
+    "id": 30,
+    "label": "label-30",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -109,
+    "score": 78,
+    "population": 54
+  },
+  {
+    "id": 31,
+    "label": "label-31",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -110,
+    "score": 56,
+    "population": 85
+  },
+  {
+    "id": 32,
+    "label": "label-32",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -109,
+    "score": 72,
+    "population": 52
+  },
+  {
+    "id": 33,
+    "label": "label-33",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -115,
+    "score": 57,
+    "population": 58
+  },
+  {
+    "id": 34,
+    "label": "label-34",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -82,
+    "score": 58,
+    "population": 50
+  },
+  {
+    "id": 35,
+    "label": "label-35",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -119,
+    "score": 56,
+    "population": 43
+  },
+  {
+    "id": 36,
+    "label": "label-36",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -82,
+    "score": 65,
+    "population": 38
+  },
+  {
+    "id": 37,
+    "label": "label-37",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -80,
+    "score": 62,
+    "population": 74
+  },
+  {
+    "id": 38,
+    "label": "label-38",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -94,
+    "score": 74,
+    "population": 69
+  },
+  {
+    "id": 39,
+    "label": "label-39",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -107,
+    "score": 74,
+    "population": 29
+  },
+  {
+    "id": 40,
+    "label": "label-40",
+    "group_by_type": "facility",
+    "latitude": 35,
+    "longitude": -119,
+    "score": 57,
+    "population": 34
+  },
+  {
+    "id": 41,
+    "label": "label-41",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -97,
+    "score": 58,
+    "population": 36
+  },
+  {
+    "id": 42,
+    "label": "label-42",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -88,
+    "score": 64,
+    "population": 96
+  },
+  {
+    "id": 43,
+    "label": "label-43",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -112,
+    "score": 93,
+    "population": 52
+  },
+  {
+    "id": 44,
+    "label": "label-44",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -108,
+    "score": 67,
+    "population": 35
+  },
+  {
+    "id": 45,
+    "label": "label-45",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -117,
+    "score": 99,
+    "population": 46
+  },
+  {
+    "id": 46,
+    "label": "label-46",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -110,
+    "score": 88,
+    "population": 81
+  },
+  {
+    "id": 47,
+    "label": "label-47",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -101,
+    "score": 73,
+    "population": 68
+  },
+  {
+    "id": 48,
+    "label": "label-48",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -80,
+    "score": 65,
+    "population": 60
+  },
+  {
+    "id": 49,
+    "label": "label-49",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -114,
+    "score": 84,
+    "population": 94
+  },
+  {
+    "id": 50,
+    "label": "label-50",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -101,
+    "score": 65,
+    "population": 95
+  },
+  {
+    "id": 51,
+    "label": "label-51",
+    "group_by_type": "facility",
+    "latitude": 49,
+    "longitude": -113,
+    "score": 75,
+    "population": 45
+  },
+  {
+    "id": 52,
+    "label": "label-52",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -118,
+    "score": 92,
+    "population": 80
+  },
+  {
+    "id": 53,
+    "label": "label-53",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -104,
+    "score": 70,
+    "population": 88
+  },
+  {
+    "id": 54,
+    "label": "label-54",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -104,
+    "score": 89,
+    "population": 68
+  },
+  {
+    "id": 55,
+    "label": "label-55",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -103,
+    "score": 84,
+    "population": 64
+  },
+  {
+    "id": 56,
+    "label": "label-56",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -86,
+    "score": 79,
+    "population": 32
+  },
+  {
+    "id": 57,
+    "label": "label-57",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -80,
+    "score": 89,
+    "population": 99
+  },
+  {
+    "id": 58,
+    "label": "label-58",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -81,
+    "score": 93,
+    "population": 45
+  },
+  {
+    "id": 59,
+    "label": "label-59",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -93,
+    "score": 67,
+    "population": 24
+  },
+  {
+    "id": 60,
+    "label": "label-60",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -118,
+    "score": 96,
+    "population": 44
+  },
+  {
+    "id": 61,
+    "label": "label-61",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -97,
+    "score": 78,
+    "population": 98
+  },
+  {
+    "id": 62,
+    "label": "label-62",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -107,
+    "score": 89,
+    "population": 73
+  },
+  {
+    "id": 63,
+    "label": "label-63",
+    "group_by_type": "facility",
+    "latitude": 35,
+    "longitude": -89,
+    "score": 71,
+    "population": 78
+  },
+  {
+    "id": 64,
+    "label": "label-64",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -108,
+    "score": 96,
+    "population": 74
+  },
+  {
+    "id": 65,
+    "label": "label-65",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -117,
+    "score": 82,
+    "population": 63
+  },
+  {
+    "id": 66,
+    "label": "label-66",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -81,
+    "score": 56,
+    "population": 23
+  },
+  {
+    "id": 67,
+    "label": "label-67",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -104,
+    "score": 81,
+    "population": 11
+  },
+  {
+    "id": 68,
+    "label": "label-68",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -80,
+    "score": 59,
+    "population": 66
+  },
+  {
+    "id": 69,
+    "label": "label-69",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -84,
+    "score": 69,
+    "population": 55
+  },
+  {
+    "id": 70,
+    "label": "label-70",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -111,
+    "score": 73,
+    "population": 39
+  },
+  {
+    "id": 71,
+    "label": "label-71",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -102,
+    "score": 56,
+    "population": 12
+  },
+  {
+    "id": 72,
+    "label": "label-72",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -116,
+    "score": 61,
+    "population": 20
+  },
+  {
+    "id": 73,
+    "label": "label-73",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -106,
+    "score": 84,
+    "population": 28
+  },
+  {
+    "id": 74,
+    "label": "label-74",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -113,
+    "score": 76,
+    "population": 72
+  },
+  {
+    "id": 75,
+    "label": "label-75",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -95,
+    "score": 98,
+    "population": 77
+  },
+  {
+    "id": 76,
+    "label": "label-76",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -109,
+    "score": 68,
+    "population": 99
+  },
+  {
+    "id": 77,
+    "label": "label-77",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -100,
+    "score": 94,
+    "population": 93
+  },
+  {
+    "id": 78,
+    "label": "label-78",
+    "group_by_type": "facility",
+    "latitude": 33,
+    "longitude": -98,
+    "score": 98,
+    "population": 38
+  },
+  {
+    "id": 79,
+    "label": "label-79",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -102,
+    "score": 60,
+    "population": 83
+  },
+  {
+    "id": 80,
+    "label": "label-80",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -86,
+    "score": 63,
+    "population": 57
+  },
+  {
+    "id": 81,
+    "label": "label-81",
+    "group_by_type": "facility",
+    "latitude": 35,
+    "longitude": -112,
+    "score": 91,
+    "population": 49
+  },
+  {
+    "id": 82,
+    "label": "label-82",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -82,
+    "score": 64,
+    "population": 99
+  },
+  {
+    "id": 83,
+    "label": "label-83",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -88,
+    "score": 68,
+    "population": 26
+  },
+  {
+    "id": 84,
+    "label": "label-84",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -93,
+    "score": 84,
+    "population": 54
+  },
+  {
+    "id": 85,
+    "label": "label-85",
+    "group_by_type": "facility",
+    "latitude": 35,
+    "longitude": -83,
+    "score": 89,
+    "population": 59
+  },
+  {
+    "id": 86,
+    "label": "label-86",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -93,
+    "score": 76,
+    "population": 17
+  },
+  {
+    "id": 87,
+    "label": "label-87",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -103,
+    "score": 61,
+    "population": 38
+  },
+  {
+    "id": 88,
+    "label": "label-88",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -87,
+    "score": 84,
+    "population": 82
+  },
+  {
+    "id": 89,
+    "label": "label-89",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -108,
+    "score": 63,
+    "population": 97
+  },
+  {
+    "id": 90,
+    "label": "label-90",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -116,
+    "score": 98,
+    "population": 50
+  },
+  {
+    "id": 91,
+    "label": "label-91",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -99,
+    "score": 94,
+    "population": 45
+  },
+  {
+    "id": 92,
+    "label": "label-92",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -88,
+    "score": 52,
+    "population": 17
+  },
+  {
+    "id": 93,
+    "label": "label-93",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -97,
+    "score": 98,
+    "population": 27
+  },
+  {
+    "id": 94,
+    "label": "label-94",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -105,
+    "score": 90,
+    "population": 91
+  },
+  {
+    "id": 95,
+    "label": "label-95",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -102,
+    "score": 70,
+    "population": 34
+  },
+  {
+    "id": 96,
+    "label": "label-96",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -80,
+    "score": 62,
+    "population": 47
+  },
+  {
+    "id": 97,
+    "label": "label-97",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -94,
+    "score": 88,
+    "population": 77
+  },
+  {
+    "id": 98,
+    "label": "label-98",
+    "group_by_type": "facility",
+    "latitude": 35,
+    "longitude": -118,
+    "score": 99,
+    "population": 53
+  },
+  {
+    "id": 99,
+    "label": "label-99",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -88,
+    "score": 70,
+    "population": 79
+  },
+  {
+    "id": 100,
+    "label": "label-100",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -103,
+    "score": 55,
+    "population": 49
+  },
+  {
+    "id": 101,
+    "label": "label-101",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -112,
+    "score": 57,
+    "population": 12
+  },
+  {
+    "id": 102,
+    "label": "label-102",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -100,
+    "score": 94,
+    "population": 55
+  },
+  {
+    "id": 103,
+    "label": "label-103",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -97,
+    "score": 58,
+    "population": 31
+  },
+  {
+    "id": 104,
+    "label": "label-104",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -108,
+    "score": 64,
+    "population": 24
+  },
+  {
+    "id": 105,
+    "label": "label-105",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -88,
+    "score": 68,
+    "population": 86
+  },
+  {
+    "id": 106,
+    "label": "label-106",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -108,
+    "score": 58,
+    "population": 18
+  },
+  {
+    "id": 107,
+    "label": "label-107",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -101,
+    "score": 57,
+    "population": 68
+  },
+  {
+    "id": 108,
+    "label": "label-108",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -91,
+    "score": 78,
+    "population": 75
+  },
+  {
+    "id": 109,
+    "label": "label-109",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -99,
+    "score": 50,
+    "population": 50
+  },
+  {
+    "id": 110,
+    "label": "label-110",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -115,
+    "score": 61,
+    "population": 14
+  },
+  {
+    "id": 111,
+    "label": "label-111",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -90,
+    "score": 72,
+    "population": 94
+  },
+  {
+    "id": 112,
+    "label": "label-112",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -98,
+    "score": 51,
+    "population": 78
+  },
+  {
+    "id": 113,
+    "label": "label-113",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -116,
+    "score": 94,
+    "population": 54
+  },
+  {
+    "id": 114,
+    "label": "label-114",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -96,
+    "score": 67,
+    "population": 91
+  },
+  {
+    "id": 115,
+    "label": "label-115",
+    "group_by_type": "facility",
+    "latitude": 35,
+    "longitude": -118,
+    "score": 84,
+    "population": 73
+  },
+  {
+    "id": 116,
+    "label": "label-116",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -111,
+    "score": 88,
+    "population": 95
+  },
+  {
+    "id": 117,
+    "label": "label-117",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -117,
+    "score": 61,
+    "population": 86
+  },
+  {
+    "id": 118,
+    "label": "label-118",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -111,
+    "score": 73,
+    "population": 66
+  },
+  {
+    "id": 119,
+    "label": "label-119",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -86,
+    "score": 50,
+    "population": 85
+  },
+  {
+    "id": 120,
+    "label": "label-120",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -90,
+    "score": 67,
+    "population": 27
+  },
+  {
+    "id": 121,
+    "label": "label-121",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -80,
+    "score": 79,
+    "population": 25
+  },
+  {
+    "id": 122,
+    "label": "label-122",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -101,
+    "score": 94,
+    "population": 41
+  },
+  {
+    "id": 123,
+    "label": "label-123",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -83,
+    "score": 85,
+    "population": 47
+  },
+  {
+    "id": 124,
+    "label": "label-124",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -107,
+    "score": 77,
+    "population": 83
+  },
+  {
+    "id": 125,
+    "label": "label-125",
+    "group_by_type": "facility",
+    "latitude": 33,
+    "longitude": -105,
+    "score": 96,
+    "population": 81
+  },
+  {
+    "id": 126,
+    "label": "label-126",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -107,
+    "score": 62,
+    "population": 61
+  },
+  {
+    "id": 127,
+    "label": "label-127",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -90,
+    "score": 90,
+    "population": 25
+  },
+  {
+    "id": 128,
+    "label": "label-128",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -108,
+    "score": 70,
+    "population": 27
+  },
+  {
+    "id": 129,
+    "label": "label-129",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -97,
+    "score": 74,
+    "population": 65
+  },
+  {
+    "id": 130,
+    "label": "label-130",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -103,
+    "score": 60,
+    "population": 14
+  },
+  {
+    "id": 131,
+    "label": "label-131",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -85,
+    "score": 91,
+    "population": 43
+  },
+  {
+    "id": 132,
+    "label": "label-132",
+    "group_by_type": "facility",
+    "latitude": 49,
+    "longitude": -96,
+    "score": 68,
+    "population": 85
+  },
+  {
+    "id": 133,
+    "label": "label-133",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -90,
+    "score": 62,
+    "population": 12
+  },
+  {
+    "id": 134,
+    "label": "label-134",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -118,
+    "score": 87,
+    "population": 63
+  },
+  {
+    "id": 135,
+    "label": "label-135",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -89,
+    "score": 66,
+    "population": 29
+  },
+  {
+    "id": 136,
+    "label": "label-136",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -114,
+    "score": 65,
+    "population": 86
+  },
+  {
+    "id": 137,
+    "label": "label-137",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -110,
+    "score": 59,
+    "population": 95
+  },
+  {
+    "id": 138,
+    "label": "label-138",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -114,
+    "score": 88,
+    "population": 83
+  },
+  {
+    "id": 139,
+    "label": "label-139",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -110,
+    "score": 52,
+    "population": 53
+  },
+  {
+    "id": 140,
+    "label": "label-140",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -95,
+    "score": 73,
+    "population": 22
+  },
+  {
+    "id": 141,
+    "label": "label-141",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -88,
+    "score": 77,
+    "population": 90
+  },
+  {
+    "id": 142,
+    "label": "label-142",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -97,
+    "score": 74,
+    "population": 19
+  },
+  {
+    "id": 143,
+    "label": "label-143",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -91,
+    "score": 68,
+    "population": 88
+  },
+  {
+    "id": 144,
+    "label": "label-144",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -87,
+    "score": 75,
+    "population": 24
+  },
+  {
+    "id": 145,
+    "label": "label-145",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -92,
+    "score": 84,
+    "population": 62
+  },
+  {
+    "id": 146,
+    "label": "label-146",
+    "group_by_type": "facility",
+    "latitude": 33,
+    "longitude": -94,
+    "score": 64,
+    "population": 44
+  },
+  {
+    "id": 147,
+    "label": "label-147",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -84,
+    "score": 90,
+    "population": 61
+  },
+  {
+    "id": 148,
+    "label": "label-148",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -113,
+    "score": 56,
+    "population": 50
+  },
+  {
+    "id": 149,
+    "label": "label-149",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -109,
+    "score": 89,
+    "population": 78
+  },
+  {
+    "id": 150,
+    "label": "label-150",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -119,
+    "score": 89,
+    "population": 70
+  },
+  {
+    "id": 151,
+    "label": "label-151",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -82,
+    "score": 85,
+    "population": 54
+  },
+  {
+    "id": 152,
+    "label": "label-152",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -116,
+    "score": 64,
+    "population": 49
+  },
+  {
+    "id": 153,
+    "label": "label-153",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -111,
+    "score": 84,
+    "population": 23
+  },
+  {
+    "id": 154,
+    "label": "label-154",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -116,
+    "score": 72,
+    "population": 45
+  },
+  {
+    "id": 155,
+    "label": "label-155",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -119,
+    "score": 97,
+    "population": 93
+  },
+  {
+    "id": 156,
+    "label": "label-156",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -119,
+    "score": 52,
+    "population": 22
+  },
+  {
+    "id": 157,
+    "label": "label-157",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -114,
+    "score": 57,
+    "population": 79
+  },
+  {
+    "id": 158,
+    "label": "label-158",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -110,
+    "score": 65,
+    "population": 26
+  },
+  {
+    "id": 159,
+    "label": "label-159",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -92,
+    "score": 90,
+    "population": 96
+  },
+  {
+    "id": 160,
+    "label": "label-160",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -102,
+    "score": 59,
+    "population": 62
+  },
+  {
+    "id": 161,
+    "label": "label-161",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -117,
+    "score": 98,
+    "population": 37
+  },
+  {
+    "id": 162,
+    "label": "label-162",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -117,
+    "score": 53,
+    "population": 58
+  },
+  {
+    "id": 163,
+    "label": "label-163",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -118,
+    "score": 53,
+    "population": 99
+  },
+  {
+    "id": 164,
+    "label": "label-164",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -115,
+    "score": 85,
+    "population": 52
+  },
+  {
+    "id": 165,
+    "label": "label-165",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -111,
+    "score": 74,
+    "population": 66
+  },
+  {
+    "id": 166,
+    "label": "label-166",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -100,
+    "score": 52,
+    "population": 34
+  },
+  {
+    "id": 167,
+    "label": "label-167",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -105,
+    "score": 61,
+    "population": 85
+  },
+  {
+    "id": 168,
+    "label": "label-168",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -98,
+    "score": 54,
+    "population": 53
+  },
+  {
+    "id": 169,
+    "label": "label-169",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -93,
+    "score": 98,
+    "population": 73
+  },
+  {
+    "id": 170,
+    "label": "label-170",
+    "group_by_type": "facility",
+    "latitude": 33,
+    "longitude": -104,
+    "score": 95,
+    "population": 94
+  },
+  {
+    "id": 171,
+    "label": "label-171",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -91,
+    "score": 99,
+    "population": 21
+  },
+  {
+    "id": 172,
+    "label": "label-172",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -106,
+    "score": 62,
+    "population": 68
+  },
+  {
+    "id": 173,
+    "label": "label-173",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -107,
+    "score": 69,
+    "population": 34
+  },
+  {
+    "id": 174,
+    "label": "label-174",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -118,
+    "score": 52,
+    "population": 42
+  },
+  {
+    "id": 175,
+    "label": "label-175",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -101,
+    "score": 77,
+    "population": 50
+  },
+  {
+    "id": 176,
+    "label": "label-176",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -87,
+    "score": 83,
+    "population": 71
+  },
+  {
+    "id": 177,
+    "label": "label-177",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -112,
+    "score": 75,
+    "population": 41
+  },
+  {
+    "id": 178,
+    "label": "label-178",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -101,
+    "score": 52,
+    "population": 36
+  },
+  {
+    "id": 179,
+    "label": "label-179",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -85,
+    "score": 56,
+    "population": 50
+  },
+  {
+    "id": 180,
+    "label": "label-180",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -101,
+    "score": 86,
+    "population": 97
+  },
+  {
+    "id": 181,
+    "label": "label-181",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -90,
+    "score": 94,
+    "population": 67
+  },
+  {
+    "id": 182,
+    "label": "label-182",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -89,
+    "score": 69,
+    "population": 47
+  },
+  {
+    "id": 183,
+    "label": "label-183",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -87,
+    "score": 86,
+    "population": 37
+  },
+  {
+    "id": 184,
+    "label": "label-184",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -82,
+    "score": 85,
+    "population": 63
+  },
+  {
+    "id": 185,
+    "label": "label-185",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -90,
+    "score": 51,
+    "population": 68
+  },
+  {
+    "id": 186,
+    "label": "label-186",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -117,
+    "score": 76,
+    "population": 17
+  },
+  {
+    "id": 187,
+    "label": "label-187",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -102,
+    "score": 79,
+    "population": 36
+  },
+  {
+    "id": 188,
+    "label": "label-188",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -101,
+    "score": 54,
+    "population": 57
+  },
+  {
+    "id": 189,
+    "label": "label-189",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -107,
+    "score": 73,
+    "population": 33
+  },
+  {
+    "id": 190,
+    "label": "label-190",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -105,
+    "score": 59,
+    "population": 65
+  },
+  {
+    "id": 191,
+    "label": "label-191",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -105,
+    "score": 78,
+    "population": 79
+  },
+  {
+    "id": 192,
+    "label": "label-192",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -105,
+    "score": 84,
+    "population": 54
+  },
+  {
+    "id": 193,
+    "label": "label-193",
+    "group_by_type": "facility",
+    "latitude": 49,
+    "longitude": -104,
+    "score": 64,
+    "population": 50
+  },
+  {
+    "id": 194,
+    "label": "label-194",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -100,
+    "score": 93,
+    "population": 60
+  },
+  {
+    "id": 195,
+    "label": "label-195",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -98,
+    "score": 78,
+    "population": 44
+  },
+  {
+    "id": 196,
+    "label": "label-196",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -86,
+    "score": 63,
+    "population": 86
+  },
+  {
+    "id": 197,
+    "label": "label-197",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -92,
+    "score": 56,
+    "population": 78
+  },
+  {
+    "id": 198,
+    "label": "label-198",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -114,
+    "score": 58,
+    "population": 64
+  },
+  {
+    "id": 199,
+    "label": "label-199",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -83,
+    "score": 65,
+    "population": 22
+  },
+  {
+    "id": 200,
+    "label": "label-200",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -117,
+    "score": 79,
+    "population": 82
+  },
+  {
+    "id": 201,
+    "label": "label-201",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -113,
+    "score": 69,
+    "population": 32
+  },
+  {
+    "id": 202,
+    "label": "label-202",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -113,
+    "score": 80,
+    "population": 78
+  },
+  {
+    "id": 203,
+    "label": "label-203",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -103,
+    "score": 80,
+    "population": 88
+  },
+  {
+    "id": 204,
+    "label": "label-204",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -101,
+    "score": 85,
+    "population": 85
+  },
+  {
+    "id": 205,
+    "label": "label-205",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -91,
+    "score": 73,
+    "population": 83
+  },
+  {
+    "id": 206,
+    "label": "label-206",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -100,
+    "score": 57,
+    "population": 38
+  },
+  {
+    "id": 207,
+    "label": "label-207",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -118,
+    "score": 51,
+    "population": 99
+  },
+  {
+    "id": 208,
+    "label": "label-208",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -92,
+    "score": 98,
+    "population": 27
+  },
+  {
+    "id": 209,
+    "label": "label-209",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -95,
+    "score": 97,
+    "population": 40
+  },
+  {
+    "id": 210,
+    "label": "label-210",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -110,
+    "score": 64,
+    "population": 17
+  },
+  {
+    "id": 211,
+    "label": "label-211",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -108,
+    "score": 86,
+    "population": 27
+  },
+  {
+    "id": 212,
+    "label": "label-212",
+    "group_by_type": "facility",
+    "latitude": 33,
+    "longitude": -112,
+    "score": 55,
+    "population": 79
+  },
+  {
+    "id": 213,
+    "label": "label-213",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -116,
+    "score": 88,
+    "population": 12
+  },
+  {
+    "id": 214,
+    "label": "label-214",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -100,
+    "score": 72,
+    "population": 80
+  },
+  {
+    "id": 215,
+    "label": "label-215",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -86,
+    "score": 56,
+    "population": 68
+  },
+  {
+    "id": 216,
+    "label": "label-216",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -107,
+    "score": 74,
+    "population": 39
+  },
+  {
+    "id": 217,
+    "label": "label-217",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -112,
+    "score": 61,
+    "population": 34
+  },
+  {
+    "id": 218,
+    "label": "label-218",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -111,
+    "score": 61,
+    "population": 47
+  },
+  {
+    "id": 219,
+    "label": "label-219",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -96,
+    "score": 99,
+    "population": 37
+  },
+  {
+    "id": 220,
+    "label": "label-220",
+    "group_by_type": "facility",
+    "latitude": 33,
+    "longitude": -89,
+    "score": 81,
+    "population": 27
+  },
+  {
+    "id": 221,
+    "label": "label-221",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -95,
+    "score": 96,
+    "population": 85
+  },
+  {
+    "id": 222,
+    "label": "label-222",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -117,
+    "score": 90,
+    "population": 23
+  },
+  {
+    "id": 223,
+    "label": "label-223",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -117,
+    "score": 56,
+    "population": 65
+  },
+  {
+    "id": 224,
+    "label": "label-224",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -113,
+    "score": 82,
+    "population": 88
+  },
+  {
+    "id": 225,
+    "label": "label-225",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -112,
+    "score": 66,
+    "population": 27
+  },
+  {
+    "id": 226,
+    "label": "label-226",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -116,
+    "score": 59,
+    "population": 69
+  },
+  {
+    "id": 227,
+    "label": "label-227",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -94,
+    "score": 67,
+    "population": 48
+  },
+  {
+    "id": 228,
+    "label": "label-228",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -81,
+    "score": 84,
+    "population": 69
+  },
+  {
+    "id": 229,
+    "label": "label-229",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -95,
+    "score": 68,
+    "population": 89
+  },
+  {
+    "id": 230,
+    "label": "label-230",
+    "group_by_type": "facility",
+    "latitude": 49,
+    "longitude": -81,
+    "score": 83,
+    "population": 59
+  },
+  {
+    "id": 231,
+    "label": "label-231",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -83,
+    "score": 69,
+    "population": 96
+  },
+  {
+    "id": 232,
+    "label": "label-232",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -93,
+    "score": 51,
+    "population": 67
+  }
+]
+        }
+      ]
+    },
+    {
+      "name": "second",
+      "config": {"titleTemplate": "Slice with dataset 2","colors":[{"range":["#FFF","#1a8cdb"],"domain":[50,100],"title_text":"Map","name":"score"}],"sizes":[{"range":[10,70],"name":"population"}]},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+
+  {
+    "id": 209,
+    "label": "label-209",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -95,
+    "score": 97,
+    "population": 40
+  },
+  {
+    "id": 210,
+    "label": "label-210",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -110,
+    "score": 64,
+    "population": 17
+  },
+  {
+    "id": 211,
+    "label": "label-211",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -108,
+    "score": 86,
+    "population": 27
+  },
+  {
+    "id": 212,
+    "label": "label-212",
+    "group_by_type": "facility",
+    "latitude": 33,
+    "longitude": -112,
+    "score": 55,
+    "population": 79
+  },
+  {
+    "id": 213,
+    "label": "label-213",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -116,
+    "score": 88,
+    "population": 12
+  },
+  {
+    "id": 214,
+    "label": "label-214",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -100,
+    "score": 72,
+    "population": 80
+  },
+  {
+    "id": 215,
+    "label": "label-215",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -86,
+    "score": 56,
+    "population": 68
+  },
+  {
+    "id": 216,
+    "label": "label-216",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -107,
+    "score": 74,
+    "population": 39
+  },
+  {
+    "id": 217,
+    "label": "label-217",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -112,
+    "score": 61,
+    "population": 34
+  },
+  {
+    "id": 218,
+    "label": "label-218",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -111,
+    "score": 61,
+    "population": 47
+  },
+  {
+    "id": 219,
+    "label": "label-219",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -96,
+    "score": 99,
+    "population": 37
+  },
+  {
+    "id": 220,
+    "label": "label-220",
+    "group_by_type": "facility",
+    "latitude": 33,
+    "longitude": -89,
+    "score": 81,
+    "population": 27
+  },
+  {
+    "id": 221,
+    "label": "label-221",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -95,
+    "score": 96,
+    "population": 85
+  },
+  {
+    "id": 222,
+    "label": "label-222",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -117,
+    "score": 90,
+    "population": 23
+  },
+  {
+    "id": 223,
+    "label": "label-223",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -117,
+    "score": 56,
+    "population": 65
+  },
+  {
+    "id": 224,
+    "label": "label-224",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -113,
+    "score": 82,
+    "population": 88
+  },
+  {
+    "id": 225,
+    "label": "label-225",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -112,
+    "score": 66,
+    "population": 27
+  },
+  {
+    "id": 226,
+    "label": "label-226",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -116,
+    "score": 59,
+    "population": 69
+  },
+  {
+    "id": 227,
+    "label": "label-227",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -94,
+    "score": 67,
+    "population": 48
+  },
+  {
+    "id": 228,
+    "label": "label-228",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -81,
+    "score": 84,
+    "population": 69
+  },
+  {
+    "id": 229,
+    "label": "label-229",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -95,
+    "score": 68,
+    "population": 89
+  },
+  {
+    "id": 230,
+    "label": "label-230",
+    "group_by_type": "facility",
+    "latitude": 49,
+    "longitude": -81,
+    "score": 83,
+    "population": 59
+  },
+  {
+    "id": 231,
+    "label": "label-231",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -83,
+    "score": 69,
+    "population": 96
+  },
+  {
+    "id": 232,
+    "label": "label-232",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -93,
+    "score": 51,
+    "population": 67
+  }
+]
+        }
+      ]
+    },
+    {
+      "name": "third",
+      "config": {"titleTemplate": "Slice with dataset 3","colors":[{"range":["#FFF","#1a8cdb"],"domain":[50,100],"title_text":"Map","name":"score"}],"sizes":[{"range":[10,70],"name":"population"}]},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+  {
+    "id": 0,
+    "label": "label-0",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -82,
+    "score": 53,
+    "population": 83
+  },
+  {
+    "id": 1,
+    "label": "label-1",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -92,
+    "score": 88,
+    "population": 22
+  },
+  {
+    "id": 2,
+    "label": "label-2",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -101,
+    "score": 75,
+    "population": 84
+  },
+  {
+    "id": 3,
+    "label": "label-3",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -82,
+    "score": 59,
+    "population": 58
+  },
+  {
+    "id": 4,
+    "label": "label-4",
+    "group_by_type": "facility",
+    "latitude": 35,
+    "longitude": -104,
+    "score": 64,
+    "population": 28
+  },
+  {
+    "id": 5,
+    "label": "label-5",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -104,
+    "score": 93,
+    "population": 17
+  },
+  {
+    "id": 6,
+    "label": "label-6",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -82,
+    "score": 55,
+    "population": 71
+  },
+  {
+    "id": 7,
+    "label": "label-7",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -93,
+    "score": 55,
+    "population": 20
+  },
+  {
+    "id": 8,
+    "label": "label-8",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -85,
+    "score": 54,
+    "population": 51
+  },
+  {
+    "id": 9,
+    "label": "label-9",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -88,
+    "score": 94,
+    "population": 37
+  },
+  {
+    "id": 10,
+    "label": "label-10",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -108,
+    "score": 50,
+    "population": 15
+  },
+  {
+    "id": 11,
+    "label": "label-11",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -114,
+    "score": 62,
+    "population": 69
+  },
+  {
+    "id": 12,
+    "label": "label-12",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -102,
+    "score": 73,
+    "population": 37
+  },
+  {
+    "id": 13,
+    "label": "label-13",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -89,
+    "score": 97,
+    "population": 54
+  },
+  {
+    "id": 14,
+    "label": "label-14",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -85,
+    "score": 59,
+    "population": 19
+  },
+  {
+    "id": 15,
+    "label": "label-15",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -80,
+    "score": 66,
+    "population": 59
+  },
+  {
+    "id": 16,
+    "label": "label-16",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -108,
+    "score": 80,
+    "population": 54
+  },
+  {
+    "id": 17,
+    "label": "label-17",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -101,
+    "score": 86,
+    "population": 63
+  },
+  {
+    "id": 18,
+    "label": "label-18",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -114,
+    "score": 50,
+    "population": 16
+  },
+  {
+    "id": 19,
+    "label": "label-19",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -104,
+    "score": 97,
+    "population": 95
+  },
+  {
+    "id": 20,
+    "label": "label-20",
+    "group_by_type": "facility",
+    "latitude": 43,
+    "longitude": -86,
+    "score": 86,
+    "population": 85
+  },
+  {
+    "id": 21,
+    "label": "label-21",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -104,
+    "score": 92,
+    "population": 62
+  },
+  {
+    "id": 22,
+    "label": "label-22",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -100,
+    "score": 77,
+    "population": 13
+  },
+  {
+    "id": 23,
+    "label": "label-23",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -82,
+    "score": 98,
+    "population": 58
+  },
+  {
+    "id": 24,
+    "label": "label-24",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -104,
+    "score": 91,
+    "population": 71
+  },
+  {
+    "id": 25,
+    "label": "label-25",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -108,
+    "score": 69,
+    "population": 52
+  },
+  {
+    "id": 26,
+    "label": "label-26",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -115,
+    "score": 67,
+    "population": 44
+  },
+  {
+    "id": 27,
+    "label": "label-27",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -112,
+    "score": 82,
+    "population": 35
+  },
+  {
+    "id": 28,
+    "label": "label-28",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -87,
+    "score": 81,
+    "population": 71
+  },
+  {
+    "id": 29,
+    "label": "label-29",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -95,
+    "score": 58,
+    "population": 10
+  },
+  {
+    "id": 30,
+    "label": "label-30",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -109,
+    "score": 78,
+    "population": 54
+  },
+  {
+    "id": 31,
+    "label": "label-31",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -110,
+    "score": 56,
+    "population": 85
+  },
+  {
+    "id": 32,
+    "label": "label-32",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -109,
+    "score": 72,
+    "population": 52
+  },
+  {
+    "id": 33,
+    "label": "label-33",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -115,
+    "score": 57,
+    "population": 58
+  },
+  {
+    "id": 34,
+    "label": "label-34",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -82,
+    "score": 58,
+    "population": 50
+  },
+  {
+    "id": 35,
+    "label": "label-35",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -119,
+    "score": 56,
+    "population": 43
+  },
+  {
+    "id": 36,
+    "label": "label-36",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -82,
+    "score": 65,
+    "population": 38
+  },
+  {
+    "id": 37,
+    "label": "label-37",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -80,
+    "score": 62,
+    "population": 74
+  },
+  {
+    "id": 38,
+    "label": "label-38",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -94,
+    "score": 74,
+    "population": 69
+  },
+  {
+    "id": 39,
+    "label": "label-39",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -107,
+    "score": 74,
+    "population": 29
+  },
+  {
+    "id": 40,
+    "label": "label-40",
+    "group_by_type": "facility",
+    "latitude": 35,
+    "longitude": -119,
+    "score": 57,
+    "population": 34
+  },
+  {
+    "id": 41,
+    "label": "label-41",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -97,
+    "score": 58,
+    "population": 36
+  },
+  {
+    "id": 42,
+    "label": "label-42",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -88,
+    "score": 64,
+    "population": 96
+  },
+  {
+    "id": 43,
+    "label": "label-43",
+    "group_by_type": "facility",
+    "latitude": 48,
+    "longitude": -112,
+    "score": 93,
+    "population": 52
+  },
+  {
+    "id": 44,
+    "label": "label-44",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -108,
+    "score": 67,
+    "population": 35
+  },
+  {
+    "id": 45,
+    "label": "label-45",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -117,
+    "score": 99,
+    "population": 46
+  },
+  {
+    "id": 46,
+    "label": "label-46",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -110,
+    "score": 88,
+    "population": 81
+  },
+  {
+    "id": 47,
+    "label": "label-47",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -101,
+    "score": 73,
+    "population": 68
+  },
+  {
+    "id": 48,
+    "label": "label-48",
+    "group_by_type": "facility",
+    "latitude": 39,
+    "longitude": -80,
+    "score": 65,
+    "population": 60
+  },
+  {
+    "id": 49,
+    "label": "label-49",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -114,
+    "score": 84,
+    "population": 94
+  },
+  {
+    "id": 50,
+    "label": "label-50",
+    "group_by_type": "facility",
+    "latitude": 46,
+    "longitude": -101,
+    "score": 65,
+    "population": 95
+  },
+  {
+    "id": 51,
+    "label": "label-51",
+    "group_by_type": "facility",
+    "latitude": 49,
+    "longitude": -113,
+    "score": 75,
+    "population": 45
+  },
+  {
+    "id": 52,
+    "label": "label-52",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -118,
+    "score": 92,
+    "population": 80
+  },
+  {
+    "id": 53,
+    "label": "label-53",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -104,
+    "score": 70,
+    "population": 88
+  },
+  {
+    "id": 54,
+    "label": "label-54",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -104,
+    "score": 89,
+    "population": 68
+  },
+  {
+    "id": 55,
+    "label": "label-55",
+    "group_by_type": "facility",
+    "latitude": 36,
+    "longitude": -103,
+    "score": 84,
+    "population": 64
+  },
+  {
+    "id": 56,
+    "label": "label-56",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -86,
+    "score": 79,
+    "population": 32
+  },
+  {
+    "id": 57,
+    "label": "label-57",
+    "group_by_type": "facility",
+    "latitude": 45,
+    "longitude": -80,
+    "score": 89,
+    "population": 99
+  },
+  {
+    "id": 58,
+    "label": "label-58",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -81,
+    "score": 93,
+    "population": 45
+  },
+  {
+    "id": 59,
+    "label": "label-59",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -93,
+    "score": 67,
+    "population": 24
+  },
+  {
+    "id": 60,
+    "label": "label-60",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -118,
+    "score": 96,
+    "population": 44
+  },
+  {
+    "id": 61,
+    "label": "label-61",
+    "group_by_type": "facility",
+    "latitude": 30,
+    "longitude": -97,
+    "score": 78,
+    "population": 98
+  },
+  {
+    "id": 62,
+    "label": "label-62",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -107,
+    "score": 89,
+    "population": 73
+  },
+  {
+    "id": 63,
+    "label": "label-63",
+    "group_by_type": "facility",
+    "latitude": 35,
+    "longitude": -89,
+    "score": 71,
+    "population": 78
+  },
+  {
+    "id": 64,
+    "label": "label-64",
+    "group_by_type": "facility",
+    "latitude": 47,
+    "longitude": -108,
+    "score": 96,
+    "population": 74
+  },
+  {
+    "id": 65,
+    "label": "label-65",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -117,
+    "score": 82,
+    "population": 63
+  },
+  {
+    "id": 66,
+    "label": "label-66",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -81,
+    "score": 56,
+    "population": 23
+  },
+  {
+    "id": 67,
+    "label": "label-67",
+    "group_by_type": "facility",
+    "latitude": 37,
+    "longitude": -104,
+    "score": 81,
+    "population": 11
+  },
+  {
+    "id": 68,
+    "label": "label-68",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -80,
+    "score": 59,
+    "population": 66
+  },
+  {
+    "id": 69,
+    "label": "label-69",
+    "group_by_type": "facility",
+    "latitude": 44,
+    "longitude": -84,
+    "score": 69,
+    "population": 55
+  },
+  {
+    "id": 70,
+    "label": "label-70",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -111,
+    "score": 73,
+    "population": 39
+  },
+  {
+    "id": 71,
+    "label": "label-71",
+    "group_by_type": "facility",
+    "latitude": 42,
+    "longitude": -102,
+    "score": 56,
+    "population": 12
+  },
+  {
+    "id": 72,
+    "label": "label-72",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -116,
+    "score": 61,
+    "population": 20
+  },
+  {
+    "id": 73,
+    "label": "label-73",
+    "group_by_type": "facility",
+    "latitude": 41,
+    "longitude": -106,
+    "score": 84,
+    "population": 28
+  },
+  {
+    "id": 74,
+    "label": "label-74",
+    "group_by_type": "facility",
+    "latitude": 40,
+    "longitude": -113,
+    "score": 76,
+    "population": 72
+  },
+  {
+    "id": 75,
+    "label": "label-75",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -95,
+    "score": 98,
+    "population": 77
+  },
+  {
+    "id": 76,
+    "label": "label-76",
+    "group_by_type": "facility",
+    "latitude": 32,
+    "longitude": -109,
+    "score": 68,
+    "population": 99
+  },
+  {
+    "id": 77,
+    "label": "label-77",
+    "group_by_type": "facility",
+    "latitude": 34,
+    "longitude": -100,
+    "score": 94,
+    "population": 93
+  },
+  {
+    "id": 78,
+    "label": "label-78",
+    "group_by_type": "facility",
+    "latitude": 33,
+    "longitude": -98,
+    "score": 98,
+    "population": 38
+  },
+  {
+    "id": 79,
+    "label": "label-79",
+    "group_by_type": "facility",
+    "latitude": 38,
+    "longitude": -102,
+    "score": 60,
+    "population": 83
+  },
+  {
+    "id": 232,
+    "label": "label-232",
+    "group_by_type": "facility",
+    "latitude": 31,
+    "longitude": -93,
+    "score": 51,
+    "population": 67
+  }
+]
+        }
+      ]
+    }
+  ]
+}

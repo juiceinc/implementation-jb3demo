@@ -1,0 +1,25 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "first",
+      "config": {"titleTemplate": "Slice with dataset 1"},
+      "data": [
+        {
+            "name": "items",
+            "values": []
+        }
+      ]
+    },
+    {
+      "name": "second",
+      "config": {"titleTemplate": "Slice with dataset 2"},
+      "data": [
+        {
+            "name": "items",
+            "values": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5247 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "first",
+      "config": { "titleTemplate": "Slice with dataset 1", "columns":[
+        {"name": "label","searchable": true},
+        {"name": "score","reverse": false},
+        {"name": "count","reverse": false},
+        {"name": "bad_stop_pct","reverse": true},
+        {"name": "tdi","reverse": false}
+      ]},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+  {
+    "id": 0,
+    "label": "label-0",
+    "group_by_type": "device",
+    "score": 80,
+    "count": 37,
+    "bad_stop_pct": 65,
+    "tdi": 83
+  },
+  {
+    "id": 1,
+    "label": "label-1",
+    "group_by_type": "device",
+    "score": 99,
+    "count": 63,
+    "bad_stop_pct": 39,
+    "tdi": 51
+  },
+  {
+    "id": 2,
+    "label": "label-2",
+    "group_by_type": "device",
+    "score": 18,
+    "count": 91,
+    "bad_stop_pct": 53,
+    "tdi": 44
+  },
+  {
+    "id": 3,
+    "label": "label-3",
+    "group_by_type": "device",
+    "score": 76,
+    "count": 35,
+    "bad_stop_pct": 17,
+    "tdi": 30
+  },
+  {
+    "id": 4,
+    "label": "label-4",
+    "group_by_type": "device",
+    "score": 79,
+    "count": 72,
+    "bad_stop_pct": 84,
+    "tdi": 44
+  },
+  {
+    "id": 5,
+    "label": "label-5",
+    "group_by_type": "device",
+    "score": 88,
+    "count": 80,
+    "bad_stop_pct": 38,
+    "tdi": 25
+  },
+  {
+    "id": 6,
+    "label": "label-6",
+    "group_by_type": "device",
+    "score": 34,
+    "count": 50,
+    "bad_stop_pct": 50,
+    "tdi": 11
+  },
+  {
+    "id": 7,
+    "label": "label-7",
+    "group_by_type": "device",
+    "score": 70,
+    "count": 48,
+    "bad_stop_pct": 77,
+    "tdi": 79
+  },
+  {
+    "id": 8,
+    "label": "label-8",
+    "group_by_type": "device",
+    "score": 56,
+    "count": 58,
+    "bad_stop_pct": 43,
+    "tdi": 22
+  },
+  {
+    "id": 9,
+    "label": "label-9",
+    "group_by_type": "device",
+    "score": 61,
+    "count": 6,
+    "bad_stop_pct": 16,
+    "tdi": 15
+  },
+  {
+    "id": 10,
+    "label": "label-10",
+    "group_by_type": "device",
+    "score": 72,
+    "count": 97,
+    "bad_stop_pct": 0,
+    "tdi": 60
+  },
+  {
+    "id": 11,
+    "label": "label-11",
+    "group_by_type": "device",
+    "score": 7,
+    "count": 78,
+    "bad_stop_pct": 52,
+    "tdi": 56
+  },
+  {
+    "id": 12,
+    "label": "label-12",
+    "group_by_type": "device",
+    "score": 38,
+    "count": 82,
+    "bad_stop_pct": 24,
+    "tdi": 87
+  },
+  {
+    "id": 13,
+    "label": "label-13",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 89,
+    "bad_stop_pct": 4,
+    "tdi": 15
+  },
+  {
+    "id": 14,
+    "label": "label-14",
+    "group_by_type": "device",
+    "score": 79,
+    "count": 9,
+    "bad_stop_pct": 5,
+    "tdi": 24
+  },
+  {
+    "id": 15,
+    "label": "label-15",
+    "group_by_type": "device",
+    "score": 28,
+    "count": 53,
+    "bad_stop_pct": 0,
+    "tdi": 87
+  },
+  {
+    "id": 16,
+    "label": "label-16",
+    "group_by_type": "device",
+    "score": 69,
+    "count": 37,
+    "bad_stop_pct": 61,
+    "tdi": 48
+  },
+  {
+    "id": 17,
+    "label": "label-17",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 33,
+    "bad_stop_pct": 43,
+    "tdi": 56
+  },
+  {
+    "id": 18,
+    "label": "label-18",
+    "group_by_type": "device",
+    "score": 42,
+    "count": 72,
+    "bad_stop_pct": 43,
+    "tdi": 24
+  },
+  {
+    "id": 19,
+    "label": "label-19",
+    "group_by_type": "device",
+    "score": 59,
+    "count": 45,
+    "bad_stop_pct": 34,
+    "tdi": 63
+  },
+  {
+    "id": 20,
+    "label": "label-20",
+    "group_by_type": "device",
+    "score": 64,
+    "count": 73,
+    "bad_stop_pct": 97,
+    "tdi": 46
+  },
+  {
+    "id": 21,
+    "label": "label-21",
+    "group_by_type": "device",
+    "score": 65,
+    "count": 95,
+    "bad_stop_pct": 47,
+    "tdi": 42
+  },
+  {
+    "id": 22,
+    "label": "label-22",
+    "group_by_type": "device",
+    "score": 53,
+    "count": 55,
+    "bad_stop_pct": 50,
+    "tdi": 75
+  },
+  {
+    "id": 23,
+    "label": "label-23",
+    "group_by_type": "device",
+    "score": 25,
+    "count": 62,
+    "bad_stop_pct": 59,
+    "tdi": 34
+  },
+  {
+    "id": 24,
+    "label": "label-24",
+    "group_by_type": "device",
+    "score": 58,
+    "count": 35,
+    "bad_stop_pct": 8,
+    "tdi": 33
+  },
+  {
+    "id": 25,
+    "label": "label-25",
+    "group_by_type": "device",
+    "score": 74,
+    "count": 59,
+    "bad_stop_pct": 96,
+    "tdi": 99
+  },
+  {
+    "id": 26,
+    "label": "label-26",
+    "group_by_type": "device",
+    "score": 88,
+    "count": 10,
+    "bad_stop_pct": 74,
+    "tdi": 63
+  },
+  {
+    "id": 27,
+    "label": "label-27",
+    "group_by_type": "device",
+    "score": 94,
+    "count": 26,
+    "bad_stop_pct": 16,
+    "tdi": 55
+  },
+  {
+    "id": 28,
+    "label": "label-28",
+    "group_by_type": "device",
+    "score": 9,
+    "count": 93,
+    "bad_stop_pct": 68,
+    "tdi": 26
+  },
+  {
+    "id": 29,
+    "label": "label-29",
+    "group_by_type": "device",
+    "score": 76,
+    "count": 7,
+    "bad_stop_pct": 76,
+    "tdi": 1
+  },
+  {
+    "id": 30,
+    "label": "label-30",
+    "group_by_type": "device",
+    "score": 62,
+    "count": 77,
+    "bad_stop_pct": 30,
+    "tdi": 27
+  },
+  {
+    "id": 31,
+    "label": "label-31",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 97,
+    "bad_stop_pct": 97,
+    "tdi": 54
+  },
+  {
+    "id": 32,
+    "label": "label-32",
+    "group_by_type": "device",
+    "score": 48,
+    "count": 12,
+    "bad_stop_pct": 14,
+    "tdi": 99
+  },
+  {
+    "id": 33,
+    "label": "label-33",
+    "group_by_type": "device",
+    "score": 81,
+    "count": 97,
+    "bad_stop_pct": 87,
+    "tdi": 27
+  },
+  {
+    "id": 34,
+    "label": "label-34",
+    "group_by_type": "device",
+    "score": 34,
+    "count": 92,
+    "bad_stop_pct": 36,
+    "tdi": 58
+  },
+  {
+    "id": 35,
+    "label": "label-35",
+    "group_by_type": "device",
+    "score": 99,
+    "count": 1,
+    "bad_stop_pct": 0,
+    "tdi": 37
+  },
+  {
+    "id": 36,
+    "label": "label-36",
+    "group_by_type": "device",
+    "score": 6,
+    "count": 95,
+    "bad_stop_pct": 26,
+    "tdi": 98
+  },
+  {
+    "id": 37,
+    "label": "label-37",
+    "group_by_type": "device",
+    "score": 55,
+    "count": 85,
+    "bad_stop_pct": 98,
+    "tdi": 72
+  },
+  {
+    "id": 38,
+    "label": "label-38",
+    "group_by_type": "device",
+    "score": 9,
+    "count": 39,
+    "bad_stop_pct": 11,
+    "tdi": 24
+  },
+  {
+    "id": 39,
+    "label": "label-39",
+    "group_by_type": "device",
+    "score": 70,
+    "count": 50,
+    "bad_stop_pct": 24,
+    "tdi": 79
+  },
+  {
+    "id": 40,
+    "label": "label-40",
+    "group_by_type": "device",
+    "score": 74,
+    "count": 93,
+    "bad_stop_pct": 47,
+    "tdi": 92
+  },
+  {
+    "id": 41,
+    "label": "label-41",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 93,
+    "bad_stop_pct": 49,
+    "tdi": 78
+  },
+  {
+    "id": 42,
+    "label": "label-42",
+    "group_by_type": "device",
+    "score": 41,
+    "count": 63,
+    "bad_stop_pct": 59,
+    "tdi": 94
+  },
+  {
+    "id": 43,
+    "label": "label-43",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 17,
+    "bad_stop_pct": 22,
+    "tdi": 62
+  },
+  {
+    "id": 44,
+    "label": "label-44",
+    "group_by_type": "device",
+    "score": 20,
+    "count": 33,
+    "bad_stop_pct": 1,
+    "tdi": 40
+  },
+  {
+    "id": 45,
+    "label": "label-45",
+    "group_by_type": "device",
+    "score": 80,
+    "count": 11,
+    "bad_stop_pct": 68,
+    "tdi": 39
+  },
+  {
+    "id": 46,
+    "label": "label-46",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 27,
+    "bad_stop_pct": 8,
+    "tdi": 2
+  },
+  {
+    "id": 47,
+    "label": "label-47",
+    "group_by_type": "device",
+    "score": 62,
+    "count": 57,
+    "bad_stop_pct": 93,
+    "tdi": 23
+  },
+  {
+    "id": 48,
+    "label": "label-48",
+    "group_by_type": "device",
+    "score": 33,
+    "count": 4,
+    "bad_stop_pct": 47,
+    "tdi": 28
+  },
+  {
+    "id": 49,
+    "label": "label-49",
+    "group_by_type": "device",
+    "score": 64,
+    "count": 87,
+    "bad_stop_pct": 54,
+    "tdi": 88
+  },
+  {
+    "id": 50,
+    "label": "label-50",
+    "group_by_type": "device",
+    "score": 69,
+    "count": 10,
+    "bad_stop_pct": 43,
+    "tdi": 38
+  },
+  {
+    "id": 51,
+    "label": "label-51",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 71,
+    "bad_stop_pct": 32,
+    "tdi": 7
+  },
+  {
+    "id": 52,
+    "label": "label-52",
+    "group_by_type": "device",
+    "score": 26,
+    "count": 19,
+    "bad_stop_pct": 40,
+    "tdi": 67
+  },
+  {
+    "id": 53,
+    "label": "label-53",
+    "group_by_type": "device",
+    "score": 88,
+    "count": 17,
+    "bad_stop_pct": 76,
+    "tdi": 42
+  },
+  {
+    "id": 54,
+    "label": "label-54",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 89,
+    "bad_stop_pct": 34,
+    "tdi": 20
+  },
+  {
+    "id": 55,
+    "label": "label-55",
+    "group_by_type": "device",
+    "score": 22,
+    "count": 17,
+    "bad_stop_pct": 18,
+    "tdi": 29
+  },
+  {
+    "id": 56,
+    "label": "label-56",
+    "group_by_type": "device",
+    "score": 8,
+    "count": 56,
+    "bad_stop_pct": 40,
+    "tdi": 74
+  },
+  {
+    "id": 57,
+    "label": "label-57",
+    "group_by_type": "device",
+    "score": 70,
+    "count": 91,
+    "bad_stop_pct": 71,
+    "tdi": 93
+  },
+  {
+    "id": 58,
+    "label": "label-58",
+    "group_by_type": "device",
+    "score": 63,
+    "count": 72,
+    "bad_stop_pct": 70,
+    "tdi": 9
+  },
+  {
+    "id": 59,
+    "label": "label-59",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 45,
+    "bad_stop_pct": 75,
+    "tdi": 70
+  },
+  {
+    "id": 60,
+    "label": "label-60",
+    "group_by_type": "device",
+    "score": 88,
+    "count": 68,
+    "bad_stop_pct": 17,
+    "tdi": 23
+  },
+  {
+    "id": 61,
+    "label": "label-61",
+    "group_by_type": "device",
+    "score": 47,
+    "count": 48,
+    "bad_stop_pct": 33,
+    "tdi": 25
+  },
+  {
+    "id": 62,
+    "label": "label-62",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 68,
+    "bad_stop_pct": 45,
+    "tdi": 75
+  },
+  {
+    "id": 63,
+    "label": "label-63",
+    "group_by_type": "device",
+    "score": 47,
+    "count": 21,
+    "bad_stop_pct": 36,
+    "tdi": 11
+  },
+  {
+    "id": 64,
+    "label": "label-64",
+    "group_by_type": "device",
+    "score": 59,
+    "count": 86,
+    "bad_stop_pct": 73,
+    "tdi": 80
+  },
+  {
+    "id": 65,
+    "label": "label-65",
+    "group_by_type": "device",
+    "score": 55,
+    "count": 0,
+    "bad_stop_pct": 94,
+    "tdi": 51
+  },
+  {
+    "id": 66,
+    "label": "label-66",
+    "group_by_type": "device",
+    "score": 37,
+    "count": 48,
+    "bad_stop_pct": 33,
+    "tdi": 22
+  },
+  {
+    "id": 67,
+    "label": "label-67",
+    "group_by_type": "device",
+    "score": 39,
+    "count": 98,
+    "bad_stop_pct": 25,
+    "tdi": 89
+  },
+  {
+    "id": 68,
+    "label": "label-68",
+    "group_by_type": "device",
+    "score": 79,
+    "count": 71,
+    "bad_stop_pct": 80,
+    "tdi": 9
+  },
+  {
+    "id": 69,
+    "label": "label-69",
+    "group_by_type": "device",
+    "score": 22,
+    "count": 4,
+    "bad_stop_pct": 49,
+    "tdi": 20
+  },
+  {
+    "id": 70,
+    "label": "label-70",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 33,
+    "bad_stop_pct": 63,
+    "tdi": 79
+  },
+  {
+    "id": 71,
+    "label": "label-71",
+    "group_by_type": "device",
+    "score": 81,
+    "count": 71,
+    "bad_stop_pct": 92,
+    "tdi": 84
+  },
+  {
+    "id": 72,
+    "label": "label-72",
+    "group_by_type": "device",
+    "score": 61,
+    "count": 65,
+    "bad_stop_pct": 98,
+    "tdi": 81
+  },
+  {
+    "id": 73,
+    "label": "label-73",
+    "group_by_type": "device",
+    "score": 80,
+    "count": 82,
+    "bad_stop_pct": 2,
+    "tdi": 99
+  },
+  {
+    "id": 74,
+    "label": "label-74",
+    "group_by_type": "device",
+    "score": 42,
+    "count": 77,
+    "bad_stop_pct": 95,
+    "tdi": 71
+  },
+  {
+    "id": 75,
+    "label": "label-75",
+    "group_by_type": "device",
+    "score": 60,
+    "count": 28,
+    "bad_stop_pct": 75,
+    "tdi": 86
+  },
+  {
+    "id": 76,
+    "label": "label-76",
+    "group_by_type": "device",
+    "score": 4,
+    "count": 26,
+    "bad_stop_pct": 5,
+    "tdi": 15
+  },
+  {
+    "id": 77,
+    "label": "label-77",
+    "group_by_type": "device",
+    "score": 33,
+    "count": 45,
+    "bad_stop_pct": 41,
+    "tdi": 82
+  },
+  {
+    "id": 78,
+    "label": "label-78",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 43,
+    "bad_stop_pct": 76,
+    "tdi": 62
+  },
+  {
+    "id": 79,
+    "label": "label-79",
+    "group_by_type": "device",
+    "score": 86,
+    "count": 19,
+    "bad_stop_pct": 87,
+    "tdi": 89
+  },
+  {
+    "id": 80,
+    "label": "label-80",
+    "group_by_type": "device",
+    "score": 78,
+    "count": 97,
+    "bad_stop_pct": 55,
+    "tdi": 24
+  },
+  {
+    "id": 81,
+    "label": "label-81",
+    "group_by_type": "device",
+    "score": 52,
+    "count": 19,
+    "bad_stop_pct": 12,
+    "tdi": 5
+  },
+  {
+    "id": 82,
+    "label": "label-82",
+    "group_by_type": "device",
+    "score": 64,
+    "count": 7,
+    "bad_stop_pct": 44,
+    "tdi": 3
+  },
+  {
+    "id": 83,
+    "label": "label-83",
+    "group_by_type": "device",
+    "score": 29,
+    "count": 63,
+    "bad_stop_pct": 31,
+    "tdi": 83
+  },
+  {
+    "id": 84,
+    "label": "label-84",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 55,
+    "bad_stop_pct": 68,
+    "tdi": 88
+  },
+  {
+    "id": 85,
+    "label": "label-85",
+    "group_by_type": "device",
+    "score": 95,
+    "count": 80,
+    "bad_stop_pct": 23,
+    "tdi": 7
+  },
+  {
+    "id": 86,
+    "label": "label-86",
+    "group_by_type": "device",
+    "score": 13,
+    "count": 55,
+    "bad_stop_pct": 28,
+    "tdi": 23
+  },
+  {
+    "id": 87,
+    "label": "label-87",
+    "group_by_type": "device",
+    "score": 67,
+    "count": 57,
+    "bad_stop_pct": 63,
+    "tdi": 61
+  },
+  {
+    "id": 88,
+    "label": "label-88",
+    "group_by_type": "device",
+    "score": 62,
+    "count": 29,
+    "bad_stop_pct": 90,
+    "tdi": 77
+  },
+  {
+    "id": 89,
+    "label": "label-89",
+    "group_by_type": "device",
+    "score": 53,
+    "count": 58,
+    "bad_stop_pct": 47,
+    "tdi": 58
+  },
+  {
+    "id": 90,
+    "label": "label-90",
+    "group_by_type": "device",
+    "score": 21,
+    "count": 59,
+    "bad_stop_pct": 69,
+    "tdi": 89
+  },
+  {
+    "id": 91,
+    "label": "label-91",
+    "group_by_type": "device",
+    "score": 47,
+    "count": 27,
+    "bad_stop_pct": 72,
+    "tdi": 50
+  },
+  {
+    "id": 92,
+    "label": "label-92",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 13,
+    "bad_stop_pct": 50,
+    "tdi": 47
+  },
+  {
+    "id": 93,
+    "label": "label-93",
+    "group_by_type": "device",
+    "score": 30,
+    "count": 52,
+    "bad_stop_pct": 71,
+    "tdi": 79
+  },
+  {
+    "id": 94,
+    "label": "label-94",
+    "group_by_type": "device",
+    "score": 99,
+    "count": 75,
+    "bad_stop_pct": 82,
+    "tdi": 75
+  },
+  {
+    "id": 95,
+    "label": "label-95",
+    "group_by_type": "device",
+    "score": 78,
+    "count": 41,
+    "bad_stop_pct": 53,
+    "tdi": 54
+  },
+  {
+    "id": 96,
+    "label": "label-96",
+    "group_by_type": "device",
+    "score": 2,
+    "count": 88,
+    "bad_stop_pct": 44,
+    "tdi": 86
+  },
+  {
+    "id": 97,
+    "label": "label-97",
+    "group_by_type": "device",
+    "score": 70,
+    "count": 61,
+    "bad_stop_pct": 37,
+    "tdi": 50
+  },
+  {
+    "id": 98,
+    "label": "label-98",
+    "group_by_type": "device",
+    "score": 13,
+    "count": 62,
+    "bad_stop_pct": 23,
+    "tdi": 56
+  },
+  {
+    "id": 99,
+    "label": "label-99",
+    "group_by_type": "device",
+    "score": 37,
+    "count": 80,
+    "bad_stop_pct": 19,
+    "tdi": 97
+  },
+  {
+    "id": 100,
+    "label": "label-100",
+    "group_by_type": "device",
+    "score": 71,
+    "count": 19,
+    "bad_stop_pct": 6,
+    "tdi": 3
+  },
+  {
+    "id": 101,
+    "label": "label-101",
+    "group_by_type": "device",
+    "score": 33,
+    "count": 27,
+    "bad_stop_pct": 99,
+    "tdi": 11
+  },
+  {
+    "id": 102,
+    "label": "label-102",
+    "group_by_type": "device",
+    "score": 19,
+    "count": 7,
+    "bad_stop_pct": 71,
+    "tdi": 53
+  },
+  {
+    "id": 103,
+    "label": "label-103",
+    "group_by_type": "device",
+    "score": 33,
+    "count": 11,
+    "bad_stop_pct": 75,
+    "tdi": 37
+  },
+  {
+    "id": 104,
+    "label": "label-104",
+    "group_by_type": "device",
+    "score": 66,
+    "count": 80,
+    "bad_stop_pct": 72,
+    "tdi": 44
+  },
+  {
+    "id": 105,
+    "label": "label-105",
+    "group_by_type": "device",
+    "score": 97,
+    "count": 35,
+    "bad_stop_pct": 72,
+    "tdi": 14
+  },
+  {
+    "id": 106,
+    "label": "label-106",
+    "group_by_type": "device",
+    "score": 96,
+    "count": 28,
+    "bad_stop_pct": 85,
+    "tdi": 18
+  },
+  {
+    "id": 107,
+    "label": "label-107",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 73,
+    "bad_stop_pct": 29,
+    "tdi": 57
+  },
+  {
+    "id": 108,
+    "label": "label-108",
+    "group_by_type": "device",
+    "score": 10,
+    "count": 19,
+    "bad_stop_pct": 19,
+    "tdi": 24
+  },
+  {
+    "id": 109,
+    "label": "label-109",
+    "group_by_type": "device",
+    "score": 2,
+    "count": 10,
+    "bad_stop_pct": 21,
+    "tdi": 67
+  },
+  {
+    "id": 110,
+    "label": "label-110",
+    "group_by_type": "device",
+    "score": 0,
+    "count": 86,
+    "bad_stop_pct": 43,
+    "tdi": 2
+  },
+  {
+    "id": 111,
+    "label": "label-111",
+    "group_by_type": "device",
+    "score": 37,
+    "count": 28,
+    "bad_stop_pct": 39,
+    "tdi": 5
+  },
+  {
+    "id": 112,
+    "label": "label-112",
+    "group_by_type": "device",
+    "score": 18,
+    "count": 67,
+    "bad_stop_pct": 14,
+    "tdi": 36
+  },
+  {
+    "id": 113,
+    "label": "label-113",
+    "group_by_type": "device",
+    "score": 20,
+    "count": 78,
+    "bad_stop_pct": 3,
+    "tdi": 67
+  },
+  {
+    "id": 114,
+    "label": "label-114",
+    "group_by_type": "device",
+    "score": 13,
+    "count": 27,
+    "bad_stop_pct": 15,
+    "tdi": 33
+  },
+  {
+    "id": 115,
+    "label": "label-115",
+    "group_by_type": "device",
+    "score": 8,
+    "count": 53,
+    "bad_stop_pct": 57,
+    "tdi": 68
+  },
+  {
+    "id": 116,
+    "label": "label-116",
+    "group_by_type": "device",
+    "score": 86,
+    "count": 30,
+    "bad_stop_pct": 62,
+    "tdi": 0
+  },
+  {
+    "id": 117,
+    "label": "label-117",
+    "group_by_type": "device",
+    "score": 70,
+    "count": 32,
+    "bad_stop_pct": 26,
+    "tdi": 27
+  },
+  {
+    "id": 118,
+    "label": "label-118",
+    "group_by_type": "device",
+    "score": 89,
+    "count": 0,
+    "bad_stop_pct": 31,
+    "tdi": 96
+  },
+  {
+    "id": 119,
+    "label": "label-119",
+    "group_by_type": "device",
+    "score": 25,
+    "count": 29,
+    "bad_stop_pct": 60,
+    "tdi": 64
+  },
+  {
+    "id": 120,
+    "label": "label-120",
+    "group_by_type": "device",
+    "score": 67,
+    "count": 18,
+    "bad_stop_pct": 99,
+    "tdi": 37
+  },
+  {
+    "id": 121,
+    "label": "label-121",
+    "group_by_type": "device",
+    "score": 93,
+    "count": 37,
+    "bad_stop_pct": 89,
+    "tdi": 95
+  },
+  {
+    "id": 122,
+    "label": "label-122",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 44,
+    "bad_stop_pct": 70,
+    "tdi": 39
+  },
+  {
+    "id": 123,
+    "label": "label-123",
+    "group_by_type": "device",
+    "score": 34,
+    "count": 85,
+    "bad_stop_pct": 51,
+    "tdi": 34
+  },
+  {
+    "id": 124,
+    "label": "label-124",
+    "group_by_type": "device",
+    "score": 64,
+    "count": 27,
+    "bad_stop_pct": 72,
+    "tdi": 38
+  },
+  {
+    "id": 125,
+    "label": "label-125",
+    "group_by_type": "device",
+    "score": 96,
+    "count": 86,
+    "bad_stop_pct": 95,
+    "tdi": 47
+  },
+  {
+    "id": 126,
+    "label": "label-126",
+    "group_by_type": "device",
+    "score": 88,
+    "count": 10,
+    "bad_stop_pct": 12,
+    "tdi": 95
+  },
+  {
+    "id": 127,
+    "label": "label-127",
+    "group_by_type": "device",
+    "score": 1,
+    "count": 20,
+    "bad_stop_pct": 71,
+    "tdi": 94
+  },
+  {
+    "id": 128,
+    "label": "label-128",
+    "group_by_type": "device",
+    "score": 47,
+    "count": 70,
+    "bad_stop_pct": 89,
+    "tdi": 8
+  },
+  {
+    "id": 129,
+    "label": "label-129",
+    "group_by_type": "device",
+    "score": 25,
+    "count": 56,
+    "bad_stop_pct": 29,
+    "tdi": 29
+  },
+  {
+    "id": 130,
+    "label": "label-130",
+    "group_by_type": "device",
+    "score": 89,
+    "count": 13,
+    "bad_stop_pct": 92,
+    "tdi": 1
+  },
+  {
+    "id": 131,
+    "label": "label-131",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 56,
+    "bad_stop_pct": 96,
+    "tdi": 15
+  },
+  {
+    "id": 132,
+    "label": "label-132",
+    "group_by_type": "device",
+    "score": 66,
+    "count": 2,
+    "bad_stop_pct": 97,
+    "tdi": 12
+  },
+  {
+    "id": 133,
+    "label": "label-133",
+    "group_by_type": "device",
+    "score": 60,
+    "count": 30,
+    "bad_stop_pct": 95,
+    "tdi": 54
+  },
+  {
+    "id": 134,
+    "label": "label-134",
+    "group_by_type": "device",
+    "score": 60,
+    "count": 98,
+    "bad_stop_pct": 41,
+    "tdi": 65
+  },
+  {
+    "id": 135,
+    "label": "label-135",
+    "group_by_type": "device",
+    "score": 98,
+    "count": 38,
+    "bad_stop_pct": 41,
+    "tdi": 54
+  },
+  {
+    "id": 136,
+    "label": "label-136",
+    "group_by_type": "device",
+    "score": 35,
+    "count": 46,
+    "bad_stop_pct": 90,
+    "tdi": 24
+  },
+  {
+    "id": 137,
+    "label": "label-137",
+    "group_by_type": "device",
+    "score": 5,
+    "count": 55,
+    "bad_stop_pct": 20,
+    "tdi": 98
+  },
+  {
+    "id": 138,
+    "label": "label-138",
+    "group_by_type": "device",
+    "score": 27,
+    "count": 1,
+    "bad_stop_pct": 22,
+    "tdi": 11
+  },
+  {
+    "id": 139,
+    "label": "label-139",
+    "group_by_type": "device",
+    "score": 82,
+    "count": 86,
+    "bad_stop_pct": 68,
+    "tdi": 61
+  },
+  {
+    "id": 140,
+    "label": "label-140",
+    "group_by_type": "device",
+    "score": 11,
+    "count": 73,
+    "bad_stop_pct": 41,
+    "tdi": 83
+  },
+  {
+    "id": 141,
+    "label": "label-141",
+    "group_by_type": "device",
+    "score": 6,
+    "count": 46,
+    "bad_stop_pct": 95,
+    "tdi": 26
+  },
+  {
+    "id": 142,
+    "label": "label-142",
+    "group_by_type": "device",
+    "score": 25,
+    "count": 77,
+    "bad_stop_pct": 63,
+    "tdi": 61
+  },
+  {
+    "id": 143,
+    "label": "label-143",
+    "group_by_type": "device",
+    "score": 48,
+    "count": 59,
+    "bad_stop_pct": 86,
+    "tdi": 13
+  },
+  {
+    "id": 144,
+    "label": "label-144",
+    "group_by_type": "device",
+    "score": 46,
+    "count": 5,
+    "bad_stop_pct": 80,
+    "tdi": 82
+  },
+  {
+    "id": 145,
+    "label": "label-145",
+    "group_by_type": "device",
+    "score": 27,
+    "count": 16,
+    "bad_stop_pct": 35,
+    "tdi": 73
+  },
+  {
+    "id": 146,
+    "label": "label-146",
+    "group_by_type": "device",
+    "score": 99,
+    "count": 2,
+    "bad_stop_pct": 33,
+    "tdi": 96
+  },
+  {
+    "id": 147,
+    "label": "label-147",
+    "group_by_type": "device",
+    "score": 27,
+    "count": 12,
+    "bad_stop_pct": 53,
+    "tdi": 56
+  },
+  {
+    "id": 148,
+    "label": "label-148",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 78,
+    "bad_stop_pct": 69,
+    "tdi": 2
+  },
+  {
+    "id": 149,
+    "label": "label-149",
+    "group_by_type": "device",
+    "score": 81,
+    "count": 2,
+    "bad_stop_pct": 98,
+    "tdi": 54
+  },
+  {
+    "id": 150,
+    "label": "label-150",
+    "group_by_type": "device",
+    "score": 61,
+    "count": 25,
+    "bad_stop_pct": 34,
+    "tdi": 40
+  },
+  {
+    "id": 151,
+    "label": "label-151",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 27,
+    "bad_stop_pct": 81,
+    "tdi": 93
+  },
+  {
+    "id": 152,
+    "label": "label-152",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 95,
+    "bad_stop_pct": 95,
+    "tdi": 23
+  },
+  {
+    "id": 153,
+    "label": "label-153",
+    "group_by_type": "device",
+    "score": 27,
+    "count": 4,
+    "bad_stop_pct": 89,
+    "tdi": 25
+  },
+  {
+    "id": 154,
+    "label": "label-154",
+    "group_by_type": "device",
+    "score": 57,
+    "count": 92,
+    "bad_stop_pct": 82,
+    "tdi": 57
+  },
+  {
+    "id": 155,
+    "label": "label-155",
+    "group_by_type": "device",
+    "score": 71,
+    "count": 44,
+    "bad_stop_pct": 66,
+    "tdi": 22
+  },
+  {
+    "id": 156,
+    "label": "label-156",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 98,
+    "bad_stop_pct": 80,
+    "tdi": 56
+  },
+  {
+    "id": 157,
+    "label": "label-157",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 98,
+    "bad_stop_pct": 71,
+    "tdi": 49
+  },
+  {
+    "id": 158,
+    "label": "label-158",
+    "group_by_type": "device",
+    "score": 78,
+    "count": 88,
+    "bad_stop_pct": 25,
+    "tdi": 16
+  },
+  {
+    "id": 159,
+    "label": "label-159",
+    "group_by_type": "device",
+    "score": 51,
+    "count": 49,
+    "bad_stop_pct": 96,
+    "tdi": 74
+  },
+  {
+    "id": 160,
+    "label": "label-160",
+    "group_by_type": "device",
+    "score": 51,
+    "count": 55,
+    "bad_stop_pct": 49,
+    "tdi": 97
+  },
+  {
+    "id": 161,
+    "label": "label-161",
+    "group_by_type": "device",
+    "score": 26,
+    "count": 36,
+    "bad_stop_pct": 17,
+    "tdi": 86
+  },
+  {
+    "id": 162,
+    "label": "label-162",
+    "group_by_type": "device",
+    "score": 50,
+    "count": 11,
+    "bad_stop_pct": 2,
+    "tdi": 49
+  },
+  {
+    "id": 163,
+    "label": "label-163",
+    "group_by_type": "device",
+    "score": 57,
+    "count": 84,
+    "bad_stop_pct": 55,
+    "tdi": 40
+  },
+  {
+    "id": 164,
+    "label": "label-164",
+    "group_by_type": "device",
+    "score": 61,
+    "count": 69,
+    "bad_stop_pct": 78,
+    "tdi": 33
+  },
+  {
+    "id": 165,
+    "label": "label-165",
+    "group_by_type": "device",
+    "score": 85,
+    "count": 76,
+    "bad_stop_pct": 61,
+    "tdi": 79
+  },
+  {
+    "id": 166,
+    "label": "label-166",
+    "group_by_type": "device",
+    "score": 14,
+    "count": 76,
+    "bad_stop_pct": 24,
+    "tdi": 23
+  },
+  {
+    "id": 167,
+    "label": "label-167",
+    "group_by_type": "device",
+    "score": 3,
+    "count": 82,
+    "bad_stop_pct": 95,
+    "tdi": 53
+  },
+  {
+    "id": 168,
+    "label": "label-168",
+    "group_by_type": "device",
+    "score": 57,
+    "count": 82,
+    "bad_stop_pct": 59,
+    "tdi": 83
+  },
+  {
+    "id": 169,
+    "label": "label-169",
+    "group_by_type": "device",
+    "score": 31,
+    "count": 37,
+    "bad_stop_pct": 46,
+    "tdi": 93
+  },
+  {
+    "id": 170,
+    "label": "label-170",
+    "group_by_type": "device",
+    "score": 93,
+    "count": 8,
+    "bad_stop_pct": 56,
+    "tdi": 51
+  },
+  {
+    "id": 171,
+    "label": "label-171",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 77,
+    "bad_stop_pct": 95,
+    "tdi": 86
+  },
+  {
+    "id": 172,
+    "label": "label-172",
+    "group_by_type": "device",
+    "score": 80,
+    "count": 81,
+    "bad_stop_pct": 57,
+    "tdi": 89
+  },
+  {
+    "id": 173,
+    "label": "label-173",
+    "group_by_type": "device",
+    "score": 41,
+    "count": 67,
+    "bad_stop_pct": 88,
+    "tdi": 48
+  },
+  {
+    "id": 174,
+    "label": "label-174",
+    "group_by_type": "device",
+    "score": 54,
+    "count": 43,
+    "bad_stop_pct": 56,
+    "tdi": 41
+  },
+  {
+    "id": 175,
+    "label": "label-175",
+    "group_by_type": "device",
+    "score": 22,
+    "count": 34,
+    "bad_stop_pct": 3,
+    "tdi": 89
+  },
+  {
+    "id": 176,
+    "label": "label-176",
+    "group_by_type": "device",
+    "score": 95,
+    "count": 26,
+    "bad_stop_pct": 35,
+    "tdi": 22
+  },
+  {
+    "id": 177,
+    "label": "label-177",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 65,
+    "bad_stop_pct": 95,
+    "tdi": 54
+  },
+  {
+    "id": 178,
+    "label": "label-178",
+    "group_by_type": "device",
+    "score": 50,
+    "count": 88,
+    "bad_stop_pct": 81,
+    "tdi": 13
+  },
+  {
+    "id": 179,
+    "label": "label-179",
+    "group_by_type": "device",
+    "score": 46,
+    "count": 30,
+    "bad_stop_pct": 67,
+    "tdi": 55
+  },
+  {
+    "id": 180,
+    "label": "label-180",
+    "group_by_type": "device",
+    "score": 82,
+    "count": 33,
+    "bad_stop_pct": 78,
+    "tdi": 34
+  },
+  {
+    "id": 181,
+    "label": "label-181",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 0,
+    "bad_stop_pct": 38,
+    "tdi": 4
+  },
+  {
+    "id": 182,
+    "label": "label-182",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 31,
+    "bad_stop_pct": 79,
+    "tdi": 81
+  },
+  {
+    "id": 183,
+    "label": "label-183",
+    "group_by_type": "device",
+    "score": 18,
+    "count": 87,
+    "bad_stop_pct": 51,
+    "tdi": 66
+  },
+  {
+    "id": 184,
+    "label": "label-184",
+    "group_by_type": "device",
+    "score": 94,
+    "count": 94,
+    "bad_stop_pct": 66,
+    "tdi": 80
+  },
+  {
+    "id": 185,
+    "label": "label-185",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 77,
+    "bad_stop_pct": 1,
+    "tdi": 37
+  },
+  {
+    "id": 186,
+    "label": "label-186",
+    "group_by_type": "device",
+    "score": 20,
+    "count": 37,
+    "bad_stop_pct": 76,
+    "tdi": 94
+  },
+  {
+    "id": 187,
+    "label": "label-187",
+    "group_by_type": "device",
+    "score": 10,
+    "count": 21,
+    "bad_stop_pct": 29,
+    "tdi": 96
+  },
+  {
+    "id": 188,
+    "label": "label-188",
+    "group_by_type": "device",
+    "score": 1,
+    "count": 60,
+    "bad_stop_pct": 67,
+    "tdi": 3
+  },
+  {
+    "id": 189,
+    "label": "label-189",
+    "group_by_type": "device",
+    "score": 14,
+    "count": 97,
+    "bad_stop_pct": 52,
+    "tdi": 78
+  },
+  {
+    "id": 190,
+    "label": "label-190",
+    "group_by_type": "device",
+    "score": 46,
+    "count": 72,
+    "bad_stop_pct": 45,
+    "tdi": 31
+  },
+  {
+    "id": 191,
+    "label": "label-191",
+    "group_by_type": "device",
+    "score": 53,
+    "count": 8,
+    "bad_stop_pct": 10,
+    "tdi": 85
+  },
+  {
+    "id": 192,
+    "label": "label-192",
+    "group_by_type": "device",
+    "score": 20,
+    "count": 25,
+    "bad_stop_pct": 78,
+    "tdi": 85
+  },
+  {
+    "id": 193,
+    "label": "label-193",
+    "group_by_type": "device",
+    "score": 54,
+    "count": 23,
+    "bad_stop_pct": 17,
+    "tdi": 91
+  },
+  {
+    "id": 194,
+    "label": "label-194",
+    "group_by_type": "device",
+    "score": 0,
+    "count": 30,
+    "bad_stop_pct": 30,
+    "tdi": 78
+  },
+  {
+    "id": 195,
+    "label": "label-195",
+    "group_by_type": "device",
+    "score": 24,
+    "count": 32,
+    "bad_stop_pct": 77,
+    "tdi": 78
+  },
+  {
+    "id": 196,
+    "label": "label-196",
+    "group_by_type": "device",
+    "score": 47,
+    "count": 51,
+    "bad_stop_pct": 5,
+    "tdi": 9
+  },
+  {
+    "id": 197,
+    "label": "label-197",
+    "group_by_type": "device",
+    "score": 76,
+    "count": 89,
+    "bad_stop_pct": 98,
+    "tdi": 71
+  },
+  {
+    "id": 198,
+    "label": "label-198",
+    "group_by_type": "device",
+    "score": 23,
+    "count": 22,
+    "bad_stop_pct": 44,
+    "tdi": 37
+  },
+  {
+    "id": 199,
+    "label": "label-199",
+    "group_by_type": "device",
+    "score": 86,
+    "count": 61,
+    "bad_stop_pct": 62,
+    "tdi": 79
+  },
+  {
+    "id": 200,
+    "label": "label-200",
+    "group_by_type": "device",
+    "score": 45,
+    "count": 47,
+    "bad_stop_pct": 17,
+    "tdi": 24
+  },
+  {
+    "id": 201,
+    "label": "label-201",
+    "group_by_type": "device",
+    "score": 46,
+    "count": 2,
+    "bad_stop_pct": 53,
+    "tdi": 4
+  },
+  {
+    "id": 202,
+    "label": "label-202",
+    "group_by_type": "device",
+    "score": 13,
+    "count": 73,
+    "bad_stop_pct": 69,
+    "tdi": 76
+  },
+  {
+    "id": 203,
+    "label": "label-203",
+    "group_by_type": "device",
+    "score": 71,
+    "count": 86,
+    "bad_stop_pct": 88,
+    "tdi": 39
+  },
+  {
+    "id": 204,
+    "label": "label-204",
+    "group_by_type": "device",
+    "score": 37,
+    "count": 18,
+    "bad_stop_pct": 7,
+    "tdi": 4
+  },
+  {
+    "id": 205,
+    "label": "label-205",
+    "group_by_type": "device",
+    "score": 80,
+    "count": 60,
+    "bad_stop_pct": 39,
+    "tdi": 60
+  },
+  {
+    "id": 206,
+    "label": "label-206",
+    "group_by_type": "device",
+    "score": 31,
+    "count": 4,
+    "bad_stop_pct": 39,
+    "tdi": 39
+  },
+  {
+    "id": 207,
+    "label": "label-207",
+    "group_by_type": "device",
+    "score": 14,
+    "count": 76,
+    "bad_stop_pct": 74,
+    "tdi": 98
+  },
+  {
+    "id": 208,
+    "label": "label-208",
+    "group_by_type": "device",
+    "score": 75,
+    "count": 73,
+    "bad_stop_pct": 92,
+    "tdi": 47
+  },
+  {
+    "id": 209,
+    "label": "label-209",
+    "group_by_type": "device",
+    "score": 68,
+    "count": 4,
+    "bad_stop_pct": 71,
+    "tdi": 83
+  },
+  {
+    "id": 210,
+    "label": "label-210",
+    "group_by_type": "device",
+    "score": 60,
+    "count": 2,
+    "bad_stop_pct": 84,
+    "tdi": 91
+  },
+  {
+    "id": 211,
+    "label": "label-211",
+    "group_by_type": "device",
+    "score": 82,
+    "count": 21,
+    "bad_stop_pct": 38,
+    "tdi": 14
+  },
+  {
+    "id": 212,
+    "label": "label-212",
+    "group_by_type": "device",
+    "score": 48,
+    "count": 54,
+    "bad_stop_pct": 76,
+    "tdi": 36
+  },
+  {
+    "id": 213,
+    "label": "label-213",
+    "group_by_type": "device",
+    "score": 8,
+    "count": 31,
+    "bad_stop_pct": 90,
+    "tdi": 2
+  },
+  {
+    "id": 214,
+    "label": "label-214",
+    "group_by_type": "device",
+    "score": 8,
+    "count": 95,
+    "bad_stop_pct": 82,
+    "tdi": 36
+  },
+  {
+    "id": 215,
+    "label": "label-215",
+    "group_by_type": "device",
+    "score": 25,
+    "count": 84,
+    "bad_stop_pct": 63,
+    "tdi": 34
+  },
+  {
+    "id": 216,
+    "label": "label-216",
+    "group_by_type": "device",
+    "score": 65,
+    "count": 25,
+    "bad_stop_pct": 99,
+    "tdi": 10
+  },
+  {
+    "id": 217,
+    "label": "label-217",
+    "group_by_type": "device",
+    "score": 14,
+    "count": 44,
+    "bad_stop_pct": 34,
+    "tdi": 19
+  },
+  {
+    "id": 218,
+    "label": "label-218",
+    "group_by_type": "device",
+    "score": 82,
+    "count": 88,
+    "bad_stop_pct": 87,
+    "tdi": 84
+  },
+  {
+    "id": 219,
+    "label": "label-219",
+    "group_by_type": "device",
+    "score": 13,
+    "count": 99,
+    "bad_stop_pct": 75,
+    "tdi": 90
+  },
+  {
+    "id": 220,
+    "label": "label-220",
+    "group_by_type": "device",
+    "score": 87,
+    "count": 47,
+    "bad_stop_pct": 61,
+    "tdi": 30
+  },
+  {
+    "id": 221,
+    "label": "label-221",
+    "group_by_type": "device",
+    "score": 74,
+    "count": 57,
+    "bad_stop_pct": 97,
+    "tdi": 73
+  },
+  {
+    "id": 222,
+    "label": "label-222",
+    "group_by_type": "device",
+    "score": 35,
+    "count": 79,
+    "bad_stop_pct": 77,
+    "tdi": 10
+  },
+  {
+    "id": 223,
+    "label": "label-223",
+    "group_by_type": "device",
+    "score": 51,
+    "count": 47,
+    "bad_stop_pct": 36,
+    "tdi": 58
+  },
+  {
+    "id": 224,
+    "label": "label-224",
+    "group_by_type": "device",
+    "score": 11,
+    "count": 8,
+    "bad_stop_pct": 87,
+    "tdi": 49
+  },
+  {
+    "id": 225,
+    "label": "label-225",
+    "group_by_type": "device",
+    "score": 22,
+    "count": 56,
+    "bad_stop_pct": 3,
+    "tdi": 16
+  },
+  {
+    "id": 226,
+    "label": "label-226",
+    "group_by_type": "device",
+    "score": 59,
+    "count": 42,
+    "bad_stop_pct": 58,
+    "tdi": 27
+  },
+  {
+    "id": 227,
+    "label": "label-227",
+    "group_by_type": "device",
+    "score": 23,
+    "count": 83,
+    "bad_stop_pct": 74,
+    "tdi": 95
+  },
+  {
+    "id": 228,
+    "label": "label-228",
+    "group_by_type": "device",
+    "score": 92,
+    "count": 40,
+    "bad_stop_pct": 9,
+    "tdi": 95
+  },
+  {
+    "id": 229,
+    "label": "label-229",
+    "group_by_type": "device",
+    "score": 92,
+    "count": 93,
+    "bad_stop_pct": 98,
+    "tdi": 37
+  },
+  {
+    "id": 230,
+    "label": "label-230",
+    "group_by_type": "device",
+    "score": 15,
+    "count": 93,
+    "bad_stop_pct": 65,
+    "tdi": 15
+  },
+  {
+    "id": 231,
+    "label": "label-231",
+    "group_by_type": "device",
+    "score": 17,
+    "count": 16,
+    "bad_stop_pct": 18,
+    "tdi": 11
+  },
+  {
+    "id": 232,
+    "label": "label-232",
+    "group_by_type": "device",
+    "score": 57,
+    "count": 24,
+    "bad_stop_pct": 30,
+    "tdi": 94
+  },
+  {
+    "id": 233,
+    "label": "label-233",
+    "group_by_type": "device",
+    "score": 83,
+    "count": 69,
+    "bad_stop_pct": 32,
+    "tdi": 20
+  },
+  {
+    "id": 234,
+    "label": "label-234",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 15,
+    "bad_stop_pct": 29,
+    "tdi": 23
+  },
+  {
+    "id": 235,
+    "label": "label-235",
+    "group_by_type": "device",
+    "score": 94,
+    "count": 58,
+    "bad_stop_pct": 6,
+    "tdi": 13
+  },
+  {
+    "id": 236,
+    "label": "label-236",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 5,
+    "bad_stop_pct": 24,
+    "tdi": 62
+  },
+  {
+    "id": 237,
+    "label": "label-237",
+    "group_by_type": "device",
+    "score": 51,
+    "count": 26,
+    "bad_stop_pct": 21,
+    "tdi": 67
+  },
+  {
+    "id": 238,
+    "label": "label-238",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 59,
+    "bad_stop_pct": 69,
+    "tdi": 15
+  },
+  {
+    "id": 239,
+    "label": "label-239",
+    "group_by_type": "device",
+    "score": 57,
+    "count": 36,
+    "bad_stop_pct": 25,
+    "tdi": 34
+  },
+  {
+    "id": 240,
+    "label": "label-240",
+    "group_by_type": "device",
+    "score": 97,
+    "count": 33,
+    "bad_stop_pct": 32,
+    "tdi": 73
+  },
+  {
+    "id": 241,
+    "label": "label-241",
+    "group_by_type": "device",
+    "score": 93,
+    "count": 99,
+    "bad_stop_pct": 15,
+    "tdi": 88
+  },
+  {
+    "id": 242,
+    "label": "label-242",
+    "group_by_type": "device",
+    "score": 36,
+    "count": 40,
+    "bad_stop_pct": 95,
+    "tdi": 55
+  },
+  {
+    "id": 243,
+    "label": "label-243",
+    "group_by_type": "device",
+    "score": 21,
+    "count": 80,
+    "bad_stop_pct": 53,
+    "tdi": 96
+  },
+  {
+    "id": 244,
+    "label": "label-244",
+    "group_by_type": "device",
+    "score": 82,
+    "count": 57,
+    "bad_stop_pct": 49,
+    "tdi": 66
+  },
+  {
+    "id": 245,
+    "label": "label-245",
+    "group_by_type": "device",
+    "score": 72,
+    "count": 4,
+    "bad_stop_pct": 62,
+    "tdi": 3
+  },
+  {
+    "id": 246,
+    "label": "label-246",
+    "group_by_type": "device",
+    "score": 59,
+    "count": 81,
+    "bad_stop_pct": 26,
+    "tdi": 95
+  },
+  {
+    "id": 247,
+    "label": "label-247",
+    "group_by_type": "device",
+    "score": 58,
+    "count": 0,
+    "bad_stop_pct": 33,
+    "tdi": 91
+  },
+  {
+    "id": 248,
+    "label": "label-248",
+    "group_by_type": "device",
+    "score": 23,
+    "count": 26,
+    "bad_stop_pct": 67,
+    "tdi": 16
+  },
+  {
+    "id": 249,
+    "label": "label-249",
+    "group_by_type": "device",
+    "score": 94,
+    "count": 58,
+    "bad_stop_pct": 90,
+    "tdi": 75
+  },
+  {
+    "id": 250,
+    "label": "label-250",
+    "group_by_type": "device",
+    "score": 28,
+    "count": 77,
+    "bad_stop_pct": 85,
+    "tdi": 83
+  },
+  {
+    "id": 251,
+    "label": "label-251",
+    "group_by_type": "device",
+    "score": 94,
+    "count": 76,
+    "bad_stop_pct": 58,
+    "tdi": 27
+  },
+  {
+    "id": 252,
+    "label": "label-252",
+    "group_by_type": "device",
+    "score": 72,
+    "count": 35,
+    "bad_stop_pct": 66,
+    "tdi": 51
+  },
+  {
+    "id": 253,
+    "label": "label-253",
+    "group_by_type": "device",
+    "score": 83,
+    "count": 70,
+    "bad_stop_pct": 35,
+    "tdi": 47
+  },
+  {
+    "id": 254,
+    "label": "label-254",
+    "group_by_type": "device",
+    "score": 30,
+    "count": 60,
+    "bad_stop_pct": 21,
+    "tdi": 35
+  },
+  {
+    "id": 255,
+    "label": "label-255",
+    "group_by_type": "device",
+    "score": 29,
+    "count": 99,
+    "bad_stop_pct": 69,
+    "tdi": 27
+  },
+  {
+    "id": 256,
+    "label": "label-256",
+    "group_by_type": "device",
+    "score": 85,
+    "count": 38,
+    "bad_stop_pct": 64,
+    "tdi": 31
+  },
+  {
+    "id": 257,
+    "label": "label-257",
+    "group_by_type": "device",
+    "score": 52,
+    "count": 43,
+    "bad_stop_pct": 50,
+    "tdi": 0
+  },
+  {
+    "id": 258,
+    "label": "label-258",
+    "group_by_type": "device",
+    "score": 48,
+    "count": 7,
+    "bad_stop_pct": 95,
+    "tdi": 47
+  },
+  {
+    "id": 259,
+    "label": "label-259",
+    "group_by_type": "device",
+    "score": 98,
+    "count": 74,
+    "bad_stop_pct": 27,
+    "tdi": 10
+  },
+  {
+    "id": 260,
+    "label": "label-260",
+    "group_by_type": "device",
+    "score": 53,
+    "count": 27,
+    "bad_stop_pct": 46,
+    "tdi": 70
+  },
+  {
+    "id": 261,
+    "label": "label-261",
+    "group_by_type": "device",
+    "score": 95,
+    "count": 66,
+    "bad_stop_pct": 98,
+    "tdi": 72
+  },
+  {
+    "id": 262,
+    "label": "label-262",
+    "group_by_type": "device",
+    "score": 65,
+    "count": 43,
+    "bad_stop_pct": 58,
+    "tdi": 99
+  },
+  {
+    "id": 263,
+    "label": "label-263",
+    "group_by_type": "device",
+    "score": 2,
+    "count": 87,
+    "bad_stop_pct": 3,
+    "tdi": 25
+  },
+  {
+    "id": 264,
+    "label": "label-264",
+    "group_by_type": "device",
+    "score": 97,
+    "count": 84,
+    "bad_stop_pct": 97,
+    "tdi": 21
+  },
+  {
+    "id": 265,
+    "label": "label-265",
+    "group_by_type": "device",
+    "score": 49,
+    "count": 50,
+    "bad_stop_pct": 62,
+    "tdi": 7
+  },
+  {
+    "id": 266,
+    "label": "label-266",
+    "group_by_type": "device",
+    "score": 63,
+    "count": 28,
+    "bad_stop_pct": 32,
+    "tdi": 33
+  },
+  {
+    "id": 267,
+    "label": "label-267",
+    "group_by_type": "device",
+    "score": 43,
+    "count": 78,
+    "bad_stop_pct": 48,
+    "tdi": 92
+  },
+  {
+    "id": 268,
+    "label": "label-268",
+    "group_by_type": "device",
+    "score": 92,
+    "count": 93,
+    "bad_stop_pct": 42,
+    "tdi": 7
+  },
+  {
+    "id": 269,
+    "label": "label-269",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 11,
+    "bad_stop_pct": 20,
+    "tdi": 84
+  },
+  {
+    "id": 270,
+    "label": "label-270",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 76,
+    "bad_stop_pct": 4,
+    "tdi": 60
+  },
+  {
+    "id": 271,
+    "label": "label-271",
+    "group_by_type": "device",
+    "score": 28,
+    "count": 52,
+    "bad_stop_pct": 51,
+    "tdi": 48
+  }
+]
+        }
+      ]
+    },
+    {
+      "name": "second",
+      "config": {"titleTemplate": "Slice with dataset 2", "columns":[
+        {"name": "label","searchable": true},
+        {"name": "score","reverse": false},
+        {"name": "count"},
+        {"name": "score","reverse": false}
+      ]},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+  {
+    "id": 165,
+    "label": "label-165",
+    "group_by_type": "device",
+    "score": 85,
+    "count": 76,
+    "bad_stop_pct": 61,
+    "tdi": 79
+  },
+  {
+    "id": 166,
+    "label": "label-166",
+    "group_by_type": "device",
+    "score": 14,
+    "count": 76,
+    "bad_stop_pct": 24,
+    "tdi": 23
+  },
+  {
+    "id": 167,
+    "label": "label-167",
+    "group_by_type": "device",
+    "score": 3,
+    "count": 82,
+    "bad_stop_pct": 95,
+    "tdi": 53
+  },
+  {
+    "id": 168,
+    "label": "label-168",
+    "group_by_type": "device",
+    "score": 57,
+    "count": 82,
+    "bad_stop_pct": 59,
+    "tdi": 83
+  },
+  {
+    "id": 169,
+    "label": "label-169",
+    "group_by_type": "device",
+    "score": 31,
+    "count": 37,
+    "bad_stop_pct": 46,
+    "tdi": 93
+  },
+  {
+    "id": 170,
+    "label": "label-170",
+    "group_by_type": "device",
+    "score": 93,
+    "count": 8,
+    "bad_stop_pct": 56,
+    "tdi": 51
+  },
+  {
+    "id": 171,
+    "label": "label-171",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 77,
+    "bad_stop_pct": 95,
+    "tdi": 86
+  },
+  {
+    "id": 172,
+    "label": "label-172",
+    "group_by_type": "device",
+    "score": 80,
+    "count": 81,
+    "bad_stop_pct": 57,
+    "tdi": 89
+  },
+  {
+    "id": 173,
+    "label": "label-173",
+    "group_by_type": "device",
+    "score": 41,
+    "count": 67,
+    "bad_stop_pct": 88,
+    "tdi": 48
+  },
+  {
+    "id": 174,
+    "label": "label-174",
+    "group_by_type": "device",
+    "score": 54,
+    "count": 43,
+    "bad_stop_pct": 56,
+    "tdi": 41
+  },
+  {
+    "id": 175,
+    "label": "label-175",
+    "group_by_type": "device",
+    "score": 22,
+    "count": 34,
+    "bad_stop_pct": 3,
+    "tdi": 89
+  },
+  {
+    "id": 176,
+    "label": "label-176",
+    "group_by_type": "device",
+    "score": 95,
+    "count": 26,
+    "bad_stop_pct": 35,
+    "tdi": 22
+  },
+  {
+    "id": 177,
+    "label": "label-177",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 65,
+    "bad_stop_pct": 95,
+    "tdi": 54
+  },
+  {
+    "id": 178,
+    "label": "label-178",
+    "group_by_type": "device",
+    "score": 50,
+    "count": 88,
+    "bad_stop_pct": 81,
+    "tdi": 13
+  },
+  {
+    "id": 179,
+    "label": "label-179",
+    "group_by_type": "device",
+    "score": 46,
+    "count": 30,
+    "bad_stop_pct": 67,
+    "tdi": 55
+  },
+  {
+    "id": 180,
+    "label": "label-180",
+    "group_by_type": "device",
+    "score": 82,
+    "count": 33,
+    "bad_stop_pct": 78,
+    "tdi": 34
+  },
+  {
+    "id": 181,
+    "label": "label-181",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 0,
+    "bad_stop_pct": 38,
+    "tdi": 4
+  },
+  {
+    "id": 182,
+    "label": "label-182",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 31,
+    "bad_stop_pct": 79,
+    "tdi": 81
+  },
+  {
+    "id": 183,
+    "label": "label-183",
+    "group_by_type": "device",
+    "score": 18,
+    "count": 87,
+    "bad_stop_pct": 51,
+    "tdi": 66
+  },
+  {
+    "id": 184,
+    "label": "label-184",
+    "group_by_type": "device",
+    "score": 94,
+    "count": 94,
+    "bad_stop_pct": 66,
+    "tdi": 80
+  },
+  {
+    "id": 185,
+    "label": "label-185",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 77,
+    "bad_stop_pct": 1,
+    "tdi": 37
+  },
+  {
+    "id": 186,
+    "label": "label-186",
+    "group_by_type": "device",
+    "score": 20,
+    "count": 37,
+    "bad_stop_pct": 76,
+    "tdi": 94
+  },
+  {
+    "id": 187,
+    "label": "label-187",
+    "group_by_type": "device",
+    "score": 10,
+    "count": 21,
+    "bad_stop_pct": 29,
+    "tdi": 96
+  },
+  {
+    "id": 188,
+    "label": "label-188",
+    "group_by_type": "device",
+    "score": 1,
+    "count": 60,
+    "bad_stop_pct": 67,
+    "tdi": 3
+  },
+  {
+    "id": 189,
+    "label": "label-189",
+    "group_by_type": "device",
+    "score": 14,
+    "count": 97,
+    "bad_stop_pct": 52,
+    "tdi": 78
+  },
+  {
+    "id": 190,
+    "label": "label-190",
+    "group_by_type": "device",
+    "score": 46,
+    "count": 72,
+    "bad_stop_pct": 45,
+    "tdi": 31
+  },
+  {
+    "id": 191,
+    "label": "label-191",
+    "group_by_type": "device",
+    "score": 53,
+    "count": 8,
+    "bad_stop_pct": 10,
+    "tdi": 85
+  },
+  {
+    "id": 192,
+    "label": "label-192",
+    "group_by_type": "device",
+    "score": 20,
+    "count": 25,
+    "bad_stop_pct": 78,
+    "tdi": 85
+  },
+  {
+    "id": 193,
+    "label": "label-193",
+    "group_by_type": "device",
+    "score": 54,
+    "count": 23,
+    "bad_stop_pct": 17,
+    "tdi": 91
+  },
+  {
+    "id": 194,
+    "label": "label-194",
+    "group_by_type": "device",
+    "score": 0,
+    "count": 30,
+    "bad_stop_pct": 30,
+    "tdi": 78
+  },
+  {
+    "id": 195,
+    "label": "label-195",
+    "group_by_type": "device",
+    "score": 24,
+    "count": 32,
+    "bad_stop_pct": 77,
+    "tdi": 78
+  },
+  {
+    "id": 196,
+    "label": "label-196",
+    "group_by_type": "device",
+    "score": 47,
+    "count": 51,
+    "bad_stop_pct": 5,
+    "tdi": 9
+  },
+  {
+    "id": 197,
+    "label": "label-197",
+    "group_by_type": "device",
+    "score": 76,
+    "count": 89,
+    "bad_stop_pct": 98,
+    "tdi": 71
+  },
+  {
+    "id": 198,
+    "label": "label-198",
+    "group_by_type": "device",
+    "score": 23,
+    "count": 22,
+    "bad_stop_pct": 44,
+    "tdi": 37
+  },
+  {
+    "id": 199,
+    "label": "label-199",
+    "group_by_type": "device",
+    "score": 86,
+    "count": 61,
+    "bad_stop_pct": 62,
+    "tdi": 79
+  },
+  {
+    "id": 200,
+    "label": "label-200",
+    "group_by_type": "device",
+    "score": 45,
+    "count": 47,
+    "bad_stop_pct": 17,
+    "tdi": 24
+  },
+  {
+    "id": 201,
+    "label": "label-201",
+    "group_by_type": "device",
+    "score": 46,
+    "count": 2,
+    "bad_stop_pct": 53,
+    "tdi": 4
+  },
+  {
+    "id": 202,
+    "label": "label-202",
+    "group_by_type": "device",
+    "score": 13,
+    "count": 73,
+    "bad_stop_pct": 69,
+    "tdi": 76
+  },
+  {
+    "id": 203,
+    "label": "label-203",
+    "group_by_type": "device",
+    "score": 71,
+    "count": 86,
+    "bad_stop_pct": 88,
+    "tdi": 39
+  },
+  {
+    "id": 204,
+    "label": "label-204",
+    "group_by_type": "device",
+    "score": 37,
+    "count": 18,
+    "bad_stop_pct": 7,
+    "tdi": 4
+  },
+  {
+    "id": 205,
+    "label": "label-205",
+    "group_by_type": "device",
+    "score": 80,
+    "count": 60,
+    "bad_stop_pct": 39,
+    "tdi": 60
+  },
+  {
+    "id": 206,
+    "label": "label-206",
+    "group_by_type": "device",
+    "score": 31,
+    "count": 4,
+    "bad_stop_pct": 39,
+    "tdi": 39
+  },
+  {
+    "id": 207,
+    "label": "label-207",
+    "group_by_type": "device",
+    "score": 14,
+    "count": 76,
+    "bad_stop_pct": 74,
+    "tdi": 98
+  },
+  {
+    "id": 208,
+    "label": "label-208",
+    "group_by_type": "device",
+    "score": 75,
+    "count": 73,
+    "bad_stop_pct": 92,
+    "tdi": 47
+  },
+  {
+    "id": 209,
+    "label": "label-209",
+    "group_by_type": "device",
+    "score": 68,
+    "count": 4,
+    "bad_stop_pct": 71,
+    "tdi": 83
+  },
+  {
+    "id": 210,
+    "label": "label-210",
+    "group_by_type": "device",
+    "score": 60,
+    "count": 2,
+    "bad_stop_pct": 84,
+    "tdi": 91
+  },
+  {
+    "id": 211,
+    "label": "label-211",
+    "group_by_type": "device",
+    "score": 82,
+    "count": 21,
+    "bad_stop_pct": 38,
+    "tdi": 14
+  },
+  {
+    "id": 212,
+    "label": "label-212",
+    "group_by_type": "device",
+    "score": 48,
+    "count": 54,
+    "bad_stop_pct": 76,
+    "tdi": 36
+  },
+  {
+    "id": 213,
+    "label": "label-213",
+    "group_by_type": "device",
+    "score": 8,
+    "count": 31,
+    "bad_stop_pct": 90,
+    "tdi": 2
+  },
+  {
+    "id": 214,
+    "label": "label-214",
+    "group_by_type": "device",
+    "score": 8,
+    "count": 95,
+    "bad_stop_pct": 82,
+    "tdi": 36
+  },
+  {
+    "id": 215,
+    "label": "label-215",
+    "group_by_type": "device",
+    "score": 25,
+    "count": 84,
+    "bad_stop_pct": 63,
+    "tdi": 34
+  },
+  {
+    "id": 216,
+    "label": "label-216",
+    "group_by_type": "device",
+    "score": 65,
+    "count": 25,
+    "bad_stop_pct": 99,
+    "tdi": 10
+  },
+  {
+    "id": 217,
+    "label": "label-217",
+    "group_by_type": "device",
+    "score": 14,
+    "count": 44,
+    "bad_stop_pct": 34,
+    "tdi": 19
+  },
+  {
+    "id": 218,
+    "label": "label-218",
+    "group_by_type": "device",
+    "score": 82,
+    "count": 88,
+    "bad_stop_pct": 87,
+    "tdi": 84
+  },
+  {
+    "id": 219,
+    "label": "label-219",
+    "group_by_type": "device",
+    "score": 13,
+    "count": 99,
+    "bad_stop_pct": 75,
+    "tdi": 90
+  },
+  {
+    "id": 220,
+    "label": "label-220",
+    "group_by_type": "device",
+    "score": 87,
+    "count": 47,
+    "bad_stop_pct": 61,
+    "tdi": 30
+  },
+  {
+    "id": 221,
+    "label": "label-221",
+    "group_by_type": "device",
+    "score": 74,
+    "count": 57,
+    "bad_stop_pct": 97,
+    "tdi": 73
+  },
+  {
+    "id": 222,
+    "label": "label-222",
+    "group_by_type": "device",
+    "score": 35,
+    "count": 79,
+    "bad_stop_pct": 77,
+    "tdi": 10
+  },
+  {
+    "id": 223,
+    "label": "label-223",
+    "group_by_type": "device",
+    "score": 51,
+    "count": 47,
+    "bad_stop_pct": 36,
+    "tdi": 58
+  },
+  {
+    "id": 224,
+    "label": "label-224",
+    "group_by_type": "device",
+    "score": 11,
+    "count": 8,
+    "bad_stop_pct": 87,
+    "tdi": 49
+  },
+  {
+    "id": 225,
+    "label": "label-225",
+    "group_by_type": "device",
+    "score": 22,
+    "count": 56,
+    "bad_stop_pct": 3,
+    "tdi": 16
+  },
+  {
+    "id": 226,
+    "label": "label-226",
+    "group_by_type": "device",
+    "score": 59,
+    "count": 42,
+    "bad_stop_pct": 58,
+    "tdi": 27
+  },
+  {
+    "id": 227,
+    "label": "label-227",
+    "group_by_type": "device",
+    "score": 23,
+    "count": 83,
+    "bad_stop_pct": 74,
+    "tdi": 95
+  },
+  {
+    "id": 228,
+    "label": "label-228",
+    "group_by_type": "device",
+    "score": 92,
+    "count": 40,
+    "bad_stop_pct": 9,
+    "tdi": 95
+  },
+  {
+    "id": 229,
+    "label": "label-229",
+    "group_by_type": "device",
+    "score": 92,
+    "count": 93,
+    "bad_stop_pct": 98,
+    "tdi": 37
+  },
+  {
+    "id": 230,
+    "label": "label-230",
+    "group_by_type": "device",
+    "score": 15,
+    "count": 93,
+    "bad_stop_pct": 65,
+    "tdi": 15
+  },
+  {
+    "id": 231,
+    "label": "label-231",
+    "group_by_type": "device",
+    "score": 17,
+    "count": 16,
+    "bad_stop_pct": 18,
+    "tdi": 11
+  },
+  {
+    "id": 232,
+    "label": "label-232",
+    "group_by_type": "device",
+    "score": 57,
+    "count": 24,
+    "bad_stop_pct": 30,
+    "tdi": 94
+  },
+  {
+    "id": 233,
+    "label": "label-233",
+    "group_by_type": "device",
+    "score": 83,
+    "count": 69,
+    "bad_stop_pct": 32,
+    "tdi": 20
+  },
+  {
+    "id": 234,
+    "label": "label-234",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 15,
+    "bad_stop_pct": 29,
+    "tdi": 23
+  },
+  {
+    "id": 235,
+    "label": "label-235",
+    "group_by_type": "device",
+    "score": 94,
+    "count": 58,
+    "bad_stop_pct": 6,
+    "tdi": 13
+  },
+  {
+    "id": 236,
+    "label": "label-236",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 5,
+    "bad_stop_pct": 24,
+    "tdi": 62
+  },
+  {
+    "id": 237,
+    "label": "label-237",
+    "group_by_type": "device",
+    "score": 51,
+    "count": 26,
+    "bad_stop_pct": 21,
+    "tdi": 67
+  },
+  {
+    "id": 238,
+    "label": "label-238",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 59,
+    "bad_stop_pct": 69,
+    "tdi": 15
+  },
+  {
+    "id": 239,
+    "label": "label-239",
+    "group_by_type": "device",
+    "score": 57,
+    "count": 36,
+    "bad_stop_pct": 25,
+    "tdi": 34
+  },
+  {
+    "id": 240,
+    "label": "label-240",
+    "group_by_type": "device",
+    "score": 97,
+    "count": 33,
+    "bad_stop_pct": 32,
+    "tdi": 73
+  },
+  {
+    "id": 241,
+    "label": "label-241",
+    "group_by_type": "device",
+    "score": 93,
+    "count": 99,
+    "bad_stop_pct": 15,
+    "tdi": 88
+  },
+  {
+    "id": 242,
+    "label": "label-242",
+    "group_by_type": "device",
+    "score": 36,
+    "count": 40,
+    "bad_stop_pct": 95,
+    "tdi": 55
+  },
+  {
+    "id": 243,
+    "label": "label-243",
+    "group_by_type": "device",
+    "score": 21,
+    "count": 80,
+    "bad_stop_pct": 53,
+    "tdi": 96
+  },
+  {
+    "id": 244,
+    "label": "label-244",
+    "group_by_type": "device",
+    "score": 82,
+    "count": 57,
+    "bad_stop_pct": 49,
+    "tdi": 66
+  },
+  {
+    "id": 245,
+    "label": "label-245",
+    "group_by_type": "device",
+    "score": 72,
+    "count": 4,
+    "bad_stop_pct": 62,
+    "tdi": 3
+  },
+  {
+    "id": 246,
+    "label": "label-246",
+    "group_by_type": "device",
+    "score": 59,
+    "count": 81,
+    "bad_stop_pct": 26,
+    "tdi": 95
+  },
+  {
+    "id": 247,
+    "label": "label-247",
+    "group_by_type": "device",
+    "score": 58,
+    "count": 0,
+    "bad_stop_pct": 33,
+    "tdi": 91
+  },
+  {
+    "id": 248,
+    "label": "label-248",
+    "group_by_type": "device",
+    "score": 23,
+    "count": 26,
+    "bad_stop_pct": 67,
+    "tdi": 16
+  },
+  {
+    "id": 249,
+    "label": "label-249",
+    "group_by_type": "device",
+    "score": 94,
+    "count": 58,
+    "bad_stop_pct": 90,
+    "tdi": 75
+  },
+  {
+    "id": 250,
+    "label": "label-250",
+    "group_by_type": "device",
+    "score": 28,
+    "count": 77,
+    "bad_stop_pct": 85,
+    "tdi": 83
+  },
+  {
+    "id": 251,
+    "label": "label-251",
+    "group_by_type": "device",
+    "score": 94,
+    "count": 76,
+    "bad_stop_pct": 58,
+    "tdi": 27
+  },
+  {
+    "id": 252,
+    "label": "label-252",
+    "group_by_type": "device",
+    "score": 72,
+    "count": 35,
+    "bad_stop_pct": 66,
+    "tdi": 51
+  },
+  {
+    "id": 253,
+    "label": "label-253",
+    "group_by_type": "device",
+    "score": 83,
+    "count": 70,
+    "bad_stop_pct": 35,
+    "tdi": 47
+  },
+  {
+    "id": 254,
+    "label": "label-254",
+    "group_by_type": "device",
+    "score": 30,
+    "count": 60,
+    "bad_stop_pct": 21,
+    "tdi": 35
+  },
+  {
+    "id": 255,
+    "label": "label-255",
+    "group_by_type": "device",
+    "score": 29,
+    "count": 99,
+    "bad_stop_pct": 69,
+    "tdi": 27
+  },
+  {
+    "id": 256,
+    "label": "label-256",
+    "group_by_type": "device",
+    "score": 85,
+    "count": 38,
+    "bad_stop_pct": 64,
+    "tdi": 31
+  },
+  {
+    "id": 257,
+    "label": "label-257",
+    "group_by_type": "device",
+    "score": 52,
+    "count": 43,
+    "bad_stop_pct": 50,
+    "tdi": 0
+  },
+  {
+    "id": 258,
+    "label": "label-258",
+    "group_by_type": "device",
+    "score": 48,
+    "count": 7,
+    "bad_stop_pct": 95,
+    "tdi": 47
+  },
+  {
+    "id": 259,
+    "label": "label-259",
+    "group_by_type": "device",
+    "score": 98,
+    "count": 74,
+    "bad_stop_pct": 27,
+    "tdi": 10
+  },
+  {
+    "id": 260,
+    "label": "label-260",
+    "group_by_type": "device",
+    "score": 53,
+    "count": 27,
+    "bad_stop_pct": 46,
+    "tdi": 70
+  },
+  {
+    "id": 261,
+    "label": "label-261",
+    "group_by_type": "device",
+    "score": 95,
+    "count": 66,
+    "bad_stop_pct": 98,
+    "tdi": 72
+  },
+  {
+    "id": 262,
+    "label": "label-262",
+    "group_by_type": "device",
+    "score": 65,
+    "count": 43,
+    "bad_stop_pct": 58,
+    "tdi": 99
+  },
+  {
+    "id": 263,
+    "label": "label-263",
+    "group_by_type": "device",
+    "score": 2,
+    "count": 87,
+    "bad_stop_pct": 3,
+    "tdi": 25
+  },
+  {
+    "id": 264,
+    "label": "label-264",
+    "group_by_type": "device",
+    "score": 97,
+    "count": 84,
+    "bad_stop_pct": 97,
+    "tdi": 21
+  },
+  {
+    "id": 265,
+    "label": "label-265",
+    "group_by_type": "device",
+    "score": 49,
+    "count": 50,
+    "bad_stop_pct": 62,
+    "tdi": 7
+  },
+  {
+    "id": 266,
+    "label": "label-266",
+    "group_by_type": "device",
+    "score": 63,
+    "count": 28,
+    "bad_stop_pct": 32,
+    "tdi": 33
+  },
+  {
+    "id": 267,
+    "label": "label-267",
+    "group_by_type": "device",
+    "score": 43,
+    "count": 78,
+    "bad_stop_pct": 48,
+    "tdi": 92
+  },
+  {
+    "id": 268,
+    "label": "label-268",
+    "group_by_type": "device",
+    "score": 92,
+    "count": 93,
+    "bad_stop_pct": 42,
+    "tdi": 7
+  },
+  {
+    "id": 269,
+    "label": "label-269",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 11,
+    "bad_stop_pct": 20,
+    "tdi": 84
+  },
+  {
+    "id": 270,
+    "label": "label-270",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 76,
+    "bad_stop_pct": 4,
+    "tdi": 60
+  },
+  {
+    "id": 271,
+    "label": "label-271",
+    "group_by_type": "device",
+    "score": 28,
+    "count": 52,
+    "bad_stop_pct": 51,
+    "tdi": 48
+  }
+]
+        }
+      ]
+    },
+    {
+      "name": "third",
+      "config": {"titleTemplate": "Slice with dataset 3", "columns":[
+        {"name": "label","searchable": true},
+        {"name": "score","reverse": false},
+        {"name": "tdi","reverse": false}
+      ]},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+  {
+    "id": 0,
+    "label": "label-0",
+    "group_by_type": "device",
+    "score": 80,
+    "count": 37,
+    "bad_stop_pct": 65,
+    "tdi": 83
+  },
+  {
+    "id": 1,
+    "label": "label-1",
+    "group_by_type": "device",
+    "score": 99,
+    "count": 63,
+    "bad_stop_pct": 39,
+    "tdi": 51
+  },
+  {
+    "id": 2,
+    "label": "label-2",
+    "group_by_type": "device",
+    "score": 18,
+    "count": 91,
+    "bad_stop_pct": 53,
+    "tdi": 44
+  },
+  {
+    "id": 3,
+    "label": "label-3",
+    "group_by_type": "device",
+    "score": 76,
+    "count": 35,
+    "bad_stop_pct": 17,
+    "tdi": 30
+  },
+  {
+    "id": 4,
+    "label": "label-4",
+    "group_by_type": "device",
+    "score": 79,
+    "count": 72,
+    "bad_stop_pct": 84,
+    "tdi": 44
+  },
+  {
+    "id": 5,
+    "label": "label-5",
+    "group_by_type": "device",
+    "score": 88,
+    "count": 80,
+    "bad_stop_pct": 38,
+    "tdi": 25
+  },
+  {
+    "id": 6,
+    "label": "label-6",
+    "group_by_type": "device",
+    "score": 34,
+    "count": 50,
+    "bad_stop_pct": 50,
+    "tdi": 11
+  },
+  {
+    "id": 7,
+    "label": "label-7",
+    "group_by_type": "device",
+    "score": 70,
+    "count": 48,
+    "bad_stop_pct": 77,
+    "tdi": 79
+  },
+  {
+    "id": 8,
+    "label": "label-8",
+    "group_by_type": "device",
+    "score": 56,
+    "count": 58,
+    "bad_stop_pct": 43,
+    "tdi": 22
+  },
+  {
+    "id": 9,
+    "label": "label-9",
+    "group_by_type": "device",
+    "score": 61,
+    "count": 6,
+    "bad_stop_pct": 16,
+    "tdi": 15
+  },
+  {
+    "id": 10,
+    "label": "label-10",
+    "group_by_type": "device",
+    "score": 72,
+    "count": 97,
+    "bad_stop_pct": 0,
+    "tdi": 60
+  },
+  {
+    "id": 11,
+    "label": "label-11",
+    "group_by_type": "device",
+    "score": 7,
+    "count": 78,
+    "bad_stop_pct": 52,
+    "tdi": 56
+  },
+  {
+    "id": 12,
+    "label": "label-12",
+    "group_by_type": "device",
+    "score": 38,
+    "count": 82,
+    "bad_stop_pct": 24,
+    "tdi": 87
+  },
+  {
+    "id": 13,
+    "label": "label-13",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 89,
+    "bad_stop_pct": 4,
+    "tdi": 15
+  },
+  {
+    "id": 14,
+    "label": "label-14",
+    "group_by_type": "device",
+    "score": 79,
+    "count": 9,
+    "bad_stop_pct": 5,
+    "tdi": 24
+  },
+  {
+    "id": 15,
+    "label": "label-15",
+    "group_by_type": "device",
+    "score": 28,
+    "count": 53,
+    "bad_stop_pct": 0,
+    "tdi": 87
+  },
+  {
+    "id": 16,
+    "label": "label-16",
+    "group_by_type": "device",
+    "score": 69,
+    "count": 37,
+    "bad_stop_pct": 61,
+    "tdi": 48
+  },
+  {
+    "id": 17,
+    "label": "label-17",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 33,
+    "bad_stop_pct": 43,
+    "tdi": 56
+  },
+  {
+    "id": 18,
+    "label": "label-18",
+    "group_by_type": "device",
+    "score": 42,
+    "count": 72,
+    "bad_stop_pct": 43,
+    "tdi": 24
+  },
+  {
+    "id": 19,
+    "label": "label-19",
+    "group_by_type": "device",
+    "score": 59,
+    "count": 45,
+    "bad_stop_pct": 34,
+    "tdi": 63
+  },
+  {
+    "id": 20,
+    "label": "label-20",
+    "group_by_type": "device",
+    "score": 64,
+    "count": 73,
+    "bad_stop_pct": 97,
+    "tdi": 46
+  },
+  {
+    "id": 21,
+    "label": "label-21",
+    "group_by_type": "device",
+    "score": 65,
+    "count": 95,
+    "bad_stop_pct": 47,
+    "tdi": 42
+  },
+  {
+    "id": 22,
+    "label": "label-22",
+    "group_by_type": "device",
+    "score": 53,
+    "count": 55,
+    "bad_stop_pct": 50,
+    "tdi": 75
+  },
+  {
+    "id": 23,
+    "label": "label-23",
+    "group_by_type": "device",
+    "score": 25,
+    "count": 62,
+    "bad_stop_pct": 59,
+    "tdi": 34
+  },
+  {
+    "id": 24,
+    "label": "label-24",
+    "group_by_type": "device",
+    "score": 58,
+    "count": 35,
+    "bad_stop_pct": 8,
+    "tdi": 33
+  },
+  {
+    "id": 25,
+    "label": "label-25",
+    "group_by_type": "device",
+    "score": 74,
+    "count": 59,
+    "bad_stop_pct": 96,
+    "tdi": 99
+  },
+  {
+    "id": 26,
+    "label": "label-26",
+    "group_by_type": "device",
+    "score": 88,
+    "count": 10,
+    "bad_stop_pct": 74,
+    "tdi": 63
+  },
+  {
+    "id": 27,
+    "label": "label-27",
+    "group_by_type": "device",
+    "score": 94,
+    "count": 26,
+    "bad_stop_pct": 16,
+    "tdi": 55
+  },
+  {
+    "id": 28,
+    "label": "label-28",
+    "group_by_type": "device",
+    "score": 9,
+    "count": 93,
+    "bad_stop_pct": 68,
+    "tdi": 26
+  },
+  {
+    "id": 29,
+    "label": "label-29",
+    "group_by_type": "device",
+    "score": 76,
+    "count": 7,
+    "bad_stop_pct": 76,
+    "tdi": 1
+  },
+  {
+    "id": 30,
+    "label": "label-30",
+    "group_by_type": "device",
+    "score": 62,
+    "count": 77,
+    "bad_stop_pct": 30,
+    "tdi": 27
+  },
+  {
+    "id": 31,
+    "label": "label-31",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 97,
+    "bad_stop_pct": 97,
+    "tdi": 54
+  },
+  {
+    "id": 32,
+    "label": "label-32",
+    "group_by_type": "device",
+    "score": 48,
+    "count": 12,
+    "bad_stop_pct": 14,
+    "tdi": 99
+  },
+  {
+    "id": 33,
+    "label": "label-33",
+    "group_by_type": "device",
+    "score": 81,
+    "count": 97,
+    "bad_stop_pct": 87,
+    "tdi": 27
+  },
+  {
+    "id": 34,
+    "label": "label-34",
+    "group_by_type": "device",
+    "score": 34,
+    "count": 92,
+    "bad_stop_pct": 36,
+    "tdi": 58
+  },
+  {
+    "id": 35,
+    "label": "label-35",
+    "group_by_type": "device",
+    "score": 99,
+    "count": 1,
+    "bad_stop_pct": 0,
+    "tdi": 37
+  },
+  {
+    "id": 36,
+    "label": "label-36",
+    "group_by_type": "device",
+    "score": 6,
+    "count": 95,
+    "bad_stop_pct": 26,
+    "tdi": 98
+  },
+  {
+    "id": 37,
+    "label": "label-37",
+    "group_by_type": "device",
+    "score": 55,
+    "count": 85,
+    "bad_stop_pct": 98,
+    "tdi": 72
+  },
+  {
+    "id": 38,
+    "label": "label-38",
+    "group_by_type": "device",
+    "score": 9,
+    "count": 39,
+    "bad_stop_pct": 11,
+    "tdi": 24
+  },
+  {
+    "id": 39,
+    "label": "label-39",
+    "group_by_type": "device",
+    "score": 70,
+    "count": 50,
+    "bad_stop_pct": 24,
+    "tdi": 79
+  },
+  {
+    "id": 40,
+    "label": "label-40",
+    "group_by_type": "device",
+    "score": 74,
+    "count": 93,
+    "bad_stop_pct": 47,
+    "tdi": 92
+  },
+  {
+    "id": 41,
+    "label": "label-41",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 93,
+    "bad_stop_pct": 49,
+    "tdi": 78
+  },
+  {
+    "id": 42,
+    "label": "label-42",
+    "group_by_type": "device",
+    "score": 41,
+    "count": 63,
+    "bad_stop_pct": 59,
+    "tdi": 94
+  },
+  {
+    "id": 43,
+    "label": "label-43",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 17,
+    "bad_stop_pct": 22,
+    "tdi": 62
+  },
+  {
+    "id": 44,
+    "label": "label-44",
+    "group_by_type": "device",
+    "score": 20,
+    "count": 33,
+    "bad_stop_pct": 1,
+    "tdi": 40
+  },
+  {
+    "id": 45,
+    "label": "label-45",
+    "group_by_type": "device",
+    "score": 80,
+    "count": 11,
+    "bad_stop_pct": 68,
+    "tdi": 39
+  },
+  {
+    "id": 46,
+    "label": "label-46",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 27,
+    "bad_stop_pct": 8,
+    "tdi": 2
+  },
+  {
+    "id": 47,
+    "label": "label-47",
+    "group_by_type": "device",
+    "score": 62,
+    "count": 57,
+    "bad_stop_pct": 93,
+    "tdi": 23
+  },
+  {
+    "id": 48,
+    "label": "label-48",
+    "group_by_type": "device",
+    "score": 33,
+    "count": 4,
+    "bad_stop_pct": 47,
+    "tdi": 28
+  },
+  {
+    "id": 49,
+    "label": "label-49",
+    "group_by_type": "device",
+    "score": 64,
+    "count": 87,
+    "bad_stop_pct": 54,
+    "tdi": 88
+  },
+  {
+    "id": 50,
+    "label": "label-50",
+    "group_by_type": "device",
+    "score": 69,
+    "count": 10,
+    "bad_stop_pct": 43,
+    "tdi": 38
+  },
+  {
+    "id": 51,
+    "label": "label-51",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 71,
+    "bad_stop_pct": 32,
+    "tdi": 7
+  },
+  {
+    "id": 52,
+    "label": "label-52",
+    "group_by_type": "device",
+    "score": 26,
+    "count": 19,
+    "bad_stop_pct": 40,
+    "tdi": 67
+  },
+  {
+    "id": 53,
+    "label": "label-53",
+    "group_by_type": "device",
+    "score": 88,
+    "count": 17,
+    "bad_stop_pct": 76,
+    "tdi": 42
+  },
+  {
+    "id": 54,
+    "label": "label-54",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 89,
+    "bad_stop_pct": 34,
+    "tdi": 20
+  },
+  {
+    "id": 55,
+    "label": "label-55",
+    "group_by_type": "device",
+    "score": 22,
+    "count": 17,
+    "bad_stop_pct": 18,
+    "tdi": 29
+  },
+  {
+    "id": 56,
+    "label": "label-56",
+    "group_by_type": "device",
+    "score": 8,
+    "count": 56,
+    "bad_stop_pct": 40,
+    "tdi": 74
+  },
+  {
+    "id": 57,
+    "label": "label-57",
+    "group_by_type": "device",
+    "score": 70,
+    "count": 91,
+    "bad_stop_pct": 71,
+    "tdi": 93
+  },
+  {
+    "id": 58,
+    "label": "label-58",
+    "group_by_type": "device",
+    "score": 63,
+    "count": 72,
+    "bad_stop_pct": 70,
+    "tdi": 9
+  },
+  {
+    "id": 59,
+    "label": "label-59",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 45,
+    "bad_stop_pct": 75,
+    "tdi": 70
+  },
+  {
+    "id": 60,
+    "label": "label-60",
+    "group_by_type": "device",
+    "score": 88,
+    "count": 68,
+    "bad_stop_pct": 17,
+    "tdi": 23
+  },
+  {
+    "id": 61,
+    "label": "label-61",
+    "group_by_type": "device",
+    "score": 47,
+    "count": 48,
+    "bad_stop_pct": 33,
+    "tdi": 25
+  },
+  {
+    "id": 62,
+    "label": "label-62",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 68,
+    "bad_stop_pct": 45,
+    "tdi": 75
+  },
+  {
+    "id": 63,
+    "label": "label-63",
+    "group_by_type": "device",
+    "score": 47,
+    "count": 21,
+    "bad_stop_pct": 36,
+    "tdi": 11
+  },
+  {
+    "id": 64,
+    "label": "label-64",
+    "group_by_type": "device",
+    "score": 59,
+    "count": 86,
+    "bad_stop_pct": 73,
+    "tdi": 80
+  },
+  {
+    "id": 65,
+    "label": "label-65",
+    "group_by_type": "device",
+    "score": 55,
+    "count": 0,
+    "bad_stop_pct": 94,
+    "tdi": 51
+  },
+  {
+    "id": 66,
+    "label": "label-66",
+    "group_by_type": "device",
+    "score": 37,
+    "count": 48,
+    "bad_stop_pct": 33,
+    "tdi": 22
+  },
+  {
+    "id": 67,
+    "label": "label-67",
+    "group_by_type": "device",
+    "score": 39,
+    "count": 98,
+    "bad_stop_pct": 25,
+    "tdi": 89
+  },
+  {
+    "id": 68,
+    "label": "label-68",
+    "group_by_type": "device",
+    "score": 79,
+    "count": 71,
+    "bad_stop_pct": 80,
+    "tdi": 9
+  },
+  {
+    "id": 69,
+    "label": "label-69",
+    "group_by_type": "device",
+    "score": 22,
+    "count": 4,
+    "bad_stop_pct": 49,
+    "tdi": 20
+  },
+  {
+    "id": 70,
+    "label": "label-70",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 33,
+    "bad_stop_pct": 63,
+    "tdi": 79
+  },
+  {
+    "id": 71,
+    "label": "label-71",
+    "group_by_type": "device",
+    "score": 81,
+    "count": 71,
+    "bad_stop_pct": 92,
+    "tdi": 84
+  },
+  {
+    "id": 72,
+    "label": "label-72",
+    "group_by_type": "device",
+    "score": 61,
+    "count": 65,
+    "bad_stop_pct": 98,
+    "tdi": 81
+  },
+  {
+    "id": 73,
+    "label": "label-73",
+    "group_by_type": "device",
+    "score": 80,
+    "count": 82,
+    "bad_stop_pct": 2,
+    "tdi": 99
+  },
+  {
+    "id": 74,
+    "label": "label-74",
+    "group_by_type": "device",
+    "score": 42,
+    "count": 77,
+    "bad_stop_pct": 95,
+    "tdi": 71
+  },
+  {
+    "id": 75,
+    "label": "label-75",
+    "group_by_type": "device",
+    "score": 60,
+    "count": 28,
+    "bad_stop_pct": 75,
+    "tdi": 86
+  },
+  {
+    "id": 76,
+    "label": "label-76",
+    "group_by_type": "device",
+    "score": 4,
+    "count": 26,
+    "bad_stop_pct": 5,
+    "tdi": 15
+  },
+  {
+    "id": 77,
+    "label": "label-77",
+    "group_by_type": "device",
+    "score": 33,
+    "count": 45,
+    "bad_stop_pct": 41,
+    "tdi": 82
+  },
+  {
+    "id": 78,
+    "label": "label-78",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 43,
+    "bad_stop_pct": 76,
+    "tdi": 62
+  },
+  {
+    "id": 79,
+    "label": "label-79",
+    "group_by_type": "device",
+    "score": 86,
+    "count": 19,
+    "bad_stop_pct": 87,
+    "tdi": 89
+  },
+  {
+    "id": 80,
+    "label": "label-80",
+    "group_by_type": "device",
+    "score": 78,
+    "count": 97,
+    "bad_stop_pct": 55,
+    "tdi": 24
+  },
+  {
+    "id": 81,
+    "label": "label-81",
+    "group_by_type": "device",
+    "score": 52,
+    "count": 19,
+    "bad_stop_pct": 12,
+    "tdi": 5
+  },
+  {
+    "id": 82,
+    "label": "label-82",
+    "group_by_type": "device",
+    "score": 64,
+    "count": 7,
+    "bad_stop_pct": 44,
+    "tdi": 3
+  },
+  {
+    "id": 83,
+    "label": "label-83",
+    "group_by_type": "device",
+    "score": 29,
+    "count": 63,
+    "bad_stop_pct": 31,
+    "tdi": 83
+  },
+  {
+    "id": 84,
+    "label": "label-84",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 55,
+    "bad_stop_pct": 68,
+    "tdi": 88
+  },
+  {
+    "id": 85,
+    "label": "label-85",
+    "group_by_type": "device",
+    "score": 95,
+    "count": 80,
+    "bad_stop_pct": 23,
+    "tdi": 7
+  },
+  {
+    "id": 86,
+    "label": "label-86",
+    "group_by_type": "device",
+    "score": 13,
+    "count": 55,
+    "bad_stop_pct": 28,
+    "tdi": 23
+  },
+  {
+    "id": 87,
+    "label": "label-87",
+    "group_by_type": "device",
+    "score": 67,
+    "count": 57,
+    "bad_stop_pct": 63,
+    "tdi": 61
+  },
+  {
+    "id": 88,
+    "label": "label-88",
+    "group_by_type": "device",
+    "score": 62,
+    "count": 29,
+    "bad_stop_pct": 90,
+    "tdi": 77
+  },
+  {
+    "id": 89,
+    "label": "label-89",
+    "group_by_type": "device",
+    "score": 53,
+    "count": 58,
+    "bad_stop_pct": 47,
+    "tdi": 58
+  },
+  {
+    "id": 90,
+    "label": "label-90",
+    "group_by_type": "device",
+    "score": 21,
+    "count": 59,
+    "bad_stop_pct": 69,
+    "tdi": 89
+  },
+  {
+    "id": 91,
+    "label": "label-91",
+    "group_by_type": "device",
+    "score": 47,
+    "count": 27,
+    "bad_stop_pct": 72,
+    "tdi": 50
+  },
+  {
+    "id": 92,
+    "label": "label-92",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 13,
+    "bad_stop_pct": 50,
+    "tdi": 47
+  },
+  {
+    "id": 93,
+    "label": "label-93",
+    "group_by_type": "device",
+    "score": 30,
+    "count": 52,
+    "bad_stop_pct": 71,
+    "tdi": 79
+  },
+  {
+    "id": 94,
+    "label": "label-94",
+    "group_by_type": "device",
+    "score": 99,
+    "count": 75,
+    "bad_stop_pct": 82,
+    "tdi": 75
+  },
+  {
+    "id": 95,
+    "label": "label-95",
+    "group_by_type": "device",
+    "score": 78,
+    "count": 41,
+    "bad_stop_pct": 53,
+    "tdi": 54
+  },
+  {
+    "id": 96,
+    "label": "label-96",
+    "group_by_type": "device",
+    "score": 2,
+    "count": 88,
+    "bad_stop_pct": 44,
+    "tdi": 86
+  },
+  {
+    "id": 97,
+    "label": "label-97",
+    "group_by_type": "device",
+    "score": 70,
+    "count": 61,
+    "bad_stop_pct": 37,
+    "tdi": 50
+  },
+  {
+    "id": 98,
+    "label": "label-98",
+    "group_by_type": "device",
+    "score": 13,
+    "count": 62,
+    "bad_stop_pct": 23,
+    "tdi": 56
+  },
+  {
+    "id": 99,
+    "label": "label-99",
+    "group_by_type": "device",
+    "score": 37,
+    "count": 80,
+    "bad_stop_pct": 19,
+    "tdi": 97
+  },
+  {
+    "id": 100,
+    "label": "label-100",
+    "group_by_type": "device",
+    "score": 71,
+    "count": 19,
+    "bad_stop_pct": 6,
+    "tdi": 3
+  },
+  {
+    "id": 101,
+    "label": "label-101",
+    "group_by_type": "device",
+    "score": 33,
+    "count": 27,
+    "bad_stop_pct": 99,
+    "tdi": 11
+  },
+  {
+    "id": 102,
+    "label": "label-102",
+    "group_by_type": "device",
+    "score": 19,
+    "count": 7,
+    "bad_stop_pct": 71,
+    "tdi": 53
+  },
+  {
+    "id": 103,
+    "label": "label-103",
+    "group_by_type": "device",
+    "score": 33,
+    "count": 11,
+    "bad_stop_pct": 75,
+    "tdi": 37
+  },
+  {
+    "id": 104,
+    "label": "label-104",
+    "group_by_type": "device",
+    "score": 66,
+    "count": 80,
+    "bad_stop_pct": 72,
+    "tdi": 44
+  },
+  {
+    "id": 105,
+    "label": "label-105",
+    "group_by_type": "device",
+    "score": 97,
+    "count": 35,
+    "bad_stop_pct": 72,
+    "tdi": 14
+  },
+  {
+    "id": 106,
+    "label": "label-106",
+    "group_by_type": "device",
+    "score": 96,
+    "count": 28,
+    "bad_stop_pct": 85,
+    "tdi": 18
+  },
+  {
+    "id": 107,
+    "label": "label-107",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 73,
+    "bad_stop_pct": 29,
+    "tdi": 57
+  },
+  {
+    "id": 108,
+    "label": "label-108",
+    "group_by_type": "device",
+    "score": 10,
+    "count": 19,
+    "bad_stop_pct": 19,
+    "tdi": 24
+  },
+  {
+    "id": 109,
+    "label": "label-109",
+    "group_by_type": "device",
+    "score": 2,
+    "count": 10,
+    "bad_stop_pct": 21,
+    "tdi": 67
+  },
+  {
+    "id": 110,
+    "label": "label-110",
+    "group_by_type": "device",
+    "score": 0,
+    "count": 86,
+    "bad_stop_pct": 43,
+    "tdi": 2
+  },
+  {
+    "id": 111,
+    "label": "label-111",
+    "group_by_type": "device",
+    "score": 37,
+    "count": 28,
+    "bad_stop_pct": 39,
+    "tdi": 5
+  },
+  {
+    "id": 112,
+    "label": "label-112",
+    "group_by_type": "device",
+    "score": 18,
+    "count": 67,
+    "bad_stop_pct": 14,
+    "tdi": 36
+  },
+  {
+    "id": 113,
+    "label": "label-113",
+    "group_by_type": "device",
+    "score": 20,
+    "count": 78,
+    "bad_stop_pct": 3,
+    "tdi": 67
+  },
+  {
+    "id": 114,
+    "label": "label-114",
+    "group_by_type": "device",
+    "score": 13,
+    "count": 27,
+    "bad_stop_pct": 15,
+    "tdi": 33
+  },
+  {
+    "id": 115,
+    "label": "label-115",
+    "group_by_type": "device",
+    "score": 8,
+    "count": 53,
+    "bad_stop_pct": 57,
+    "tdi": 68
+  },
+  {
+    "id": 116,
+    "label": "label-116",
+    "group_by_type": "device",
+    "score": 86,
+    "count": 30,
+    "bad_stop_pct": 62,
+    "tdi": 0
+  },
+  {
+    "id": 117,
+    "label": "label-117",
+    "group_by_type": "device",
+    "score": 70,
+    "count": 32,
+    "bad_stop_pct": 26,
+    "tdi": 27
+  },
+  {
+    "id": 118,
+    "label": "label-118",
+    "group_by_type": "device",
+    "score": 89,
+    "count": 0,
+    "bad_stop_pct": 31,
+    "tdi": 96
+  },
+  {
+    "id": 119,
+    "label": "label-119",
+    "group_by_type": "device",
+    "score": 25,
+    "count": 29,
+    "bad_stop_pct": 60,
+    "tdi": 64
+  },
+  {
+    "id": 120,
+    "label": "label-120",
+    "group_by_type": "device",
+    "score": 67,
+    "count": 18,
+    "bad_stop_pct": 99,
+    "tdi": 37
+  },
+  {
+    "id": 121,
+    "label": "label-121",
+    "group_by_type": "device",
+    "score": 93,
+    "count": 37,
+    "bad_stop_pct": 89,
+    "tdi": 95
+  },
+  {
+    "id": 122,
+    "label": "label-122",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 44,
+    "bad_stop_pct": 70,
+    "tdi": 39
+  },
+  {
+    "id": 123,
+    "label": "label-123",
+    "group_by_type": "device",
+    "score": 34,
+    "count": 85,
+    "bad_stop_pct": 51,
+    "tdi": 34
+  },
+  {
+    "id": 124,
+    "label": "label-124",
+    "group_by_type": "device",
+    "score": 64,
+    "count": 27,
+    "bad_stop_pct": 72,
+    "tdi": 38
+  },
+  {
+    "id": 125,
+    "label": "label-125",
+    "group_by_type": "device",
+    "score": 96,
+    "count": 86,
+    "bad_stop_pct": 95,
+    "tdi": 47
+  },
+  {
+    "id": 126,
+    "label": "label-126",
+    "group_by_type": "device",
+    "score": 88,
+    "count": 10,
+    "bad_stop_pct": 12,
+    "tdi": 95
+  },
+  {
+    "id": 127,
+    "label": "label-127",
+    "group_by_type": "device",
+    "score": 1,
+    "count": 20,
+    "bad_stop_pct": 71,
+    "tdi": 94
+  },
+  {
+    "id": 128,
+    "label": "label-128",
+    "group_by_type": "device",
+    "score": 47,
+    "count": 70,
+    "bad_stop_pct": 89,
+    "tdi": 8
+  },
+  {
+    "id": 129,
+    "label": "label-129",
+    "group_by_type": "device",
+    "score": 25,
+    "count": 56,
+    "bad_stop_pct": 29,
+    "tdi": 29
+  },
+  {
+    "id": 130,
+    "label": "label-130",
+    "group_by_type": "device",
+    "score": 89,
+    "count": 13,
+    "bad_stop_pct": 92,
+    "tdi": 1
+  },
+  {
+    "id": 131,
+    "label": "label-131",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 56,
+    "bad_stop_pct": 96,
+    "tdi": 15
+  },
+  {
+    "id": 132,
+    "label": "label-132",
+    "group_by_type": "device",
+    "score": 66,
+    "count": 2,
+    "bad_stop_pct": 97,
+    "tdi": 12
+  },
+  {
+    "id": 133,
+    "label": "label-133",
+    "group_by_type": "device",
+    "score": 60,
+    "count": 30,
+    "bad_stop_pct": 95,
+    "tdi": 54
+  },
+  {
+    "id": 134,
+    "label": "label-134",
+    "group_by_type": "device",
+    "score": 60,
+    "count": 98,
+    "bad_stop_pct": 41,
+    "tdi": 65
+  },
+  {
+    "id": 135,
+    "label": "label-135",
+    "group_by_type": "device",
+    "score": 98,
+    "count": 38,
+    "bad_stop_pct": 41,
+    "tdi": 54
+  },
+  {
+    "id": 136,
+    "label": "label-136",
+    "group_by_type": "device",
+    "score": 35,
+    "count": 46,
+    "bad_stop_pct": 90,
+    "tdi": 24
+  },
+  {
+    "id": 137,
+    "label": "label-137",
+    "group_by_type": "device",
+    "score": 5,
+    "count": 55,
+    "bad_stop_pct": 20,
+    "tdi": 98
+  },
+  {
+    "id": 138,
+    "label": "label-138",
+    "group_by_type": "device",
+    "score": 27,
+    "count": 1,
+    "bad_stop_pct": 22,
+    "tdi": 11
+  },
+  {
+    "id": 139,
+    "label": "label-139",
+    "group_by_type": "device",
+    "score": 82,
+    "count": 86,
+    "bad_stop_pct": 68,
+    "tdi": 61
+  },
+  {
+    "id": 140,
+    "label": "label-140",
+    "group_by_type": "device",
+    "score": 11,
+    "count": 73,
+    "bad_stop_pct": 41,
+    "tdi": 83
+  },
+  {
+    "id": 141,
+    "label": "label-141",
+    "group_by_type": "device",
+    "score": 6,
+    "count": 46,
+    "bad_stop_pct": 95,
+    "tdi": 26
+  },
+  {
+    "id": 142,
+    "label": "label-142",
+    "group_by_type": "device",
+    "score": 25,
+    "count": 77,
+    "bad_stop_pct": 63,
+    "tdi": 61
+  },
+  {
+    "id": 143,
+    "label": "label-143",
+    "group_by_type": "device",
+    "score": 48,
+    "count": 59,
+    "bad_stop_pct": 86,
+    "tdi": 13
+  },
+  {
+    "id": 144,
+    "label": "label-144",
+    "group_by_type": "device",
+    "score": 46,
+    "count": 5,
+    "bad_stop_pct": 80,
+    "tdi": 82
+  },
+  {
+    "id": 145,
+    "label": "label-145",
+    "group_by_type": "device",
+    "score": 27,
+    "count": 16,
+    "bad_stop_pct": 35,
+    "tdi": 73
+  },
+  {
+    "id": 146,
+    "label": "label-146",
+    "group_by_type": "device",
+    "score": 99,
+    "count": 2,
+    "bad_stop_pct": 33,
+    "tdi": 96
+  },
+  {
+    "id": 147,
+    "label": "label-147",
+    "group_by_type": "device",
+    "score": 27,
+    "count": 12,
+    "bad_stop_pct": 53,
+    "tdi": 56
+  },
+  {
+    "id": 148,
+    "label": "label-148",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 78,
+    "bad_stop_pct": 69,
+    "tdi": 2
+  },
+  {
+    "id": 149,
+    "label": "label-149",
+    "group_by_type": "device",
+    "score": 81,
+    "count": 2,
+    "bad_stop_pct": 98,
+    "tdi": 54
+  },
+  {
+    "id": 150,
+    "label": "label-150",
+    "group_by_type": "device",
+    "score": 61,
+    "count": 25,
+    "bad_stop_pct": 34,
+    "tdi": 40
+  },
+  {
+    "id": 151,
+    "label": "label-151",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 27,
+    "bad_stop_pct": 81,
+    "tdi": 93
+  },
+  {
+    "id": 152,
+    "label": "label-152",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 95,
+    "bad_stop_pct": 95,
+    "tdi": 23
+  },
+  {
+    "id": 153,
+    "label": "label-153",
+    "group_by_type": "device",
+    "score": 27,
+    "count": 4,
+    "bad_stop_pct": 89,
+    "tdi": 25
+  },
+  {
+    "id": 154,
+    "label": "label-154",
+    "group_by_type": "device",
+    "score": 57,
+    "count": 92,
+    "bad_stop_pct": 82,
+    "tdi": 57
+  },
+  {
+    "id": 155,
+    "label": "label-155",
+    "group_by_type": "device",
+    "score": 71,
+    "count": 44,
+    "bad_stop_pct": 66,
+    "tdi": 22
+  },
+  {
+    "id": 156,
+    "label": "label-156",
+    "group_by_type": "device",
+    "score": 32,
+    "count": 98,
+    "bad_stop_pct": 80,
+    "tdi": 56
+  },
+  {
+    "id": 157,
+    "label": "label-157",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 98,
+    "bad_stop_pct": 71,
+    "tdi": 49
+  },
+  {
+    "id": 158,
+    "label": "label-158",
+    "group_by_type": "device",
+    "score": 78,
+    "count": 88,
+    "bad_stop_pct": 25,
+    "tdi": 16
+  },
+  {
+    "id": 159,
+    "label": "label-159",
+    "group_by_type": "device",
+    "score": 51,
+    "count": 49,
+    "bad_stop_pct": 96,
+    "tdi": 74
+  },
+  {
+    "id": 160,
+    "label": "label-160",
+    "group_by_type": "device",
+    "score": 51,
+    "count": 55,
+    "bad_stop_pct": 49,
+    "tdi": 97
+  },
+  {
+    "id": 161,
+    "label": "label-161",
+    "group_by_type": "device",
+    "score": 26,
+    "count": 36,
+    "bad_stop_pct": 17,
+    "tdi": 86
+  },
+  {
+    "id": 162,
+    "label": "label-162",
+    "group_by_type": "device",
+    "score": 50,
+    "count": 11,
+    "bad_stop_pct": 2,
+    "tdi": 49
+  },
+  {
+    "id": 163,
+    "label": "label-163",
+    "group_by_type": "device",
+    "score": 57,
+    "count": 84,
+    "bad_stop_pct": 55,
+    "tdi": 40
+  },
+  {
+    "id": 164,
+    "label": "label-164",
+    "group_by_type": "device",
+    "score": 61,
+    "count": 69,
+    "bad_stop_pct": 78,
+    "tdi": 33
+  },
+  {
+    "id": 165,
+    "label": "label-165",
+    "group_by_type": "device",
+    "score": 85,
+    "count": 76,
+    "bad_stop_pct": 61,
+    "tdi": 79
+  },
+  {
+    "id": 166,
+    "label": "label-166",
+    "group_by_type": "device",
+    "score": 14,
+    "count": 76,
+    "bad_stop_pct": 24,
+    "tdi": 23
+  },
+  {
+    "id": 167,
+    "label": "label-167",
+    "group_by_type": "device",
+    "score": 3,
+    "count": 82,
+    "bad_stop_pct": 95,
+    "tdi": 53
+  },
+  {
+    "id": 168,
+    "label": "label-168",
+    "group_by_type": "device",
+    "score": 57,
+    "count": 82,
+    "bad_stop_pct": 59,
+    "tdi": 83
+  },
+  {
+    "id": 169,
+    "label": "label-169",
+    "group_by_type": "device",
+    "score": 31,
+    "count": 37,
+    "bad_stop_pct": 46,
+    "tdi": 93
+  },
+  {
+    "id": 170,
+    "label": "label-170",
+    "group_by_type": "device",
+    "score": 93,
+    "count": 8,
+    "bad_stop_pct": 56,
+    "tdi": 51
+  },
+  {
+    "id": 171,
+    "label": "label-171",
+    "group_by_type": "device",
+    "score": 91,
+    "count": 77,
+    "bad_stop_pct": 95,
+    "tdi": 86
+  },
+  {
+    "id": 172,
+    "label": "label-172",
+    "group_by_type": "device",
+    "score": 80,
+    "count": 81,
+    "bad_stop_pct": 57,
+    "tdi": 89
+  },
+  {
+    "id": 173,
+    "label": "label-173",
+    "group_by_type": "device",
+    "score": 41,
+    "count": 67,
+    "bad_stop_pct": 88,
+    "tdi": 48
+  },
+  {
+    "id": 174,
+    "label": "label-174",
+    "group_by_type": "device",
+    "score": 54,
+    "count": 43,
+    "bad_stop_pct": 56,
+    "tdi": 41
+  },
+  {
+    "id": 175,
+    "label": "label-175",
+    "group_by_type": "device",
+    "score": 22,
+    "count": 34,
+    "bad_stop_pct": 3,
+    "tdi": 89
+  },
+  {
+    "id": 176,
+    "label": "label-176",
+    "group_by_type": "device",
+    "score": 95,
+    "count": 26,
+    "bad_stop_pct": 35,
+    "tdi": 22
+  },
+  {
+    "id": 177,
+    "label": "label-177",
+    "group_by_type": "device",
+    "score": 16,
+    "count": 65,
+    "bad_stop_pct": 95,
+    "tdi": 54
+  },
+  {
+    "id": 178,
+    "label": "label-178",
+    "group_by_type": "device",
+    "score": 50,
+    "count": 88,
+    "bad_stop_pct": 81,
+    "tdi": 13
+  },
+  {
+    "id": 179,
+    "label": "label-179",
+    "group_by_type": "device",
+    "score": 46,
+    "count": 30,
+    "bad_stop_pct": 67,
+    "tdi": 55
+  },
+  {
+    "id": 180,
+    "label": "label-180",
+    "group_by_type": "device",
+    "score": 82,
+    "count": 33,
+    "bad_stop_pct": 78,
+    "tdi": 34
+  },
+  {
+    "id": 181,
+    "label": "label-181",
+    "group_by_type": "device",
+    "score": 44,
+    "count": 0,
+    "bad_stop_pct": 38,
+    "tdi": 4
+  },
+  {
+    "id": 182,
+    "label": "label-182",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 31,
+    "bad_stop_pct": 79,
+    "tdi": 81
+  },
+  {
+    "id": 183,
+    "label": "label-183",
+    "group_by_type": "device",
+    "score": 18,
+    "count": 87,
+    "bad_stop_pct": 51,
+    "tdi": 66
+  },
+  {
+    "id": 184,
+    "label": "label-184",
+    "group_by_type": "device",
+    "score": 94,
+    "count": 94,
+    "bad_stop_pct": 66,
+    "tdi": 80
+  },
+  {
+    "id": 185,
+    "label": "label-185",
+    "group_by_type": "device",
+    "score": 12,
+    "count": 77,
+    "bad_stop_pct": 1,
+    "tdi": 37
+  },
+  {
+    "id": 186,
+    "label": "label-186",
+    "group_by_type": "device",
+    "score": 20,
+    "count": 37,
+    "bad_stop_pct": 76,
+    "tdi": 94
+  },
+  {
+    "id": 187,
+    "label": "label-187",
+    "group_by_type": "device",
+    "score": 10,
+    "count": 21,
+    "bad_stop_pct": 29,
+    "tdi": 96
+  },
+  {
+    "id": 188,
+    "label": "label-188",
+    "group_by_type": "device",
+    "score": 1,
+    "count": 60,
+    "bad_stop_pct": 67,
+    "tdi": 3
+  },
+  {
+    "id": 189,
+    "label": "label-189",
+    "group_by_type": "device",
+    "score": 14,
+    "count": 97,
+    "bad_stop_pct": 52,
+    "tdi": 78
+  },
+  {
+    "id": 190,
+    "label": "label-190",
+    "group_by_type": "device",
+    "score": 46,
+    "count": 72,
+    "bad_stop_pct": 45,
+    "tdi": 31
+  },
+  {
+    "id": 191,
+    "label": "label-191",
+    "group_by_type": "device",
+    "score": 53,
+    "count": 8,
+    "bad_stop_pct": 10,
+    "tdi": 85
+  },
+  {
+    "id": 192,
+    "label": "label-192",
+    "group_by_type": "device",
+    "score": 20,
+    "count": 25,
+    "bad_stop_pct": 78,
+    "tdi": 85
+  },
+  {
+    "id": 193,
+    "label": "label-193",
+    "group_by_type": "device",
+    "score": 54,
+    "count": 23,
+    "bad_stop_pct": 17,
+    "tdi": 91
+  },
+  {
+    "id": 194,
+    "label": "label-194",
+    "group_by_type": "device",
+    "score": 0,
+    "count": 30,
+    "bad_stop_pct": 30,
+    "tdi": 78
+  },
+  {
+    "id": 195,
+    "label": "label-195",
+    "group_by_type": "device",
+    "score": 24,
+    "count": 32,
+    "bad_stop_pct": 77,
+    "tdi": 78
+  },
+  {
+    "id": 196,
+    "label": "label-196",
+    "group_by_type": "device",
+    "score": 47,
+    "count": 51,
+    "bad_stop_pct": 5,
+    "tdi": 9
+  },
+  {
+    "id": 197,
+    "label": "label-197",
+    "group_by_type": "device",
+    "score": 76,
+    "count": 89,
+    "bad_stop_pct": 98,
+    "tdi": 71
+  }
+]
+        }
+      ]
+    }
+  ]
+}
+

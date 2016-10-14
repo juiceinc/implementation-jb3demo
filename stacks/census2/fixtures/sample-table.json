@@ -1,0 +1,1374 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "option 1",
+      "config": {"titleTemplate": "Moo 1"},
+      "metadata": {},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+    {
+      "assigned": 15,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-0",
+      "student_name": "label-0",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 0,
+      "id": 0
+    },
+    {
+      "assigned": 10,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-1",
+      "student_name": "label-1",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 1,
+      "id": 1
+    },
+    {
+      "assigned": 14,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-2",
+      "student_name": "label-2",
+      "completed": 12,
+      "path": "path-1",
+      "row_id": 2,
+      "id": 2
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-3",
+      "student_name": "label-3",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 3,
+      "id": 3
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-4",
+      "student_name": "label-4",
+      "completed": 19,
+      "path": "path-1",
+      "row_id": 4,
+      "id": 4
+    },
+    {
+      "assigned": 14,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-5",
+      "student_name": "label-5",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 5,
+      "id": 5
+    },
+    {
+      "assigned": 16,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-6",
+      "student_name": "label-6",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 6,
+      "id": 6
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-7",
+      "student_name": "label-7",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 7,
+      "id": 7
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-8",
+      "student_name": "label-8",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 8,
+      "id": 8
+    },
+    {
+      "assigned": 14,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-9",
+      "student_name": "label-9",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 9,
+      "id": 9
+    },
+    {
+      "assigned": 14,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-10",
+      "student_name": "label-10",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 10,
+      "id": 10
+    },
+    {
+      "assigned": 14,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-11",
+      "student_name": "label-11",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 11,
+      "id": 11
+    },
+    {
+      "assigned": 10,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-12",
+      "student_name": "label-12",
+      "completed": 16,
+      "path": "path-1",
+      "row_id": 12,
+      "id": 12
+    },
+    {
+      "assigned": 15,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-13",
+      "student_name": "label-13",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 13,
+      "id": 13
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-14",
+      "student_name": "label-14",
+      "completed": 17,
+      "path": "path-1",
+      "row_id": 14,
+      "id": 14
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-15",
+      "student_name": "label-15",
+      "completed": 16,
+      "path": "path-1",
+      "row_id": 15,
+      "id": 15
+    },
+    {
+      "assigned": 14,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-16",
+      "student_name": "label-16",
+      "completed": 16,
+      "path": "path-1",
+      "row_id": 16,
+      "id": 16
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-17",
+      "student_name": "label-17",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 17,
+      "id": 17
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-18",
+      "student_name": "label-18",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 18,
+      "id": 18
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-19",
+      "student_name": "label-19",
+      "completed": 19,
+      "path": "path-1",
+      "row_id": 19,
+      "id": 19
+    },
+    {
+      "assigned": 14,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-20",
+      "student_name": "label-20",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 20,
+      "id": 20
+    },
+    {
+      "assigned": 12,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-21",
+      "student_name": "label-21",
+      "completed": 10,
+      "path": "path-1",
+      "row_id": 21,
+      "id": 21
+    },
+    {
+      "assigned": 15,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-22",
+      "student_name": "label-22",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 22,
+      "id": 22
+    },
+    {
+      "assigned": 10,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-23",
+      "student_name": "label-23",
+      "completed": 17,
+      "path": "path-1",
+      "row_id": 23,
+      "id": 23
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-24",
+      "student_name": "label-24",
+      "completed": 12,
+      "path": "path-1",
+      "row_id": 24,
+      "id": 24
+    },
+    {
+      "assigned": 16,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-25",
+      "student_name": "label-25",
+      "completed": 16,
+      "path": "path-1",
+      "row_id": 25,
+      "id": 25
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-26",
+      "student_name": "label-26",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 26,
+      "id": 26
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-27",
+      "student_name": "label-27",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 27,
+      "id": 27
+    },
+    {
+      "assigned": 16,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-28",
+      "student_name": "label-28",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 28,
+      "id": 28
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-29",
+      "student_name": "label-29",
+      "completed": 19,
+      "path": "path-1",
+      "row_id": 29,
+      "id": 29
+    },
+    {
+      "assigned": 16,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-30",
+      "student_name": "label-30",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 30,
+      "id": 30
+    },
+    {
+      "assigned": 11,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-31",
+      "student_name": "label-31",
+      "completed": 19,
+      "path": "path-1",
+      "row_id": 31,
+      "id": 31
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-32",
+      "student_name": "label-32",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 32,
+      "id": 32
+    },
+    {
+      "assigned": 12,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-33",
+      "student_name": "label-33",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 33,
+      "id": 33
+    },
+    {
+      "assigned": 10,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-34",
+      "student_name": "label-34",
+      "completed": 19,
+      "path": "path-1",
+      "row_id": 34,
+      "id": 34
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-35",
+      "student_name": "label-35",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 35,
+      "id": 35
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-36",
+      "student_name": "label-36",
+      "completed": 12,
+      "path": "path-1",
+      "row_id": 36,
+      "id": 36
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-37",
+      "student_name": "label-37",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 37,
+      "id": 37
+    },
+    {
+      "assigned": 11,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-38",
+      "student_name": "label-38",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 38,
+      "id": 38
+    },
+    {
+      "assigned": 14,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-39",
+      "student_name": "label-39",
+      "completed": 12,
+      "path": "path-1",
+      "row_id": 39,
+      "id": 39
+    },
+    {
+      "assigned": 12,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-40",
+      "student_name": "label-40",
+      "completed": 19,
+      "path": "path-1",
+      "row_id": 40,
+      "id": 40
+    },
+    {
+      "assigned": 16,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-41",
+      "student_name": "label-41",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 41,
+      "id": 41
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-42",
+      "student_name": "label-42",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 42,
+      "id": 42
+    },
+    {
+      "assigned": 11,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-43",
+      "student_name": "label-43",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 43,
+      "id": 43
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-44",
+      "student_name": "label-44",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 44,
+      "id": 44
+    },
+    {
+      "assigned": 11,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-45",
+      "student_name": "label-45",
+      "completed": 10,
+      "path": "path-1",
+      "row_id": 45,
+      "id": 45
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-46",
+      "student_name": "label-46",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 46,
+      "id": 46
+    },
+    {
+      "assigned": 14,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-47",
+      "student_name": "label-47",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 47,
+      "id": 47
+    },
+    {
+      "assigned": 12,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-48",
+      "student_name": "label-48",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 48,
+      "id": 48
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-49",
+      "student_name": "label-49",
+      "completed": 12,
+      "path": "path-1",
+      "row_id": 49,
+      "id": 49
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-50",
+      "student_name": "label-50",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 50,
+      "id": 50
+    },
+    {
+      "assigned": 16,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-51",
+      "student_name": "label-51",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 51,
+      "id": 51
+    },
+    {
+      "assigned": 10,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-52",
+      "student_name": "label-52",
+      "completed": 16,
+      "path": "path-1",
+      "row_id": 52,
+      "id": 52
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-53",
+      "student_name": "label-53",
+      "completed": 17,
+      "path": "path-1",
+      "row_id": 53,
+      "id": 53
+    },
+    {
+      "assigned": 11,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-54",
+      "student_name": "label-54",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 54,
+      "id": 54
+    },
+    {
+      "assigned": 11,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-55",
+      "student_name": "label-55",
+      "completed": 17,
+      "path": "path-1",
+      "row_id": 55,
+      "id": 55
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-56",
+      "student_name": "label-56",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 56,
+      "id": 56
+    },
+    {
+      "assigned": 12,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-57",
+      "student_name": "label-57",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 57,
+      "id": 57
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-58",
+      "student_name": "label-58",
+      "completed": 17,
+      "path": "path-1",
+      "row_id": 58,
+      "id": 58
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-59",
+      "student_name": "label-59",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 59,
+      "id": 59
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-60",
+      "student_name": "label-60",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 60,
+      "id": 60
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-61",
+      "student_name": "label-61",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 61,
+      "id": 61
+    },
+    {
+      "assigned": 12,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-62",
+      "student_name": "label-62",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 62,
+      "id": 62
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-63",
+      "student_name": "label-63",
+      "completed": 19,
+      "path": "path-1",
+      "row_id": 63,
+      "id": 63
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-64",
+      "student_name": "label-64",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 64,
+      "id": 64
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-65",
+      "student_name": "label-65",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 65,
+      "id": 65
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-66",
+      "student_name": "label-66",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 66,
+      "id": 66
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-67",
+      "student_name": "label-67",
+      "completed": 12,
+      "path": "path-1",
+      "row_id": 67,
+      "id": 67
+    },
+    {
+      "assigned": 16,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-68",
+      "student_name": "label-68",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 68,
+      "id": 68
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-69",
+      "student_name": "label-69",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 69,
+      "id": 69
+    },
+    {
+      "assigned": 12,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-70",
+      "student_name": "label-70",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 70,
+      "id": 70
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-71",
+      "student_name": "label-71",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 71,
+      "id": 71
+    },
+    {
+      "assigned": 15,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-72",
+      "student_name": "label-72",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 72,
+      "id": 72
+    },
+    {
+      "assigned": 11,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-73",
+      "student_name": "label-73",
+      "completed": 17,
+      "path": "path-1",
+      "row_id": 73,
+      "id": 73
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-74",
+      "student_name": "label-74",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 74,
+      "id": 74
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-75",
+      "student_name": "label-75",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 75,
+      "id": 75
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-76",
+      "student_name": "label-76",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 76,
+      "id": 76
+    },
+    {
+      "assigned": 12,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-77",
+      "student_name": "label-77",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 77,
+      "id": 77
+    },
+    {
+      "assigned": 10,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-78",
+      "student_name": "label-78",
+      "completed": 12,
+      "path": "path-1",
+      "row_id": 78,
+      "id": 78
+    },
+    {
+      "assigned": 15,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-79",
+      "student_name": "label-79",
+      "completed": 17,
+      "path": "path-1",
+      "row_id": 79,
+      "id": 79
+    },
+    {
+      "assigned": 11,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-80",
+      "student_name": "label-80",
+      "completed": 16,
+      "path": "path-1",
+      "row_id": 80,
+      "id": 80
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-81",
+      "student_name": "label-81",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 81,
+      "id": 81
+    },
+    {
+      "assigned": 16,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-82",
+      "student_name": "label-82",
+      "completed": 19,
+      "path": "path-1",
+      "row_id": 82,
+      "id": 82
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-83",
+      "student_name": "label-83",
+      "completed": 12,
+      "path": "path-1",
+      "row_id": 83,
+      "id": 83
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-84",
+      "student_name": "label-84",
+      "completed": 10,
+      "path": "path-1",
+      "row_id": 84,
+      "id": 84
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-85",
+      "student_name": "label-85",
+      "completed": 12,
+      "path": "path-1",
+      "row_id": 85,
+      "id": 85
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-86",
+      "student_name": "label-86",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 86,
+      "id": 86
+    },
+    {
+      "assigned": 10,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-87",
+      "student_name": "label-87",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 87,
+      "id": 87
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-88",
+      "student_name": "label-88",
+      "completed": 17,
+      "path": "path-1",
+      "row_id": 88,
+      "id": 88
+    },
+    {
+      "assigned": 16,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-89",
+      "student_name": "label-89",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 89,
+      "id": 89
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-90",
+      "student_name": "label-90",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 90,
+      "id": 90
+    },
+    {
+      "assigned": 15,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-91",
+      "student_name": "label-91",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 91,
+      "id": 91
+    },
+    {
+      "assigned": 15,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-92",
+      "student_name": "label-92",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 92,
+      "id": 92
+    },
+    {
+      "assigned": 10,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-93",
+      "student_name": "label-93",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 93,
+      "id": 93
+    },
+    {
+      "assigned": 16,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-94",
+      "student_name": "label-94",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 94,
+      "id": 94
+    },
+    {
+      "assigned": 15,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-95",
+      "student_name": "label-95",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 95,
+      "id": 95
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-96",
+      "student_name": "label-96",
+      "completed": 15,
+      "path": "path-1",
+      "row_id": 96,
+      "id": 96
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-97",
+      "student_name": "label-97",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 97,
+      "id": 97
+    },
+    {
+      "assigned": 15,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-98",
+      "student_name": "label-98",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 98,
+      "id": 98
+    },
+    {
+      "assigned": 15,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-99",
+      "student_name": "label-99",
+      "completed": 19,
+      "path": "path-1",
+      "row_id": 99,
+      "id": 99
+    },
+    {
+      "assigned": 14,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-100",
+      "student_name": "label-100",
+      "completed": 11,
+      "path": "path-1",
+      "row_id": 100,
+      "id": 100
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-101",
+      "student_name": "label-101",
+      "completed": 16,
+      "path": "path-1",
+      "row_id": 101,
+      "id": 101
+    },
+    {
+      "assigned": 10,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-102",
+      "student_name": "label-102",
+      "completed": 19,
+      "path": "path-1",
+      "row_id": 102,
+      "id": 102
+    },
+    {
+      "assigned": 14,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-103",
+      "student_name": "label-103",
+      "completed": 16,
+      "path": "path-1",
+      "row_id": 103,
+      "id": 103
+    },
+    {
+      "assigned": 15,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-104",
+      "student_name": "label-104",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 104,
+      "id": 104
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-105",
+      "student_name": "label-105",
+      "completed": 12,
+      "path": "path-1",
+      "row_id": 105,
+      "id": 105
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-106",
+      "student_name": "label-106",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 106,
+      "id": 106
+    },
+    {
+      "assigned": 17,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-107",
+      "student_name": "label-107",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 107,
+      "id": 107
+    },
+    {
+      "assigned": 11,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-108",
+      "student_name": "label-108",
+      "completed": 14,
+      "path": "path-1",
+      "row_id": 108,
+      "id": 108
+    },
+    {
+      "assigned": 19,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-109",
+      "student_name": "label-109",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 109,
+      "id": 109
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-110",
+      "student_name": "label-110",
+      "completed": 10,
+      "path": "path-1",
+      "row_id": 110,
+      "id": 110
+    },
+    {
+      "assigned": 10,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-111",
+      "student_name": "label-111",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 111,
+      "id": 111
+    },
+    {
+      "assigned": 11,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-112",
+      "student_name": "label-112",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 112,
+      "id": 112
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "student_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-113",
+      "student_name": "label-113",
+      "completed": 10,
+      "path": "path-1",
+      "row_id": 113,
+      "id": 113
+    }
+  ]
+        }
+      ],
+      "columns": [
+        {
+          "field": "student_name",
+          "name": "Student"
+        },
+        {
+          "field": "job_function_name",
+          "name": "Job Function"
+        },
+        {
+          "field": "assigned",
+          "name": "Assigned"
+        },
+        {
+          "field": "completed",
+          "name": "Complete"
+        },
+        {
+          "field": "completion_status",
+          "name": "Completion Status"
+        }
+      ]
+    },
+    {
+      "name": "option 2",
+      "config": {"titleTemplate": "Moo 2"},
+      "metadata": {},
+      "data": [
+        {
+          "name": "items",
+          "values": [
+    {
+      "assigned": 19,
+      "group_by_type": "location_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-109",
+      "student_name": "label-109",
+      "completed": 18,
+      "path": "path-1",
+      "row_id": 109,
+      "id": 109
+    },
+    {
+      "assigned": 13,
+      "group_by_type": "location_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-110",
+      "student_name": "label-110",
+      "completed": 10,
+      "path": "path-1",
+      "row_id": 110,
+      "id": 110
+    },
+    {
+      "assigned": 10,
+      "group_by_type": "location_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-111",
+      "student_name": "label-111",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 111,
+      "id": 111
+    },
+    {
+      "assigned": 11,
+      "group_by_type": "location_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-112",
+      "student_name": "label-112",
+      "completed": 13,
+      "path": "path-1",
+      "row_id": 112,
+      "id": 112
+    },
+    {
+      "assigned": 18,
+      "group_by_type": "location_id",
+      "completion_status": "Complete",
+      "job_function_name": "label-113",
+      "student_name": "label-113",
+      "completed": 10,
+      "path": "path-1",
+      "row_id": 113,
+      "id": 113
+    }
+  ]
+        }
+      ],
+      "columns": [
+        {
+          "field": "student_name",
+          "name": "Student"
+        },
+        {
+          "field": "job_function_name",
+          "name": "Job Function"
+        },
+        {
+          "field": "completion_status",
+          "name": "Completion Status"
+        }
+      ]
+    }
+  ]
+}

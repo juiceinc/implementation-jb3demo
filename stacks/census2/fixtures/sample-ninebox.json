@@ -1,0 +1,110 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "option 1",
+      "config": {"titleTemplate": "Title of the first dataset"},
+      "metadata": {},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+                {
+                  "group_by_type": "product_category",
+                  "label": "label-0",
+                  "y": 41,
+                  "x": 18,
+                  "id": 0,
+                  "size": 39
+                },
+                {
+                  "group_by_type": "product_category",
+                  "label": "label-1",
+                  "y": 36,
+                  "x": 17,
+                  "id": 1,
+                  "size": 84
+                },
+                {
+                  "group_by_type": "product_category",
+                  "label": "label-2",
+                  "y": 46,
+                  "x": 10,
+                  "id": 2,
+                  "size": 71
+                },
+                {
+                  "group_by_type": "product_category",
+                  "label": "label-3",
+                  "y": 9,
+                  "x": 6,
+                  "id": 3,
+                  "size": 66
+                },
+                {
+                  "group_by_type": "product_category",
+                  "label": "label-5",
+                  "y": 40,
+                  "x": 24,
+                  "id": 4,
+                  "size": 69
+                }
+            ]
+        }
+      ]
+    },
+    {
+      "name": "option 2",
+      "config": {"titleTemplate": "Title of the second dataset"},
+      "metadata": {},
+      "data": [
+        {
+            "name": "items",
+            "values":  [
+                {
+                  "group_by_type": "product_category",
+                  "label": "label-0",
+                  "y": 11,
+                  "x": 48,
+                  "id": 0,
+                  "size": 20
+                },
+                {
+                  "group_by_type": "product_category",
+                  "label": "label-1",
+                  "y": 76,
+                  "x": 57,
+                  "id": 1,
+                  "size": 50
+                },
+                {
+                  "group_by_type": "product_category",
+                  "label": "label-2",
+                  "y": 16,
+                  "x": 70,
+                  "id": 2,
+                  "size": 30
+                },
+                {
+                  "group_by_type": "product_category",
+                  "label": "label-3",
+                  "y": 19,
+                  "x": 61,
+                  "id": 3,
+                  "size": 90
+                },
+                {
+                  "group_by_type": "product_category",
+                  "label": "label-5",
+                  "y": 20,
+                  "x": 4,
+                  "id": 4,
+                  "size": 29
+                }
+            ]
+        }
+      ]
+
+    }
+  ]
+}
