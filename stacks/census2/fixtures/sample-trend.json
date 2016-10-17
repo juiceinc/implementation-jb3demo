@@ -1,0 +1,1519 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "first",
+      "config": {
+        "titleTemplate": "Trend slice fixture ds 1",
+        "type": "bar",
+        "datasets": {
+          "bad_stops": {
+            "series": [
+              {
+                "color": "#1ba0e2",
+                "name": "bad_stops",
+                "negative": false
+              }
+            ],
+            "showLegend": false,
+            "height": 100
+          }
+        },
+        "canToggleDatasets": false,
+        "xAxisLabelPolicy": "edges",
+        "xField": "date",
+        "selectionPolicy": "multi"
+      },
+      "data": [
+        {
+          "name": "items",
+          "values": [
+            {
+              "name": "bad_stops",
+              "items": [
+              {
+                "group_by_type": "week_ending",
+                "name": "label-0",
+                "bad_stops": 13,
+                "date": "date-0",
+                "path": "path-1",
+                "id": 0
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-1",
+                "bad_stops": 29,
+                "date": "date-1",
+                "path": "path-1",
+                "id": 1
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-2",
+                "bad_stops": 29,
+                "date": "date-2",
+                "path": "path-1",
+                "id": 2
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-3",
+                "bad_stops": 69,
+                "date": "date-3",
+                "path": "path-1",
+                "id": 3
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-4",
+                "bad_stops": 3,
+                "date": "date-4",
+                "path": "path-1",
+                "id": 4
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-5",
+                "bad_stops": 98,
+                "date": "date-5",
+                "path": "path-1",
+                "id": 5
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-6",
+                "bad_stops": 74,
+                "date": "date-6",
+                "path": "path-1",
+                "id": 6
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-7",
+                "bad_stops": 24,
+                "date": "date-7",
+                "path": "path-1",
+                "id": 7
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-8",
+                "bad_stops": 78,
+                "date": "date-8",
+                "path": "path-1",
+                "id": 8
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-9",
+                "bad_stops": 74,
+                "date": "date-9",
+                "path": "path-1",
+                "id": 9
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-10",
+                "bad_stops": 50,
+                "date": "date-10",
+                "path": "path-1",
+                "id": 10
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-11",
+                "bad_stops": 27,
+                "date": "date-11",
+                "path": "path-1",
+                "id": 11
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-12",
+                "bad_stops": 25,
+                "date": "date-12",
+                "path": "path-1",
+                "id": 12
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-13",
+                "bad_stops": 56,
+                "date": "date-13",
+                "path": "path-1",
+                "id": 13
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-14",
+                "bad_stops": 41,
+                "date": "date-14",
+                "path": "path-1",
+                "id": 14
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-15",
+                "bad_stops": 22,
+                "date": "date-15",
+                "path": "path-1",
+                "id": 15
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-16",
+                "bad_stops": 39,
+                "date": "date-16",
+                "path": "path-1",
+                "id": 16
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-17",
+                "bad_stops": 5,
+                "date": "date-17",
+                "path": "path-1",
+                "id": 17
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-18",
+                "bad_stops": 64,
+                "date": "date-18",
+                "path": "path-1",
+                "id": 18
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-19",
+                "bad_stops": 59,
+                "date": "date-19",
+                "path": "path-1",
+                "id": 19
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-20",
+                "bad_stops": 45,
+                "date": "date-20",
+                "path": "path-1",
+                "id": 20
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-21",
+                "bad_stops": 58,
+                "date": "date-21",
+                "path": "path-1",
+                "id": 21
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-22",
+                "bad_stops": 46,
+                "date": "date-22",
+                "path": "path-1",
+                "id": 22
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-23",
+                "bad_stops": 32,
+                "date": "date-23",
+                "path": "path-1",
+                "id": 23
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-24",
+                "bad_stops": 73,
+                "date": "date-24",
+                "path": "path-1",
+                "id": 24
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-25",
+                "bad_stops": 75,
+                "date": "date-25",
+                "path": "path-1",
+                "id": 25
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-26",
+                "bad_stops": 95,
+                "date": "date-26",
+                "path": "path-1",
+                "id": 26
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-27",
+                "bad_stops": 97,
+                "date": "date-27",
+                "path": "path-1",
+                "id": 27
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-28",
+                "bad_stops": 80,
+                "date": "date-28",
+                "path": "path-1",
+                "id": 28
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-29",
+                "bad_stops": 86,
+                "date": "date-29",
+                "path": "path-1",
+                "id": 29
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-30",
+                "bad_stops": 47,
+                "date": "date-30",
+                "path": "path-1",
+                "id": 30
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-31",
+                "bad_stops": 28,
+                "date": "date-31",
+                "path": "path-1",
+                "id": 31
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-32",
+                "bad_stops": 37,
+                "date": "date-32",
+                "path": "path-1",
+                "id": 32
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-33",
+                "bad_stops": 16,
+                "date": "date-33",
+                "path": "path-1",
+                "id": 33
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-34",
+                "bad_stops": 4,
+                "date": "date-34",
+                "path": "path-1",
+                "id": 34
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-35",
+                "bad_stops": 12,
+                "date": "date-35",
+                "path": "path-1",
+                "id": 35
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-36",
+                "bad_stops": 3,
+                "date": "date-36",
+                "path": "path-1",
+                "id": 36
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-37",
+                "bad_stops": 84,
+                "date": "date-37",
+                "path": "path-1",
+                "id": 37
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-38",
+                "bad_stops": 71,
+                "date": "date-38",
+                "path": "path-1",
+                "id": 38
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-39",
+                "bad_stops": 6,
+                "date": "date-39",
+                "path": "path-1",
+                "id": 39
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-40",
+                "bad_stops": 24,
+                "date": "date-40",
+                "path": "path-1",
+                "id": 40
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-41",
+                "bad_stops": 19,
+                "date": "date-41",
+                "path": "path-1",
+                "id": 41
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-42",
+                "bad_stops": 28,
+                "date": "date-42",
+                "path": "path-1",
+                "id": 42
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-43",
+                "bad_stops": 62,
+                "date": "date-43",
+                "path": "path-1",
+                "id": 43
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-44",
+                "bad_stops": 41,
+                "date": "date-44",
+                "path": "path-1",
+                "id": 44
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-45",
+                "bad_stops": 60,
+                "date": "date-45",
+                "path": "path-1",
+                "id": 45
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-46",
+                "bad_stops": 32,
+                "date": "date-46",
+                "path": "path-1",
+                "id": 46
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-47",
+                "bad_stops": 32,
+                "date": "date-47",
+                "path": "path-1",
+                "id": 47
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-48",
+                "bad_stops": 49,
+                "date": "date-48",
+                "path": "path-1",
+                "id": 48
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-49",
+                "bad_stops": 66,
+                "date": "date-49",
+                "path": "path-1",
+                "id": 49
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-50",
+                "bad_stops": 44,
+                "date": "date-50",
+                "path": "path-1",
+                "id": 50
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-51",
+                "bad_stops": 59,
+                "date": "date-51",
+                "path": "path-1",
+                "id": 51
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-52",
+                "bad_stops": 96,
+                "date": "date-52",
+                "path": "path-1",
+                "id": 52
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-53",
+                "bad_stops": 38,
+                "date": "date-53",
+                "path": "path-1",
+                "id": 53
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-54",
+                "bad_stops": 62,
+                "date": "date-54",
+                "path": "path-1",
+                "id": 54
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-55",
+                "bad_stops": 59,
+                "date": "date-55",
+                "path": "path-1",
+                "id": 55
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-56",
+                "bad_stops": 57,
+                "date": "date-56",
+                "path": "path-1",
+                "id": 56
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-57",
+                "bad_stops": 45,
+                "date": "date-57",
+                "path": "path-1",
+                "id": 57
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-58",
+                "bad_stops": 80,
+                "date": "date-58",
+                "path": "path-1",
+                "id": 58
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-59",
+                "bad_stops": 89,
+                "date": "date-59",
+                "path": "path-1",
+                "id": 59
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-60",
+                "bad_stops": 33,
+                "date": "date-60",
+                "path": "path-1",
+                "id": 60
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-61",
+                "bad_stops": 65,
+                "date": "date-61",
+                "path": "path-1",
+                "id": 61
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-62",
+                "bad_stops": 64,
+                "date": "date-62",
+                "path": "path-1",
+                "id": 62
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-63",
+                "bad_stops": 52,
+                "date": "date-63",
+                "path": "path-1",
+                "id": 63
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-64",
+                "bad_stops": 66,
+                "date": "date-64",
+                "path": "path-1",
+                "id": 64
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-65",
+                "bad_stops": 7,
+                "date": "date-65",
+                "path": "path-1",
+                "id": 65
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-66",
+                "bad_stops": 34,
+                "date": "date-66",
+                "path": "path-1",
+                "id": 66
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-67",
+                "bad_stops": 12,
+                "date": "date-67",
+                "path": "path-1",
+                "id": 67
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-68",
+                "bad_stops": 62,
+                "date": "date-68",
+                "path": "path-1",
+                "id": 68
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-69",
+                "bad_stops": 97,
+                "date": "date-69",
+                "path": "path-1",
+                "id": 69
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-70",
+                "bad_stops": 70,
+                "date": "date-70",
+                "path": "path-1",
+                "id": 70
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-71",
+                "bad_stops": 65,
+                "date": "date-71",
+                "path": "path-1",
+                "id": 71
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-72",
+                "bad_stops": 23,
+                "date": "date-72",
+                "path": "path-1",
+                "id": 72
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-73",
+                "bad_stops": 90,
+                "date": "date-73",
+                "path": "path-1",
+                "id": 73
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-74",
+                "bad_stops": 2,
+                "date": "date-74",
+                "path": "path-1",
+                "id": 74
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-75",
+                "bad_stops": 30,
+                "date": "date-75",
+                "path": "path-1",
+                "id": 75
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-76",
+                "bad_stops": 51,
+                "date": "date-76",
+                "path": "path-1",
+                "id": 76
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-77",
+                "bad_stops": 6,
+                "date": "date-77",
+                "path": "path-1",
+                "id": 77
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-78",
+                "bad_stops": 53,
+                "date": "date-78",
+                "path": "path-1",
+                "id": 78
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-79",
+                "bad_stops": 19,
+                "date": "date-79",
+                "path": "path-1",
+                "id": 79
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-80",
+                "bad_stops": 13,
+                "date": "date-80",
+                "path": "path-1",
+                "id": 80
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-81",
+                "bad_stops": 79,
+                "date": "date-81",
+                "path": "path-1",
+                "id": 81
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-82",
+                "bad_stops": 52,
+                "date": "date-82",
+                "path": "path-1",
+                "id": 82
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-83",
+                "bad_stops": 99,
+                "date": "date-83",
+                "path": "path-1",
+                "id": 83
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-84",
+                "bad_stops": 63,
+                "date": "date-84",
+                "path": "path-1",
+                "id": 84
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-85",
+                "bad_stops": 31,
+                "date": "date-85",
+                "path": "path-1",
+                "id": 85
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-86",
+                "bad_stops": 61,
+                "date": "date-86",
+                "path": "path-1",
+                "id": 86
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-87",
+                "bad_stops": 96,
+                "date": "date-87",
+                "path": "path-1",
+                "id": 87
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-88",
+                "bad_stops": 41,
+                "date": "date-88",
+                "path": "path-1",
+                "id": 88
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-89",
+                "bad_stops": 55,
+                "date": "date-89",
+                "path": "path-1",
+                "id": 89
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-90",
+                "bad_stops": 72,
+                "date": "date-90",
+                "path": "path-1",
+                "id": 90
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-91",
+                "bad_stops": 86,
+                "date": "date-91",
+                "path": "path-1",
+                "id": 91
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-92",
+                "bad_stops": 81,
+                "date": "date-92",
+                "path": "path-1",
+                "id": 92
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-93",
+                "bad_stops": 45,
+                "date": "date-93",
+                "path": "path-1",
+                "id": 93
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-94",
+                "bad_stops": 83,
+                "date": "date-94",
+                "path": "path-1",
+                "id": 94
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-95",
+                "bad_stops": 30,
+                "date": "date-95",
+                "path": "path-1",
+                "id": 95
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-96",
+                "bad_stops": 37,
+                "date": "date-96",
+                "path": "path-1",
+                "id": 96
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-97",
+                "bad_stops": 29,
+                "date": "date-97",
+                "path": "path-1",
+                "id": 97
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-98",
+                "bad_stops": 71,
+                "date": "date-98",
+                "path": "path-1",
+                "id": 98
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-99",
+                "bad_stops": 76,
+                "date": "date-99",
+                "path": "path-1",
+                "id": 99
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-100",
+                "bad_stops": 4,
+                "date": "date-100",
+                "path": "path-1",
+                "id": 100
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-101",
+                "bad_stops": 21,
+                "date": "date-101",
+                "path": "path-1",
+                "id": 101
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-102",
+                "bad_stops": 2,
+                "date": "date-102",
+                "path": "path-1",
+                "id": 102
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-103",
+                "bad_stops": 24,
+                "date": "date-103",
+                "path": "path-1",
+                "id": 103
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-104",
+                "bad_stops": 100,
+                "date": "date-104",
+                "path": "path-1",
+                "id": 104
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-105",
+                "bad_stops": 74,
+                "date": "date-105",
+                "path": "path-1",
+                "id": 105
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-106",
+                "bad_stops": 86,
+                "date": "date-106",
+                "path": "path-1",
+                "id": 106
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-107",
+                "bad_stops": 37,
+                "date": "date-107",
+                "path": "path-1",
+                "id": 107
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-108",
+                "bad_stops": 10,
+                "date": "date-108",
+                "path": "path-1",
+                "id": 108
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-109",
+                "bad_stops": 78,
+                "date": "date-109",
+                "path": "path-1",
+                "id": 109
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-110",
+                "bad_stops": 63,
+                "date": "date-110",
+                "path": "path-1",
+                "id": 110
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-111",
+                "bad_stops": 2,
+                "date": "date-111",
+                "path": "path-1",
+                "id": 111
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-112",
+                "bad_stops": 38,
+                "date": "date-112",
+                "path": "path-1",
+                "id": 112
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-113",
+                "bad_stops": 53,
+                "date": "date-113",
+                "path": "path-1",
+                "id": 113
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-114",
+                "bad_stops": 85,
+                "date": "date-114",
+                "path": "path-1",
+                "id": 114
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-115",
+                "bad_stops": 5,
+                "date": "date-115",
+                "path": "path-1",
+                "id": 115
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-116",
+                "bad_stops": 36,
+                "date": "date-116",
+                "path": "path-1",
+                "id": 116
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-117",
+                "bad_stops": 70,
+                "date": "date-117",
+                "path": "path-1",
+                "id": 117
+              },
+              {
+                "group_by_type": "week_ending",
+                "name": "label-118",
+                "bad_stops": 91,
+                "date": "date-118",
+                "path": "path-1",
+                "id": 118
+              }
+            ]
+            }
+          ]
+        },
+        {
+          "name": "markers",
+          "values": [
+            {"x1": 10, "label": "target", "tooltipContent": "Target Range <strong>50-100</strong>",
+              "position":"below", "shape": "rect", "classed": "slice-legend__goal"},
+            {"x1": 30, "x2": 30, "label": "current goal",  "shape": "line-dashed", "position": "above"},
+            {"x1": 40, "x2": 40, "label": "minimum goal", "shape": "line", "position": "above", "classed": "red-class"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "second",
+      "config": {
+        "titleTemplate": "Trend slice fixture ds 2",
+        "type": "line",
+        "datasets": {
+          "bad_stops": {
+            "series": [
+              {
+                "color": "#1ba0e2",
+                "name": "bad_stops",
+                "negative": false
+              }
+            ],
+            "showLegend": false,
+            "height": 100
+          }
+        },
+        "canToggleDatasets": false,
+        "xAxisLabelPolicy": "edges",
+        "xField": "date",
+        "selectionPolicy": "multi"
+      },
+      "data": [
+        {
+          "name": "items",
+          "values": [
+            {
+              "name": "bad_stops",
+              "items": [
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-60",
+                  "bad_stops": 33,
+                  "date": "date-60",
+                  "path": "path-1",
+                  "id": 60
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-61",
+                  "bad_stops": 65,
+                  "date": "date-61",
+                  "path": "path-1",
+                  "id": 61
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-62",
+                  "bad_stops": 64,
+                  "date": "date-62",
+                  "path": "path-1",
+                  "id": 62
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-63",
+                  "bad_stops": 52,
+                  "date": "date-63",
+                  "path": "path-1",
+                  "id": 63
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-64",
+                  "bad_stops": 66,
+                  "date": "date-64",
+                  "path": "path-1",
+                  "id": 64
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-65",
+                  "bad_stops": 7,
+                  "date": "date-65",
+                  "path": "path-1",
+                  "id": 65
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-66",
+                  "bad_stops": 34,
+                  "date": "date-66",
+                  "path": "path-1",
+                  "id": 66
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-67",
+                  "bad_stops": 12,
+                  "date": "date-67",
+                  "path": "path-1",
+                  "id": 67
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-68",
+                  "bad_stops": 62,
+                  "date": "date-68",
+                  "path": "path-1",
+                  "id": 68
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-69",
+                  "bad_stops": 97,
+                  "date": "date-69",
+                  "path": "path-1",
+                  "id": 69
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-70",
+                  "bad_stops": 70,
+                  "date": "date-70",
+                  "path": "path-1",
+                  "id": 70
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-71",
+                  "bad_stops": 65,
+                  "date": "date-71",
+                  "path": "path-1",
+                  "id": 71
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-72",
+                  "bad_stops": 23,
+                  "date": "date-72",
+                  "path": "path-1",
+                  "id": 72
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-73",
+                  "bad_stops": 90,
+                  "date": "date-73",
+                  "path": "path-1",
+                  "id": 73
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-74",
+                  "bad_stops": 2,
+                  "date": "date-74",
+                  "path": "path-1",
+                  "id": 74
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-75",
+                  "bad_stops": 30,
+                  "date": "date-75",
+                  "path": "path-1",
+                  "id": 75
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-76",
+                  "bad_stops": 51,
+                  "date": "date-76",
+                  "path": "path-1",
+                  "id": 76
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-77",
+                  "bad_stops": 6,
+                  "date": "date-77",
+                  "path": "path-1",
+                  "id": 77
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-78",
+                  "bad_stops": 53,
+                  "date": "date-78",
+                  "path": "path-1",
+                  "id": 78
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-79",
+                  "bad_stops": 19,
+                  "date": "date-79",
+                  "path": "path-1",
+                  "id": 79
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-80",
+                  "bad_stops": 13,
+                  "date": "date-80",
+                  "path": "path-1",
+                  "id": 80
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-81",
+                  "bad_stops": 79,
+                  "date": "date-81",
+                  "path": "path-1",
+                  "id": 81
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-82",
+                  "bad_stops": 52,
+                  "date": "date-82",
+                  "path": "path-1",
+                  "id": 82
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-83",
+                  "bad_stops": 99,
+                  "date": "date-83",
+                  "path": "path-1",
+                  "id": 83
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-84",
+                  "bad_stops": 63,
+                  "date": "date-84",
+                  "path": "path-1",
+                  "id": 84
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-85",
+                  "bad_stops": 31,
+                  "date": "date-85",
+                  "path": "path-1",
+                  "id": 85
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-86",
+                  "bad_stops": 61,
+                  "date": "date-86",
+                  "path": "path-1",
+                  "id": 86
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-87",
+                  "bad_stops": 96,
+                  "date": "date-87",
+                  "path": "path-1",
+                  "id": 87
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-88",
+                  "bad_stops": 41,
+                  "date": "date-88",
+                  "path": "path-1",
+                  "id": 88
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-89",
+                  "bad_stops": 55,
+                  "date": "date-89",
+                  "path": "path-1",
+                  "id": 89
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-90",
+                  "bad_stops": 72,
+                  "date": "date-90",
+                  "path": "path-1",
+                  "id": 90
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-91",
+                  "bad_stops": 86,
+                  "date": "date-91",
+                  "path": "path-1",
+                  "id": 91
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-92",
+                  "bad_stops": 81,
+                  "date": "date-92",
+                  "path": "path-1",
+                  "id": 92
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-93",
+                  "bad_stops": 45,
+                  "date": "date-93",
+                  "path": "path-1",
+                  "id": 93
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-94",
+                  "bad_stops": 83,
+                  "date": "date-94",
+                  "path": "path-1",
+                  "id": 94
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-95",
+                  "bad_stops": 30,
+                  "date": "date-95",
+                  "path": "path-1",
+                  "id": 95
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-96",
+                  "bad_stops": 37,
+                  "date": "date-96",
+                  "path": "path-1",
+                  "id": 96
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-97",
+                  "bad_stops": 29,
+                  "date": "date-97",
+                  "path": "path-1",
+                  "id": 97
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-98",
+                  "bad_stops": 71,
+                  "date": "date-98",
+                  "path": "path-1",
+                  "id": 98
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-99",
+                  "bad_stops": 76,
+                  "date": "date-99",
+                  "path": "path-1",
+                  "id": 99
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-100",
+                  "bad_stops": 4,
+                  "date": "date-100",
+                  "path": "path-1",
+                  "id": 100
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-101",
+                  "bad_stops": 21,
+                  "date": "date-101",
+                  "path": "path-1",
+                  "id": 101
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-102",
+                  "bad_stops": 2,
+                  "date": "date-102",
+                  "path": "path-1",
+                  "id": 102
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-103",
+                  "bad_stops": 24,
+                  "date": "date-103",
+                  "path": "path-1",
+                  "id": 103
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-104",
+                  "bad_stops": 100,
+                  "date": "date-104",
+                  "path": "path-1",
+                  "id": 104
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-105",
+                  "bad_stops": 74,
+                  "date": "date-105",
+                  "path": "path-1",
+                  "id": 105
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-106",
+                  "bad_stops": 86,
+                  "date": "date-106",
+                  "path": "path-1",
+                  "id": 106
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-107",
+                  "bad_stops": 37,
+                  "date": "date-107",
+                  "path": "path-1",
+                  "id": 107
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-108",
+                  "bad_stops": 10,
+                  "date": "date-108",
+                  "path": "path-1",
+                  "id": 108
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-109",
+                  "bad_stops": 78,
+                  "date": "date-109",
+                  "path": "path-1",
+                  "id": 109
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-110",
+                  "bad_stops": 63,
+                  "date": "date-110",
+                  "path": "path-1",
+                  "id": 110
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-111",
+                  "bad_stops": 2,
+                  "date": "date-111",
+                  "path": "path-1",
+                  "id": 111
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-112",
+                  "bad_stops": 38,
+                  "date": "date-112",
+                  "path": "path-1",
+                  "id": 112
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-113",
+                  "bad_stops": 53,
+                  "date": "date-113",
+                  "path": "path-1",
+                  "id": 113
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-114",
+                  "bad_stops": 85,
+                  "date": "date-114",
+                  "path": "path-1",
+                  "id": 114
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-115",
+                  "bad_stops": 5,
+                  "date": "date-115",
+                  "path": "path-1",
+                  "id": 115
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-116",
+                  "bad_stops": 36,
+                  "date": "date-116",
+                  "path": "path-1",
+                  "id": 116
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-117",
+                  "bad_stops": 70,
+                  "date": "date-117",
+                  "path": "path-1",
+                  "id": 117
+                },
+                {
+                  "group_by_type": "week_ending",
+                  "name": "label-118",
+                  "bad_stops": 91,
+                  "date": "date-118",
+                  "path": "path-1",
+                  "id": 118
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "markers",
+          "values": [
+            {"y1": 70, "y2": 90, "label": "target", "tooltipContent": "Target Range <strong>50-100</strong>", "position":"below", "shape": "rect", "classed": "goal"},
+            {"y1": 150, "y2": 150, "label": "goal",  "shape": "line", "position": "above", "classed": "goal"},
+            {"y1": 200, "y2": 220, "label": "previous goal", "shape": "line", "position": "above"},
+            {"y1": 120, "y2": 200, "label": "another goal", "shape": "line", "position": "below"}
+          ]
+        }
+      ]
+    }
+  ]
+}

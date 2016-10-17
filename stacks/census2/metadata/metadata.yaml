@@ -1,0 +1,36 @@
+# Metadata controls how data is formatted in the juicebox frontend.
+# It looks like this:
+#
+# widget:                     -- The name of a property that's sent to the frontend
+#  format: ",.0f"             -- A jb format to display numbers
+#  label_plural: "Widgets"    -- A plural descriptive name for this thing
+#  label_singular: "Widget"   -- A singlar descriptive name for this
+#  short_format:              -- (optional) a abbreviated jb format string
+"avgage":
+  format: ".1f"
+  label_plural: "Average Age"
+  label_singular: "Average Age"
+"pctfemale":
+  format: ".1%"
+  label_plural: "% Female"
+  label_singular: "% Female"
+"pop2000":
+  format: ".0f"
+  label_plural: "Population in 2000"
+  label_singular: "Population in 2000"
+"pop2008":
+  format: ".0f"
+  label_plural: "Population in 2008"
+  label_singular: "Population in 2008"
+"popdiff":
+  format: ".0f"
+  label_plural: "Population Change"
+  label_singular: "Population Change"
+"sex":
+  format: ",.0f\" people\""
+  label_plural: "Gender"
+  label_singular: "Gender"
+"state":
+  format: ",.0f\" people\""
+  label_plural: "States"
+  label_singular: "State"
