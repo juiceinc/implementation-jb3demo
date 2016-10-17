@@ -180,16 +180,18 @@ class FooService(CensusService):
         from random import randint,choice
         job_titles=['magician', 'programmer' , 'pro gamer', 'politician', 'cow herder']
         response = self.response_template()
+        i = 0
 
         for row in recipe1.all():
             response['data'][0]['values'].append({
-              "radius": (float(row.pop2008)/50000.)**0.5,
-              "color": "#d62728" if row.state == 'California' else '#dddddd',
+              "id": i,
+              "group_by_type": "custom",
+              "label": row.state,
               "job_title": choice(job_titles),
-              "cx": randint(100,800),
-              "cy": randint(50,250)
+              "population": row.pop2008
             })
+            i = i + 1
 
-
+        response['name'] = 'States'
         self.response['responses'].append(response)
         print 'Ms: ',current_milli_time() - start
