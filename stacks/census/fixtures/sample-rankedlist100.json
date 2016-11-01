@@ -4,7 +4,7 @@
     {
       "name": "option 1",
       "config": {"titleTemplate": "Moo 1", "colorRange": ["orange", "blue"]},
-      "metadata": {},
+      "metadata": {"option 1": {"field": "option-2", "format": ",.1f", "plural": "courses", "singular": "course"}},
       "data": [
         {
           "name": "items",
@@ -13,7 +13,7 @@
         {
           "name": "markers",
           "values": [
-            {"x1": -50, "x2": 0, "label": "target", "tooltipContent": "Target Range <strong>-50-0</strong>",
+            {"x1": -200, "x2": -100, "label": "target", "tooltipContent": "Target Range <strong>-200-0</strong>",
               "position":"below", "shape": "rect", "classed": "slice-legend__goal"}
           ]
         }
@@ -23,7 +23,7 @@
     {
       "name": "option 2",
       "config": {"titleTemplate": "Moo 2"},
-      "metadata": {},
+      "metadata": {"option 2": {"field": "option-2", "format": "$,.2f", "plural": "courses", "singular": "course"}},
       "data": [
         {
           "name": "items",
@@ -121,7 +121,7 @@
         {
           "name": "markers",
           "values": [
-            {"x1": 20, "x2": 30, "label": "target", "tooltipContent": "Target Range <strong>-50-0</strong>",
+            {"x1": 20, "x2": 30, "label": "target", "tooltipContent": "Target Range <strong>-20-30</strong>",
               "position":"below", "shape": "rect", "classed": "slice-legend__goal"}
           ]
         }

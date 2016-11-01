@@ -3,7 +3,7 @@
   "responses": [
     {
       "name": "first",
-      "config": {"titleTemplate": "Slice with dataset 1", "height": 450, "zoomFactor": 1},
+      "config": {"title": "Slice with dataset 1", "height": 450, "zoomFactor": 1},
       "data": [
         {
             "name": "items",
@@ -93,7 +93,7 @@
     },
     {
       "name": "second",
-      "config": {"titleTemplate": "Slice with dataset 2", "height": 600},
+      "config": {"title": "Slice with dataset 2", "height": 600},
       "data": [
         {
             "name": "items",
@@ -420,7 +420,7 @@
     },
     {
       "name": "third",
-      "config": {"titleTemplate": "Slice with dataset 3", "height": 900},
+      "config": {"title": "Slice with dataset 3", "height": 900},
       "data": [
         {
             "name": "items",

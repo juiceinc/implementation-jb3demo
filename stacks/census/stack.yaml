@@ -161,7 +161,7 @@ slices:
         "max": 100
     "minSelections": 1
     "showStick": true
-  data_service: "censusv2service.LollipopV3Service"
+  data_service: "sample-lollipop.json"
   extra_css: ""
 
 - slice_type: "free-form"
