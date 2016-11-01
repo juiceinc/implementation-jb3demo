@@ -17,5 +17,4 @@ juicebox_version: "3"
 # A list of stacks in this app, should be a folder in the stacks/ directory in this app
 stacks:
 - "census"
-- "woohoo"
 - "census2"
