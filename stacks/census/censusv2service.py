@@ -368,3 +368,32 @@ class MatchupV3Service(CensusService):
             *self.dimensions)
 
         self.response['responses'].append(recipe.render())
+
+
+class CustomSliceService(CensusService):
+    def build_response(self):
+        start = current_milli_time()
+
+        self.metrics = ('pop2008',)
+        self.dimensions = ('state',)
+        recipe1 = self.recipe().metrics(*self.metrics).dimensions(
+            *self.dimensions)
+
+        from random import randint,choice
+        job_titles=['magician', 'programmer' , 'pro gamer', 'politician', 'cow herder']
+        response = self.response_template()
+        i = 0
+
+        for row in recipe1.all():
+            response['data'][0]['values'].append({
+              "id": i,
+              "group_by_type": "custom",
+              "label": row.state,
+              "job_title": choice(job_titles),
+              "population": row.pop2008
+            })
+            i = i + 1
+
+        response['name'] = 'States'
+        self.response['responses'].append(response)
+        print 'Ms: ',current_milli_time() - start

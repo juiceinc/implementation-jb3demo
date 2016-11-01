@@ -34,3 +34,11 @@
   format: ",.0f\" people\""
   label_plural: "States"
   label_singular: "State"
+"option 1":
+  format: ",.1f"
+  label_plural: "States"
+  label_singular: "State"
+"option 2":
+  format: "$,.2f"
+  label_plural: "States"
+  label_singular: "State"

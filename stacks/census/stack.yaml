@@ -310,3 +310,13 @@ slices:
     "detailsTemplateName": "#flower-slice-details-template"
     "width": 750
   data_service: "sample-flower.json"
+
+- slice_type: "custom"
+  slug: "custom_1"
+  title: "Hi, I am a custom slice!"
+  mixins:
+  - options: {}
+    target: "view"
+  config:
+    visual_plugin: "force"
+  data_service: "censusv2service.CustomSliceService"
