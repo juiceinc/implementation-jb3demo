@@ -12,22 +12,22 @@ var width = 920,
   maxRadius = 30;
 
 
-var jobTitles = _.keys(_.groupBy(nodes, 'job_title'));
+var jobTitles = _.keys(_.groupBy(nodes, 'work_profession_group_name'));
 
 
 var x = d3.scale.ordinal()
         .domain(jobTitles)
         .rangePoints([0, width], 1),
-    xPosition = function(d) { return x(d['job_title']);},
+    xPosition = function(d) { return x(d['work_profession_group_name']);},
 
     c = d3.scale.category10()
         .domain([0, jobTitles.length-1]),
-    color = function(d) { return c(d['job_title']);},
+    color = function(d) { return c(d['work_profession_group_name']);},
 
     r = d3.scale.linear()
-          .domain(d3.extent(nodes.map(function(d) {return d.population;})))
+          .domain(d3.extent(nodes.map(function(d) {return d.count;})))
           .range([10, 30]),
-    radius = function(d) { return r(d.population);}
+    radius = function(d) { return r(d.count);}
 ;
 
 
@@ -85,7 +85,7 @@ text.enter()
   .style('text-anchor', 'middle')
   .attr('y', '5')
 ;
-state.selectAll('text').text(function(d){ return d.label[0]; });
+state.selectAll('text').text(function(d){ return d.label.substr(0, 5); });
 
 var title = state.selectAll('title').data(function(d){ return [d]});
 title.enter().append('title');
