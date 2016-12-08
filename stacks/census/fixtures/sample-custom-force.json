@@ -1,0 +1,508 @@
+{
+  "version": "3",
+  "responses": [
+    {
+      "name": "groups",
+      "config": {"titleTemplate": "Custom force fixture"},
+      "metadata": {},
+      "data": [
+        {
+            "name": "items",
+            "values": [
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "NA",
+                "degree_level_display_name": "MD",
+                "count": 2,
+                "id": 0,
+                "group_by_type": "work_profession_group_name",
+                "label": "MD"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Allied Health",
+                "degree_level_display_name": "High School",
+                "count": 1,
+                "id": 1,
+                "group_by_type": "work_profession_group_name",
+                "label": "High School"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "NA",
+                "degree_level_display_name": "High School",
+                "count": 77,
+                "id": 2,
+                "group_by_type": "work_profession_group_name",
+                "label": "High School"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Physicians",
+                "degree_level_display_name": "Masters",
+                "count": 1,
+                "id": 3,
+                "group_by_type": "work_profession_group_name",
+                "label": "Masters"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Nurses",
+                "degree_level_display_name": "PhD",
+                "count": 2,
+                "id": 4,
+                "group_by_type": "work_profession_group_name",
+                "label": "PhD"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "NA",
+                "degree_level_display_name": "No Degree Awarded",
+                "count": 97,
+                "id": 5,
+                "group_by_type": "work_profession_group_name",
+                "label": "No Degree Awarded"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Advanced Practice",
+                "degree_level_display_name": "No Degree Awarded",
+                "count": 7,
+                "id": 6,
+                "group_by_type": "work_profession_group_name",
+                "label": "No Degree Awarded"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Non Clinical",
+                "degree_level_display_name": "No Degree Awarded",
+                "count": 7,
+                "id": 7,
+                "group_by_type": "work_profession_group_name",
+                "label": "No Degree Awarded"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Nurses",
+                "degree_level_display_name": "Doctorate",
+                "count": 13,
+                "id": 8,
+                "group_by_type": "work_profession_group_name",
+                "label": "Doctorate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Advanced Practice",
+                "degree_level_display_name": "Associate",
+                "count": 3,
+                "id": 9,
+                "group_by_type": "work_profession_group_name",
+                "label": "Associate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Advanced Practice",
+                "degree_level_display_name": "Certificate",
+                "count": 8,
+                "id": 10,
+                "group_by_type": "work_profession_group_name",
+                "label": "Certificate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Non Clinical",
+                "degree_level_display_name": "PhD",
+                "count": 2,
+                "id": 11,
+                "group_by_type": "work_profession_group_name",
+                "label": "PhD"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Nurses",
+                "degree_level_display_name": "Bachelors",
+                "count": 522,
+                "id": 12,
+                "group_by_type": "work_profession_group_name",
+                "label": "Bachelors"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Nurses",
+                "degree_level_display_name": "MD",
+                "count": 2,
+                "id": 13,
+                "group_by_type": "work_profession_group_name",
+                "label": "MD"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Nurses",
+                "degree_level_display_name": "No Degree Awarded",
+                "count": 45,
+                "id": 14,
+                "group_by_type": "work_profession_group_name",
+                "label": "No Degree Awarded"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Nurses",
+                "degree_level_display_name": "Masters",
+                "count": 167,
+                "id": 15,
+                "group_by_type": "work_profession_group_name",
+                "label": "Masters"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Nurses",
+                "degree_level_display_name": "Certificate",
+                "count": 25,
+                "id": 16,
+                "group_by_type": "work_profession_group_name",
+                "label": "Certificate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Non Clinical",
+                "degree_level_display_name": "Masters",
+                "count": 24,
+                "id": 17,
+                "group_by_type": "work_profession_group_name",
+                "label": "Masters"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Non Clinical",
+                "degree_level_display_name": "Diploma",
+                "count": 1,
+                "id": 18,
+                "group_by_type": "work_profession_group_name",
+                "label": "Diploma"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Non Clinical",
+                "degree_level_display_name": "Associate",
+                "count": 10,
+                "id": 19,
+                "group_by_type": "work_profession_group_name",
+                "label": "Associate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Allied Health",
+                "degree_level_display_name": "Associate",
+                "count": 12,
+                "id": 20,
+                "group_by_type": "work_profession_group_name",
+                "label": "Associate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Advanced Practice",
+                "degree_level_display_name": "High School",
+                "count": 3,
+                "id": 21,
+                "group_by_type": "work_profession_group_name",
+                "label": "High School"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Allied Health",
+                "degree_level_display_name": "No Degree Awarded",
+                "count": 4,
+                "id": 22,
+                "group_by_type": "work_profession_group_name",
+                "label": "No Degree Awarded"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Allied Health",
+                "degree_level_display_name": "PhD",
+                "count": 1,
+                "id": 23,
+                "group_by_type": "work_profession_group_name",
+                "label": "PhD"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Non Clinical",
+                "degree_level_display_name": "Doctorate",
+                "count": 5,
+                "id": 24,
+                "group_by_type": "work_profession_group_name",
+                "label": "Doctorate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "NA",
+                "degree_level_display_name": "Associate",
+                "count": 314,
+                "id": 25,
+                "group_by_type": "work_profession_group_name",
+                "label": "Associate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Physicians",
+                "degree_level_display_name": "Bachelors",
+                "count": 2,
+                "id": 26,
+                "group_by_type": "work_profession_group_name",
+                "label": "Bachelors"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Nurses",
+                "degree_level_display_name": "High School",
+                "count": 31,
+                "id": 27,
+                "group_by_type": "work_profession_group_name",
+                "label": "High School"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Non Clinical",
+                "degree_level_display_name": "Certificate",
+                "count": 4,
+                "id": 28,
+                "group_by_type": "work_profession_group_name",
+                "label": "Certificate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Allied Health",
+                "degree_level_display_name": "Bachelors",
+                "count": 45,
+                "id": 29,
+                "group_by_type": "work_profession_group_name",
+                "label": "Bachelors"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Allied Health",
+                "degree_level_display_name": "Masters",
+                "count": 9,
+                "id": 30,
+                "group_by_type": "work_profession_group_name",
+                "label": "Masters"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Advanced Practice",
+                "degree_level_display_name": "Doctorate",
+                "count": 9,
+                "id": 31,
+                "group_by_type": "work_profession_group_name",
+                "label": "Doctorate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Advanced Practice",
+                "degree_level_display_name": "Bachelors",
+                "count": 61,
+                "id": 32,
+                "group_by_type": "work_profession_group_name",
+                "label": "Bachelors"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "NA",
+                "degree_level_display_name": "Certificate",
+                "count": 36,
+                "id": 33,
+                "group_by_type": "work_profession_group_name",
+                "label": "Certificate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Non Clinical",
+                "degree_level_display_name": "Bachelors",
+                "count": 39,
+                "id": 34,
+                "group_by_type": "work_profession_group_name",
+                "label": "Bachelors"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Nurses",
+                "degree_level_display_name": "Associate",
+                "count": 97,
+                "id": 35,
+                "group_by_type": "work_profession_group_name",
+                "label": "Associate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "NA",
+                "degree_level_display_name": "PhD",
+                "count": 2,
+                "id": 36,
+                "group_by_type": "work_profession_group_name",
+                "label": "PhD"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Physicians",
+                "degree_level_display_name": "MD",
+                "count": 1,
+                "id": 37,
+                "group_by_type": "work_profession_group_name",
+                "label": "MD"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Advanced Practice",
+                "degree_level_display_name": "Diploma",
+                "count": 5,
+                "id": 38,
+                "group_by_type": "work_profession_group_name",
+                "label": "Diploma"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "NA",
+                "degree_level_display_name": "Doctorate",
+                "count": 36,
+                "id": 39,
+                "group_by_type": "work_profession_group_name",
+                "label": "Doctorate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "NA",
+                "degree_level_display_name": "Bachelors",
+                "count": 1181,
+                "id": 40,
+                "group_by_type": "work_profession_group_name",
+                "label": "Bachelors"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Allied Health",
+                "degree_level_display_name": "Certificate",
+                "count": 2,
+                "id": 41,
+                "group_by_type": "work_profession_group_name",
+                "label": "Certificate"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Non Clinical",
+                "degree_level_display_name": "High School",
+                "count": 1,
+                "id": 42,
+                "group_by_type": "work_profession_group_name",
+                "label": "High School"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Nurses",
+                "degree_level_display_name": "Diploma",
+                "count": 20,
+                "id": 43,
+                "group_by_type": "work_profession_group_name",
+                "label": "Diploma"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "NA",
+                "degree_level_display_name": "Diploma",
+                "count": 72,
+                "id": 44,
+                "group_by_type": "work_profession_group_name",
+                "label": "Diploma"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "NA",
+                "degree_level_display_name": "Masters",
+                "count": 401,
+                "id": 45,
+                "group_by_type": "work_profession_group_name",
+                "label": "Masters"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Advanced Practice",
+                "degree_level_display_name": "Masters",
+                "count": 61,
+                "id": 46,
+                "group_by_type": "work_profession_group_name",
+                "label": "Masters"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Advanced Practice",
+                "degree_level_display_name": "PhD",
+                "count": 1,
+                "id": 47,
+                "group_by_type": "work_profession_group_name",
+                "label": "PhD"
+              },
+              {
+                "org_id": "abc1",
+                "org_name": "Pediatric Med Center",
+                "work_profession_group_name": "Physicians",
+                "degree_level_display_name": "No Degree Awarded",
+                "count": 1,
+                "id": 48,
+                "group_by_type": "work_profession_group_name",
+                "label": "No Degree Awarded"
+              }
+            ]
+        }
+      ]
+    }
+  ]
+}
+
