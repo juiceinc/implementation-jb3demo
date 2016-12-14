@@ -5,17 +5,22 @@ var dataItems = data.items[0];
 
 
 
+
+
 // the code below is modified from https://bl.ocks.org/mbostock/4339083
+
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
   width = 960 - margin.right - margin.left,
   height = 800 - margin.top - margin.bottom;
+
+var pctFormatter = d3.format(',.0%');
 
 var i = 0,
   duration = 750,
   root;
 
 var tree = d3.layout.tree()
-  .size([height, width]);
+    .size([height, width]);
 
 var diagonal = d3.svg.diagonal()
   .projection(function(d) { return [d.y, d.x]; });
@@ -43,6 +48,33 @@ function collapse(d) {
 
 // get all nodes
 var allNodes = tree.nodes(root);
+
+var valueFx = function(d) { return d.value; };
+var valueExtent = d3.extent(allNodes.map(valueFx));
+
+// < 70% = red
+// 70 to < 80% = light red (with red outline)
+// 80% to < 90% = white (with black outline)
+// 90% or more = green
+// no score = gray (with dark gray outline)
+
+var domainValues = [0, 0.0000000001, 0.7000, 0.8000, 0.9000, 1];
+var c1 = d3.scale.quantile()
+        .domain(domainValues)
+        .range(['#ccc', '#cb181d', '#cb181d', '#fc9272', '#fff', '#006d2c']),
+    fillColor = function(d) {return c1(valueFx(d));},
+    c2 = d3.scale.quantile()
+      .domain(domainValues)
+      .range(['#666', '#cb181d', '#cb181d', '#cb181d', '#000', '#006d2c']),
+    strokeColor = function(d) { return c2(valueFx(d));},
+
+  r = d3.scale.linear()
+    .domain(valueExtent)
+    .range([5, 20]),
+  radius = function(d) { return r(valueFx(d));}
+;
+
+
 // expand only the first level on nodes
 root.children.forEach(collapse);
 
@@ -69,7 +101,7 @@ function update(source) {
 
   // Compute the new tree layout.
   var nodes = tree.nodes(root).reverse(),
-    links = tree.links(nodes);
+      links = tree.links(nodes);
 
   // Normalize for fixed-depth.
   nodes.forEach(function(d) { d.y = d.depth * 180; });
@@ -83,21 +115,22 @@ function update(source) {
     .attr("class", "node")
     .classed('active', function(d) { return d._selected; })
     .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
-    // .on("click", click);
+  ;
 
   nodeEnter.append("circle")
-    .attr("r", 1e-6)
+    .attr("r", 0)
     .attr("class", 'js-selectable-item')
-    .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; })
     .on('click', onCircleClick);
 
+  var maxRadius = r.range()[1];
   nodeEnter.append("text")
-    .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
-    .attr("dy", ".35em")
+    .attr("class", 'item-label')
+    .attr("x", function(d) { return d.children || d._children ? -maxRadius : maxRadius; })
     .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-    .text(function(d) { return d.label; })
-    .style("fill-opacity", 1e-6)
-    .on('click', onTextClick);
+    .style("fill-opacity", 0)
+    .on('click', onTextClick)
+    .call(wrapText)
+  ;
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
@@ -105,12 +138,13 @@ function update(source) {
     .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
   nodeUpdate.select("circle")
-    .attr("r", 4.5)
-    .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+    .attr("r", radius)
+    .style("fill", fillColor)
+    .style("stroke", strokeColor)
+  ;
 
-  nodeUpdate.select("text")
+  nodeUpdate.select(".item-label")
     .style("fill-opacity", 1)
-    .text(function(d) { return d.label + (d.children ? ' [-]' : d._children ? ' [+]': ''); })
   ;
 
   // Transition exiting nodes to the parent's new position.
@@ -189,5 +223,65 @@ function onTextClick(d) {
     d.children = d._children;
     d._children = null;
   }
+
+  // expand/collapse children
   update(d);
+  // change icon
+  wrapText(d3.select(this))
+}
+
+
+function createLabel(d) {
+  // return (d.children ? '[-] ' : d._children ? '[+] ': '') + pctFormatter(d.value) + ' ' + d.label ;//(d.children ? ' [-]' : d._children ? ' [+]': '') + ' ' +
+  return d.label ;//(d.children ? ' [-]' : d._children ? ' [+]': '') + ' ' +
+}
+
+
+function wrapText(textElements) {
+  textElements.each(function(d) {
+    var
+      text = d3.select(this),
+      width = 120,
+      label = createLabel(d),
+      words = label.split(/\s+/).reverse(),
+      word,
+      line = [],
+      lineNumber = 0,
+      lineHeight = 10, //px
+      x = text.attr("x"),
+      y = text.attr("y"),
+      textAnchor = text.attr("text-anchor")
+    ;
+
+    var addSpan = function(value, lineNumber) {
+      return text.append("tspan")
+        .attr("x", x)
+        .attr("dy", lineNumber > 0 ? lineHeight : 0)
+        .attr('text-anchor', textAnchor)
+        .text(value)
+        ;
+    };
+
+    // clear text
+    text.text(null);
+    // add expand/collapse and value of the node
+    addSpan((d.children ? '[-] ' : d._children ? '[+] ': '') + pctFormatter(d.value), lineNumber)
+      .classed('item-value', true)
+    ;
+
+
+    var tspan = addSpan(null, ++lineNumber);
+    // start adding lines (tspans)
+    while (word = words.pop()) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = addSpan(word, ++lineNumber);
+      }
+    }
+    text.attr('y',  - lineHeight/2 * lineNumber );
+  });
 }
