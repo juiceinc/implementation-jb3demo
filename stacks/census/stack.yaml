@@ -330,7 +330,7 @@ slices:
     target: "view"
   config:
     visual_plugin: "tree"
-  data_service: "sample-orbit.json"
+  data_service: "sample-tree.json"
   extra_css: "
   .node {
     cursor: pointer;
@@ -349,7 +349,10 @@ slices:
   }
 
   .node text {
-    font: 10px sans-serif;
+    font: 11px sans-serif;
+  }
+  .node text .item-value {
+    font-size: 14px;
   }
 
   .link {
