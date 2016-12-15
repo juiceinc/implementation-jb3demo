@@ -25,11 +25,16 @@ var tree = d3.layout.tree()
 var diagonal = d3.svg.diagonal()
   .projection(function(d) { return [d.y, d.x]; });
 
-var svg = container.append("svg")
-  .attr("width", width + margin.right + margin.left)
-  .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+container.selectAll('svg').data([{}])
+  .enter()
+    .append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr('class', 'tree-container')
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var svg = container.selectAll('g.tree-container');
 
 
 root = dataItems;
@@ -113,7 +118,6 @@ function update(source) {
   // Enter any new nodes at the parent's previous position.
   var nodeEnter = node.enter().append("g")
     .attr("class", "node")
-    .classed('active', function(d) { return d._selected; })
     .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
   ;
 
@@ -132,10 +136,15 @@ function update(source) {
     .call(wrapText)
   ;
 
+  // update node active class without transition
+  svg.selectAll("g.node")
+    .classed('active', function(d) {return d._selected; })
+  ;
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
     .duration(duration)
-    .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+    .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+  ;
 
   nodeUpdate.select("circle")
     .attr("r", radius)
