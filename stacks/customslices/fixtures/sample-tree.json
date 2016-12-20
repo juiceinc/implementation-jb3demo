@@ -1,0 +1,718 @@
+{
+   "version": "3",
+   "responses":[
+      {
+         "name":"option 1",
+         "config":{},
+         "metadata":{
+
+         },
+         "data":[
+            {
+               "name":"items",
+               "values": [
+                 {
+                   "label": "Total",
+                   "group_by_type": "tree",
+                   "children": [
+                     {
+                       "label": "Clinical Knowledge",
+                       "group_by_type": "tree",
+                       "value": 0.5743316634347841,
+                       "children": [
+                         {
+                           "label": "Knowledge of Pathophysiology and Patient Condition (CK1)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Recognizes patterns and clusters of symptoms (CK1b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20055",
+                               "level": "performance_measure",
+                               "value": 0.8979910934368203,
+                               "description": "This is some random 0.3426971950133324 text for Recognizes patterns and clusters of symptoms (CK1b)"
+                             },
+                             {
+                               "label": "Discusses diagnostic tests (CK1c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20084",
+                               "level": "performance_measure",
+                               "value": 0.273187084745931,
+                               "description": "This is some random 0.05619971459414974 text for Discusses diagnostic tests (CK1c)"
+                             },
+                             {
+                               "label": "Describes pathophysiology of condition (CK1a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20100",
+                               "level": "performance_measure",
+                               "value": 0.15178852056835157,
+                               "description": "This is some random 0.4569220057709713 text for Describes pathophysiology of condition (CK1a)"
+                             }
+                           ],
+                           "id": "20004",
+                           "level": "competency",
+                           "value": 0.47867623092654665,
+                           "description": "This is some random 0.5276563181197982 text for Knowledge of Pathophysiology and Patient Condition (CK1)"
+                         },
+                         {
+                           "label": "Medication Management (CK2)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Collaborates in revising medications (CK2b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20016",
+                               "level": "performance_measure",
+                               "value": 0.7697420816605823,
+                               "description": "This is some random 0.8128295285262093 text for Collaborates in revising medications (CK2b)"
+                             },
+                             {
+                               "label": "Administers high risk meds following policy (CK2e)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20021",
+                               "level": "performance_measure",
+                               "value": 0.892043281294884,
+                               "description": "This is some random 0.926485045776207 text for Administers high risk meds following policy (CK2e)"
+                             },
+                             {
+                               "label": "Seeks additional info on medications (CK2c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20023",
+                               "level": "performance_measure",
+                               "value": 0.8945169597653881,
+                               "description": "This is some random 0.6287707542754692 text for Seeks additional info on medications (CK2c)"
+                             },
+                             {
+                               "label": "Evaluates appropriateness of medications (CK2a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20085",
+                               "level": "performance_measure",
+                               "value": null,
+                               "description": "This is some random 0.2348823725081164 text for Evaluates appropriateness of medications (CK2a)"
+                             },
+                             {
+                               "label": "Follows up on medication administration (CK2d)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20102",
+                               "level": "performance_measure",
+                               "value": null,
+                               "description": "This is some random 0.5253841674886781 text for Follows up on medication administration (CK2d)"
+                             },
+                             {
+                               "label": "Educates about medications (CK2f)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20111",
+                               "level": "performance_measure",
+                               "value": null,
+                               "description": "This is some random 0.7905728014962581 text for Educates about medications (CK2f)"
+                             }
+                           ],
+                           "id": "20005",
+                           "level": "competency",
+                           "value": 0.8053305736968914,
+                           "description": "This is some random 0.5305501601213123 text for Medication Management (CK2)"
+                         },
+                         {
+                           "label": "Interpretation of Provider Orders (CK3)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Assesses appropriateness of orders (CK3a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20014",
+                               "level": "performance_measure",
+                               "value": 0.22792273865948554,
+                               "description": "This is some random 0.8766552906273124 text for Assesses appropriateness of orders (CK3a)"
+                             },
+                             {
+                               "label": "Initiates STAT orders within safe timeframe (CK3c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20022",
+                               "level": "performance_measure",
+                               "value": 0.9063891419705714,
+                               "description": "This is some random 0.9467039181756489 text for Initiates STAT orders within safe timeframe (CK3c)"
+                             },
+                             {
+                               "label": "Initiates STAT orders within safe timeframe(CK3c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20046",
+                               "level": "performance_measure",
+                               "value": 0.03708198338768409,
+                               "description": "This is some random 0.07514786954128616 text for Initiates STAT orders within safe timeframe(CK3c)"
+                             }
+                           ],
+                           "id": "20006",
+                           "level": "competency",
+                           "value": 0.5165725194954158,
+                           "description": "This is some random 0.2604023859071567 text for Interpretation of Provider Orders (CK3)"
+                         },
+                         {
+                           "label": "Use of Evidence Based Practice (CK4)",
+                           "group_by_type": "tree",
+                           "children": [],
+                           "id": "20007",
+                           "level": "competency",
+                           "value": 0.9359098805947388,
+                           "description": "This is some random 0.9099776700462805 text for Use of Evidence Based Practice (CK4)"
+                         },
+                         {
+                           "label": "Compliance with Legal and Regulatory Requirements (CK5)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Reports situations using chain of command (CK5b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20028",
+                               "level": "performance_measure",
+                               "value": 0.9475021618407167,
+                               "description": "This is some random 0.16411779867240894 text for Reports situations using chain of command (CK5b)"
+                             }
+                           ],
+                           "id": "20008",
+                           "level": "competency",
+                           "value": 0.6783948191176914,
+                           "description": "This is some random 0.905543012850861 text for Compliance with Legal and Regulatory Requirements (CK5)"
+                         }
+                       ],
+                       "id": "20001",
+                       "level": "concept",
+                       "description": "This is some random 0.006350313939576191 text for Clinical Knowledge"
+                     },
+                     {
+                       "label": "Management of Responsibility",
+                       "group_by_type": "tree",
+                       "children": [
+                         {
+                           "label": "Ability to Take Initiative (MR1)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Conducts appropriate follow-up (MR1b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20026",
+                               "level": "performance_measure",
+                               "value": 0.38398436596193264,
+                               "description": "This is some random 0.40795469206388124 text for Conducts appropriate follow-up (MR1b)"
+                             },
+                             {
+                               "label": "Communicates proactively with team (MR1a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20117",
+                               "level": "performance_measure",
+                               "value": 0.08623444162119598,
+                               "description": "This is some random 0.6125227148609793 text for Communicates proactively with team (MR1a)"
+                             }
+                           ],
+                           "id": "20009",
+                           "level": "competency",
+                           "value": 0.287902551080534,
+                           "description": "This is some random 0.9889935862643693 text for Ability to Take Initiative (MR1)"
+                         },
+                         {
+                           "label": "Organization and Prioritization (MR2)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Prioritizes care based on changes in patient (MR2a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20121",
+                               "level": "performance_measure",
+                               "value": 0.24147101281201255,
+                               "description": "This is some random 0.13293442361385077 text for Prioritizes care based on changes in patient (MR2a)"
+                             },
+                             {
+                               "label": "Prioritizes care for multiple patients (MR2b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20122",
+                               "level": "performance_measure",
+                               "value": 0.646338490646543,
+                               "description": "This is some random 0.13633819036257067 text for Prioritizes care for multiple patients (MR2b)"
+                             }
+                           ],
+                           "id": "20113",
+                           "level": "competency",
+                           "value": 0.2647498956178025,
+                           "description": "This is some random 0.8950130086390029 text for Organization and Prioritization (MR2)"
+                         },
+                         {
+                           "label": "Delegation of Tasks (MR3)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Uses ANA delegation tree to delegate task and manage workload (MR3a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20123",
+                               "level": "performance_measure",
+                               "value": 0.9148117027306732,
+                               "description": "This is some random 0.4289203566691284 text for Uses ANA delegation tree to delegate task and manage workload (MR3a)"
+                             },
+                             {
+                               "label": "Assesses outcomes of delegated tasks (MR3b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20125",
+                               "level": "performance_measure",
+                               "value": 0.135586520071864,
+                               "description": "This is some random 0.23933916950315193 text for Assesses outcomes of delegated tasks (MR3b)"
+                             },
+                             {
+                               "label": "Uses ANA delegation tree to delegate tasks and manage workload (MR3a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20160",
+                               "level": "performance_measure",
+                               "value": 0.9621702584756548,
+                               "description": "This is some random 0.5623268127497094 text for Uses ANA delegation tree to delegate tasks and manage workload (MR3a)"
+                             }
+                           ],
+                           "id": "20114",
+                           "level": "competency",
+                           "value": 0.5337536383455659,
+                           "description": "This is some random 0.7152810921002786 text for Delegation of Tasks (MR3)"
+                         }
+                       ],
+                       "id": "20002",
+                       "level": "concept",
+                       "value": 0.13121402410098226,
+                       "description": "This is some random 0.7836336416371206 text for Management of Responsibility"
+                     },
+                     {
+                       "label": "Communication",
+                       "group_by_type": "tree",
+                       "children": [
+                         {
+                           "label": "Interprofessional Team Communication (C1)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Communicates patient status using SBAR (C1c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20015",
+                               "level": "performance_measure",
+                               "value": 0.5556527457364817,
+                               "description": "This is some random 0.8234451837409829 text for Communicates patient status using SBAR (C1c)"
+                             },
+                             {
+                               "label": "Makes recommendations to team (C1e)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20017",
+                               "level": "performance_measure",
+                               "value": 0.18876370222793226,
+                               "description": "This is some random 0.9084289983509903 text for Makes recommendations to team (C1e)"
+                             },
+                             {
+                               "label": "Communicates changes in patient status (C1b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20029",
+                               "level": "performance_measure",
+                               "value": 0.3989893261617947,
+                               "description": "This is some random 0.8741658173267284 text for Communicates changes in patient status (C1b)"
+                             },
+                             {
+                               "label": "Obtains information from healthcare team (C1f)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20126",
+                               "level": "performance_measure",
+                               "value": 0.9980543272299129,
+                               "description": "This is some random 0.2524008599862364 text for Obtains information from healthcare team (C1f)"
+                             },
+                             {
+                               "label": "Gives accurate hand-off report (C1d)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20128",
+                               "level": "performance_measure",
+                               "value": 0.7412568940145707,
+                               "description": "This is some random 0.5793744226155468 text for Gives accurate hand-off report (C1d)"
+                             }
+                           ],
+                           "id": "20010",
+                           "level": "competency",
+                           "value": 0.5112299336589321,
+                           "description": "This is some random 0.8870441976701864 text for Interprofessional Team Communication (C1)"
+                         },
+                         {
+                           "label": "Patient/Caregiver Education (C2)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Uses AIDET (C2c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20013",
+                               "level": "performance_measure",
+                               "value": 0.14890622977344292,
+                               "description": "This is some random 0.5711893002045756 text for Uses AIDET (C2c)"
+                             },
+                             {
+                               "label": "Educates based on patient preferences (C2a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20020",
+                               "level": "performance_measure",
+                               "value": 0.5425214608951021,
+                               "description": "This is some random 0.5511749196850053 text for Educates based on patient preferences (C2a)"
+                             },
+                             {
+                               "label": "Affirms understanding after education (C2d)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20024",
+                               "level": "performance_measure",
+                               "value": 0.3223905936627416,
+                               "description": "This is some random 0.19297260603285715 text for Affirms understanding after education (C2d)"
+                             },
+                             {
+                               "label": "Uses AIDET (C2d)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20063",
+                               "level": "performance_measure",
+                               "value": 0.5769421698667723,
+                               "description": "This is some random 0.5450734550392862 text for Uses AIDET (C2d)"
+                             },
+                             {
+                               "label": "Communicates plan of care to patient (C2b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20095",
+                               "level": "performance_measure",
+                               "value": 0.5837289507863053,
+                               "description": "This is some random 0.6475969978650482 text for Communicates plan of care to patient (C2b)"
+                             }
+                           ],
+                           "id": "20011",
+                           "level": "competency",
+                           "value": 0.5002547874453551,
+                           "description": "This is some random 0.6999532336693455 text for Patient/Caregiver Education (C2)"
+                         },
+                         {
+                           "label": "Patient Advocacy (C4)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Responds promptly to patient concerns (C4c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20058",
+                               "level": "performance_measure",
+                               "value": 0.5675869143705419,
+                               "description": "This is some random 0.6066056787974818 text for Responds promptly to patient concerns (C4c)"
+                             },
+                             {
+                               "label": "Engage patient in plan of care (C4a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20098",
+                               "level": "performance_measure",
+                               "value": 0.565557068555353,
+                               "description": "This is some random 0.535717794278534 text for Engage patient in plan of care (C4a)"
+                             },
+                             {
+                               "label": "Fit patient preferences into plan of care (C4b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20109",
+                               "level": "performance_measure",
+                               "value": 0.9751338953952444,
+                               "description": "This is some random 0.11261048262247564 text for Fit patient preferences into plan of care (C4b)"
+                             }
+                           ],
+                           "id": "20012",
+                           "level": "competency",
+                           "value": 0.27864928057942784,
+                           "description": "This is some random 0.7353374924522902 text for Patient Advocacy (C4)"
+                         },
+                         {
+                           "label": "Conflict Resolution (C3)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Reacts professionally in conflicts (C3a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20103",
+                               "level": "performance_measure",
+                               "value": 0.7545090795725036,
+                               "description": "This is some random 0.004476524560701689 text for Reacts professionally in conflicts (C3a)"
+                             },
+                             {
+                               "label": "Resolves conflict considering all views (C3b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20104",
+                               "level": "performance_measure",
+                               "value": 0.06734588149363385,
+                               "description": "This is some random 0.6833381804559651 text for Resolves conflict considering all views (C3b)"
+                             }
+                           ],
+                           "id": "20093",
+                           "level": "competency",
+                           "value": 0.7885814466211623,
+                           "description": "This is some random 0.45182994310277724 text for Conflict Resolution (C3)"
+                         },
+                         {
+                           "label": "Rapport with Patients and Caregivers (C5)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Plans care in collaboration with patient (C5c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20135",
+                               "level": "performance_measure",
+                               "value": 0.22450128485807985,
+                               "description": "This is some random 0.383724173447723 text for Plans care in collaboration with patient (C5c)"
+                             }
+                           ],
+                           "id": "20094",
+                           "level": "competency",
+                           "value": 0.6015021666630633,
+                           "description": "This is some random 0.04656721613105974 text for Rapport with Patients and Caregivers (C5)"
+                         }
+                       ],
+                       "id": "20003",
+                       "level": "concept",
+                       "value": 0.37299666996264635,
+                       "description": "This is some random 0.5442817492259429 text for Communication"
+                     },
+                     {
+                       "label": "Clinical Reasoning",
+                       "group_by_type": "tree",
+                       "children": [
+                         {
+                           "label": "Decision Making Based on Interpretation of Patient Data (CR3)",
+                           "group_by_type": "tree",
+                           "children": [],
+                           "id": "20033",
+                           "level": "performance_measure",
+                           "value": 0.5735228253701414,
+                           "description": "This is some random 0.07308719524927665 text for Decision Making Based on Interpretation of Patient Data (CR3)"
+                         },
+                         {
+                           "label": "Recognizing and Responding to Changes in Patient Status (CR4)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Responds to subtle changes in patient (CR4c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20041",
+                               "level": "performance_measure",
+                               "value": 0.16730459429176525,
+                               "description": "This is some random 0.9131949730552793 text for Responds to subtle changes in patient (CR4c)"
+                             },
+                             {
+                               "label": "Recognizes changes in patient condition (CR4b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20078",
+                               "level": "performance_measure",
+                               "value": 0.6802167755169202,
+                               "description": "This is some random 0.13977553044783364 text for Recognizes changes in patient condition (CR4b)"
+                             },
+                             {
+                               "label": "Intervenes on change of patient condition (CR4e)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20092",
+                               "level": "performance_measure",
+                               "value": 0.7075431049504528,
+                               "description": "This is some random 0.9304276518443482 text for Intervenes on change of patient condition (CR4e)"
+                             }
+                           ],
+                           "id": "20034",
+                           "level": "performance_measure",
+                           "value": 0.8966237879631485,
+                           "description": "This is some random 0.9083987247351539 text for Recognizing and Responding to Changes in Patient Status (CR4)"
+                         },
+                         {
+                           "label": "Ability to Anticipate Risk (CR5)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Discusses potential complications (CR5c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20056",
+                               "level": "performance_measure",
+                               "value": 0.47749782215145475,
+                               "description": "This is some random 0.21674279262031448 text for Discusses potential complications (CR5c)"
+                             },
+                             {
+                               "label": "Proactively minimizes risks to patient (CR5a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20136",
+                               "level": "performance_measure",
+                               "value": 0.4036091363124883,
+                               "description": "This is some random 0.8367783318072641 text for Proactively minimizes risks to patient (CR5a)"
+                             },
+                             {
+                               "label": "Communicates safety risks to team (CR5b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20148",
+                               "level": "performance_measure",
+                               "value": 0.3892539789365359,
+                               "description": "This is some random 0.4196098865902065 text for Communicates safety risks to team (CR5b)"
+                             }
+                           ],
+                           "id": "20035",
+                           "level": "performance_measure",
+                           "value": 0.4959121023094457,
+                           "description": "This is some random 0.9461237906366866 text for Ability to Anticipate Risk (CR5)"
+                         },
+                         {
+                           "label": "Recognition of Need for Assistance (CR1)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Collaborates with team when needed (CR1c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20081",
+                               "level": "performance_measure",
+                               "value": 0.5539692422824938,
+                               "description": "This is some random 0.2930169718592879 text for Collaborates with team when needed (CR1c)"
+                             }
+                           ],
+                           "id": "20065",
+                           "level": "performance_measure",
+                           "value": 0.07440970982956752,
+                           "description": "This is some random 0.8030694579652105 text for Recognition of Need for Assistance (CR1)"
+                         },
+                         {
+                           "label": "Patient Safety (CR2)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Utilizes patient safety technologies (CR2a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20067",
+                               "level": "performance_measure",
+                               "value": 0.7382858521769355,
+                               "description": "This is some random 0.5342486109390359 text for Utilizes patient safety technologies (CR2a)"
+                             },
+                             {
+                               "label": "Uses technologies in problem solving (CR2c)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20088",
+                               "level": "performance_measure",
+                               "value": 0.13562006748961086,
+                               "description": "This is some random 0.853245108265565 text for Uses technologies in problem solving (CR2c)"
+                             }
+                           ],
+                           "id": "20066",
+                           "level": "performance_measure",
+                           "value": 0.9795985863126708,
+                           "description": "This is some random 0.5615199287172166 text for Patient Safety (CR2)"
+                         }
+                       ],
+                       "id": "20032",
+                       "level": "concept",
+                       "value": 0.41271236462130734,
+                       "description": "This is some random 0.2857558414827983 text for Clinical Reasoning"
+                     },
+                     {
+                       "label": "Professionalism",
+                       "group_by_type": "tree",
+                       "children": [
+                         {
+                           "label": "Ability to Work as Part of a Team (P1)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Develops professional relationships (P1a)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20118",
+                               "level": "performance_measure",
+                               "value": 0.39300294481204956,
+                               "description": "This is some random 0.4700193746248744 text for Develops professional relationships (P1a)"
+                             },
+                             {
+                               "label": "Supports care team in achieving goals (P1b)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20120",
+                               "level": "performance_measure",
+                               "value": 0.14469586895850384,
+                               "description": "This is some random 0.5003129015306842 text for Supports care team in achieving goals (P1b)"
+                             }
+                           ],
+                           "id": "20115",
+                           "level": "performance_measure",
+                           "value": 0.3565769371625471,
+                           "description": "This is some random 0.15207044465241748 text for Ability to Work as Part of a Team (P1)"
+                         },
+                         {
+                           "label": "Accountability for Professional Practice (P2)",
+                           "group_by_type": "tree",
+                           "children": [
+                             {
+                               "label": "Exhibits professional image (P2d)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20119",
+                               "level": "performance_measure",
+                               "value": 0.34295513972595026,
+                               "description": "This is some random 0.8537273953285773 text for Exhibits professional image (P2d)"
+                             },
+                             {
+                               "label": "Limits negative impact of own emotions (P2e)",
+                               "group_by_type": "tree",
+                               "children": [],
+                               "id": "20165",
+                               "level": "performance_measure",
+                               "value": 0.716874564034826,
+                               "description": "This is some random 0.7591127289547401 text for Limits negative impact of own emotions (P2e)"
+                             }
+                           ],
+                           "id": "20116",
+                           "level": "performance_measure",
+                           "value": 0.3410689845683521,
+                           "description": "This is some random 0.9459067747492376 text for Accountability for Professional Practice (P2)"
+                         }
+                       ],
+                       "id": "20112",
+                       "level": "concept",
+                       "value": 0.2873481132005482,
+                       "description": "This is some random 0.5965408268418386 text for Professionalism"
+                     }
+                   ],
+                   "id": "20000",
+                   "level": "root",
+                   "value": 0.90395721619053493,
+                   "description": "This is some random 0.45736710576252104 text for Total"
+                 }
+               ]
+            }
+         ]
+      }
+   ]
+}

@@ -26,7 +26,7 @@ var x = d3.scale.ordinal()
 
     r = d3.scale.linear()
           .domain(d3.extent(nodes.map(function(d) {return d.count;})))
-          .range([10, 30]),
+          .range([10, 40]),
     radius = function(d) { return r(d.count);}
 ;
 

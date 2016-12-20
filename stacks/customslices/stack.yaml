@@ -1,0 +1,63 @@
+# Label is the displayed name of this stack
+label: "Custom slices"
+# Should a hopscotch tour be displayed.
+has_tour: false
+# The hash to load if the user hasn't started using this stack.
+# If you leave this blank the slices will start with nothing selected or defaults.
+initial_hash: ""
+# Provides data to the global filters
+# Can be either a data service class in your service.py file (e.g. 'realtorservice.FilterService')
+# or a json file in the fixtures directory (e.g. 'filters.json')
+global_filters_service: "censusv2service.FilterService"
+slices:
+
+- slice_type: "custom"
+  slug: "custom_1"
+  title: "Custom Force"
+  mixins:
+  - options: {}
+    target: "view"
+  config:
+    visual_plugin: "force"
+  data_service: "sample-custom-force.json"
+
+
+- slice_type: "custom"
+  slug: "custom_2"
+  title: "Custom Tree"
+  mixins:
+  - options: {}
+    target: "view"
+  config:
+    visual_plugin: "tree"
+  data_service: "sample-tree.json"
+  extra_css: "
+  .node {
+    cursor: pointer;
+  }
+  .node.active circle{
+    stroke: indianred;
+  }
+  .node.active text{
+    font-weight: 600;
+    font-size: 11px;
+  }
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+
+  .node text {
+    font: 11px sans-serif;
+  }
+  .node text .item-value {
+    font-size: 14px;
+  }
+
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+  }
+  "
