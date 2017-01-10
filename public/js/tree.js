@@ -3,6 +3,8 @@
 var container = d3.select(this);
 var dataItems = data.items[0];
 
+// IMPORTANT: max depth is not dynamic, set it here
+var MAX_DEPTH = 4;
 
 
 
@@ -12,6 +14,7 @@ var dataItems = data.items[0];
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
   width = 960 - margin.right - margin.left,
   height = 800 - margin.top - margin.bottom;
+var depthWidth = width / MAX_DEPTH;
 
 var pctFormatter = d3.format(',.0%');
 
@@ -20,19 +23,28 @@ var i = 0,
   root;
 
 var tree = d3.layout.tree()
-    .size([height, width]);
+  .size([height, width]);
 
 var diagonal = d3.svg.diagonal()
   .projection(function(d) { return [d.y, d.x]; });
 
-container.selectAll('svg').data([{}])
+var svgEnter = container.selectAll('svg').data([{}])
   .enter()
-    .append("svg")
-    .attr("width", width + margin.right + margin.left)
-    .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-      .attr('class', 'tree-container')
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .append("svg")
+  .attr("width", width + margin.right + margin.left)
+  .attr("height", height + margin.top + margin.bottom)
+
+// background gridlines
+svgEnter
+  .append("g")
+  .attr('class', 'tree-background')
+  .attr("transform", "translate(" + (margin.left  - depthWidth/2)+ "," + margin.top + ")");
+
+// tree container
+svgEnter
+  .append("g")
+  .attr('class', 'tree-container')
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var svg = container.selectAll('g.tree-container');
 
@@ -65,40 +77,54 @@ var valueExtent = d3.extent(allNodes.map(valueFx));
 
 var domainValues = [0, 0.0000000001, 0.7000, 0.8000, 0.9000, 1];
 var c1 = d3.scale.quantile()
-        .domain(domainValues)
-        .range(['#ccc', '#cb181d', '#cb181d', '#fc9272', '#fff', '#006d2c']),
-    fillColor = function(d) {return c1(valueFx(d));},
-    c2 = d3.scale.quantile()
-      .domain(domainValues)
-      .range(['#666', '#cb181d', '#cb181d', '#cb181d', '#000', '#006d2c']),
-    strokeColor = function(d) { return c2(valueFx(d));},
+    .domain(domainValues)
+    .range(['#ccc', '#cb181d', '#cb181d', '#fc9272', '#fff', '#006d2c']),
+  fillColor = function(d) {return c1(valueFx(d));},
+  c2 = d3.scale.quantile()
+    .domain(domainValues)
+    .range(['#666', '#cb181d', '#cb181d', '#cb181d', '#000', '#006d2c']),
+  strokeColor = function(d) { return c2(valueFx(d));},
 
   r = d3.scale.linear()
     .domain(valueExtent)
     .range([5, 20]),
-  radius = function(d) { return r(valueFx(d));}
-;
+  radius = function(d) { return 15/*r(valueFx(d))*/;}
+  ;
 
 
-// expand only the first level on nodes
-root.children.forEach(collapse);
+function start() {
+  container.selectAll('svg .tree-background')
+    .selectAll('line').data(d3.range(MAX_DEPTH))
+    .enter()
+    .append('line')
+      .attr('x1', function (d) { console.log(d); return d * depthWidth; })
+      .attr('x2', function (d) { return d * depthWidth; })
+      .attr('y1', function (d) { return 0; })
+      .attr('y2', function (d) { return height; })
+      .attr("stroke-width", 2)
+      .attr("stroke", "#EAEAEA");
 
-// expand selected items
-var selectedItems = allNodes.filter(function(d){ return d._selected;});
-selectedItems.forEach(function(d){
-  var p = d.parent;
-  while(p) {
-    if (!p.children) {
-      p.children = p._children;
-      p._children = null;
+
+  // expand only the first level on nodes
+  root.children.forEach(collapse);
+
+  // expand selected items
+  var selectedItems = allNodes.filter(function(d){ return d._selected;});
+  selectedItems.forEach(function(d){
+    var p = d.parent;
+    while(p) {
+      if (!p.children) {
+        p.children = p._children;
+        p._children = null;
+      }
+      p = p.parent;
     }
-    p = p.parent;
-  }
-});
+  });
 
-// draw tree
-update(root);
+  // draw tree
+  update(root);
 
+}
 
 
 
@@ -106,10 +132,11 @@ function update(source) {
 
   // Compute the new tree layout.
   var nodes = tree.nodes(root).reverse(),
-      links = tree.links(nodes);
+    links = tree.links(nodes);
 
-  // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = d.depth * 180; });
+  // Normalize for fixed-depth: d.y is actually for horizontal positioning
+  nodes.forEach(function(d) { d.y = d.depth * depthWidth; });
+
 
   // Update the nodes…
   var node = svg.selectAll("g.node")
@@ -117,9 +144,9 @@ function update(source) {
 
   // Enter any new nodes at the parent's previous position.
   var nodeEnter = node.enter().append("g")
-    .attr("class", "node")
-    .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
-  ;
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+    ;
 
   nodeEnter.append("circle")
     .attr("r", 0)
@@ -142,9 +169,9 @@ function update(source) {
   ;
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
-    .duration(duration)
-    .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
-  ;
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+    ;
 
   nodeUpdate.select("circle")
     .attr("r", radius)
@@ -260,7 +287,7 @@ function wrapText(textElements) {
       x = text.attr("x"),
       y = text.attr("y"),
       textAnchor = text.attr("text-anchor")
-    ;
+      ;
 
     var addSpan = function(value, lineNumber) {
       return text.append("tspan")
@@ -294,3 +321,5 @@ function wrapText(textElements) {
     text.attr('y',  - lineHeight/2 * lineNumber );
   });
 }
+
+start();
