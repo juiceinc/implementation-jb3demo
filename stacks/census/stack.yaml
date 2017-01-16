@@ -324,7 +324,7 @@ slices:
 
 - slice_type: "custom"
   slug: "custom_2"
-  title: "Custom Tree"
+  title: "custom - Tree"
   mixins:
   - options: {}
     target: "view"

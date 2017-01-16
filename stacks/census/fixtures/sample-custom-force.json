@@ -3,7 +3,7 @@
   "responses": [
     {
       "name": "groups",
-      "config": {"titleTemplate": "Custom force fixture"},
+      "config": {"titleTemplate": "custom - force bubbles"},
       "metadata": {},
       "data": [
         {
