@@ -3,7 +3,7 @@
   "responses": [
     {
       "name": "first",
-      "config": {"titleTemplate": "Slice with dataset 1"},
+      "config": {"titleTemplate": "keymetrics-hierarchy (title from service)"},
       "data": [
         {
             "name": "items",

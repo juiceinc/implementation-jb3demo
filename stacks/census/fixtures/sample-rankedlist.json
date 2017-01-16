@@ -3,7 +3,7 @@
   "responses": [
     {
       "name": "option 1",
-      "config": {"titleTemplate": "Moo 1"},
+      "config": {"titleTemplate": "ranked-list-2 (title from service)"},
       "metadata": {},
       "data": [
         {

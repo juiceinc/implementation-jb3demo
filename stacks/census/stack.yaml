@@ -4,7 +4,7 @@ label: "Census"
 has_tour: false
 # The hash to load if the user hasn't started using this stack.
 # If you leave this blank the slices will start with nothing selected or defaults.
-initial_hash: ""
+initial_hash: "2eXUh0AluCS"
 # Provides data to the global filters
 # Can be either a data service class in your service.py file (e.g. 'realtorservice.FilterService')
 # or a json file in the fixtures directory (e.g. 'filters.json')
@@ -33,7 +33,7 @@ slices:
 - slice_type: "option-chooser"
   slug: "foo"
   # The title line for the slice.
-  title: "This should go away"
+  title: "option-chooser 1: This should go away"
   # Detailed configuration for the slice.
   config:
     "optionExtraClass": "option-item-fixed-width"
@@ -54,7 +54,7 @@ slices:
 - slice_type: "option-chooser"
   slug: "bar"
   # The title line for the slice.
-  title: "This could stay here"
+  title: "option-chooser 2: This could stay here"
   # Detailed configuration for the slice.
   config:
     "optionExtraClass": "option-item-fixed-width"
@@ -76,7 +76,7 @@ slices:
 - slice_type: "option-chooser"
   slug: "buttons"
   # The title line for the slice.
-  title: "This could stay here"
+  title: "option-chooser 3: This could stay here"
   # Detailed configuration for the slice.
   config:
     "optionExtraClass": "option-item-fixed-width"
@@ -98,7 +98,7 @@ slices:
 - slice_type: "distribution"
   slug: "distribution1"
   # The title line for the slice.
-  title: "Distribution slice"
+  title: "distribution"
   # Detailed configuration for the slice.
   config:
     "cellTemplateName": "#distribution-template"
@@ -112,7 +112,7 @@ slices:
 - slice_type: "details-table"
   slug: "table23"
   # The title line for the slice.
-  title: "Details table2"
+  title: "details-table"
   # Detailed configuration for the slice.
   config:
     "name_field": "state"
@@ -125,7 +125,7 @@ slices:
 
 - slice_type: "ranked-list"
   slug: "COOKIES"
-  title: "Here's a breakout of your responses."
+  title: "ranked-list"
   config:
     "disableSort": true
   style:
@@ -135,7 +135,7 @@ slices:
 
 - slice_type: "ranked-list-2"
   slug: "rl2"
-  title: "New ranked list!"
+  title: "ranked-list-2"
   config:
     "disableSort": true
   style:
@@ -144,7 +144,7 @@ slices:
   extra_css: ""
 - slice_type: "ranked-list-2"
   slug: "rl3"
-  title: "New ranked list!"
+  title: "ranked-list-2"
   config:
     "disableSort": true
   style:
@@ -154,7 +154,7 @@ slices:
 
 - slice_type: "lollipop"
   slug: "lollipop_jam1"
-  title: "JAM lollipop"
+  title: "JAM lollipop! This will change."
   config:
     "groups":
       "default":
@@ -200,7 +200,7 @@ slices:
 
 - slice_type: "card"
   slug: "jam_card1"
-  title: "Card"
+  title: "card"
   config:
     "cardTemplateName": "#jam-card-template"
   data_service: "censusv2service.CardV3Service2"
@@ -208,7 +208,7 @@ slices:
 
 - slice_type: "nine-box"
   slug: "ninebox"
-  title: "Nine box"
+  title: "nine-box"
   config:
     "axisLabels": [{"labels": ["Low", "Medium", "High"]}, {"labels": ["Slow", "Normal", "Fast"]}]
     "boxLabels":
@@ -233,13 +233,13 @@ slices:
 
 - slice_type: "leaderboard"
   slug: "leaderboard"
-  title: "Leaderboard"
+  title: "leaderboard"
   data_service: "censusv2service.LeaderboardV3Service"
   extra_css: ""
 
 - slice_type: "map"
   slug: "map"
-  title: "Map"
+  title: "map"
   data_service: "sample-map.json"
   extra_css: ""
 
@@ -296,7 +296,7 @@ slices:
 
 - slice_type: "bubble"
   slug: "bubble"
-  title: "Bubble"
+  title: "bubble"
   config:
     "sizeField": "employees"
     "colorField": "value"
@@ -305,7 +305,7 @@ slices:
 
 - slice_type: "flower"
   slug: "flower1"
-  title: "Flower"
+  title: "flower"
   config:
     "detailsTemplateName": "#flower-slice-details-template"
     "width": 750
@@ -313,7 +313,7 @@ slices:
 
 - slice_type: "custom"
   slug: "custom_1"
-  title: "Hi, I am a custom slice!"
+  title: "custom"
   mixins:
   - options: {}
     target: "view"

@@ -3,7 +3,7 @@
   "responses": [
     {
       "name": "option 1",
-      "config": {"titleTemplate": "Moo 1", "colorRange": ["orange", "blue"]},
+      "config": {"titleTemplate": "ranked-list-2", "colorRange": ["orange", "blue"]},
       "metadata": {"option 1": {"field": "option-2", "format": ",.1f", "plural": "courses", "singular": "course"}},
       "data": [
         {

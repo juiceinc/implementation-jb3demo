@@ -3,7 +3,6 @@
   "responses": [
     {
       "name": "option 1",
-      "config": {"titleTemplate": "Title of the first dataset"},
       "metadata": {},
       "data": [
         {

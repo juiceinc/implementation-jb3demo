@@ -3,7 +3,7 @@
   "responses": [
     {
       "name": "first",
-      "config": {"titleTemplate": "Slice with dataset 1","colors":[{"range":["#FFF","#1a8cdb"],"domain":[50,100],"title_text":"Map","name":"score"}],"sizes":[{"range":[10,70],"name":"population"}]},
+      "config": {"titleTemplate": "map","colors":[{"range":["#FFF","#1a8cdb"],"domain":[50,100],"title_text":"Map","name":"score"}],"sizes":[{"range":[10,70],"name":"population"}]},
       "data": [
         {
             "name": "items",

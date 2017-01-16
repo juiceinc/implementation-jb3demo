@@ -3,7 +3,7 @@
   "responses": [
     {
       "name": "6 months ago",
-      "config": {"titleTemplate": "Title of the first dataset"},
+      "config": {"titleTemplate": "sankey"},
       "metadata": {},
       "data": [
         {

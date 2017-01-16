@@ -3,7 +3,7 @@
   "responses": [
     {
       "name": "option 1",
-      "config": {"titleTemplate": "Title of the first dataset"},
+      "config": {"titleTemplate": "lollipop (title from service)"},
       "metadata": {},
       "data": [
         {

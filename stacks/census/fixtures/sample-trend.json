@@ -4,7 +4,7 @@
     {
       "name": "first",
       "config": {
-        "titleTemplate": "Trend slice fixture ds 1",
+        "titleTemplate": "trend ds 1",
         "type": "bar",
         "datasets": {
           "bad_stops": {
