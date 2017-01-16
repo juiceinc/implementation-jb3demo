@@ -3,7 +3,7 @@
   "responses": [
     {
       "name": "first",
-      "config": {"titleTemplate": "keymetrics-hierarchy (title from service)"},
+      "config": {"titleTemplate": "keymetrics-hierarchy"},
       "data": [
         {
             "name": "items",
