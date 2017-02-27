@@ -210,7 +210,9 @@ function module() {
 
   // Check if `d` is selected.
   function isSelected(d) {
-    return currentSelections.find((s) => s.id == d.id);
+    return currentSelections.find(function(s) {
+      return s.id == d.id;
+    });
   }
 
 
