@@ -237,10 +237,10 @@ class TableV3Service(CensusService):
         self.metrics = ('pop2000', 'pop2008', 'popdiff')
         self.dimensions = ('state', 'sex')
         recipe1 = self.recipe().metrics(*self.metrics).dimensions(
-            *self.dimensions)
+            *self.dimensions).order_by('state')
         self.dimensions = ('age_bands', 'age')
         recipe2 = self.recipe().metrics(*self.metrics).dimensions(
-            *self.dimensions)
+            *self.dimensions).order_by('age')
 
         results = RecipePool([
             (recipe1, 'States'), (recipe2, 'Ages'),
