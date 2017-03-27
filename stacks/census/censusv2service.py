@@ -1,6 +1,7 @@
 import time
 from sqlalchemy import Column, String, ForeignKey, select, join
 
+from dataservices.mixins import DownloadTable
 from dataservices.recipe import *
 from dataservices.redshift_connectionbase import *
 from dataservices.servicebase import *
@@ -231,7 +232,7 @@ class DistributionV3Service(CensusService):
         print 'Ms: ',current_milli_time() - start
 
 
-class TableV3Service(CensusService):
+class TableV3Service(DownloadTable, CensusService):
     def build_response(self):
         start = current_milli_time()
         self.metrics = ('pop2000', 'pop2008', 'popdiff')
@@ -246,6 +247,7 @@ class TableV3Service(CensusService):
             (recipe1, 'States'), (recipe2, 'Ages'),
         ]).run()
         self.response['responses'] = results
+        self.response['responses'][0]['templateContext']['notes'] = 'Lorem Ipsum Dolor Sumit'
         print 'Ms: ', current_milli_time() - start
 
 
