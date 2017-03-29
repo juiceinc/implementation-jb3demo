@@ -238,6 +238,15 @@ slices:
   title: "leaderboard"
   data_service: "censusv2service.LeaderboardV3Service"
   extra_css: ""
+  mixins:
+    - target: "view"
+      class: "ColorDataMixin"
+      options:
+        colorMap:
+          leaderboard__chart__item--selected-1: $theme-leaderboard-color1
+          leaderboard__chart__item--selected-2: $theme-leaderboard-color2
+          leaderboard__chart__item--selected-3: $theme-leaderboard-color3
+          leaderboard__chart__item--selected-4: $theme-leaderboard-color4
 
 - slice_type: "map"
   slug: "map"
