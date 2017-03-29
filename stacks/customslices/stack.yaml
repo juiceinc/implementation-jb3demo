@@ -18,7 +18,7 @@ slices:
   - options: {}
     target: "view"
   config:
-    visual_plugin: "force"
+    visual_plugin: "forcev2"
   data_service: "sample-custom-force.json"
 
 
@@ -29,7 +29,7 @@ slices:
   - options: {}
     target: "view"
   config:
-    visual_plugin: "tree"
+    visual_plugin: "treev2"
   data_service: "sample-tree.json"
   extra_css: "
   .node {
