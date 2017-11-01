@@ -1,0 +1,15 @@
+# A unique id for a tour. Feature tours should start with 'feature-', stack tours should start with 'stack-'
+id: "stack-ranked-list-2-guide-me"
+# The name for the tour. Appears in the drop-down list of tours
+name: "Welcome to the new Ranked List slice"
+# Set this to the current time when saving changes to the tour which would warrant a user seeing it again.
+updated: 2017-10-31 17:34:47.702913+00:00
+# If false, tour will only appear when new or updated for the user.
+show_all_the_time: true
+# JSON definition for Hopscotch tour
+definition:
+- "yOffset": 20
+  "content": "Welcome to the new Ranked List slice!"
+  "placement": "top"
+  "target": ".slug-rl2"
+  "title": "Ranked List Tour"
