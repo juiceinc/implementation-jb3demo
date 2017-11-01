@@ -147,6 +147,7 @@ slices:
       "options":
         "tourId":
           - "stack-ranked-list-2-guide-me"
+        "label": "Take a tour!"
       "target": "view"
   data_service: "sample-rankedlist100.json"
   extra_css: ""
