@@ -10,7 +10,6 @@ logo_geometry: "x62"
 background_pattern: "patterns/bright_squares.png"
 # Set the primary colors for the app.
 variables: |
-  $theme-base-font-stack: 'Merriweather', Georgia, serif !default;
   $theme-primary-color: #11222f;
   $theme-accent-color: #dd4b44;
 # Extra css overrides
