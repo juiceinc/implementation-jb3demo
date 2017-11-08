@@ -119,7 +119,12 @@ slices:
     "slickgrid_id_field": "row_id"
     "pagination":
       "pageSize": 13
-  # Provides data to the slice
+  include_commands:
+    - "download-data"
+    - "download-image"
+    - "print-image"
+    - "hello-world"
+   # Provides data to the slice
   # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
   # or a json file in the fixtures directory (e.g. 'rankedlist.json')
   data_service: "censusv2service.TableV3Service"
