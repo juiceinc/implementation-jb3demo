@@ -170,7 +170,9 @@ slices:
 - slice_type: "lollipop"
   slug: "lollipop_jam1"
   title: "JAM lollipop! This will change."
+  subtitle: "I am a subtitle."
   config:
+    baseTemplate: "#base-slice-twocolumns-template"
     "groups":
       "default":
         "max": 100
