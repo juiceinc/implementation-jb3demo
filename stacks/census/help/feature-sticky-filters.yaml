@@ -1,0 +1,27 @@
+# A unique id for a tour. Feature tours should start with 'feature-', stack tours should start with 'stack-'
+id: "feature-sticky-filters"
+# The name for the tour. Appears in the drop-down list of tours
+name: "sticky-filters-feature"
+# Set this to the current time when saving changes to the tour which would warrant a user seeing it again.
+updated: 2018-02-01 01:00:00+00:00
+# If false, tour will only appear when new or updated for the user.
+show_all_the_time: true
+# JSON definition for Hopscotch tour
+definition:
+- "arrowOffset": 0 
+  "title": "Filters stick here, so you always know what you are focused on."
+  "content": "As you continue through the data story, use this bar see and edit selected filters."
+  "fixedElement": true
+  "placement": "bottom"
+  "target": ".page-header-actions__save-filter"
+  "xOffset": -550
+  "yOffset": -10
+- "arrowOffset": 244 
+  "fixedElement": true
+  "placement": "bottom"
+  "target": ".page-header-actions__global-filter-selection"
+  "title": "Select fitlers to jump back and edit them."
+  "yOffset": -10
+  "xOffset": -220
+  "showPrevButton": false
+

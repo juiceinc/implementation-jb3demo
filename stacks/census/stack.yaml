@@ -4,7 +4,7 @@ label: "Census"
 has_tour: true
 # The hash to load if the user hasn't started using this stack.
 # If you leave this blank the slices will start with nothing selected or defaults.
-initial_hash: "2eXUh0AluCS"
+initial_hash: "a9nP7RxdgWZ"
 # Provides data to the global filters
 # Can be either a data service class in your service.py file (e.g. 'realtorservice.FilterService')
 # or a json file in the fixtures directory (e.g. 'filters.json')
