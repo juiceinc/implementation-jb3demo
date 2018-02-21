@@ -9,7 +9,7 @@ show_all_the_time: true
 # JSON definition for Hopscotch tour
 definition:
 - "arrowOffset": 0 
-  "title": "Filters stick here, so you always know what you are focused on."
+  "title": "Filters stick here, so that you always know what you are focused on."
   "content": "As you continue through the data story, use this bar see and edit selected filters."
   "fixedElement": true
   "placement": "bottom"
@@ -20,7 +20,7 @@ definition:
   "fixedElement": true
   "placement": "bottom"
   "target": ".page-header-actions__global-filter-selection"
-  "title": "Select fitlers to jump back and edit them."
+  "title": "Select filters to jump back and edit them, without losing your place."
   "yOffset": -10
   "xOffset": -220
   "showPrevButton": false
