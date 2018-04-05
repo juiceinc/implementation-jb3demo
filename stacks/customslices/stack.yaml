@@ -61,3 +61,8 @@ slices:
     stroke-width: 1.5px;
   }
   "
+
+- slice_type: "story-chooser"
+  slug: "story_chooser"
+  title: "Story Chooser"
+  data_service: "sample-story-chooser.json"

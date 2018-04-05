@@ -1,0 +1,68 @@
+{
+    "version": "3",
+    "responses": [
+        {
+            "name": "Stack Switcher",
+            "config": {
+                "path": [],
+                "subtitleTemplate": "",
+                "collapsable": false,
+                "titleTemplate": "Choose a Data Story to open: <div class='fr-caption'>Note: Stories will enable after their design process questions are complete.</div>"
+            },
+            "version": "3",
+            "templateContext": {},
+            "data": [
+                {
+                    "values": [
+                        {
+                            "url": "/jb3demo/census",
+                            "stack_id": "869470f2",
+                            "slug": "story-cards",
+                            "label": "Story Cards",
+                            "icon": "pencil-square-o",
+                            "description": "This story has an image defined, and it inheriting it's color from that image via imgx.",
+                            "disabled": "",
+                            "color": "",
+                            "image": "https://juicebox.imgix.net/app_assets/43c796fe/img/backgrounds/Sunset_2007-1.jpg"
+                        },
+                        {
+                            "url": "/jb3demo/census2",
+                            "stack_id": "58c6a623",
+                            "slug": "style",
+                            "label": "Style Config",
+                            "icon": "home",
+                            "description": "Here's a different story with another image defined. If an image and a color is defined, the image gets priority in the header.",
+                            "disabled": "",
+                            "color": "9b59b6",
+                            "image": "https://juicebox.imgix.net/app_assets/43c796fe/img/backgrounds/temp_image.jpg"
+                        },
+                        {
+                            "url": "/jb3demo/census",
+                            "stack_id": "869470f2",
+                            "slug": "slice-components",
+                            "label": "Slice Components",
+                            "icon": "binoculars",
+                            "description": "This one doesn't have an image defined. But you should still go checkout the Components story!",
+                            "disabled": "",
+                            "color": "9b59b6",
+                            "image": ""
+                        },
+                        {
+                            "url": "/jb3demo/census2",
+                            "stack_id": "58c6a623",
+                            "slug": "layouts",
+                            "label": "Layouts",
+                            "icon": "",
+                            "description": "This one just has a color defined. The only problem here is that I can't read this color automatically, to color the text contrast appropriately.",
+                            "disabled": "",
+                            "color": "f2a",
+                            "image": ""
+                        }
+                    ],
+                    "name": "items"
+                }
+            ],
+            "metadata": {}
+        }
+    ]
+}
