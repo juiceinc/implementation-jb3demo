@@ -64,5 +64,10 @@ slices:
 
 - slice_type: "story-chooser"
   slug: "story_chooser"
-  title: "Story Chooser"
+  title: "Where to Next?"
+  style:
+    - wide
+    - background-transparent
+  config:
+    collapsable: false
   data_service: "sample-story-chooser.json"

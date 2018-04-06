@@ -3,12 +3,6 @@
     "responses": [
         {
             "name": "Stack Switcher",
-            "config": {
-                "path": [],
-                "subtitleTemplate": "",
-                "collapsable": false,
-                "titleTemplate": "Choose a Data Story to open: <div class='fr-caption'>Note: Stories will enable after their design process questions are complete.</div>"
-            },
             "version": "3",
             "templateContext": {},
             "data": [
@@ -48,8 +42,8 @@
                             "image": ""
                         },
                         {
-                            "url": "/jb3demo/census2",
-                            "stack_id": "58c6a623",
+                            "url": "/jb3demo/customslices",
+                            "stack_id": "c1525bf8",
                             "slug": "layouts",
                             "label": "Layouts",
                             "icon": "",
