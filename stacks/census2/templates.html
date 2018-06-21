@@ -9,11 +9,19 @@ The template goes here
 -->
 
 
-
+<!--
 <script type="text/template" id="distribution-template">
         COWS
         <%= datum.format("value", ",.3s") %>
 </script>
+-->
+
+<script type="text/template" id="jam-card-template">
+  <div class="fr-body2"><%= datum.label %></div>
+  <div class="fr-caption"><%= datum.format("exercised", ',.0f') %> change in privileges granted</div>
+</script>
+
+<!--
 <script type="text/template" id="jam-free-form1-template">
 	<div style="text-align: center; margin-top: 50px; background-color: lightsalmon;">
         <div class="free-form-header">Percent Female Overview</div>
@@ -48,20 +56,19 @@ The template goes here
 		</div>
 	</div>
 </script>
+-->
 
-<!--card template-->
+<!--card template
 <script type="text/template" id="card-template">
   <div class="fr-caption <%= datum.classed %>-color" style="font-style: normal; font-size: 80%; text-transform: uppercase;"><%= datum.course_category %></div>
   <div class="fr-body2"><%= datum.label %></div>
   <div class="fr-caption"><%= datum.format("score", ',.1f') %> average score</div>
   <div class="fr-caption"><%= datum.format("count", ',.0f"pluralize( student, students)"') %></div>
 </script>
-<script type="text/template" id="jam-card-template">
-  <div class="fr-body2"><%= datum.label %></div>
-  <div class="fr-caption"><%= datum.format("popdiff", ',.0f') %> change in population</div>
-</script>
 
-<!-- flower slice details template -->
+-->
+<!--
+<!-- flower slice details template
 <script type="text/template" id="flower-slice-details-template">
     <div  class="viz-details-container">
         <div class="viz-details-title"><i class="hand-icon"></i> <%=title%>:</div>
@@ -69,9 +76,12 @@ The template goes here
         <div class="viz-details-average">Industry average is <strong><%=avg%></strong></div>
     </div>
 </script>
+-->
 
+<!--
 <script type="text/template" id="stack-switcher-template">
   <% if (datum.url) { %>
   <a href="<%= datum.url %>" target="_blank" class="fr-btn fr-btn-accent"><%= datum.label %></a>
   <% } %>
 </script>
+-->

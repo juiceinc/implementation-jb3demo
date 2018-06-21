@@ -1,5 +1,5 @@
 # Label is the displayed name of this stack
-label: "Census 2"
+label: "Privileging Insights"
 # Should a hopscotch tour be displayed.
 has_tour: false
 # The hash to load if the user hasn't started using this stack.
@@ -10,276 +10,54 @@ initial_hash: ""
 # or a json file in the fixtures directory (e.g. 'filters.json')
 global_filters_service: "censusv2service.FilterService"
 slices:
-#
-# Slice documentation: http://dev.fruitiondata.com/static/docs/slices.html
-# How to build titles: http://dev.fruitiondata.com/static/docs/title-templates.html
-#
-#- slice_type: "option-chooser"
-#  # The title line for the slice.
-#  title: "Explore your data"
-#  # Detailed configuration for the slice.
-#  config:
-#    "maxSelections": 1
-#    "minSelections": 1
-#    "optionExtraClass": "option-item-fixed-width"
-#    "optionTemplate": |-
-#      <div data-id="<%=id%>" class="group-container__item"><div class="group-container__item__label"><%=label%></div><div class="group-container__item__value"><%=formattedValue%></div></div>
-#    "showTitles": false
-#  # Provides data to the slice
-#  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
-#  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-#  data_service: "censusv2service.KeyMetricsService"
 
 - slice_type: "option-chooser"
   slug: "foo"
-  # The title line for the slice.
-  title: "This should go away"
-  # Detailed configuration for the slice.
+  title: "Examine types of privileges"
+  style:
+  - alignment-center
   config:
     "optionExtraClass": "option-item-fixed-width"
-#    <%=format('value', undefined, 'id')%> means: in the current object, format value  of a 'value' field
-#    we don't have a static format specifier (undefined), but you can lookup the format in metadata using the 'id' field's value
-#    so, the specifier is metadata[item.id].format
     "optionTemplate": |-
-      <div data-id="<%= datum.id %>" class="group-container__item"><div class="group-container__item__label"><%= datum.label%></div><div class="group-container__item__value"><%= datum.format('value', undefined, 'id') %></div></div>
+      <div data-id="<%= datum.id %>" class="group-container__item">
+        <div class="group-container__item__label"><%= datum.label%></div>
+        <div class="group-container__item__value"><%= datum.format('value', undefined, 'id') %></div>
+      </div>
     "showTitles": false
     "minSelections": 1
     "maxSelections": 1
-  # Provides data to the slice
-  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
-  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
   data_service: "censusv2service.FirstChooserV3Service"
-  extra_css: ""
-
-- slice_type: "option-chooser"
-  slug: "bar"
-  # The title line for the slice.
-  title: "This could stay here"
-  # Detailed configuration for the slice.
-  config:
-    "optionExtraClass": "option-item-fixed-width"
-    "optionTemplate": |-
-      <div data-id="<%= datum.id %>" class="group-container__item"><div class="group-container__item__label"><%= datum.label %></div><div class="group-container__item__value"><%= datum.format('value', ',.2s') %></div></div>
-    "showTitles": false
-    "minSelections": 1
-    "maxSelections": 1
-
-  # TODO: this eventmap could go away, because in v3 it is automatic, but we have it here explicitly to test it.
-  eventmap:
-  - "foo"
-  # Provides data to the slice
-  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
-  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-  data_service: "censusv2service.SecondChooserV3Service"
-  extra_css: ""
-
-- slice_type: "option-chooser"
-  slug: "buttons"
-  # The title line for the slice.
-  title: "This could stay here"
-  # Detailed configuration for the slice.
-  config:
-    "optionExtraClass": "option-item-fixed-width"
-    "optionTemplate": |-
-      <div data-id="<%= datum.id %>" class="group-container__item"><div class="group-container__item__label"><%= datum.label %></div><div class="group-container__item__value"><%= datum.format('value', ',.2s') %></div></div>
-    "showTitles": false
-    "minSelections": 1
-    "maxSelections": 1
-
-  # TODO: this eventmap could go away, because in v3 it is automatic, but we have it here explicitly to test it.
-  eventmap:
-  - "foo"
-  # Provides data to the slice
-  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
-  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-  data_service: "censusv2service.ButtonChooserV3Service"
-  extra_css: ""
-
-- slice_type: "distribution"
-  slug: "distribution1"
-  # The title line for the slice.
-  title: "Distribution of <%= foo.selectionDisplay() %> by <%= distribution1.metadata(distribution1.selectionType()) %>"
-  # Detailed configuration for the slice.
-  config:
-    "cellTemplateName": "#distribution-template"
-    "colors": {"Ages": {"range": ["#f00", "#0f0"], "field": "value"} }
-  # Provides data to the slice
-  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
-  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-  data_service: "censusv2service.DistributionV3Service"
-  extra_css: ""
-
-- slice_type: "details-table"
-  slug: "table23"
-  # The title line for the slice.
-  title: "Details table2"
-  # Detailed configuration for the slice.
-  config:
-    "name_field": "state"
-    "slickgrid_id_field": "row_id"
-  # Provides data to the slice
-  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
-  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
-  data_service: "censusv2service.TableV3Service"
-  extra_css: ""
-
-- slice_type: "ranked-list"
-  slug: "COOKIES"
-  title: "Here's a breakout of your responses by <%= COOKIES.metadata(COOKIES.selectionType(), 'plural') %> for <%= table23.selectionListDisplay() %>."
-  config:
-    "disableSort": true
-  style:
-    - "section-content"
-  data_service: "censusv2service.RankedListV3Service"
-  extra_css: ""
-
-- slice_type: "ranked-list-2"
-  slug: "rl2"
-  title: "New ranked list!"
-  config:
-    "disableSort": true
-  style:
-    - "section-content"
-  data_service: "sample-rankedlist100.json"
-  extra_css: ""
-- slice_type: "ranked-list-2"
-  slug: "rl3"
-  title: "New ranked list!"
-  config:
-    "disableSort": true
-  style:
-    - "section-content"
-  data_service: "sample-rankedlist.json"
-  extra_css: ""
-
-- slice_type: "free-form"
-  slug: "jam_free_form1"
-  style:
-  - "title-large"
-# bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
-# see https://juiceanalytics.atlassian.net/browse/JB-682 for details
-  bare: true
-  mixins:
-  - options: {}
-    target: "view"
-    class: "WithNoData"
-  config:
-    baseTemplateName: "#base-slice-bare-template"
-    contentTemplate: "#jam-free-form1-template"
-  data_service: "censusv2service.FreeFormV3Service1"
-  extra_css: ""
-
-- slice_type: "free-form"
-  slug: "jam_free_form2"
-  style:
-  - "title-large"
-# bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
-# see https://juiceanalytics.atlassian.net/browse/JB-682 for details
-  bare: true
-  mixins:
-  - options: {}
-    target: "view"
-    class: "WithNoData"
-  config:
-    baseTemplateName: "#base-slice-bare-template"
-    contentTemplate: "#jam-free-form2-template"
-  data_service: "censusv2service.FreeFormV3Service2"
-  extra_css: ""
-
-- slice_type: "card"
-  slug: "jam_card1"
-  title: "Card"
-  config:
-    "cardTemplateName": "#jam-card-template"
-  data_service: "censusv2service.CardV3Service2"
-  extra_css: ""
-
-- slice_type: "nine-box"
-  slug: "ninebox"
-  title: "Nine box"
-  config:
-    "axisLabels": [{"labels": ["Low", "Medium", "High"]}, {"labels": ["Slow", "Normal", "Fast"]}]
-    "boxLabels":
-    - "col": 2
-      "position": "ne"
-      "row": 0
-      "text": "Small exposure, but high conversion rate"
-  data_service: "censusv2service.NineBoxV3Service"
-  extra_css: ""
-
-- slice_type: "keymetrics-hierarchy"
-  slug: "keymetrics_hierarchy"
-  title: "Key Metrics Hierarchy"
-  config:
-    margin:
-      top: 60
-      right: 80
-      left: 20
-      bottom: 100
-  data_service: "sample-keymetricshierarchy.json"
-  extra_css: ""
-
-- slice_type: "leaderboard"
-  slug: "leaderboard"
-  title: "Leaderboard"
-  data_service: "censusv2service.LeaderboardV3Service"
-  extra_css: ""
-
-- slice_type: "map"
-  slug: "map"
-  title: "Map"
-  data_service: "sample-map.json"
-  extra_css: ""
-
-- slice_type: "matchup"
-  slug: "matchup"
-  title: "matchup"
-  data_service: "censusv2service.MatchupV3Service"
-  config:
-    "differenceThreshold": 0.01
-    "scoreTitleTemplate": "Population Change"
-    "averageTitle": "Average Change"
   extra_css: "
-  .red-class {
-    stroke: red;
-    stroke-width: 2px;
-    color: red;
-  };
-  "
-
-- slice_type: "trend"
-  slug: "trend"
-  title: "trend"
-  data_service: "sample-trend.json"
-  extra_css: ""
-
-- slice_type: "vega"
-  slug: "vega"
-  title: "vega"
-  data_service: "sample-vega.json"
-  extra_css: ""
-
-- slice_type: "orbit"
-  slug: "orbit"
-  title: "orbit"
-  config:
-    "minSelections": 1
-    "sizeField": "employees"
-    "sizeRange": [30,200]
-    "colorField": "value"
-    "colorRange": ["#d7191c","#ffffcf","#36A556"]
-  data_service: "sample-orbit.json"
-  extra_css: ""
-
-- slice_type: "sankey"
-  slug: "sankey"
-  title: "Sankey"
-  config:
-    "colorMap":
-      "Better Than": "#97cc58"
-      "Same As": "#ccc"
-      "Worse Than": "#ff7e79"
-  data_service: "sample-sankey.json"
+    border: none;
+    padding-top: 100px;
+   .group-container__item {
+     border: 1px solid rgba(0,0,0,.2);
+     border-radius: 6px;
+     vertical-align: top;
+     margin: 10px 10px 0;
+     padding: 20px;
+     &:hover {
+       border: 1px solid rgba(0,0,0,.2);
+       border-radius: 6px;
+       vertical-align: top;
+       background-color: rgba(0,0,0,.1);
+     }
+   }
+  .group-container {
+    display: inline-block;
+    margin-right: 40px;
+   }
+  .slice-body__visualization {
+    text-align: center;
+  }
+  .slice-selection {
+    display: none;
+   }
+   .slice-download__link {
+     border: 1px solid rgba(0,0,0,.2);
+     padding: 6px 15px;
+     border-radius: 24px;
+   } "
 
 - slice_type: "bubble"
   slug: "bubble"
@@ -289,19 +67,253 @@ slices:
     "colorField": "value"
   data_service: "sample-orbit.json"
 
-- slice_type: "flower"
-  slug: "flower1"
-  title: "Flower"
+- slice_type: "card"
+  slug: "jam_card1"
+  layout: twocolumns-twothirds
+  title: "Let's look at <%=foo.selectionDisplay()%> by <%=jam_card1.selectionDisplay()%>."
   config:
-    "detailsTemplateName": "#flower-slice-details-template"
-    "width": 750
-  data_service: "sample-flower.json"
+    "cardTemplateName": "#jam-card-template"
+  data_service: "censusv2service.CardV3Service2"
+  extra_css: |-
+    border: none;
+    .card-item { background-color: #fff; }
+    .slice-body {
+      border-bottom: 1px #ffffff7d solid;
+      box-shadow: -2px -6px 3px -3px rgba(0, 0, 0, 0.1) inset;
+    }
+
+- slice_type: "details-table"
+  title: "Let's look at the details for <%=jam_card1.selectionDisplay()%>."
+  config:
+    "name_field": "state"
+    "slickgrid_id_field": "row_id"
+  data_service: "censusv2service.TableV3Service"
+  extra_css: ""
+
+#- slice_type: "option-chooser"
+#  slug: "bar"
+#  # The title line for the slice.
+#  title: "This could stay here"
+#  # Detailed configuration for the slice.
+#  config:
+#    "optionExtraClass": "option-item-fixed-width"
+#    "optionTemplate": |-
+#      <div data-id="<%= datum.id %>" class="group-container__item"><div class="group-container__item__label"><%= datum.label %></div><div class="group-container__item__value"><%= datum.format('value', ',.2s') %></div></div>
+#    "showTitles": false
+#    "minSelections": 1
+#    "maxSelections": 1
 #
-- slice_type: "free-form"
-  slug: "stack_switcher_free_form"
-  title: "Switch to these other stacks"
-  style:
-  - "title-large"
-  config:
-    "contentTemplate": "#stack-switcher-template"
-  data_service: "censusv2service.StackSwitcherService"
+#  # TODO: this eventmap could go away, because in v3 it is automatic, but we have it here explicitly to test it.
+#  eventmap:
+#  - "foo"
+#  # Provides data to the slice
+#  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
+#  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
+#  data_service: "censusv2service.SecondChooserV3Service"
+#  extra_css: ""
+#
+#- slice_type: "option-chooser"
+#  slug: "buttons"
+#  # The title line for the slice.
+#  title: "This could stay here"
+#  # Detailed configuration for the slice.
+#  config:
+#    "optionExtraClass": "option-item-fixed-width"
+#    "optionTemplate": |-
+#      <div data-id="<%= datum.id %>" class="group-container__item"><div class="group-container__item__label"><%= datum.label %></div><div class="group-container__item__value"><%= datum.format('value', ',.2s') %></div></div>
+#    "showTitles": false
+#    "minSelections": 1
+#    "maxSelections": 1
+#
+#  # TODO: this eventmap could go away, because in v3 it is automatic, but we have it here explicitly to test it.
+#  eventmap:
+#  - "foo"
+#  # Provides data to the slice
+#  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
+#  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
+#  data_service: "censusv2service.ButtonChooserV3Service"
+#  extra_css: ""
+#
+#- slice_type: "distribution"
+#  slug: "distribution1"
+#  # The title line for the slice.
+#  title: "Distribution of <%= foo.selectionDisplay() %> by <%= distribution1.metadata(distribution1.selectionType()) %>"
+#  # Detailed configuration for the slice.
+#  config:
+#    "cellTemplateName": "#distribution-template"
+#    "colors": {"Ages": {"range": ["#f00", "#0f0"], "field": "value"} }
+#  # Provides data to the slice
+#  # Can be either a data service class in your service.py file (e.g. 'realtorservice.RankedListService')
+#  # or a json file in the fixtures directory (e.g. 'rankedlist.json')
+#  data_service: "censusv2service.DistributionV3Service"
+#  extra_css: ""
+#
+#
+#- slice_type: "ranked-list"
+#  slug: "COOKIES"
+#  title: "Here's a breakout of your responses by <%= COOKIES.metadata(COOKIES.selectionType(), 'plural') %> for <%= table23.selectionListDisplay() %>."
+#  config:
+#    "disableSort": true
+#  style:
+#    - "section-content"
+#  data_service: "censusv2service.RankedListV3Service"
+#  extra_css: ""
+#
+#- slice_type: "ranked-list-2"
+#  slug: "rl2"
+#  title: "New ranked list!"
+#  config:
+#    "disableSort": true
+#  style:
+#    - "section-content"
+#  data_service: "sample-rankedlist100.json"
+#  extra_css: ""
+#- slice_type: "ranked-list-2"
+#  slug: "rl3"
+#  title: "New ranked list!"
+#  config:
+#    "disableSort": true
+#  style:
+#    - "section-content"
+#  data_service: "sample-rankedlist.json"
+#  extra_css: ""
+#
+#- slice_type: "free-form"
+#  slug: "jam_free_form1"
+#  style:
+#  - "title-large"
+## bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
+## see https://juiceanalytics.atlassian.net/browse/JB-682 for details
+#  bare: true
+#  mixins:
+#  - options: {}
+#    target: "view"
+#    class: "WithNoData"
+#  config:
+#    baseTemplateName: "#base-slice-bare-template"
+#    contentTemplate: "#jam-free-form1-template"
+#  data_service: "censusv2service.FreeFormV3Service1"
+#  extra_css: ""
+#
+#- slice_type: "free-form"
+#  slug: "jam_free_form2"
+#  style:
+#  - "title-large"
+## bare: true should automatically enable WithNoData mixin, set config.baseTemplateName and tweak CSS
+## see https://juiceanalytics.atlassian.net/browse/JB-682 for details
+#  bare: true
+#  mixins:
+#  - options: {}
+#    target: "view"
+#    class: "WithNoData"
+#  config:
+#    baseTemplateName: "#base-slice-bare-template"
+#    contentTemplate: "#jam-free-form2-template"
+#  data_service: "censusv2service.FreeFormV3Service2"
+#  extra_css: ""
+#
+#
+#- slice_type: "nine-box"
+#  slug: "ninebox"
+#  title: "Nine box"
+#  config:
+#    "axisLabels": [{"labels": ["Low", "Medium", "High"]}, {"labels": ["Slow", "Normal", "Fast"]}]
+#    "boxLabels":
+#    - "col": 2
+#      "position": "ne"
+#      "row": 0
+#      "text": "Small exposure, but high conversion rate"
+#  data_service: "censusv2service.NineBoxV3Service"
+#  extra_css: ""
+#
+#- slice_type: "keymetrics-hierarchy"
+#  slug: "keymetrics_hierarchy"
+#  title: "Key Metrics Hierarchy"
+#  config:
+#    margin:
+#      top: 60
+#      right: 80
+#      left: 20
+#      bottom: 100
+#  data_service: "sample-keymetricshierarchy.json"
+#  extra_css: ""
+#
+#- slice_type: "leaderboard"
+#  slug: "leaderboard"
+#  title: "Leaderboard"
+#  data_service: "censusv2service.LeaderboardV3Service"
+#  extra_css: ""
+#
+#- slice_type: "map"
+#  slug: "map"
+#  title: "Map"
+#  data_service: "sample-map.json"
+#  extra_css: ""
+#
+#- slice_type: "matchup"
+#  slug: "matchup"
+#  title: "matchup"
+#  data_service: "censusv2service.MatchupV3Service"
+#  config:
+#    "differenceThreshold": 0.01
+#    "scoreTitleTemplate": "Population Change"
+#    "averageTitle": "Average Change"
+#  extra_css: "
+#  .red-class {
+#    stroke: red;
+#    stroke-width: 2px;
+#    color: red;
+#  };
+#  "
+#
+#- slice_type: "trend"
+#  slug: "trend"
+#  title: "trend"
+#  data_service: "sample-trend.json"
+#  extra_css: ""
+#
+#- slice_type: "vega"
+#  slug: "vega"
+#  title: "vega"
+#  data_service: "sample-vega.json"
+#  extra_css: ""
+#
+#- slice_type: "orbit"
+#  slug: "orbit"
+#  title: "orbit"
+#  config:
+#    "minSelections": 1
+#    "sizeField": "employees"
+#    "sizeRange": [30,200]
+#    "colorField": "value"
+#    "colorRange": ["#d7191c","#ffffcf","#36A556"]
+#  data_service: "sample-orbit.json"
+#  extra_css: ""
+#
+#- slice_type: "sankey"
+#  slug: "sankey"
+#  title: "Sankey"
+#  config:
+#    "colorMap":
+#      "Better Than": "#97cc58"
+#      "Same As": "#ccc"
+#      "Worse Than": "#ff7e79"
+#  data_service: "sample-sankey.json"
+
+
+#- slice_type: "flower"
+#  slug: "flower1"
+#  title: "Flower"
+#  config:
+#    "detailsTemplateName": "#flower-slice-details-template"
+#    "width": 750
+#  data_service: "sample-flower.json"
+#
+#- slice_type: "free-form"
+#  slug: "stack_switcher_free_form"
+#  title: "Switch to these other stacks"
+#  style:
+#  - "title-large"
+#  config:
+#    "contentTemplate": "#stack-switcher-template"
+#  data_service: "censusv2service.StackSwitcherService"
