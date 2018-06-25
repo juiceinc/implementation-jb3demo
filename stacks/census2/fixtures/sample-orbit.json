@@ -2,7 +2,7 @@
   "version": "3",
   "responses": [
     {
-      "name": "Physician",
+      "name": "Physician Specialties",
       "config": {
         "titleTemplate": "Look at <strong>Privileges Exercised</strong> by <strong>Physicians</strong>."
       },
@@ -6006,7 +6006,7 @@
       ]
     },
     {
-      "name": "Non-Physician",
+      "name": "Non-Physician Specialties",
       "config": {
         "titleTemplate": "Look at <strong>Privileges Exercised</strong> by <strong>Non-Physicians</strong>."
       },
