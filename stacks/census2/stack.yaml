@@ -1,10 +1,32 @@
 # Label is the displayed name of this stack
-label: "Privileging Insights"
+label: Privileging Insights
 # Should a hopscotch tour be displayed.
 has_tour: false
 # The hash to load if the user hasn't started using this stack.
 # If you leave this blank the slices will start with nothing selected or defaults.
 initial_hash: ""
+header:
+  #- gradient: 'linear-gradient(to bottom, rgba(255,255,255, .3) 35% , rgba(166,232,255, .8))'
+  - pattern: 'overlapping_circles'
+    config:
+      color: '#CCCDCE'
+      scale: 7
+      opacity: .35
+background:
+  - gradient: 'linear-gradient(to bottom, rgba(255,255,255, .5) 55% , rgba(166,232,255, .5))'
+    extra: "no-repeat fixed"
+  - pattern: "sinewaves"
+    config:
+      color: '#F0F5EE'
+      scale: 12
+      opacity: .5
+  - image: backgrounds/background_img.jpg
+    config:
+      blur: 8
+      blend: 92ACC5
+      bm: normal
+      balph: 55
+    extra: "0/cover no-repeat fixed"
 # Provides data to the global filters
 # Can be either a data service class in your service.py file (e.g. 'realtorservice.FilterService')
 # or a json file in the fixtures directory (e.g. 'filters.json')
@@ -27,37 +49,37 @@ slices:
     "minSelections": 1
     "maxSelections": 1
   data_service: "censusv2service.FirstChooserV3Service"
-  extra_css: "
+  extra_css: |-
     border: none;
-    padding-top: 100px;
-   .group-container__item {
-     border: 1px solid rgba(0,0,0,.2);
-     border-radius: 6px;
-     vertical-align: top;
-     margin: 10px 10px 0;
-     padding: 20px;
-     &:hover {
-       border: 1px solid rgba(0,0,0,.2);
-       border-radius: 6px;
-       vertical-align: top;
-       background-color: rgba(0,0,0,.1);
-     }
-   }
-  .group-container {
-    display: inline-block;
-    margin-right: 40px;
-   }
-  .slice-body__visualization {
-    text-align: center;
-  }
-  .slice-selection {
-    display: none;
-   }
-   .slice-download__link {
-     border: 1px solid rgba(0,0,0,.2);
-     padding: 6px 15px;
-     border-radius: 24px;
-   } "
+    .group-container__item {
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: 6px;
+      vertical-align: top;
+      margin: 10px 10px 0;
+      padding: 20px;
+      &:hover {
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 6px;
+        vertical-align: top;
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+    .group-container {
+      display: inline-block;
+      margin-right: 40px;
+    }
+    .slice-body__visualization {
+      text-align: center;
+    }
+    .slice-selection {
+      display: none;
+    }
+    .slice-download__link {
+      border: 1px solid rgba(0,0,0,.2);
+      padding: 6px 15px;
+      border-radius: 24px;
+    }
+
 
 - slice_type: "bubble"
   slug: "bubble"
@@ -67,13 +89,13 @@ slices:
     "colorField": "value"
   data_service: "sample-orbit.json"
 
+
 - slice_type: "card"
   slug: "jam_card1"
   layout: twocolumns-twothirds
-  title: "Let's look at <%=foo.selectionDisplay()%> by <%=jam_card1.selectionDisplay()%>."
   config:
     "cardTemplateName": "#jam-card-template"
-  data_service: "censusv2service.CardV3Service2"
+  data_service: "sample-card.json"
   extra_css: |-
     border: none;
     .card-item { background-color: #fff; }
@@ -87,7 +109,7 @@ slices:
   config:
     "name_field": "state"
     "slickgrid_id_field": "row_id"
-  data_service: "censusv2service.TableV3Service"
+  data_service: "sample-table.json"
   extra_css: ""
 
 #- slice_type: "option-chooser"

@@ -17,8 +17,13 @@ The template goes here
 -->
 
 <script type="text/template" id="jam-card-template">
-  <div class="fr-body2"><%= datum.label %></div>
-  <div class="fr-caption"><%= datum.format("exercised", ',.0f') %> change in privileges granted</div>
+  <div>
+      <div style="display: inline-block; width: 100%;">
+          <div class="fr-headline" style="display: inline-block; font-weight: 700;"><%= datum.name %></div>
+      </div>
+      <div class="fr-body1" style="font-weight: 600;"><%= datum.privilege %></div>
+      <div class="fr-body1" style="font-weight: 500;"><%= datum.date %></div>
+  </div>
 </script>
 
 <!--

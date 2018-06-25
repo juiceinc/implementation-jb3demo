@@ -1,10 +1,10 @@
-id: "xVNKTlyz"
+id: xVNKTlyz
 # Slug appears in the url for the stack like http://www.juiceboxdata.com/{appslug}/{stackslug}/
-slug: "jb3demo"
+slug: jb3demo
 # Label is the displayed name of this app. Appears on the home page.
-label: "Juicebox 3 Demo"
+label: Privileging Insights
 # Description of this app, appears below the label on the home page.
-description: "The Juicebox 3 demo"
+description: The Juicebox 3 demo
 # If true, allow discussions in this app
 use_discussions: false
 # discussions_group_property is a property of user.extra that groups who users can talk to in discussions
