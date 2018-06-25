@@ -11,132 +11,134 @@
             "values": [
               {
                 "name": "Charis, Caroline",
-                "privilege": "Consultation",
-                "date": "06/25/2017"
+                "privilege": 45,
+                "date": "06/25/2017",
+                "id": 123
               },
               {
                 "name": "Hobavcovich, Allie",
-                "privilege": "Central Venous Catheter Insertion",
-                "date": "06/25/2017"
+                "privilege": 46,
+                "date": "06/25/2017",
+                "id": 456
               },
               {
                 "name": "Woodruff, Annie",
-                "privilege": "Administration of Sedation",
+                "privilege": 29,
                 "date": "06/25/2017"
               },
               {
                 "name": "Brown, Mac",
-                "privilege": "Goal-directed Bedside Ultrasonography",
+                "privilege": 37,
                 "date": "06/25/2017"
               },
               {
                 "name": "Greene, Justin",
-                "privilege": "Trauma Surgery",
+                "privilege": 23,
                 "date": "06/25/2017"
               },
               {
                 "name": "Stanley, Amaris",
-                "privilege": "Use of Fluoroscopy Equipment",
+                "privilege": 23,
                 "date": "06/25/2017"
               },
               {
                 "name": "Wood, James",
-                "privilege": "Admission",
+                "privilege": 32,
                 "date": "06/25/2017"
               },
               {
                 "name": "Cauthon, Matt",
-                "privilege": "Stabilizing Treatment",
+                "privilege": 47,
                 "date": "06/25/2017"
               },
               {
                 "name": "Thor, Heinrich",
-                "privilege": "Surgical Consultation",
+                "privilege": 47,
                 "date": "06/25/2017"
               },
               {
                 "name": "Leithaug, Johann",
-                "privilege": "Treat Inpatients 14 Years or Younger",
+                "privilege": 65,
                 "date": "06/25/2017"
               },
               {
                 "name": "Grab, Manuel",
-                "privilege": "Stablilizing Treatment",
+                "privilege": 24,
                 "date": "06/25/2017"
               },
               {
                 "name": "Codian, Yann",
-                "privilege": "Goal-directed Bedside Ultrasonography",
+                "privilege": 12,
                 "date": "06/25/2017"
               },
               {
                 "name": "Thompson, Iosif",
-                "privilege": "Administration of Sedation",
+                "privilege": 15,
                 "date": "06/25/2017"
               },
               {
                 "name": "Harley, Dave",
-                "privilege": "Comprehensive Treatment of Trauma",
+                "privilege": 13,
                 "date": "06/25/2017"
               },
               {
                 "name": "Smith, Simona",
-                "privilege": "Endoscopic Procedures",
+                "privilege": 24,
                 "date": "06/25/2017"
               },
               {
                 "name": "Sommers, June",
-                "privilege": "Diagnosis and Surgical Care of Tumors",
+                "privilege": 23,
                 "date": "06/25/2017"
               },
               {
                 "name": "Brownard, Lucas",
-                "privilege": "Central Venous Catheter Insertion",
+                "privilege": 31,
                 "date": "06/25/2017"
               },
               {
                 "name": "Davies, Jem",
-                "privilege": "Admission",
+                "privilege": 42,
                 "date": "06/25/2017"
               },
               {
                 "name": "Hawthorne, Nate",
-                "privilege": "Admission",
+                "privilege": 23,
                 "date": "06/25/2017"
               },
               {
                 "name": "Dickens, Charley",
-                "privilege": "CDU Observation",
+                "privilege": 42,
                 "date": "06/25/2017"
               },
               {
                 "name": "Austen, Janet",
-                "privilege": "Admission",
+                "privilege": 42,
                 "date": "06/25/2017"
               },
               {
                 "name": "Ingraham, Nate",
-                "privilege": "Trauma Surgery",
+                "privilege": 42,
                 "date": "06/25/2017"
               },
               {
                 "name": "Schillman, Iulia",
-                "privilege": "Central Venous Catheter Insertion",
+                "privilege": 32,
                 "date": "06/25/2017"
               },
               {
                 "name": "Popescu, Florin",
-                "privilege": "CDU Observation",
+                "privilege": 42,
                 "date": "06/25/2017"
               },
               {
                 "name": "Chirla, Bogdan",
-                "privilege": "CDU Observation",
+                "privilege": 45,
                 "date": "06/25/2017"
               },
               {
                 "name": "Brincovan, Miriam",
-                "privilege": "Care of Critically Ill with Underlying Surgical Conditions",
+                "privilege": 24,
                 "date": "06/25/2017"
               }
             ]

@@ -18,11 +18,12 @@ The template goes here
 
 <script type="text/template" id="jam-card-template">
   <div>
-      <div style="display: inline-block; width: 100%;">
-          <div class="fr-headline" style="display: inline-block; font-weight: 700;"><%= datum.name %></div>
+      <div style="display: inline-block; width: 100%; text-align: center">
+          <div class="fr-headline" style="display: inline-block; font-weight: 500;"><%= datum.name %></div>
       </div>
-      <div class="fr-body1" style="font-weight: 600;"><%= datum.privilege %></div>
-      <div class="fr-body1" style="font-weight: 500;"><%= datum.date %></div>
+      <div class="fr-display1" style="display: inline-block; width: 48%; text-align: right; padding-right: 5px; font-weight: 700;" ><%= datum.privilege %></div>
+      <div class="fr-body1" style="display: inline-block; width: 48%;">privileges <br> excercised</div>
+      <div class="fr-body1" style="font-weight: 500; text-align: center">Most recent request: <%= datum.date %></div>
   </div>
 </script>
 

@@ -35,9 +35,12 @@ slices:
 
 - slice_type: "option-chooser"
   slug: "foo"
-  title: "Examine types of privileges"
+  title: "How are privileges being granted?"
   style:
   - alignment-center
+  - title-large
+  - wide
+  - background-transparent
   config:
     "optionExtraClass": "option-item-fixed-width"
     "optionTemplate": |-
@@ -92,13 +95,14 @@ slices:
 
 - slice_type: "card"
   slug: "jam_card1"
-  layout: twocolumns-twothirds
+#  layout: twocolumns-twothirds
   config:
     "cardTemplateName": "#jam-card-template"
+    "cardWidth": 32%
   data_service: "sample-card.json"
   extra_css: |-
     border: none;
-    .card-item { background-color: #fff; }
+    .card-item { background-color: #DCDCDC; }
     .slice-body {
       border-bottom: 1px #ffffff7d solid;
       box-shadow: -2px -6px 3px -3px rgba(0, 0, 0, 0.1) inset;
