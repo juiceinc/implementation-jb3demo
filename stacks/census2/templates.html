@@ -16,13 +16,21 @@ The template goes here
 </script>
 -->
 
+<script type="text/template" id="buttons-template">
+  <div data-id="<%= datum.id %>" class="group-container__item">
+        <div class="group-container__item__label"><%= datum.label%></div>
+        <div class="group-container__item__value"><%= datum.format('value', undefined, 'id') %></div>
+        <div class="fr-body1">Benchmark: 200K</div>
+  </div>
+</script>
+
 <script type="text/template" id="jam-card-template">
   <div>
       <div style="display: inline-block; width: 100%; text-align: center">
           <div class="fr-headline" style="display: inline-block; font-weight: 500;"><%= datum.name %></div>
       </div>
       <div class="fr-display1" style="display: inline-block; width: 48%; text-align: right; padding-right: 5px; font-weight: 700;" ><%= datum.privilege %></div>
-      <div class="fr-body1" style="display: inline-block; width: 48%;">privileges <br> excercised</div>
+      <div class="fr-body1" style="display: inline-block; width: 48%;">privileges <br> exercised</div>
       <div class="fr-body1" style="font-weight: 500; text-align: center">Most recent request: <%= datum.date %></div>
   </div>
 </script>

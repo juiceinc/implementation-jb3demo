@@ -190,6 +190,26 @@ class FirstChooserV3Service(CensusService):
         print 'Ms: ', current_milli_time() - start
 
 
+# class ButtonChooserV3Service(CensusService):
+#     def build_response(self):
+#         render_config = {
+#             'buttons': [
+#                 {'total': 'Privileges Exercised',
+#                  'path': 'path1'},
+#                 {'standard': 'Temporary Privileges',
+#                  'path': 'path2'},
+#                 {'vent_trach': '% Granted',
+#                  'path': 'path3'}
+#             ],
+#             'group_by': 'exclusion'
+#         }
+#
+#         renderer = OptionChooserRenderer(self, None, 'button_name')
+#         response = renderer.render(flavor='buttons',
+#                                    render_config=render_config)
+#         self.response['responses'].append(response)
+
+
 class CardV3Service2(CensusService):
     def build_response(self):
         start = current_milli_time()

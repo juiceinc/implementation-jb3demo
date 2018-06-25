@@ -3,21 +3,24 @@
   "responses": [
     {
       "name": "first",
-      "config": {"titleTemplate": "Slice with dataset 1"},
+      "config": {"titleTemplate": "How are privileges being granted?"},
       "data": [
         {
             "name": "items",
-            "values": []
-        }
-      ]
-    },
-    {
-      "name": "second",
-      "config": {"titleTemplate": "Slice with dataset 2"},
-      "data": [
-        {
-            "name": "items",
-            "values": []
+            "values": [
+              {
+                "name": "Privileges Exercised",
+                "value": "212K"
+              },
+              {
+                "name": "Temporary Privileges",
+                "value": "523"
+              },
+              {
+                "name": "% Granted",
+                "value": "87.1%"
+              }
+            ]
         }
       ]
     }

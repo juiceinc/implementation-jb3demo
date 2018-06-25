@@ -43,15 +43,26 @@ slices:
   - background-transparent
   config:
     "optionExtraClass": "option-item-fixed-width"
-    "optionTemplate": |-
-      <div data-id="<%= datum.id %>" class="group-container__item">
-        <div class="group-container__item__label"><%= datum.label%></div>
-        <div class="group-container__item__value"><%= datum.format('value', undefined, 'id') %></div>
-      </div>
+    "optionTemplateName": "#buttons-template"
     "showTitles": false
     "minSelections": 1
     "maxSelections": 1
   data_service: "censusv2service.FirstChooserV3Service"
+
+#- slice_type: "option-chooser"
+#  slug: "buttons"
+#  title: "How are privileges being used?"
+#  style:
+#  - alignment-center
+#  - title-large
+#  - background-transparent
+#  config:
+#    "optionExtraClass": "option-item-fixed-width"
+#    "optionTemplateName": "#buttons-template"
+#    "showTitles": false
+#    "minSelections": 1
+#    "maxSelections": 1
+#  data_service: "censusv2service.ButtonChooserV3Service"
   extra_css: |-
     border: none;
     .group-container__item {
