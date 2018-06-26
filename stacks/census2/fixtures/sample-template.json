@@ -10,15 +10,18 @@
             "values": [
               {
                 "name": "Privileges Exercised",
-                "value": "212K"
+                "value": "212K",
+                "benchmark": "Nat'l Average: 200K"
               },
               {
                 "name": "Temporary Privileges",
-                "value": "523"
+                "value": "523",
+                "benchmark": "Nat'l Average: 550"
               },
               {
                 "name": "% Granted",
-                "value": "87.1%"
+                "value": "87.1%",
+                "benchmark": "Nat'l Average: 68%"
               }
             ]
         }

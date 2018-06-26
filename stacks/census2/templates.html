@@ -15,14 +15,25 @@ The template goes here
         <%= datum.format("value", ",.3s") %>
 </script>
 -->
+<script type="text/template" id="free-form-template-unu">
+    <button class="group-container__item group-container__item-metric-flavor" style="width: 15%; display: inline-block">
+        <div class="group-container__item__label" style="font-weight: 600; font-size: 12px;"><%= datum.name %></div>
+        <div class="group-container__item__value group-container__item__value-metric-flavor" style="font-size: 40px; font-weight: 100;"><%= datum.value %></div>
+        <div class="group-container__item__label" style="font-weight: 300; font-size: 12px;"><%= datum.benchmark %></div>
+    </button>
+</script>
 
-<script type="text/template" id="buttons-template">
-  <div data-id="<%= datum.id %>" class="group-container__item">
-        <div class="group-container__item__label"><%= datum.label%></div>
-        <div class="group-container__item__value"><%= datum.format('value', undefined, 'id') %></div>
-        <div class="fr-body1">Benchmark: 200K</div>
+<!--
+<script type="text/template" id="option-chooser-item-template-metric-flavor">
+  <div data-id="<%= datum.id %>" class="group-container__item group-container__item-metric-flavor">
+    <div class="group-container__item__label"><%= datum.label %></div>
+    <div class="group-container__item__value group-container__item__value-metric-flavor"><%= datum.format('value', null, 'id') %></div>
+    <% if (datum.compare) { %>
+      <div><%= datum.compare %></div>
+    <% } %>
   </div>
 </script>
+-->
 
 <script type="text/template" id="jam-card-template">
   <div>

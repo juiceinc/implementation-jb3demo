@@ -33,36 +33,16 @@ background:
 global_filters_service: "censusv2service.FilterService"
 slices:
 
-- slice_type: "option-chooser"
-  slug: "foo"
+- slice_type: "free-form"
+  slug: "metrics_chooser"
   title: "How are privileges being granted?"
   style:
   - alignment-center
   - title-large
-  - wide
   - background-transparent
   config:
-    "optionExtraClass": "option-item-fixed-width"
-    "optionTemplateName": "#buttons-template"
-    "showTitles": false
-    "minSelections": 1
-    "maxSelections": 1
-  data_service: "censusv2service.FirstChooserV3Service"
-
-#- slice_type: "option-chooser"
-#  slug: "buttons"
-#  title: "How are privileges being used?"
-#  style:
-#  - alignment-center
-#  - title-large
-#  - background-transparent
-#  config:
-#    "optionExtraClass": "option-item-fixed-width"
-#    "optionTemplateName": "#buttons-template"
-#    "showTitles": false
-#    "minSelections": 1
-#    "maxSelections": 1
-#  data_service: "censusv2service.ButtonChooserV3Service"
+    contentTemplate: "#free-form-template-unu"
+  data_service: "sample-template.json"
   extra_css: |-
     border: none;
     .group-container__item {
@@ -72,11 +52,20 @@ slices:
       margin: 10px 10px 0;
       padding: 20px;
       &:hover {
-        border: 1px solid rgba(0,0,0,.2);
+        border: 1px solid #EBB42F;
         border-radius: 6px;
         vertical-align: top;
-        background-color: rgba(0,0,0,.1);
+        background-color: rgba(13,60,127,.2);
       }
+      &:focus {
+        background-color: rgba(13,60,127,0.9);
+        color: #FFFFFF;
+        border-radius: 6px;
+        border: 1px solid #EBB42F;
+      }
+    }
+    .group-container__item.selected {
+      background-color: red;
     }
     .group-container {
       display: inline-block;
@@ -93,6 +82,67 @@ slices:
       padding: 6px 15px;
       border-radius: 24px;
     }
+
+#- slice_type: "option-chooser"
+#  slug: "foo"
+#  title: "How are privileges being granted?"
+#  style:
+#  - alignment-center
+#  - title-large
+#  - wide
+#  - background-transparent
+#  config:
+#    "optionExtraClass": "option-item-fixed-width"
+#    "optionTemplateName": "#buttons-template"
+#    "showTitles": false
+#    "minSelections": 1
+#    "maxSelections": 1
+#  data_service: "censusv2service.FirstChooserV3Service"
+
+#- slice_type: "option-chooser"
+#  slug: "buttons"
+#  title: "How are privileges being used?"
+#  style:
+#  - alignment-center
+#  - title-large
+#  - background-transparent
+#  config:
+#    "optionExtraClass": "option-item-fixed-width"
+#    "optionTemplateName": "#buttons-template"
+#    "showTitles": false
+#    "minSelections": 1
+#    "maxSelections": 1
+#  data_service: "censusv2service.ButtonChooserV3Service"
+#  extra_css: |-
+#    border: none;
+#    .group-container__item {
+#      border: 1px solid rgba(0,0,0,0.2);
+#      border-radius: 6px;
+#      vertical-align: top;
+#      margin: 10px 10px 0;
+#      padding: 20px;
+#      &:hover {
+#        border: 1px solid rgba(0,0,0,.2);
+#        border-radius: 6px;
+#        vertical-align: top;
+#        background-color: rgba(0,0,0,.1);
+#      }
+#    }
+#    .group-container {
+#      display: inline-block;
+#      margin-right: 40px;
+#    }
+#    .slice-body__visualization {
+#      text-align: center;
+#    }
+#    .slice-selection {
+#      display: none;
+#    }
+#    .slice-download__link {
+#      border: 1px solid rgba(0,0,0,.2);
+#      padding: 6px 15px;
+#      border-radius: 24px;
+#    }
 
 
 - slice_type: "bubble"

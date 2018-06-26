@@ -179,15 +179,15 @@ class FilterService(CensusService):
         self.response['responses'] = results
 
 
-class FirstChooserV3Service(CensusService):
-    def build_response(self):
-        start = current_milli_time()
-        self.metrics = (
-            # 'pop2000', 'pop2008',
-            'exercised', 'tempgrants', 'pctgranted')
-        recipe = self.recipe().metrics(*self.metrics)
-        self.response['responses'].append(recipe.render(flavor='metric'))
-        print 'Ms: ', current_milli_time() - start
+# class FirstChooserV3Service(CensusService):
+#     def build_response(self):
+#         start = current_milli_time()
+#         self.metrics = (
+#             # 'pop2000', 'pop2008',
+#             'exercised', 'tempgrants', 'pctgranted')
+#         recipe = self.recipe().metrics(*self.metrics)
+#         self.response['responses'].append(recipe.render(flavor='metric'))
+#         print 'Ms: ', current_milli_time() - start
 
 
 # class ButtonChooserV3Service(CensusService):
