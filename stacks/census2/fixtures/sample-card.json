@@ -4,7 +4,14 @@
     {
       "name": "courses",
       "config": {"titleTemplate": "<strong>Privileges Exercised</strong> by <strong>Physicians</strong> in the <strong>EM Physician</strong> group."},
-      "metadata": {},
+      "metadata": {
+        "name": {
+          "short_format": ",.0f",
+          "format": ",.0f",
+          "plural": "Students",
+          "singular": "Student"
+        }
+      },
       "data": [
         {
             "name": "items",
@@ -19,7 +26,8 @@
                 "name": "Hobavcovich, Allie",
                 "privilege": 46,
                 "date": "06/25/2017",
-                "id": 456
+                "id": 456,
+                "label": "Hobavcovich, Allie"
               },
               {
                 "name": "Woodruff, Annie",
