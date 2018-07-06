@@ -3,257 +3,257 @@
   "responses": [
     {
       "name": "option 1",
-      "config": {"titleTemplate": "Here are all <strong>Privileges Exercised</strong> by <strong>Allie Hobavcovich</strong>."},
+      "config": {"titleTemplate": "Here are all <strong>Cardio arteriography</strong> privileges exercised by <strong>Physician Specialties</strong>."},
       "metadata": {},
       "data": [
         {
             "name": "items",
             "values": [
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Reagan, Daniel",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "06/25/2018",
       "row_id": 0,
       "id": 0
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission of a Patient Age 14 or Younger",
+      "name": "Deane, Allie",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "06/22/2018",
       "row_id": 1,
       "id": 1
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Trauma Surgery",
+      "name": "Hall, Alex",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "06/01/2018",
       "row_id": 2,
       "id": 2
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Trauma Surgery",
+      "name": "Lovett, Brittany",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "05/13/2018",
       "row_id": 3,
       "id": 3
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Infusion Pump Insertion",
+      "name": "Brown, Miller",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "05/12/2018",
       "row_id": 4,
       "id": 4
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Administration of Anesthesia",
+      "name": "Campbell, Michael",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "05/12/2018",
       "row_id": 5,
       "id": 5
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Stabilizing Treatment",
+      "name": "Dillon, Mike",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "05/12/2018",
       "row_id": 6,
       "id": 6
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Adams, Sydney",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "05/11/2018",
       "row_id": 7,
       "id": 7
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Davis, Joshua",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "05/09/2018",
       "row_id": 8,
       "id": 8
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Timmons, Monroe",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "05/08/2018",
       "row_id": 9,
       "id": 9
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Administration of Anesthesia",
+      "name": "Moore, Frank",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "05/08/2018",
       "row_id": 10,
       "id": 10
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Trauma Surgery",
+      "name": "Hofmann, Jann",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "05/01/2018",
       "row_id": 11,
       "id": 11
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Infusion Pump Insertion",
+      "name": "Cobb, Ion",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "04/24/2018",
       "row_id": 12,
       "id": 12
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Infusion Pump Insertion",
+      "name": "Popescu, Eliana",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "04/22/2018",
       "row_id": 13,
       "id": 13
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Ciurdar, Amanda",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "04/12/2018",
       "row_id": 14,
       "id": 14
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Consultation",
+      "name": "Tomici, David",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "04/12/2018",
       "row_id": 15,
       "id": 15
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Infusion Pump Insertion",
+      "name": "Pop, Alex",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "04/02/2018",
       "row_id": 16,
       "id": 16
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Hawley, Scott",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
       "request_date": "04/02/2018",
       "row_id": 17,
       "id": 17
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Stefani, Louie",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "04/01/2018",
       "row_id": 18,
       "id": 18
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Thomas, Robert",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "04/01/2018",
       "row_id": 19,
       "id": 19
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Chirla, Miriam",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/29/2018",
       "row_id": 20,
       "id": 20
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Vera, Marius",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/28/2018",
       "row_id": 21,
       "id": 21
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Ortega, Juan",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/28/2018",
       "row_id": 22,
       "id": 22
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Maxwell, Torian",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/27/2018",
       "row_id": 23,
       "id": 23
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Ritchey, Keanna",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/26/2018",
       "row_id": 24,
       "id": 24
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Tjornholm, Hunter",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/24/2018",
       "row_id": 25,
       "id": 25
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Pop, Elizabeth",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/21/2018",
       "row_id": 26,
       "id": 26
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Daniels, Alberto",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/12/2018",
       "row_id": 27,
       "id": 27
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Thomas, Julian",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/10/2018",
       "row_id": 28,
       "id": 28
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Brennon, KJ",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/07/2018",
       "row_id": 29,
       "id": 29
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Warren, Skip",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/02/2018",
       "row_id": 30,
       "id": 30
     },
@@ -261,119 +261,119 @@
       "name": "Hobavcovich, Allie",
       "privilege_request": "Admission",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/02/2018",
       "row_id": 31,
       "id": 31
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Wilkins, Percy",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/02/2018",
       "row_id": 32,
       "id": 32
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Johns, Lydia",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "03/01/2018",
       "row_id": 33,
       "id": 33
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Rose, Mike",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "02/28/2018",
       "row_id": 34,
       "id": 34
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Hawkins, Nicole",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "02/28/2018",
       "row_id": 35,
       "id": 35
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Young, Anna",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "02/28/2018",
       "row_id": 36,
       "id": 36
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Brown, Leticia",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "02/25/2018",
       "row_id": 37,
       "id": 37
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Collins, Sarai",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "02/19/2018",
       "row_id": 38,
       "id": 38
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Leake, Patricia",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "02/10/2018",
       "row_id": 39,
       "id": 39
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Boyle, Jill",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "02/09/2018",
       "row_id": 40,
       "id": 40
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Galloway, Andrew",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "02/02/2018",
       "row_id": 41,
       "id": 41
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Greene, Andrea",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "01/19/2018",
       "row_id": 42,
       "id": 42
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Hart, Morgan",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "01/14/2018",
       "row_id": 43,
       "id": 43
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Summers, KeeKee",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "01/11/2018",
       "row_id": 44,
       "id": 44
     },
     {
-      "name": "Hobavcovich, Allie",
-      "privilege_request": "Admission",
+      "name": "Beckham, David",
+      "privilege_request": "Cardio arteriography",
       "status": "Granted",
-      "request_date": "04/02/2018",
+      "request_date": "01/02/2018",
       "row_id": 45,
       "id": 45
     }

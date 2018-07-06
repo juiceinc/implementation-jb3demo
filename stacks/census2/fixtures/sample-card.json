@@ -3,7 +3,7 @@
   "responses": [
     {
       "name": "courses",
-      "config": {"titleTemplate": "<strong>Privileges Exercised</strong> by <strong>Physicians</strong> in the <strong>EM Physician</strong> group."},
+      "config": {"titleTemplate": "<strong>Privileges Exercised</strong> by <strong>Physicians</strong> in the <strong>Invasive Cardiology</strong> cluster."},
       "metadata": {
         "name": {
           "short_format": ",.0f",
@@ -17,137 +17,60 @@
             "name": "items",
             "values": [
               {
-                "name": "Charis, Caroline",
+                "name": "Coronary arteriography",
                 "privilege": 45,
                 "date": "06/25/2017",
-                "id": 123
+                "id": 123,
+                "label": "Coronary arteriography"
               },
               {
-                "name": "Hobavcovich, Allie",
+                "name": "Diagnostic right and left heart catheterization",
                 "privilege": 46,
                 "date": "06/25/2017",
                 "id": 456,
-                "label": "Hobavcovich, Allie"
+                "label": "Diagnostic right and left heart catheterization"
               },
               {
-                "name": "Woodruff, Annie",
+                "name": "Placement of long term PA pressure monitoring device via right heart catheterization",
                 "privilege": 29,
-                "date": "06/25/2017"
+                "date": "06/25/2017",
+                "id": 789,
+                "label": "Placement of long term PA pressure monitoring device via right heart catheterization"
               },
               {
-                "name": "Brown, Mac",
+                "name": "Endomyocardial biopsy",
                 "privilege": 37,
-                "date": "06/25/2017"
+                "date": "06/25/2017",
+                "id": 101112,
+                "label": "Endomyocardial biopsy"
               },
               {
-                "name": "Greene, Justin",
+                "name": "Hemodynamic monitoring with balloon floatation device",
                 "privilege": 23,
-                "date": "06/25/2017"
+                "date": "06/25/2017",
+                "id": 131415,
+                "label": "Hemodynamic monitoring with balloon flotation device"
               },
               {
-                "name": "Stanley, Amaris",
+                "name": "Insertion of intra-aortic balloon counter pulsation device",
                 "privilege": 23,
-                "date": "06/25/2017"
+                "date": "06/25/2017",
+                "id": 161718,
+                "label": "Insertion of intra-aortic balloon counter pulsation device"
               },
               {
-                "name": "Wood, James",
+                "name": "Placement of temporary transvenous pacemaker",
                 "privilege": 32,
-                "date": "06/25/2017"
+                "date": "06/25/2017",
+                "id": 192021,
+                "label": "Placement of temporary transvenous pacemaker"
               },
               {
-                "name": "Cauthon, Matt",
+                "name": "Pericardiocentesis",
                 "privilege": 47,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Thor, Heinrich",
-                "privilege": 47,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Leithaug, Johann",
-                "privilege": 65,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Grab, Manuel",
-                "privilege": 24,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Codian, Yann",
-                "privilege": 12,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Thompson, Iosif",
-                "privilege": 15,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Harley, Dave",
-                "privilege": 13,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Smith, Simona",
-                "privilege": 24,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Sommers, June",
-                "privilege": 23,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Brownard, Lucas",
-                "privilege": 31,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Davies, Jem",
-                "privilege": 42,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Hawthorne, Nate",
-                "privilege": 23,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Dickens, Charley",
-                "privilege": 42,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Austen, Janet",
-                "privilege": 42,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Ingraham, Nate",
-                "privilege": 42,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Schillman, Iulia",
-                "privilege": 32,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Popescu, Florin",
-                "privilege": 42,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Chirla, Bogdan",
-                "privilege": 45,
-                "date": "06/25/2017"
-              },
-              {
-                "name": "Brincovan, Miriam",
-                "privilege": 24,
-                "date": "06/25/2017"
+                "date": "06/25/2017",
+                "id": 222324,
+                "label": "Pericardiocentesis"
               }
             ]
         }
