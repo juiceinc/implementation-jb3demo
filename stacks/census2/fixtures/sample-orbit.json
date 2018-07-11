@@ -1166,90 +1166,226 @@
                   "children": [
                         {
                           "group_by_type": "orbit",
-                          "level": "position_code",
+                          "level": "cluster",
                           "employees": 400,
-                          "children": [],
+                          "children": [
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "General",
+                              "id": "a"
+                            },
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "Procedures",
+                              "id": "b"
+                            }
+                          ],
                           "value": 0,
                           "label": "Primary Privileges",
-                          "id": "400"
+                          "id": "c"
                         },
                         {
                           "group_by_type": "orbit",
-                          "level": "position_code",
+                          "level": "cluster",
                           "employees": 400,
-                          "children": [],
+                          "children": [
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "General",
+                              "id": "d"
+                        }
+                          ],
                           "value": 0,
                           "label": "Invasive Cardiology",
                           "id": "position_code~f~~dept_name~39~~cost_center_id~6"
                         },
                         {
                           "group_by_type": "orbit",
-                          "level": "position_code",
+                          "level": "cluster",
                           "employees": 400,
-                          "children": [],
+                          "children": [
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "General",
+                              "id": "f"
+                            },
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "Procedures",
+                              "id": "g"
+                            }
+                          ],
                           "value": 0,
                           "label": "Interventional Cardiology",
                           "id": "position_code~g~~dept_name~39~~cost_center_id~7"
                         },
                         {
                           "group_by_type": "orbit",
-                          "level": "position_code",
+                          "level": "cluster",
                           "employees": 400,
-                          "children": [],
+                          "children": [
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "General",
+                              "id": "h"
+                            },
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "Electrophysiology Procedures",
+                              "id": "i"
+                            }
+                          ],
                           "value": 0,
                           "label": "Clinical Cardiac Electrophysiology",
                           "id": "position_code~h~~dept_name~39~~cost_center_id~7"
                         },
                         {
                           "group_by_type": "orbit",
-                          "level": "position_code",
+                          "level": "cluster",
                           "employees": 400,
-                          "children": [],
+                          "children": [
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "General",
+                              "id": "j"
+                            },
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "Procedures",
+                              "id": "k"
+                            }
+                          ],
                           "value": 0,
                           "label": "Structural Heart Disease",
                           "id": "position_code~i~~dept_name~39~~cost_center_id~7"
                         },
                         {
                           "group_by_type": "orbit",
-                          "level": "position_code",
+                          "level": "cluster",
                           "employees": 400,
-                          "children": [],
+                          "children": [
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "General",
+                              "id": "l"
+                            }
+                          ],
                           "value": 0,
                           "label": "Transcatheter Heart Valve Implantation",
                           "id": "position_code~j~~dept_name~39~~cost_center_id~7"
                         },
                         {
                           "group_by_type": "orbit",
-                          "level": "position_code",
+                          "level": "cluster",
                           "employees": 400,
-                          "children": [],
+                          "children": [
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "General",
+                              "id": "m"
+                            }
+                          ],
                           "value": 0,
                           "label": "Cardiac CT/CTA",
                           "id": "position_code~k~~dept_name~39~~cost_center_id~7"
                         },
                         {
                           "group_by_type": "orbit",
-                          "level": "position_code",
+                          "level": "cluster",
                           "employees": 400,
-                          "children": [],
+                          "children": [
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "General",
+                              "id": "n"
+                            }
+                          ],
                           "value": 0,
                           "label": "Cardiac MR/MRA",
                           "id": "position_code~l~~dept_name~39~~cost_center_id~7"
                         },
                         {
                           "group_by_type": "orbit",
-                          "level": "position_code",
+                          "level": "cluster",
                           "employees": 400,
-                          "children": [],
+                          "children": [
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "General",
+                              "id": "o"
+                            }
+                          ],
                           "value": 0,
                           "label": "Carotid Ultrasound Interpretation",
                           "id": "position_code~m~~dept_name~39~~cost_center_id~7"
                         },
                         {
                           "group_by_type": "orbit",
-                          "level": "position_code",
+                          "level": "cluster",
                           "employees": 400,
-                          "children": [],
+                          "children": [
+                            {
+                              "group_by_type": "orbit",
+                              "level": "grouping_code",
+                              "employees": 400,
+                              "children": [],
+                              "value": 0,
+                              "label": "General",
+                              "id": "p"
+                            }
+                          ],
                           "value": 0,
                           "label": "Peripheral Endovascular Procedures",
                           "id": "position_code~n~~dept_name~39~~cost_center_id~7"
@@ -1257,7 +1393,7 @@
                       ],
                   "value": 0.87,
                   "label": "Cardiovascular Disease",
-                  "id": "5555"
+                  "id": "zebra"
                 },
                 {
                   "group_by_type": "orbit",
