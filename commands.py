@@ -34,7 +34,7 @@ class MagicCommand(JBCommand):
 There are <strong>{total_value}</strong> buckets in this response.\n 
 <strong>{highest_label}</strong> was your highest increase at <strong>{highest_percent}%</strong> 
 from {highest_value} to {highest_benchmark} while <strong>{lowest_label}</strong> was your highest decrease, 
-dropping <strong>{lowest_percent}%</strong> dropping from {lowest_value} to {lowest_benchmark}.
+dropping <strong>{lowest_percent}%</strong> from {lowest_value} to {lowest_benchmark}.
 '''.format(
             total_value=values_len,
             highest_label=highest_increase['label'],
