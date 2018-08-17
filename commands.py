@@ -55,22 +55,22 @@ dropping <strong>{lowest_percent}%</strong> from {lowest_value} to {lowest_bench
         for value in values:
             benchmark_value = value['benchmarks'][0]['value']
 
+            difference_amount = float(benchmark_value) / float(value['value']) * 100
+
             # There was an increase in metric
             if benchmark_value > value['value']:
-                increase_amount = float(benchmark_value) / float(value['value']) * 100
-                if 'increase_amount' not in highest_increase or increase_amount > highest_increase['increase_amount']:
+                if 'increase_amount' not in highest_increase or difference_amount > highest_increase['increase_amount']:
                     highest_increase = {
-                        'increase_amount': round(increase_amount, 2),
+                        'increase_amount': round(difference_amount, 2),
                         'value': value['value'],
                         'benchmark': benchmark_value,
                         'label': value['label']
                     }
 
             elif benchmark_value < value['value']:
-                decrease_amount = float(benchmark_value) / float(value['value']) * 100
-                if 'decrease_amount' not in highest_decrease or decrease_amount < highest_decrease['decrease_amount']:
+                if 'decrease_amount' not in highest_decrease or difference_amount < highest_decrease['decrease_amount']:
                     highest_decrease = {
-                        'decrease_amount': round(decrease_amount, 2),
+                        'decrease_amount': round(difference_amount, 2),
                         'value': value['value'],
                         'benchmark': benchmark_value,
                         'label': value['label']
