@@ -19,3 +19,6 @@ stacks:
 - "census"
 - "census2"
 - "customslices"
+metadata:
+  commands:
+    magic-insight:

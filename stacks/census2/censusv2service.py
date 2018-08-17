@@ -410,3 +410,396 @@ class StackSwitcherService(CensusService):
         response = self.response_template()
         response['data'][0]['values'] = buttons
         self.response['responses'].append(response)
+
+
+class RankedListService(CensusService):
+    _response_data = {
+        "version": "3",
+        "responses": [
+            {
+                "name": "option 1",
+                "config": {
+                    "titleTemplate": "Moo 1"
+                },
+                "metadata": {},
+                "data": [
+                    {
+                        "name": "items",
+                        "values": [
+                            {
+                                "count": 47,
+                                "group_by_type": "course",
+                                "value": 28,
+                                "id": 0,
+                                "label": "label-0",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 16,
+                                "group_by_type": "course",
+                                "value": 6,
+                                "id": 1,
+                                "label": "label-1",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 20
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 23,
+                                "group_by_type": "course",
+                                "value": 48,
+                                "id": 2,
+                                "label": "label-2",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 30
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 47,
+                                "group_by_type": "course",
+                                "value": 28,
+                                "id": 10,
+                                "label": "label-10",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 16,
+                                "group_by_type": "course",
+                                "value": 6,
+                                "id": 11,
+                                "label": "label-11",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 23,
+                                "group_by_type": "course",
+                                "value": 48,
+                                "id": 12,
+                                "label": "label-21",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 25,
+                                "group_by_type": "course",
+                                "value": 11,
+                                "id": 3,
+                                "label": "label-3",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 30
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 21,
+                                "group_by_type": "course",
+                                "value": 26,
+                                "id": 4,
+                                "label": "label-4",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 26,
+                                "group_by_type": "course",
+                                "value": 34,
+                                "id": 5,
+                                "label": "label-5",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 25,
+                                "group_by_type": "course",
+                                "value": 11,
+                                "id": 13,
+                                "label": "label-13",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 21,
+                                "group_by_type": "course",
+                                "value": 26,
+                                "id": 14,
+                                "label": "label-14",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 26,
+                                "group_by_type": "course",
+                                "value": 34,
+                                "id": 15,
+                                "label": "label-15",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 16,
+                                "group_by_type": "course",
+                                "value": 30,
+                                "id": 6,
+                                "label": "label-6",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "markers",
+                        "values": [
+                            {
+                                "x1": 20,
+                                "x2": 40,
+                                "label": "target",
+                                "tooltipContent": "Target Range <strong>20-40</strong>",
+                                "position": "below",
+                                "shape": "rect",
+                                "classed": "slice-legend__goal"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "option 2",
+                "config": {
+                    "titleTemplate": "Moo 2"
+                },
+                "metadata": {},
+                "data": [
+                    {
+                        "name": "items",
+                        "values": [
+                            {
+                                "count": 23,
+                                "group_by_type": "something-else",
+                                "value": 48,
+                                "id": 2,
+                                "label": "label-2",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 47,
+                                "group_by_type": "something-else",
+                                "value": 28,
+                                "id": 10,
+                                "label": "label-10",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 16,
+                                "group_by_type": "something-else",
+                                "value": 6,
+                                "id": 11,
+                                "label": "label-11",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 23,
+                                "group_by_type": "something-else",
+                                "value": 48,
+                                "id": 12,
+                                "label": "label-21",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 25,
+                                "group_by_type": "something-else",
+                                "value": 11,
+                                "id": 3,
+                                "label": "label-3",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 21,
+                                "group_by_type": "something-else",
+                                "value": 26,
+                                "id": 4,
+                                "label": "label-4",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 26,
+                                "group_by_type": "something-else",
+                                "value": 34,
+                                "id": 5,
+                                "label": "label-5",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 25,
+                                "group_by_type": "something-else",
+                                "value": 11,
+                                "id": 13,
+                                "label": "label-13",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 21,
+                                "group_by_type": "something-else",
+                                "value": 26,
+                                "id": 14,
+                                "label": "label-14",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 26,
+                                "group_by_type": "something-else",
+                                "value": 34,
+                                "id": 15,
+                                "label": "label-15",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            },
+                            {
+                                "count": 16,
+                                "group_by_type": "something-else",
+                                "value": 30,
+                                "id": 6,
+                                "label": "label-6",
+                                "dimension": "product_category",
+                                "benchmarks": [
+                                    {
+                                        "label": "last year",
+                                        "value": 29
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+
+    def __init__(self, *args, **kwargs):
+        super(RankedListService, self).__init__(*args, **kwargs)
+        self.custom_filter_keys = self.automatic_filter_keys
+
+    def build_response(self):
+        self.response = self._response_data

@@ -147,6 +147,8 @@ slices:
   title: "New ranked list!"
   config:
     "disableSort": true
+  include_commands:
+    - "magic-insight"
   style:
     - "section-content"
   data_service: "sample-rankedlist.json"
