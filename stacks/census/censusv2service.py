@@ -123,6 +123,14 @@ class CensusService(RecipeServiceBaseV3):
                           #     lambda x: "Change is {0:0.1%} percent".format(
                           #         x)]
                               ),
+        'unique_states': Metric(func.count(distinct(Census.state)), singular='Unique'),
+        'unique_gender': Metric(func.count(distinct(Census.sex)), singular='Unique' ),
+        'unique_ages': Metric(func.count(distinct(Census.age)), singular='Unique'),
+        'unique_age_bands': Metric(func.count(distinct(
+            case([(Census.age < 21, 'Under 21'),
+                                     (Census.age < 49, '21-49')
+                                     ], else_='Other')
+        )), singular='Unique:')
     }
 
     # Dimensions are ways to split the data.
@@ -246,6 +254,22 @@ class TableV3Service(DownloadTable, CensusService):
         results = RecipePool([
             (recipe1, 'States'), (recipe2, 'Ages'),
         ]).run()
+
+        self.metrics = ('unique_states', 'unique_gender', 'pop2000', 'pop2008', 'popdiff')
+        summary_recipe1 = self.recipe().metrics(*self.metrics)
+        summary_recipe1_response = summary_recipe1.render()
+
+        from dataservices.utils import create_summary_table_response
+        results[0] = create_summary_table_response(
+            results[0],
+            summary_recipe1_response,
+            summary_labels= {
+                'pop2000': 'Sum',
+                'pop2008': 'Sum',
+                'popdiff': 'Sum'
+            }
+        )
+
         self.response['responses'] = results
         self.response['responses'][0]['templateContext']['notes'] = 'Lorem Ipsum Dolor Sumit'
         print 'Ms: ', current_milli_time() - start

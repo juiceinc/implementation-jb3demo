@@ -117,8 +117,8 @@ slices:
   config:
     "name_field": "state"
     "slickgrid_id_field": "row_id"
-    "pagination":
-      "pageSize": 13
+    # "pagination":
+    #   "pageSize": 13
   include_commands:
     - "download-data"
     - "download-image"
