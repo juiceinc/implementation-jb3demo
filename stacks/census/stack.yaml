@@ -138,7 +138,15 @@ slices:
   style:
     - "section-content"
   data_service: "censusv2service.RankedListV3Service"
-  extra_css: ""
+
+- slug: "ranked_list_raw_query"
+  slice_type: "ranked-list"
+  title: "ranked-list (raw query)"
+  config:
+    "disableSort": true
+  style:
+    - "section-content"
+  data_service: "censusv2service.RankedListRawQuery"
 
 - slice_type: "ranked-list-2"
   slug: "rl2"
