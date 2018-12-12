@@ -1,5 +1,5 @@
 import time
-from sqlalchemy import Column, String, ForeignKey, select, join
+from sqlalchemy import Column, String, ForeignKey, select, join, func, case
 
 from dataservices.mixins import DownloadTable
 from dataservices.recipe import *
@@ -7,6 +7,7 @@ from dataservices.redshift_connectionbase import *
 from dataservices.servicebase import *
 from dataservices.recipe_pool import RecipePool
 from dataservices.renderers import OptionChooserRenderer
+from dataservices.renderable_query import RenderableQuery
 from dataservices.servicebasev3 import RecipeServiceBaseV3
 
 # -------------
@@ -268,24 +269,59 @@ class LeaderboardV3Service(CensusService):
         self.response['responses'] = results
         print 'Ms: ', current_milli_time() - start
 
-
 class RankedListV3Service(CensusService):
-    def build_response(self):
-        start = current_milli_time()
-        self.metrics = ('avgage', 'pop2008')
-        self.dimensions = ('state', )
-        recipe1 = self.recipe().metrics(*self.metrics).dimensions(
-            *self.dimensions).order_by('avgage')
-        self.dimensions = ('sex',)
-        recipe2 = self.recipe().metrics(*self.metrics).dimensions(
-            *self.dimensions).order_by('avgage')
-        results = RecipePool([
-            (recipe1, 'States'), (recipe2, 'Gender'),
-        ]).run()
-        self.response['responses'] = results
-        print 'Ms: ',current_milli_time() - start
+    def build_recipe(self):
+        recipe1 = self.recipe().metrics('avgage', 'pop2008').dimensions('state').order_by('avgage')
+        recipe2 = self.recipe().metrics('avgage', 'pop2008').dimensions('sex').order_by('avgage')
+        return [recipe1.prepare(name='States'), recipe2.prepare(name='Gender')]
 
+class RankedListRawQuery(CensusService):
+    """An example of how to use raw SQLAlchemy queries instead of the Recipe library.
+    This should be identical to :class:`RankedListV3Service`.
+    """
 
+    def build_recipe(self):
+        avgage_clause = func.sum(Census.pop2008 * Census.age) / func.sum(Census.pop2008)
+        filters = and_(
+            Census.sex.in_(self.automatic_filters['sex']),
+            Census.state.in_(self.automatic_filters['state']))
+        state_query = (
+            select([
+                Census.state.label('state_id'), Census.state,
+                avgage_clause.label('avgage'),
+                func.sum(Census.pop2008).label('pop2008')
+            ])
+            .where(filters)
+            .group_by(Census.state)
+            .order_by(avgage_clause)
+        )
+
+        gender_query = (
+            select([
+                Census.sex.label('sex_id'),
+                case({'F': 'Womenfolk', 'M': 'Menfolk'}, value=Census.sex).label('sex'),
+                avgage_clause.label('avgage'),
+                func.sum(Census.pop2008).label('pop2008')
+            ])
+            .where(filters)
+            .group_by(Census.sex)
+            .order_by(avgage_clause)
+        )
+
+        metadata = {
+            'avgage': {'format': '.1f'},
+            'pop2008': {'format': '.3s'},
+        }
+
+        state = RenderableQuery(
+            service=self, query=state_query,
+            name='State', dimensions=['state'], metrics=['avgage', 'pop2008'],
+            metadata=metadata)
+        gender = RenderableQuery(
+            service=self, query=gender_query,
+            name='Gender', dimensions=['sex'], metrics=['avgage', 'pop2008'],
+            metadata=metadata)
+        return [state, gender]
 
 class LollipopV3Service(CensusService):
     def build_response(self):
