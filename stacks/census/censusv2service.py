@@ -6,7 +6,8 @@ from dataservices.recipe import *
 from dataservices.redshift_connectionbase import *
 from dataservices.servicebase import *
 from dataservices.recipe_pool import RecipePool
-from dataservices.renderers import OptionChooserRenderer, RenderableQuery
+from dataservices.renderers import OptionChooserRenderer
+from dataservices.renderable_query import RenderableQuery
 from dataservices.servicebasev3 import RecipeServiceBaseV3
 
 # -------------
