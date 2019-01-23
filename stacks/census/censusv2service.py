@@ -282,16 +282,18 @@ class RankedListRawQuery(CensusService):
 
     def build_recipe(self):
         avgage_clause = func.sum(Census.pop2008 * Census.age) / func.sum(Census.pop2008)
-        filters = and_(
-            Census.sex.in_(self.automatic_filters['sex']),
-            Census.state.in_(self.automatic_filters['state']))
+        filters = []
+        if 'state' in self.automatic_filters:
+            filters.append(Census.state.in_(self.automatic_filters['state']))
+        if 'sex' in self.automatic_filters:
+            filters.append(Census.sex.in_(self.automatic_filters['sex']))
         state_query = (
             select([
                 Census.state.label('state_id'), Census.state,
                 avgage_clause.label('avgage'),
                 func.sum(Census.pop2008).label('pop2008')
             ])
-            .where(filters)
+            .where(and_(*filters))
             .group_by(Census.state)
             .order_by(avgage_clause)
         )
@@ -303,7 +305,7 @@ class RankedListRawQuery(CensusService):
                 avgage_clause.label('avgage'),
                 func.sum(Census.pop2008).label('pop2008')
             ])
-            .where(filters)
+            .where(and_(*filters))
             .group_by(Census.sex)
             .order_by(avgage_clause)
         )
