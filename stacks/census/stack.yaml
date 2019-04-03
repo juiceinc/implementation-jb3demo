@@ -36,6 +36,7 @@ slices:
   title: "option-chooser 1: This should go away"
   # Detailed configuration for the slice.
   config:
+    "display_slice_as": "pill"
     "optionExtraClass": "option-item-fixed-width"
 #    <%=format('value', undefined, 'id')%> means: in the current object, format value  of a 'value' field
 #    we don't have a static format specifier (undefined), but you can lookup the format in metadata using the 'id' field's value
@@ -57,6 +58,7 @@ slices:
   title: "option-chooser 2: This could stay here"
   # Detailed configuration for the slice.
   config:
+    "display_slice_as": "default"
     "optionExtraClass": "option-item-fixed-width"
     "optionTemplate": |-
       <div data-id="<%= datum.id %>" class="group-container__item"><div class="group-container__item__label"><%= datum.label %></div><div class="group-container__item__value"><%= datum.format('value', ',.2s') %></div></div>
@@ -79,6 +81,7 @@ slices:
   title: "option-chooser 3: This could stay here"
   # Detailed configuration for the slice.
   config:
+    "display_slice_as": "default"
     "optionExtraClass": "option-item-fixed-width"
     "optionTemplate": |-
       <div data-id="<%= datum.id %>" class="group-container__item"><div class="group-container__item__label"><%= datum.label %></div><div class="group-container__item__value"><%= datum.format('value', ',.2s') %></div></div>
@@ -101,6 +104,7 @@ slices:
   title: "distribution"
   # Detailed configuration for the slice.
   config:
+    "display_slice_as": "default"
     "cellTemplateName": "#distribution-template"
     "colors": {"Ages": {"range": ["#f00", "#0f0"], "field": "value"} }
   # Provides data to the slice
@@ -115,6 +119,7 @@ slices:
   title: "details-table"
   # Detailed configuration for the slice.
   config:
+    "display_slice_as": "default"
     "name_field": "state"
     "slickgrid_id_field": "row_id"
     # "pagination":
@@ -144,6 +149,7 @@ slices:
   slug: "rl2"
   title: "ranked-list-2"
   config:
+    "display_slice_as": "default"
     "disableSort": true
   style:
     - "section-content"
@@ -161,6 +167,7 @@ slices:
   slug: "rl3"
   title: "ranked-list-2"
   config:
+    "display_slice_as": "default"
     "disableSort": true
   style:
     - "section-content"
@@ -173,6 +180,7 @@ slices:
   subtitle: "I am a subtitle."
   config:
     baseTemplate: "#base-slice-twocolumns-template"
+    "display_slice_as": "default"
     "groups":
       "default":
         "max": 100
@@ -219,6 +227,7 @@ slices:
   slug: "jam_card1"
   title: "card"
   config:
+    "display_slice_as": "default"
     "cardTemplateName": "#jam-card-template"
   data_service: "censusv2service.CardV3Service2"
   extra_css: ""
@@ -227,6 +236,7 @@ slices:
   slug: "ninebox"
   title: "nine-box"
   config:
+    "display_slice_as": "default"
     "axisLabels": [{"labels": ["Low", "Medium", "High"]}, {"labels": ["Slow", "Normal", "Fast"]}]
     "boxLabels":
     - "col": 2
@@ -240,6 +250,7 @@ slices:
   slug: "keymetrics_hierarchy"
   title: "Key Metrics Hierarchy"
   config:
+    "display_slice_as": "default"
     margin:
       top: 60
       right: 80
@@ -253,6 +264,8 @@ slices:
   title: "leaderboard"
   data_service: "censusv2service.LeaderboardV3Service"
   extra_css: ""
+  config:
+    "display_slice_as": "default"
   mixins:
     - target: "view"
       class: "ColorDataMixin"
@@ -268,12 +281,15 @@ slices:
   title: "map"
   data_service: "sample-map.json"
   extra_css: ""
+  config:
+    "display_slice_as": "default"
 
 - slice_type: "matchup"
   slug: "matchup"
   title: "matchup"
   data_service: "censusv2service.MatchupV3Service"
   config:
+    "display_slice_as": "default"
     "differenceThreshold": 0.01
     "scoreTitleTemplate": "Population Change"
     "averageTitle": "Average Change"
@@ -290,17 +306,22 @@ slices:
   title: "trend"
   data_service: "sample-trend.json"
   extra_css: ""
+  config:
+    "display_slice_as": "default"
 
 - slice_type: "vega"
   slug: "vega"
   title: "vega"
   data_service: "sample-vega.json"
   extra_css: ""
+  config:
+    "display_slice_as": "default"
 
 - slice_type: "orbit"
   slug: "orbit"
   title: "orbit"
   config:
+    "display_slice_as": "default"
     "minSelections": 1
     "sizeField": "employees"
     "sizeRange": [30,200]
@@ -314,6 +335,7 @@ slices:
   slug: "sankey"
   title: "Sankey"
   config:
+    "display_slice_as": "default"
     "colorMap":
       "Better Than": "#97cc58"
       "Same As": "#ccc"
@@ -324,6 +346,7 @@ slices:
   slug: "bubble"
   title: "bubble"
   config:
+    "display_slice_as": "default"
     "sizeField": "employees"
     "colorField": "value"
   data_service: "sample-orbit.json"
@@ -333,6 +356,7 @@ slices:
   slug: "flower1"
   title: "flower"
   config:
+    "display_slice_as": "default"
     "detailsTemplateName": "#flower-slice-details-template"
     "width": 750
   data_service: "sample-flower.json"
@@ -344,6 +368,7 @@ slices:
   - options: {}
     target: "view"
   config:
+    "display_slice_as": "default"
     visual_plugin: "forcev2"
   data_service: "sample-custom-force.json"
 
@@ -355,6 +380,7 @@ slices:
   - options: {}
     target: "view"
   config:
+    "display_slice_as": "default"
     visual_plugin: "treev2"
   data_service: "sample-tree.json"
   extra_css: "
