@@ -270,7 +270,7 @@ class LeaderboardV3Service(CensusService):
         print 'Ms: ', current_milli_time() - start
 
 class RankedListV3Service(CensusService):
-    def build_recipe(self):
+    def build_renderers(self):
         recipe1 = self.recipe().metrics('avgage', 'pop2008').dimensions('state').order_by('avgage')
         recipe2 = self.recipe().metrics('avgage', 'pop2008').dimensions('sex').order_by('avgage')
         return [recipe1.prepare(name='States'), recipe2.prepare(name='Gender')]
@@ -280,7 +280,7 @@ class RankedListRawQuery(CensusService):
     This should be identical to :class:`RankedListV3Service`.
     """
 
-    def build_recipe(self):
+    def build_renderers(self):
         avgage_clause = func.sum(Census.pop2008 * Census.age) / func.sum(Census.pop2008)
         filters = []
         if 'state' in self.automatic_filters:
