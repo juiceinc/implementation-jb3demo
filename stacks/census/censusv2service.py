@@ -273,7 +273,7 @@ class RankedListV3Service(CensusService):
     def build_renderers(self):
         recipe1 = self.recipe().metrics('avgage', 'pop2008').dimensions('state').order_by('avgage')
         recipe2 = self.recipe().metrics('avgage', 'pop2008').dimensions('sex').order_by('avgage')
-        return [recipe1.prepare(name='States'), recipe2.prepare(name='Gender')]
+        return [self.renderer('States', data=recipe1), self.renderer('Gender', data=recipe2)]
 
 class RankedListRawQuery(CensusService):
     """An example of how to use raw SQLAlchemy queries instead of the Recipe library.
