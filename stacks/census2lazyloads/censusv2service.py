@@ -1,3 +1,4 @@
+from __future__ import print_function
 import json
 import time
 from copy import deepcopy
@@ -178,5 +179,5 @@ class FirstChooserV3Service(CensusService):
         start = current_milli_time()
         self.metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
         recipe = self.recipe().metrics(*self.metrics).prepare(flavor='metric')
-        print 'Ms: ', current_milli_time() - start
+        print('Ms: ', current_milli_time() - start)
         return [recipe]

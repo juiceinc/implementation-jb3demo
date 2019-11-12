@@ -1,3 +1,4 @@
+from __future__ import print_function
 import time
 from sqlalchemy import Column, String, ForeignKey, select, join
 
@@ -173,19 +174,19 @@ class FirstChooserV3Service(CensusService):
         self.metrics = ('pop2000', 'pop2008', 'popdiff', 'avgage', 'pctfemale')
         recipe = self.recipe().metrics(*self.metrics)
         self.response['responses'].append(recipe.render(flavor='metric'))
-        print 'Ms: ', current_milli_time() - start
+        print('Ms: ', current_milli_time() - start)
 
 
 class SecondChooserV3Service(CensusService):
     def build_response(self):
-        print 'Metrics: ',self.metrics
+        print('Metrics: ',self.metrics)
         start = current_milli_time()
         self.metrics = ('pop2000', )
         self.dimensions = ('sex',)
         recipe = self.recipe().dimensions(
             *self.dimensions).metrics(*self.metrics)
         self.response['responses'].append(recipe.render())
-        print 'Ms: ', current_milli_time() - start
+        print('Ms: ', current_milli_time() - start)
 
 
 class ButtonChooserV3Service(CensusService):
@@ -228,7 +229,7 @@ class DistributionV3Service(CensusService):
             (recipe1, 'Ages'), (recipe2, 'States'),
         ]).run()
         self.response['responses'] = results
-        print 'Ms: ',current_milli_time() - start
+        print('Ms: ',current_milli_time() - start)
 
 
 class TableV3Service(CensusService):
@@ -246,7 +247,7 @@ class TableV3Service(CensusService):
             (recipe1, 'States'), (recipe2, 'Ages'),
         ]).run()
         self.response['responses'] = results
-        print 'Ms: ', current_milli_time() - start
+        print('Ms: ', current_milli_time() - start)
 
 
 class LeaderboardV3Service(CensusService):
@@ -264,7 +265,7 @@ class LeaderboardV3Service(CensusService):
             (recipe1, 'States'), (recipe2, 'Ages'),
         ]).run()
         self.response['responses'] = results
-        print 'Ms: ', current_milli_time() - start
+        print('Ms: ', current_milli_time() - start)
 
 
 class RankedListV3Service(CensusService):
@@ -281,7 +282,7 @@ class RankedListV3Service(CensusService):
             (recipe1, 'States'), (recipe2, 'Gender'),
         ]).run()
         self.response['responses'] = results
-        print 'Ms: ',current_milli_time() - start
+        print('Ms: ',current_milli_time() - start)
 
 
 
@@ -298,7 +299,7 @@ class LollipopV3Service(CensusService):
 
         self.response['responses'].append(
             recipe.render(flavor='single_benchmark'))
-        print 'Ms: ',current_milli_time() - start
+        print('Ms: ',current_milli_time() - start)
 
 
 class FreeFormV3Service1(CensusService):
@@ -309,7 +310,7 @@ class FreeFormV3Service1(CensusService):
         recipe = self.recipe().metrics(*self.metrics).dimensions(
             *self.dimensions).limit(1).apply_global_filters(False)
         self.response['responses'].append(recipe.render())
-        print 'Ms: ',current_milli_time() - start
+        print('Ms: ',current_milli_time() - start)
 
 
 class FreeFormV3Service2(CensusService):
@@ -322,7 +323,7 @@ class FreeFormV3Service2(CensusService):
         response['data'][0]['values'].append(data)
 
         self.response['responses'].append(response)
-        print 'Ms: ',current_milli_time() - start
+        print('Ms: ',current_milli_time() - start)
 
 
 class CardV3Service2(CensusService):
@@ -343,7 +344,7 @@ class CardV3Service2(CensusService):
         ]).run()
 
         self.response['responses'] = results
-        print 'Ms: ',current_milli_time() - start
+        print('Ms: ',current_milli_time() - start)
 
 
 class NineBoxV3Service(CensusService):
@@ -356,7 +357,7 @@ class NineBoxV3Service(CensusService):
             *self.dimensions).apply_global_filters(False)
 
         self.response['responses'].append(recipe.render())
-        print 'Ms: ',current_milli_time() - start
+        print('Ms: ',current_milli_time() - start)
 
 
 class MatchupV3Service(CensusService):
@@ -396,4 +397,4 @@ class CustomSliceService(CensusService):
 
         response['name'] = 'States'
         self.response['responses'].append(response)
-        print 'Ms: ',current_milli_time() - start
+        print('Ms: ',current_milli_time() - start)
