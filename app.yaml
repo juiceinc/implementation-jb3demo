@@ -19,4 +19,3 @@ stacks:
 - "census"
 - "census2"
 - "customslices"
-- "census2lazyloads"
