@@ -10,6 +10,6 @@ logo_geometry: "x62"
 background_pattern: "patterns/bright_squares.png"
 # Set the primary colors for the app.
 variables: |
-  $theme-primary-color: #11222f;
-  $theme-accent-color: #dd4b44;
+  $theme-primary-color: #DC758F;
+  $theme-accent-color: #00FFCD;
 # Extra css overrides
